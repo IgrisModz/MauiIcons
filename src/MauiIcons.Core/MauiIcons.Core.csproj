@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <PackageId>IgrisModz.Maui.MauiIcons.Core</PackageId>
+	  <Summary>Core Library for Maui Icons</Summary>
+	  <Product>MauiIcons - Core (net10.0)</Product>
+	  <Description>Core Library for .Net Maui Icons</Description>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Update="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+	</ItemGroup>
+
+</Project>

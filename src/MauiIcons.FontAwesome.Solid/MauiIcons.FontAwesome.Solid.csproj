@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<PackageId>IgrisModz.Maui.MauiIcons.FontAwesome.Solid</PackageId>
+	  <Summary>Maui Icons - FontAwesome Solid is a FontAwesome 7 Based Icon Library for .Net Maui</Summary>
+	  <Product>MauiIcons - FontAwesome Solid (net10.0)</Product>
+	  <Description>Maui Icons - FontAwesome Solid is a FontAwesome 7 Based Icon Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete FontAwesome 7 Icon Collection Built into Library.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\fa-solid-900.otf" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Update="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+	</ItemGroup>
+
+</Project>

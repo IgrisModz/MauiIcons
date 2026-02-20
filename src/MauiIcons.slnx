@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/Others/">
+    <File Path="../README.md" />
+    <File Path="Directory.Build.props" />
+  </Folder>
+  <Folder Name="/Samples/">
+    <Project Path="../samples/MauiIcons.Sample/MauiIcons.Sample.csproj">
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/Source/">
+    <Project Path="MauiIcons.Core/MauiIcons.Core.csproj" />
+    <Project Path="MauiIcons.FontAwesome.Brands/MauiIcons.FontAwesome.Brands.csproj" />
+    <Project Path="MauiIcons.FontAwesome.Solid/MauiIcons.FontAwesome.Solid.csproj" />
+    <Project Path="MauiIcons.FontAwesome/MauiIcons.FontAwesome.Regular.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="MauiIcons.Modules.UnitTest/MauiIcons.Modules.UnitTest.csproj" />
+  </Folder>
+</Solution>

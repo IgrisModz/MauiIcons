@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+             x:Class="MauiIcons.Sample.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <mi:FontAwesomeRegularIcon
+                Icon="Newspaper"
+                FontSize="40"
+                TextColor="Red"
+                Animation="Rotate"
+                IsAnimationActive="True" />
+
+            <Image Source="{mi:FontAwesomeRegular Icon=Image, Color=Wheat, Size=100, Animation=Pulse, IsAnimationActive=True}" Aspect="Center" />
+
+            <Label Text="{mi:FontAwesomeRegular Icon=House, Color=Blue, Size=40}" HorizontalOptions="Center" />
+
+            <Button Text="{mi:FontAwesomeSolid Icon=Heart, Color=#1C9894, Size=40, Animation=Pulse, IsAnimationActive=True}" HorizontalOptions="Center" />
+
+            <mi:FontAwesomeBrandsIcon Icon="Github" FontSize="40" />
+
+            <Label HorizontalOptions="Center" VerticalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{mi:FontAwesomeBrands Icon=Facebook, Color=Blue, Size=30}" />
+                        <Span Text=" - IgrisModz" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <ContentView Content="{mi:FontAwesomeRegular Icon=AddressCard, Size=40, Color=AliceBlue, Animation=Spin, IsAnimationActive=False}"/>
+            <mi:FontAwesomeSolidIcon Icon="AddressBook" FontSize="40" TextColor="Green" Animation="Spin" IsAnimationActive="False" />
+
+
+            <mi:FontAwesomeBrandsIcon
+                Icon="{mi:FontAwesomeBrandsPlatform WinUI=Youtube}"
+                FontSize="40"
+                TextColor="Red"
+                Animation="Rotate"
+                IsAnimationActive="True"/>
+
+            <Label Text="{mi:FontAwesomeBrands Icon={mi:FontAwesomeBrandsPlatform WinUI=Youtube}, Size=80, Color=Orange}" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

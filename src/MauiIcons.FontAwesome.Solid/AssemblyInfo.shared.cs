@@ -1,0 +1,1 @@
+﻿[assembly: XmlnsDefinition("http://www.igrismodz.com/dotnet/2026/maui/icons", "MauiIcons.FontAwesome.Solid")]
