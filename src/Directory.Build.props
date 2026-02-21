@@ -24,7 +24,7 @@
 		<NeutralLanguage>en</NeutralLanguage>
 		<DefineConstants>$(DefineConstants);</DefineConstants>
 		<Configurations>Debug;Release</Configurations>
-		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<GitInfoReportImportance>high</GitInfoReportImportance>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/ReleaseNotes.txt"))</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -32,6 +32,10 @@
 		<RepositoryUrl>https://github.com/IgrisModz/MauiIcons</RepositoryUrl>
 		<Copyright>© IgrisModz. All rights reserved.</Copyright>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<!-- Prevent NuGet Package Vulnerabilities -->
+		<NuGetAudit>enable</NuGetAudit>
+		<NuGetAuditMode>all</NuGetAuditMode>
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
@@ -47,7 +51,7 @@
 
 	<ItemGroup Condition="'$(MSBuildProjectName)' != 'MauiIcons.Sample' and $(MSBuildProjectName) != 'MauiIcons.Modules.UnitTest'">
 		<None Include="README.md" Pack="true" PackagePath="\" />
-		<!--<None Include="..\..\images\icon.png" PackagePath="icon.png" Pack="true" />-->
+		<None Include="..\..\images\icon.png" PackagePath="icon.png" Pack="true" />
 	</ItemGroup>
 
 	<ItemGroup  Condition="'$(MSBuildProjectName)' != 'MauiIcons.Sample' and '$(MSBuildProjectName)' != 'MauiIcons.Core' and $(MSBuildProjectName) != 'MauiIcons.Modules.UnitTest'">
