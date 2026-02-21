@@ -2,48 +2,69 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+             xmlns:ext="clr-namespace:MauiIcons.Core;assembly=MauiIcons.Core"
              x:Class="MauiIcons.Sample.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+        <StackLayout Padding="30,0" Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
             <mi:FontAwesomeRegularIcon
                 Icon="Newspaper"
-                FontSize="40"
+                VerticalOptions="Center"
+                FontSize="60"
                 TextColor="Red"
-                Animation="Rotate"
+                Animation="Spin"
                 IsAnimationActive="True" />
 
-            <Image Source="{mi:FontAwesomeRegular Icon=Image, Color=Wheat, Size=100, Animation=Pulse, IsAnimationActive=True}" Aspect="Center" />
+            <Image Source="{mi:FontAwesomeRegular Icon=Image, Color=Wheat, Size=60}" VerticalOptions="Center" HorizontalOptions="Center" Aspect="Center" />
 
-            <Label Text="{mi:FontAwesomeRegular Icon=House, Color=Blue, Size=40}" HorizontalOptions="Center" />
+            <Label Text="{mi:FontAwesomeRegular Icon=Heart, Color=Blue, Size=60, Animation=Pulse,IsAnimationActive=True}" VerticalOptions="Center" HorizontalOptions="Center" />
 
-            <Button Text="{mi:FontAwesomeSolid Icon=Heart, Color=#1C9894, Size=40, Animation=Pulse, IsAnimationActive=True}" HorizontalOptions="Center" />
+            <Button Text="{mi:FontAwesomeSolid Icon=House, Color=#1C9894, Size=20, Animation=Spin, IsAnimationActive=True}" VerticalOptions="Center" HorizontalOptions="Center" />
 
-            <mi:FontAwesomeBrandsIcon Icon="Github" FontSize="40" />
+            <mi:FontAwesomeBrandsIcon Icon="Github" FontSize="60" />
 
             <Label HorizontalOptions="Center" VerticalTextAlignment="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="{mi:FontAwesomeBrands Icon=Facebook, Color=Blue, Size=30}" />
+                        <Span Text="{mi:FontAwesomeBrands Icon=Facebook, Color=Blue, Size=20}" />
                         <Span Text=" - IgrisModz" />
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
+            
             <ContentView Content="{mi:FontAwesomeRegular Icon=AddressCard, Size=40, Color=AliceBlue, Animation=Spin, IsAnimationActive=False}"/>
-            <mi:FontAwesomeSolidIcon Icon="AddressBook" FontSize="40" TextColor="Green" Animation="Spin" IsAnimationActive="False" />
+            
+            <mi:FontAwesomeSolidIcon Icon="AddressBook" FontSize="60" TextColor="Green" Animation="Spin" IsAnimationActive="False" />
 
 
             <mi:FontAwesomeBrandsIcon
                 Icon="{mi:FontAwesomeBrandsPlatform WinUI=Youtube}"
-                FontSize="40"
+                FontSize="60"
                 TextColor="Red"
                 Animation="Rotate"
                 IsAnimationActive="True"/>
 
-            <Label Text="{mi:FontAwesomeBrands Icon={mi:FontAwesomeBrandsPlatform WinUI=Youtube}, Size=80, Color=Orange}" HorizontalOptions="Center"/>
-        </VerticalStackLayout>
+            <Label Text="{mi:FontAwesomeBrands Icon={mi:FontAwesomeBrandsPlatform WinUI=Apple}, Size=60, Color=Orange}" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label HorizontalOptions="Center" VerticalOptions="Center">
+                <Label.Text>
+                    <mi:FontAwesomeBrands Size="60" Animation="Shake" IsAnimationActive="True">
+                        <mi:FontAwesomeBrands.Icon>
+                            <mi:FontAwesomeBrandsPlatform WinUI="Airbnb" />
+                        </mi:FontAwesomeBrands.Icon>
+                    </mi:FontAwesomeBrands>
+                </Label.Text>
+            </Label>
+
+            <mi:MaterialRegularIcon Icon="TvOff" FontSize="60"/>
+
+            <!--<mi:FontAwesomeBrandsIcon>
+                <mi:FontAwesomeBrandsIcon.Icon>
+                    <mi:IconPlatform x:TypeArguments="mi:FontAwesomeBrandsIcons" WinUI="Angular" />
+                </mi:FontAwesomeBrandsIcon.Icon>
+            </mi:FontAwesomeBrandsIcon>-->
+            
+        </StackLayout>
     </ScrollView>
 
 </ContentPage>

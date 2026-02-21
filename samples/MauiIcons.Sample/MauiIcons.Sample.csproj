@@ -81,10 +81,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\src\MauiIcons.Core\MauiIcons.Core.csproj" />
+	  <ProjectReference Include="..\..\src\MauiIcons.Core\MauiIcons.Core.csproj" />
 	  <ProjectReference Include="..\..\src\MauiIcons.FontAwesome.Brands\MauiIcons.FontAwesome.Brands.csproj" />
+	  <ProjectReference Include="..\..\src\MauiIcons.FontAwesome.Regular\MauiIcons.FontAwesome.Regular.csproj" />
 	  <ProjectReference Include="..\..\src\MauiIcons.FontAwesome.Solid\MauiIcons.FontAwesome.Solid.csproj" />
-	  <ProjectReference Include="..\..\src\MauiIcons.FontAwesome\MauiIcons.FontAwesome.Regular.csproj" />
+      <ProjectReference Include="..\..\src\MauiIcons.Material.Outlined\MauiIcons.Material.Outlined.csproj" />
+      <ProjectReference Include="..\..\src\MauiIcons.Material.Regular\MauiIcons.Material.Regular.csproj" />
+      <ProjectReference Include="..\..\src\MauiIcons.Material.Round\MauiIcons.Material.Round.csproj" />
+      <ProjectReference Include="..\..\src\MauiIcons.Material.Sharp\MauiIcons.Material.Sharp.csproj" />
+      <ProjectReference Include="..\..\src\MauiIcons.Material.TwoTone\MauiIcons.Material.TwoTone.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

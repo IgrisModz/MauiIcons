@@ -1,6 +1,11 @@
 ﻿using MauiIcons.FontAwesome.Regular;
 using MauiIcons.FontAwesome.Brands;
 using MauiIcons.FontAwesome.Solid;
+using MauiIcons.Material.Outlined;
+using MauiIcons.Material.Regular;
+using MauiIcons.Material.Round;
+using MauiIcons.Material.Sharp;
+using MauiIcons.Material.TwoTone;
 
 namespace MauiIcons.Sample;
 
@@ -11,9 +16,14 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-            .UseFontAwesomeRegular()
 			.UseFontAwesomeBrands()
+            .UseFontAwesomeRegular()
             .UseFontAwesomeSolid()
+			.UseMaterialOutlined()
+			.UseMaterialRegular()
+			.UseMaterialRound()
+			.UseMaterialSharp()
+			.UseMaterialTwoTone()
             .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

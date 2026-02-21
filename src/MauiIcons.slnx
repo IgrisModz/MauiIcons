@@ -11,8 +11,13 @@
   <Folder Name="/Source/">
     <Project Path="MauiIcons.Core/MauiIcons.Core.csproj" />
     <Project Path="MauiIcons.FontAwesome.Brands/MauiIcons.FontAwesome.Brands.csproj" />
+    <Project Path="MauiIcons.FontAwesome.Regular/MauiIcons.FontAwesome.Regular.csproj" />
     <Project Path="MauiIcons.FontAwesome.Solid/MauiIcons.FontAwesome.Solid.csproj" />
-    <Project Path="MauiIcons.FontAwesome/MauiIcons.FontAwesome.Regular.csproj" />
+    <Project Path="MauiIcons.Material.Outlined/MauiIcons.Material.Outlined.csproj" />
+    <Project Path="MauiIcons.Material.Regular/MauiIcons.Material.Regular.csproj" />
+    <Project Path="MauiIcons.Material.Round/MauiIcons.Material.Round.csproj" />
+    <Project Path="MauiIcons.Material.Sharp/MauiIcons.Material.Sharp.csproj" />
+    <Project Path="MauiIcons.Material.TwoTone/MauiIcons.Material.TwoTone.csproj" />
   </Folder>
   <Folder Name="/Tests/">
     <Project Path="MauiIcons.Modules.UnitTest/MauiIcons.Modules.UnitTest.csproj" />
