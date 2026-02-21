@@ -11,9 +11,4 @@
     <EmbeddedResource Include="Fonts\fa-regular-400.otf" />
   </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Update="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
-	</ItemGroup>
-
 </Project>
