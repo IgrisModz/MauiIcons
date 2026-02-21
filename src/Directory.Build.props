@@ -24,7 +24,7 @@
 		<NeutralLanguage>en</NeutralLanguage>
 		<DefineConstants>$(DefineConstants);</DefineConstants>
 		<Configurations>Debug;Release</Configurations>
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<GitInfoReportImportance>high</GitInfoReportImportance>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/ReleaseNotes.txt"))</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
