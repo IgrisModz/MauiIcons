@@ -1,6 +1,6 @@
 ﻿namespace MauiIcons.Core;
 
-public class IconPlatform<TEnum> : IMarkupExtension<TEnum>
+public class IconPlatformExtension<TEnum> : IMarkupExtension<TEnum>
     where TEnum : struct, Enum
 {
     public TEnum Android { get; set; }

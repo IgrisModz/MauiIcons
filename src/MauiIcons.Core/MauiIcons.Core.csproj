@@ -7,9 +7,4 @@
 	  <Description>Core Library for .Net Maui Icons</Description>
   </PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Update="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
-	</ItemGroup>
-
 </Project>

@@ -1,5 +1,4 @@
-﻿using MauiIcons.Core.Converters;
-using MauiIcons.Core.Extensions;
+﻿using MauiIcons.Core.Extensions;
 using System.ComponentModel;
 
 namespace MauiIcons.Core.Controls;
@@ -113,7 +112,7 @@ public abstract class BaseIcon<TEnum> : Label where TEnum : Enum
                     break;
             }
         }
-        catch (TaskCanceledException) { }
+        catch (Exception) { }
     }
 
     public void StopAnimation()

@@ -9,19 +9,15 @@ public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> whe
 {
     private WeakReference<VisualElement>? _targetReference;
 
-    // Propriété Icon avec support Binding
+    // Propriétés Bindable
     public static readonly BindableProperty IconProperty = BindableProperty.Create(nameof(Icon), typeof(TEnum), typeof(IconExtension<TEnum>), null);
-
     public static readonly BindableProperty ColorProperty = BindableProperty.Create(nameof(Color), typeof(Color), typeof(IconExtension<TEnum>), null);
-
     public static readonly BindableProperty BackgroundColorProperty = BindableProperty.Create(nameof(BackgroundColor), typeof(Color), typeof(IconExtension<TEnum>), null);
-
     public static readonly BindableProperty SizeProperty = BindableProperty.Create(nameof(Size), typeof(double), typeof(IconExtension<TEnum>), 30.0);
-
     public static readonly BindableProperty AnimationProperty = BindableProperty.Create(nameof(Animation), typeof(AnimationType), typeof(IconExtension<TEnum>), AnimationType.None);
+    public static readonly BindableProperty IsAnimationActiveProperty = BindableProperty.Create(nameof(IsAnimationActive), typeof(bool), typeof(BaseIcon<TEnum>), false, propertyChanged: OnIsAnimationActivePropertyChanged);
 
-    public static readonly BindableProperty IsAnimationActiveProperty = BindableProperty.Create(nameof(IsAnimationActive), typeof(bool), typeof(IconExtension<TEnum>), false);
-
+    // Accesseurs C#
     public TEnum Icon { get => (TEnum)GetValue(IconProperty); set => SetValue(IconProperty, value); }
     public Color Color { get => (Color)GetValue(ColorProperty); set => SetValue(ColorProperty, value); }
     public Color BackgroundColor { get => (Color)GetValue(BackgroundColorProperty); set => SetValue(BackgroundColorProperty, value); }
@@ -31,7 +27,7 @@ public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> whe
 
     public string FontFamily => Icon is not null ? Icon.GetFontFamily() : string.Empty;
 
-    public virtual object ProvideValue(IServiceProvider serviceProvider)
+    public object ProvideValue(IServiceProvider serviceProvider)
     {
         var provideValueTarget = serviceProvider.GetService<IProvideValueTarget>();
         if (provideValueTarget == null) return string.Empty;
@@ -117,76 +113,112 @@ public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> whe
             target.SetValue(property, value);
     }
 
-    // Gestion des animations pour les contrôles tiers (Label, Button)
-    private void AttachAnimationHandler(VisualElement target)
+    // Callback statique appelé par MAUI lors d'un changement de IsAnimationActive
+    private static void OnIsAnimationActivePropertyChanged(BindableObject bindable, object oldValue, object newValue)
     {
-        PropertyChanged -= OnExtensionPropertyChanged;
-        _targetReference = new WeakReference<VisualElement>(target);
-        PropertyChanged += OnExtensionPropertyChanged;
+        if (bindable is IconExtension<TEnum> extension)
+        {
+            extension.TriggerAnimationUpdate();
+        }
     }
 
-    private void OnExtensionPropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+    // Gestion des animations pour les contrôles tiers (Label, Button,...)
+    private void AttachAnimationHandler(VisualElement target)
     {
-        if (e.PropertyName == nameof(IsAnimationActive) && _targetReference != null && _targetReference.TryGetTarget(out var visual))
+        // On stocke la référence cible sans polluer les événements
+        _targetReference = new WeakReference<VisualElement>(target);
+
+        // On déclenche l'animation immédiatement si elle est définie à True dans le XAML
+        TriggerAnimationUpdate();
+    }
+
+    private void TriggerAnimationUpdate()
+    {
+        if (_targetReference != null && _targetReference.TryGetTarget(out var visual))
+        {
             HandleAnimation(visual);
+        }
     }
 
     private void HandleAnimation(VisualElement target)
     {
-        // Indispensable : On ne peut pas animer un contrôle non monté
         if (!target.IsLoaded)
         {
-            target.Loaded += (s, e) => HandleAnimation(target);
+            // On s'assure qu'on ne s'abonne qu'une seule fois au Loaded
+            target.Loaded -= OnTargetLoaded;
+            target.Loaded += OnTargetLoaded;
             return;
         }
 
-        // Sécurité : Annuler les animations en cours avant de relancer
         target.CancelAnimations();
 
         if (IsAnimationActive && Animation != AnimationType.None)
         {
-            // On lance dans une tâche séparée pour ne pas bloquer l'UI
-            Task.Run(async () => {
-                await Task.Delay(100); // Petit délai pour laisser le rendu natif se stabiliser
+            Task.Run(async () =>
+            {
+                await Task.Delay(50); // Petit délai pour laisser le layout se dessiner
                 MainThread.BeginInvokeOnMainThread(async () => await RunAnimation(target));
             });
+        }
+        else
+        {
+            // Réinitialisation visuelle propre si on stoppe l'animation
+            target.Rotation = 0;
+            target.TranslationX = 0;
+            target.Scale = 1;
+        }
+    }
+
+    private void OnTargetLoaded(object? sender, EventArgs e)
+    {
+        if (sender is VisualElement target)
+        {
+            target.Loaded -= OnTargetLoaded;
+            HandleAnimation(target);
         }
     }
 
     private async Task RunAnimation(VisualElement target)
     {
-        switch (Animation)
+        try
         {
-            case AnimationType.Rotate:
-                // Rotation simple (One-shot)
-                await target.RotateToAsync(360, 500, Easing.CubicInOut);
-                target.Rotation = 0;
-                IsAnimationActive = false;
-                break;
-            case AnimationType.Spin:
-                // Rotation infinie
-                while (IsAnimationActive)
-                {
-                    await target.RelRotateToAsync(360, 2000, Easing.Linear);
+            switch (Animation)
+            {
+                case AnimationType.Rotate:
+                    // Rotation simple (One-shot)
+                    await target.RotateToAsync(360, 500, Easing.CubicInOut);
                     target.Rotation = 0;
-                }
-                break;
-            case AnimationType.Pulse:
-                while (IsAnimationActive)
-                {
-                    await target.ScaleToAsync(1.2, 500, Easing.CubicIn);
-                    await target.ScaleToAsync(1.0, 500, Easing.CubicOut);
-                }
-                break;
-            case AnimationType.Shake:
-                while (IsAnimationActive)
-                {
-                    await target.TranslateToAsync(-5, 0, 50);
-                    await target.TranslateToAsync(5, 0, 50);
-                    target.TranslationX = 0;
-                    await Task.Delay(100);
-                }
-                break;
+                    IsAnimationActive = false;
+                    break;
+                case AnimationType.Spin:
+                    // Rotation infinie
+                    while (IsAnimationActive)
+                    {
+                        await target.RelRotateToAsync(360, 2000, Easing.Linear);
+                        target.Rotation = 0;
+                    }
+                    break;
+                case AnimationType.Pulse:
+                    while (IsAnimationActive)
+                    {
+                        await target.ScaleToAsync(1.2, 500, Easing.CubicIn);
+                        await target.ScaleToAsync(1.0, 500, Easing.CubicOut);
+                    }
+                    break;
+                case AnimationType.Shake:
+                    while (IsAnimationActive)
+                    {
+                        await target.TranslateToAsync(-5, 0, 50);
+                        await target.TranslateToAsync(5, 0, 50);
+                        target.TranslationX = 0;
+                        await Task.Delay(100);
+                    }
+                    break;
+            }
+        }
+        catch (Exception)
+        {
+            // Capture silencieuse (ex: si l'utilisateur quitte la page pendant l'animation)
         }
     }
 
