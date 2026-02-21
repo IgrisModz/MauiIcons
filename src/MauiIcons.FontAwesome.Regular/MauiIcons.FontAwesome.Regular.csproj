@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<PackageId>IgrisModz.Maui.MauiIcons.FontAwesome.Regular</PackageId>
+	<PackageId>IgrisModz.MauiIcons.FontAwesome.Regular</PackageId>
 	<Summary>Maui Icons - FontAwesome is a FontAwesome 7 Based Icon Library for .Net Maui</Summary>
 	<Product>MauiIcons - FontAwesome (net10.0)</Product>
 	<Description>Maui Icons - FontAwesome is a FontAwesome 7 Based Icon Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete FontAwesome 7 Icon Collection Built into Library.</Description>

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<PackageId>IgrisModz.Maui.MauiIcons.Material.Outlined</PackageId>
+	<PackageId>IgrisModz.MauiIcons.Material.Outlined</PackageId>
 	<Summary>Maui Icons - Material Outlined is Icon Library for .Net Maui</Summary>
 	<Product>MauiIcons - Material Outlined (net10.0)</Product>
 	<Description>Maui Icons - Material Outlined is a Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete Material Icon Collection Built into Library.</Description>

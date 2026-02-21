@@ -11,13 +11,13 @@
                 Icon="Newspaper"
                 VerticalOptions="Center"
                 FontSize="60"
-                TextColor="Red"
+                TextColor="Indigo"
                 Animation="Spin"
                 IsAnimationActive="True" />
 
             <Image Source="{mi:FontAwesomeRegular Icon=Image, Color=Wheat, Size=60}" VerticalOptions="Center" HorizontalOptions="Center" Aspect="Center" />
 
-            <Label Text="{mi:FontAwesomeRegular Icon=Heart, Color=Blue, Size=60, Animation=Pulse,IsAnimationActive=True}" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="{mi:FontAwesomeRegular Icon=Heart, Color=Pink, Size=60, Animation=Pulse,IsAnimationActive=True}" VerticalOptions="Center" HorizontalOptions="Center" />
 
             <Button Text="{mi:FontAwesomeSolid Icon=House, Color=#1C9894, Size=20, Animation=Spin, IsAnimationActive=True}" VerticalOptions="Center" HorizontalOptions="Center" />
 
@@ -26,13 +26,13 @@
             <Label HorizontalOptions="Center" VerticalTextAlignment="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="{mi:FontAwesomeBrands Icon=Facebook, Color=Blue, Size=20}" />
+                        <Span Text="{mi:FontAwesomeBrands Icon=Facebook, Color=#105FF2, Size=25}" />
                         <Span Text=" - IgrisModz" />
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
             
-            <ContentView Content="{mi:FontAwesomeRegular Icon=AddressCard, Size=40, Color=AliceBlue, Animation=Spin, IsAnimationActive=False}"/>
+            <ContentView Content="{mi:FontAwesomeRegular Icon=AddressCard, Size=40, Color=Crimson, Animation=Spin, IsAnimationActive=False}"/>
             
             <mi:FontAwesomeSolidIcon Icon="AddressBook" FontSize="60" TextColor="Green" Animation="Spin" IsAnimationActive="False" />
 
@@ -48,7 +48,7 @@
 
             <Label HorizontalOptions="Center" VerticalOptions="Center">
                 <Label.Text>
-                    <mi:FontAwesomeBrands Size="60" Animation="Shake" IsAnimationActive="True">
+                    <mi:FontAwesomeBrands Size="60" Color="RosyBrown" Animation="Shake" IsAnimationActive="True">
                         <mi:FontAwesomeBrands.Icon>
                             <mi:FontAwesomeBrandsPlatform WinUI="Airbnb" />
                         </mi:FontAwesomeBrands.Icon>
@@ -56,7 +56,9 @@
                 </Label.Text>
             </Label>
 
-            <mi:MaterialRegularIcon Icon="TvOff" FontSize="60"/>
+            <mi:MaterialRegularIcon Icon="TvOff" TextColor="BlueViolet" FontSize="60"/>
+
+            <Label Text="&#xf024;" FontSize="60" FontFamily="FontAwesomeRegularIcons" TextColor="Aqua" VerticalOptions="Center"/>
 
             <!--<mi:FontAwesomeBrandsIcon>
                 <mi:FontAwesomeBrandsIcon.Icon>
