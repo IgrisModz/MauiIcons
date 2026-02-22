@@ -5,6 +5,7 @@
 	<Summary>Maui Icons - Material Regular is Icon Library for .Net Maui</Summary>
 	<Product>MauiIcons - Material Regular (net10.0)</Product>
 	<Description>Maui Icons - Material Regular is a Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete Material Icon Collection Built into Library.</Description>
+	<PackageTags>Material,MaterialIcons,Regular,Maui,Icon,Dotnet,Icons,MauiIcons,iOSIcon,AndroidIcon,MacIcon,WindowsIcon,IgrisModz</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

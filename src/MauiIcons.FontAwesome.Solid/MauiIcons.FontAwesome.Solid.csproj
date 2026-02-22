@@ -5,6 +5,7 @@
 	  <Summary>Maui Icons - FontAwesome Solid is a FontAwesome 7 Based Icon Library for .Net Maui</Summary>
 	  <Product>MauiIcons - FontAwesome Solid (net10.0)</Product>
 	  <Description>Maui Icons - FontAwesome Solid is a FontAwesome 7 Based Icon Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete FontAwesome 7 Icon Collection Built into Library.</Description>
+	  <PackageTags>FontAwesome,Solid,Maui,Icon,Dotnet,Icons,MauiIcons,iOSIcon,AndroidIcon,MacIcon,WindowsIcon,IgrisModz</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
