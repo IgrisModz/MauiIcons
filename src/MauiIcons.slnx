@@ -20,6 +20,6 @@
     <Project Path="MauiIcons.Material.TwoTone/MauiIcons.Material.TwoTone.csproj" />
   </Folder>
   <Folder Name="/Tests/">
-    <Project Path="MauiIcons.Modules.UnitTest/MauiIcons.Modules.UnitTest.csproj" />
+    <Project Path="MauiIcons.Tests/MauiIcons.Tests.csproj" />
   </Folder>
 </Solution>
