@@ -1,4 +1,4 @@
-﻿namespace MauiIcons.Core;
+﻿namespace MauiIcons.Core.Extensions;
 
 public class IconPlatformExtension<TEnum> : IMarkupExtension<TEnum>
     where TEnum : struct, Enum

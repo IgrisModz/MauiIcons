@@ -1,4 +1,4 @@
-﻿using MauiIcons.Core;
+﻿using MauiIcons.Core.Extensions;
 
 namespace MauiIcons.FontAwesome.Brands;
 
