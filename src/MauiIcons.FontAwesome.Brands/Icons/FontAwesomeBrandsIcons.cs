@@ -1,1107 +1,558 @@
-﻿using System.ComponentModel;
+﻿using MauiIcons.Core.Attributes;
 
 namespace MauiIcons.FontAwesome.Brands;
 
+[IconFont(FontAwesomeBrandsFont.FontAlias)]
 public enum FontAwesomeBrandsIcons
 {
-    [Description("\ue080")]
-    FortyTwoGroup,
-    [Description("\uf26e")]
-    FiveHundredpx,
-    [Description("\uf368")]
-    AccessibleIcon,
-    [Description("\uf369")]
-    Accusoft,
-    [Description("\uf170")]
-    Adn,
-    [Description("\uf36a")]
-    Adversal,
-    [Description("\uf36b")]
-    Affiliatetheme,
-    [Description("\uf834")]
-    Airbnb,
-    [Description("\uf36c")]
-    Algolia,
-    [Description("\uf642")]
-    Alipay,
-    [Description("\uf270")]
-    Amazon,
-    [Description("\uf42c")]
-    AmazonPay,
-    [Description("\uf36d")]
-    Amilia,
-    [Description("\uf17b")]
-    Android,
-    [Description("\uf209")]
-    Angellist,
-    [Description("\uf36e")]
-    Angrycreative,
-    [Description("\uf420")]
-    Angular,
-    [Description("\uf36f")]
-    AppStore,
-    [Description("\uf370")]
-    AppStoreIos,
-    [Description("\uf371")]
-    Apper,
-    [Description("\uf179")]
-    Apple,
-    [Description("\uf415")]
-    ApplePay,
-    [Description("\ue867")]
-    ArchLinux,
-    [Description("\uf77a")]
-    Artstation,
-    [Description("\uf372")]
-    Asymmetrik,
-    [Description("\uf77b")]
-    Atlassian,
-    [Description("\uf373")]
-    Audible,
-    [Description("\uf41c")]
-    Autoprefixer,
-    [Description("\uf374")]
-    Avianex,
-    [Description("\uf421")]
-    Aviato,
-    [Description("\uf375")]
-    Aws,
-    [Description("\uf2d5")]
-    Bandcamp,
-    [Description("\uf835")]
-    BattleNet,
-    [Description("\uf1b4")]
-    Behance,
-    [Description("\ue3d9")]
-    Bilibili,
-    [Description("\uf378")]
-    Bimobject,
-    [Description("\uf171")]
-    Bitbucket,
-    [Description("\uf379")]
-    Bitcoin,
-    [Description("\uf37a")]
-    Bity,
-    [Description("\uf27e")]
-    BlackTie,
-    [Description("\uf37b")]
-    Blackberry,
-    [Description("\uf37c")]
-    Blogger,
-    [Description("\uf37d")]
-    BloggerB,
-    [Description("\ue671")]
-    Bluesky,
-    [Description("\uf293")]
-    Bluetooth,
-    [Description("\uf294")]
-    BluetoothB,
-    [Description("\ue855")]
-    BoardGameGeek,
-    [Description("\uf836")]
-    Bootstrap,
-    [Description("\ue340")]
-    Bots,
-    [Description("\ue63c")]
-    Brave,
-    [Description("\ue63d")]
-    BraveReverse,
-    [Description("\uf15a")]
-    Btc,
-    [Description("\uf837")]
-    Buffer,
-    [Description("\uf37f")]
-    Buromobelexperte,
-    [Description("\uf8a6")]
-    BuyNLarge,
-    [Description("\uf20d")]
-    Buysellads,
-    [Description("\uf785")]
-    CanadianMapleLeaf,
-    [Description("\ue7d4")]
-    CashApp,
-    [Description("\uf42d")]
-    CcAmazonPay,
-    [Description("\uf1f3")]
-    CcAmex,
-    [Description("\uf416")]
-    CcApplePay,
-    [Description("\uf24c")]
-    CcDinersClub,
-    [Description("\uf1f2")]
-    CcDiscover,
-    [Description("\uf24b")]
-    CcJcb,
-    [Description("\uf1f1")]
-    CcMastercard,
-    [Description("\uf1f4")]
-    CcPaypal,
-    [Description("\uf1f5")]
-    CcStripe,
-    [Description("\uf1f0")]
-    CcVisa,
-    [Description("\uf380")]
-    Centercode,
-    [Description("\uf789")]
-    Centos,
-    [Description("\uf268")]
-    Chrome,
-    [Description("\uf838")]
-    Chromecast,
-    [Description("\ue851")]
-    CircleZulip,
-    [Description("\ue861")]
-    Claude,
-    [Description("\ue07d")]
-    Cloudflare,
-    [Description("\uf383")]
-    Cloudscale,
-    [Description("\uf384")]
-    Cloudsmith,
-    [Description("\uf385")]
-    Cloudversify,
-    [Description("\ue360")]
-    Cmplid,
-    [Description("\uf1cb")]
-    Codepen,
-    [Description("\uf284")]
-    Codiepie,
-    [Description("\uf78d")]
-    Confluence,
-    [Description("\uf20e")]
-    Connectdevelop,
-    [Description("\uf26d")]
-    Contao,
-    [Description("\uf89e")]
-    CottonBureau,
-    [Description("\uf388")]
-    Cpanel,
-    [Description("\uf25e")]
-    CreativeCommons,
-    [Description("\uf4e7")]
-    CreativeCommonsBy,
-    [Description("\uf4e8")]
-    CreativeCommonsNc,
-    [Description("\uf4e9")]
-    CreativeCommonsNcEu,
-    [Description("\uf4ea")]
-    CreativeCommonsNcJp,
-    [Description("\uf4eb")]
-    CreativeCommonsNd,
-    [Description("\uf4ec")]
-    CreativeCommonsPd,
-    [Description("\uf4ed")]
-    CreativeCommonsPdAlt,
-    [Description("\uf4ee")]
-    CreativeCommonsRemix,
-    [Description("\uf4ef")]
-    CreativeCommonsSa,
-    [Description("\uf4f0")]
-    CreativeCommonsSampling,
-    [Description("\uf4f1")]
-    CreativeCommonsSamplingPlus,
-    [Description("\uf4f2")]
-    CreativeCommonsShare,
-    [Description("\uf4f3")]
-    CreativeCommonsZero,
-    [Description("\uf6c9")]
-    CriticalRole,
-    [Description("\ue6a2")]
-    Css,
-    [Description("\uf13c")]
-    Css3,
-    [Description("\uf38b")]
-    Css3Alt,
-    [Description("\uf38c")]
-    Cuttlefish,
-    [Description("\uf38d")]
-    DAndD,
-    [Description("\uf6ca")]
-    DAndDBeyond,
-    [Description("\ue052")]
-    Dailymotion,
-    [Description("\ue693")]
-    DartLang,
-    [Description("\uf210")]
-    Dashcube,
-    [Description("\ue60b")]
-    Debian,
-    [Description("\ue077")]
-    Deezer,
-    [Description("\uf1a5")]
-    Delicious,
-    [Description("\uf38e")]
-    Deploydog,
-    [Description("\uf38f")]
-    Deskpro,
-    [Description("\uf6cc")]
-    Dev,
-    [Description("\uf1bd")]
-    Deviantart,
-    [Description("\uf790")]
-    Dhl,
-    [Description("\uf791")]
-    Diaspora,
-    [Description("\uf1a6")]
-    Digg,
-    [Description("\uf391")]
-    DigitalOcean,
-    [Description("\uf392")]
-    Discord,
-    [Description("\uf393")]
-    Discourse,
-    [Description("\ue7d5")]
-    Disqus,
-    [Description("\uf394")]
-    Dochub,
-    [Description("\uf395")]
-    Docker,
-    [Description("\uf396")]
-    Draft2digital,
-    [Description("\uf17d")]
-    Dribbble,
-    [Description("\uf16b")]
-    Dropbox,
-    [Description("\uf1a9")]
-    Drupal,
-    [Description("\ue812")]
-    Duolingo,
-    [Description("\uf399")]
-    Dyalog,
-    [Description("\uf39a")]
-    Earlybirds,
-    [Description("\uf4f4")]
-    Ebay,
-    [Description("\uf282")]
-    Edge,
-    [Description("\ue078")]
-    EdgeLegacy,
-    [Description("\uf430")]
-    Elementor,
-    [Description("\ue7d6")]
-    Eleventy,
-    [Description("\uf5f1")]
-    Ello,
-    [Description("\uf423")]
-    Ember,
-    [Description("\uf1d1")]
-    Empire,
-    [Description("\uf299")]
-    Envira,
-    [Description("\uf39d")]
-    Erlang,
-    [Description("\uf42e")]
-    Ethereum,
-    [Description("\uf2d7")]
-    Etsy,
-    [Description("\uf839")]
-    Evernote,
-    [Description("\uf23e")]
-    Expeditedssl,
-    [Description("\uf09a")]
-    Facebook,
-    [Description("\uf39e")]
-    FacebookF,
-    [Description("\uf39f")]
-    FacebookMessenger,
-    [Description("\uf6dc")]
-    FantasyFlightGames,
-    [Description("\uf797")]
-    Fedex,
-    [Description("\ue865")]
-    Fediverse,
-    [Description("\uf798")]
-    Fedora,
-    [Description("\uf799")]
-    Figma,
-    [Description("\ue69f")]
-    FilesPinwheel,
-    [Description("\uf269")]
-    Firefox,
-    [Description("\ue007")]
-    FirefoxBrowser,
-    [Description("\uf2b0")]
-    FirstOrder,
-    [Description("\uf50a")]
-    FirstOrderAlt,
-    [Description("\uf3a1")]
-    Firstdraft,
-    [Description("\uf16e")]
-    Flickr,
-    [Description("\uf44d")]
-    Flipboard,
-    [Description("\ue694")]
-    Flutter,
-    [Description("\uf417")]
-    Fly,
-    [Description("\uf2b4")]
-    FontAwesome,
-    [Description("\uf280")]
-    Fonticons,
-    [Description("\uf3a2")]
-    FonticonsFi,
-    [Description("\ue860")]
-    Forgejo,
-    [Description("\uf286")]
-    FortAwesome,
-    [Description("\uf3a3")]
-    FortAwesomeAlt,
-    [Description("\uf211")]
-    Forumbee,
-    [Description("\uf180")]
-    Foursquare,
-    [Description("\uf2c5")]
-    FreeCodeCamp,
-    [Description("\uf3a4")]
-    Freebsd,
-    [Description("\uf50b")]
-    Fulcrum,
-    [Description("\uf50c")]
-    GalacticRepublic,
-    [Description("\uf50d")]
-    GalacticSenate,
-    [Description("\uf265")]
-    GetPocket,
-    [Description("\uf260")]
-    Gg,
-    [Description("\uf261")]
-    GgCircle,
-    [Description("\uf1d3")]
-    Git,
-    [Description("\uf841")]
-    GitAlt,
-    [Description("\ue863")]
-    Gitee,
-    [Description("\uf09b")]
-    Github,
-    [Description("\uf113")]
-    GithubAlt,
-    [Description("\uf3a6")]
-    Gitkraken,
-    [Description("\uf296")]
-    Gitlab,
-    [Description("\uf426")]
-    Gitter,
-    [Description("\uf2a5")]
-    Glide,
-    [Description("\uf2a6")]
-    GlideG,
-    [Description("\ue85d")]
-    Globaleaks,
-    [Description("\uf3a7")]
-    Gofore,
-    [Description("\ue40f")]
-    Golang,
-    [Description("\uf3a8")]
-    Goodreads,
-    [Description("\uf3a9")]
-    GoodreadsG,
-    [Description("\uf1a0")]
-    Google,
-    [Description("\uf3aa")]
-    GoogleDrive,
-    [Description("\ue079")]
-    GooglePay,
-    [Description("\uf3ab")]
-    GooglePlay,
-    [Description("\uf2b3")]
-    GooglePlus,
-    [Description("\uf0d5")]
-    GooglePlusG,
-    [Description("\ue63b")]
-    GoogleScholar,
-    [Description("\uf1ee")]
-    GoogleWallet,
-    [Description("\uf184")]
-    Gratipay,
-    [Description("\uf2d6")]
-    Grav,
-    [Description("\uf3ac")]
-    Gripfire,
-    [Description("\uf3ad")]
-    Grunt,
-    [Description("\ue07e")]
-    Guilded,
-    [Description("\uf3ae")]
-    Gulp,
-    [Description("\uf1d4")]
-    HackerNews,
-    [Description("\uf5f7")]
-    Hackerrank,
-    [Description("\ue499")]
-    Hashnode,
-    [Description("\uf452")]
-    Hips,
-    [Description("\uf3b0")]
-    HireAHelper,
-    [Description("\ue07f")]
-    Hive,
-    [Description("\uf427")]
-    Hooli,
-    [Description("\uf592")]
-    Hornbill,
-    [Description("\uf3b1")]
-    Hotjar,
-    [Description("\uf27c")]
-    Houzz,
-    [Description("\uf13b")]
-    Html5,
-    [Description("\uf3b2")]
-    Hubspot,
-    [Description("\ue869")]
-    HuggingFace,
-    [Description("\ue013")]
-    Ideal,
-    [Description("\uf2d8")]
-    Imdb,
-    [Description("\uf16d")]
-    Instagram,
-    [Description("\ue081")]
-    Instalod,
-    [Description("\uf7af")]
-    Intercom,
-    [Description("\uf26b")]
-    InternetExplorer,
-    [Description("\uf7b0")]
-    Invision,
-    [Description("\uf208")]
-    Ioxhost,
-    [Description("\uf83a")]
-    ItchIo,
-    [Description("\uf3b4")]
-    Itunes,
-    [Description("\uf3b5")]
-    ItunesNote,
-    [Description("\uf4e4")]
-    Java,
-    [Description("\uf50e")]
-    JediOrder,
-    [Description("\uf3b6")]
-    Jenkins,
-    [Description("\uf7b1")]
-    Jira,
-    [Description("\uf3b7")]
-    Joget,
-    [Description("\uf1aa")]
-    Joomla,
-    [Description("\uf3b8")]
-    Js,
-    [Description("\uf1cc")]
-    Jsfiddle,
-    [Description("\ue852")]
-    Julia,
-    [Description("\ue67b")]
-    Jxl,
-    [Description("\uf5fa")]
-    Kaggle,
-    [Description("\ue7d7")]
-    KakaoTalk,
-    [Description("\uf4f5")]
-    Keybase,
-    [Description("\uf3ba")]
-    Keycdn,
-    [Description("\uf3bb")]
-    Kickstarter,
-    [Description("\uf3bc")]
-    KickstarterK,
-    [Description("\ue856")]
-    KoFi,
-    [Description("\uf42f")]
-    Korvue,
-    [Description("\ue857")]
-    Kubernetes,
-    [Description("\uf3bd")]
-    Laravel,
-    [Description("\uf202")]
-    Lastfm,
-    [Description("\uf212")]
-    Leanpub,
-    [Description("\ue86a")]
-    Leetcode,
-    [Description("\uf41d")]
-    Less,
-    [Description("\ue62d")]
-    Letterboxd,
-    [Description("\uf3c0")]
-    Line,
-    [Description("\uf08c")]
-    Linkedin,
-    [Description("\uf0e1")]
-    LinkedinIn,
-    [Description("\ue7d8")]
-    Linktree,
-    [Description("\uf2b8")]
-    Linode,
-    [Description("\uf17c")]
-    Linux,
-    [Description("\ue7e2")]
-    Lumon,
-    [Description("\ue7e3")]
-    LumonDrop,
-    [Description("\uf3c3")]
-    Lyft,
-    [Description("\uf3c4")]
-    Magento,
-    [Description("\uf59e")]
-    Mailchimp,
-    [Description("\uf50f")]
-    Mandalorian,
-    [Description("\uf60f")]
-    Markdown,
-    [Description("\uf4f6")]
-    Mastodon,
-    [Description("\uf136")]
-    Maxcdn,
-    [Description("\uf8ca")]
-    Mdb,
-    [Description("\uf3c6")]
-    Medapps,
-    [Description("\uf23a")]
-    Medium,
-    [Description("\uf3c8")]
-    Medrt,
-    [Description("\uf2e0")]
-    Meetup,
-    [Description("\uf5a3")]
-    Megaport,
-    [Description("\uf7b3")]
-    Mendeley,
-    [Description("\ue49b")]
-    Meta,
-    [Description("\ue01a")]
-    Microblog,
-    [Description("\uf3ca")]
-    Microsoft,
-    [Description("\ue62f")]
-    Mintbit,
-    [Description("\uf3cb")]
-    Mix,
-    [Description("\uf289")]
-    Mixcloud,
-    [Description("\ue056")]
-    Mixer,
-    [Description("\uf3cc")]
-    Mizuni,
-    [Description("\uf285")]
-    Modx,
-    [Description("\uf3d0")]
-    Monero,
-    [Description("\uf3d2")]
-    Napster,
-    [Description("\uf612")]
-    Neos,
-    [Description("\ue530")]
-    NfcDirectional,
-    [Description("\ue531")]
-    NfcSymbol,
-    [Description("\uf5a8")]
-    Nimblr,
-    [Description("\uf419")]
-    Node,
-    [Description("\uf3d3")]
-    NodeJs,
-    [Description("\ue7d9")]
-    Notion,
-    [Description("\uf3d4")]
-    Npm,
-    [Description("\uf3d5")]
-    Ns8,
-    [Description("\uf3d6")]
-    Nutritionix,
-    [Description("\ue879")]
-    Obsidian,
-    [Description("\ue082")]
-    OctopusDeploy,
-    [Description("\uf263")]
-    Odnoklassniki,
-    [Description("\ue5c6")]
-    Odysee,
-    [Description("\uf510")]
-    OldRepublic,
-    [Description("\ue7cf")]
-    Openai,
-    [Description("\uf23d")]
-    Opencart,
-    [Description("\uf19b")]
-    Openid,
-    [Description("\ue86b")]
-    Openstreetmap,
-    [Description("\ue62b")]
-    Opensuse,
-    [Description("\uf26a")]
-    Opera,
-    [Description("\uf23c")]
-    OptinMonster,
-    [Description("\uf8d2")]
-    Orcid,
-    [Description("\uf41a")]
-    Osi,
-    [Description("\ue4a0")]
-    Padlet,
-    [Description("\uf3d7")]
-    Page4,
-    [Description("\uf18c")]
-    Pagelines,
-    [Description("\uf3d8")]
-    Palfed,
-    [Description("\ue7da")]
-    Pandora,
-    [Description("\uf3d9")]
-    Patreon,
-    [Description("\uf1ed")]
-    Paypal,
-    [Description("\ue083")]
-    Perbyte,
-    [Description("\uf3da")]
-    Periscope,
-    [Description("\uf3db")]
-    Phabricator,
-    [Description("\uf3dc")]
-    PhoenixFramework,
-    [Description("\uf511")]
-    PhoenixSquadron,
-    [Description("\uf457")]
-    Php,
-    [Description("\uf2ae")]
-    PiedPiper,
-    [Description("\uf1a8")]
-    PiedPiperAlt,
-    [Description("\uf4e5")]
-    PiedPiperHat,
-    [Description("\uf1a7")]
-    PiedPiperPp,
-    [Description("\uf0d2")]
-    Pinterest,
-    [Description("\uf231")]
-    PinterestP,
-    [Description("\ue43a")]
-    Pix,
-    [Description("\ue7db")]
-    Pixelfed,
-    [Description("\ue640")]
-    Pixiv,
-    [Description("\uf3df")]
-    Playstation,
-    [Description("\ue858")]
-    Postgresql,
-    [Description("\uf288")]
-    ProductHunt,
-    [Description("\uf3e1")]
-    Pushed,
-    [Description("\uf3e2")]
-    Python,
-    [Description("\uf1d6")]
-    Qq,
-    [Description("\uf459")]
-    Quinscape,
-    [Description("\uf2c4")]
-    Quora,
-    [Description("\uf4f7")]
-    RProject,
-    [Description("\uf7bb")]
-    RaspberryPi,
-    [Description("\uf2d9")]
-    Ravelry,
-    [Description("\uf41b")]
-    React,
-    [Description("\uf75d")]
-    Reacteurope,
-    [Description("\uf4d5")]
-    Readme,
-    [Description("\uf1d0")]
-    Rebel,
-    [Description("\uf3e3")]
-    RedRiver,
-    [Description("\uf1a1")]
-    Reddit,
-    [Description("\uf281")]
-    RedditAlien,
-    [Description("\uf7bc")]
-    Redhat,
-    [Description("\uf18b")]
-    Renren,
-    [Description("\uf3e6")]
-    Replyd,
-    [Description("\uf4f8")]
-    Researchgate,
-    [Description("\uf3e7")]
-    Resolving,
-    [Description("\uf5b2")]
-    Rev,
-    [Description("\uf3e8")]
-    Rocketchat,
-    [Description("\uf3e9")]
-    Rockrms,
-    [Description("\ue07a")]
-    Rust,
-    [Description("\uf267")]
-    Safari,
-    [Description("\uf83b")]
-    Salesforce,
-    [Description("\uf41e")]
-    Sass,
-    [Description("\ue859")]
-    Scaleway,
-    [Description("\uf3ea")]
-    Schlix,
-    [Description("\ue570")]
-    Screenpal,
-    [Description("\uf28a")]
-    Scribd,
-    [Description("\uf3eb")]
-    Searchengin,
-    [Description("\uf2da")]
-    Sellcast,
-    [Description("\uf213")]
-    Sellsy,
-    [Description("\uf3ec")]
-    Servicestack,
-    [Description("\uf214")]
-    Shirtsinbulk,
-    [Description("\ue60c")]
-    Shoelace,
-    [Description("\ue057")]
-    Shopify,
-    [Description("\uf5b5")]
-    Shopware,
-    [Description("\ue663")]
-    SignalMessenger,
-    [Description("\uf215")]
-    Simplybuilt,
-    [Description("\uf3ee")]
-    Sistrix,
-    [Description("\uf512")]
-    Sith,
-    [Description("\ue44a")]
-    Sitrox,
-    [Description("\uf7c6")]
-    Sketch,
-    [Description("\uf216")]
-    Skyatlas,
-    [Description("\uf17e")]
-    Skype,
-    [Description("\uf198")]
-    Slack,
-    [Description("\uf1e7")]
-    Slideshare,
-    [Description("\uf2ab")]
-    Snapchat,
-    [Description("\ue85e")]
-    Solana,
-    [Description("\uf1be")]
-    Soundcloud,
-    [Description("\uf7d3")]
-    Sourcetree,
-    [Description("\ue5ac")]
-    SpaceAwesome,
-    [Description("\uf3f3")]
-    Speakap,
-    [Description("\uf83c")]
-    SpeakerDeck,
-    [Description("\uf1bc")]
-    Spotify,
-    [Description("\uf1b5")]
-    SquareBehance,
-    [Description("\ue6a3")]
-    SquareBluesky,
-    [Description("\ue844")]
-    SquareDeskpro,
-    [Description("\uf397")]
-    SquareDribbble,
-    [Description("\uf082")]
-    SquareFacebook,
-    [Description("\ue7e4")]
-    SquareFigma,
-    [Description("\ue5ad")]
-    SquareFontAwesome,
-    [Description("\uf35c")]
-    SquareFontAwesomeStroke,
-    [Description("\uf1d2")]
-    SquareGit,
-    [Description("\uf092")]
-    SquareGithub,
-    [Description("\ue5ae")]
-    SquareGitlab,
-    [Description("\uf0d4")]
-    SquareGooglePlus,
-    [Description("\uf3af")]
-    SquareHackerNews,
-    [Description("\ue055")]
-    SquareInstagram,
-    [Description("\uf3b9")]
-    SquareJs,
-    [Description("\uf203")]
-    SquareLastfm,
-    [Description("\ue62e")]
-    SquareLetterboxd,
-    [Description("\ue7d0")]
-    SquareLinkedin,
-    [Description("\uf264")]
-    SquareOdnoklassniki,
-    [Description("\ue01e")]
-    SquarePiedPiper,
-    [Description("\uf0d3")]
-    SquarePinterest,
-    [Description("\uf1a2")]
-    SquareReddit,
-    [Description("\uf2ad")]
-    SquareSnapchat,
-    [Description("\uf1b7")]
-    SquareSteam,
-    [Description("\ue619")]
-    SquareThreads,
-    [Description("\uf174")]
-    SquareTumblr,
-    [Description("\uf081")]
-    SquareTwitter,
-    [Description("\ue67c")]
-    SquareUpwork,
-    [Description("\uf2aa")]
-    SquareViadeo,
-    [Description("\uf194")]
-    SquareVimeo,
-    [Description("\ue683")]
-    SquareWebAwesome,
-    [Description("\ue684")]
-    SquareWebAwesomeStroke,
-    [Description("\uf40c")]
-    SquareWhatsapp,
-    [Description("\ue61a")]
-    SquareXTwitter,
-    [Description("\uf169")]
-    SquareXing,
-    [Description("\uf431")]
-    SquareYoutube,
-    [Description("\uf5be")]
-    Squarespace,
-    [Description("\uf18d")]
-    StackExchange,
-    [Description("\uf16c")]
-    StackOverflow,
-    [Description("\uf842")]
-    Stackpath,
-    [Description("\uf3f5")]
-    Staylinked,
-    [Description("\uf1b6")]
-    Steam,
-    [Description("\uf3f6")]
-    SteamSymbol,
-    [Description("\uf3f7")]
-    StickerMule,
-    [Description("\uf428")]
-    Strava,
-    [Description("\uf429")]
-    Stripe,
-    [Description("\uf42a")]
-    StripeS,
-    [Description("\ue5c7")]
-    Stubber,
-    [Description("\uf3f8")]
-    Studiovinari,
-    [Description("\uf1a4")]
-    Stumbleupon,
-    [Description("\uf1a3")]
-    StumbleuponCircle,
-    [Description("\uf2dd")]
-    Superpowers,
-    [Description("\uf3f9")]
-    Supple,
-    [Description("\ue833")]
-    Supportnow,
-    [Description("\uf7d6")]
-    Suse,
-    [Description("\ue868")]
-    Svelte,
-    [Description("\uf8e1")]
-    Swift,
-    [Description("\uf83d")]
-    Symfony,
-    [Description("\ue8ab")]
-    Symfonycasts,
-    [Description("\ue866")]
-    TailwindCss,
-    [Description("\uf4f9")]
-    Teamspeak,
-    [Description("\uf2c6")]
-    Telegram,
-    [Description("\uf1d5")]
-    TencentWeibo,
-    [Description("\ue7ff")]
-    Tex,
-    [Description("\uf69d")]
-    TheRedYeti,
-    [Description("\uf5c6")]
-    Themeco,
-    [Description("\uf2b2")]
-    Themeisle,
-    [Description("\uf731")]
-    ThinkPeaks,
-    [Description("\ue618")]
-    Threads,
-    [Description("\ue85f")]
-    Threema,
-    [Description("\ue7dc")]
-    Tidal,
-    [Description("\ue07b")]
-    Tiktok,
-    [Description("\ue838")]
-    TorBrowser,
-    [Description("\uf513")]
-    TradeFederation,
-    [Description("\uf181")]
-    Trello,
-    [Description("\uf173")]
-    Tumblr,
-    [Description("\uf1e8")]
-    Twitch,
-    [Description("\uf099")]
-    Twitter,
-    [Description("\ue840")]
-    Typescript,
-    [Description("\uf42b")]
-    Typo3,
-    [Description("\uf402")]
-    Uber,
-    [Description("\uf7df")]
-    Ubuntu,
-    [Description("\uf403")]
-    Uikit,
-    [Description("\ue86d")]
-    Ultralytics,
-    [Description("\ue86e")]
-    UltralyticsHub,
-    [Description("\ue86f")]
-    UltralyticsYolo,
-    [Description("\uf8e8")]
-    Umbraco,
-    [Description("\ue084")]
-    Uncharted,
-    [Description("\uf404")]
-    Uniregistry,
-    [Description("\ue854")]
-    Unison,
-    [Description("\ue049")]
-    Unity,
-    [Description("\ue85c")]
-    UnrealEngine,
-    [Description("\ue07c")]
-    Unsplash,
-    [Description("\uf405")]
-    Untappd,
-    [Description("\uf7e0")]
-    Ups,
-    [Description("\ue641")]
-    Upwork,
-    [Description("\uf287")]
-    Usb,
-    [Description("\uf7e1")]
-    Usps,
-    [Description("\uf407")]
-    Ussunnah,
-    [Description("\uf408")]
-    Vaadin,
-    [Description("\ue85a")]
-    Venmo,
-    [Description("\ue85b")]
-    VenmoV,
-    [Description("\uf237")]
-    Viacoin,
-    [Description("\uf2a9")]
-    Viadeo,
-    [Description("\uf409")]
-    Viber,
-    [Description("\ue88a")]
-    Vim,
-    [Description("\uf40a")]
-    Vimeo,
-    [Description("\uf27d")]
-    VimeoV,
-    [Description("\uf1ca")]
-    Vine,
-    [Description("\uf189")]
-    Vk,
-    [Description("\uf40b")]
-    Vnv,
-    [Description("\ue7dd")]
-    Vsco,
-    [Description("\uf41f")]
-    Vuejs,
-    [Description("\ue7de")]
-    W3c,
-    [Description("\ue087")]
-    WatchmanMonitoring,
-    [Description("\uf83f")]
-    Waze,
-    [Description("\ue682")]
-    WebAwesome,
-    [Description("\ue65c")]
-    Webflow,
-    [Description("\uf5cc")]
-    Weebly,
-    [Description("\uf18a")]
-    Weibo,
-    [Description("\uf1d7")]
-    Weixin,
-    [Description("\uf232")]
-    Whatsapp,
-    [Description("\uf40d")]
-    Whmcs,
-    [Description("\uf266")]
-    WikipediaW,
-    [Description("\uf17a")]
-    Windows,
-    [Description("\ue2d0")]
-    Wirsindhandwerk,
-    [Description("\uf5cf")]
-    Wix,
-    [Description("\uf730")]
-    WizardsOfTheCoast,
-    [Description("\ue088")]
-    Wodu,
-    [Description("\uf514")]
-    WolfPackBattalion,
-    [Description("\uf19a")]
-    Wordpress,
-    [Description("\uf411")]
-    WordpressSimple,
-    [Description("\uf297")]
-    Wpbeginner,
-    [Description("\uf2de")]
-    Wpexplorer,
-    [Description("\uf298")]
-    Wpforms,
-    [Description("\uf3e4")]
-    Wpressr,
-    [Description("\ue61b")]
-    XTwitter,
-    [Description("\uf412")]
-    Xbox,
-    [Description("\uf168")]
-    Xing,
-    [Description("\ue864")]
-    Xmpp,
-    [Description("\uf23b")]
-    YCombinator,
-    [Description("\uf19e")]
-    Yahoo,
-    [Description("\uf840")]
-    Yammer,
-    [Description("\uf413")]
-    Yandex,
-    [Description("\uf414")]
-    YandexInternational,
-    [Description("\uf7e3")]
-    Yarn,
-    [Description("\uf1e9")]
-    Yelp,
-    [Description("\uf2b1")]
-    Yoast,
-    [Description("\uf167")]
-    Youtube,
-    [Description("\uf63f")]
-    Zhihu,
-    [Description("\ue87b")]
-    Zoom,
-    [Description("\ue853")]
-    Zulip,
+    FortyTwoGroup = 0xe080,
+    FiveHundredpx = 0xf26e,
+    AccessibleIcon = 0xf368,
+    Accusoft = 0xf369,
+    Adn = 0xf170,
+    Adversal = 0xf36a,
+    Affiliatetheme = 0xf36b,
+    Airbnb = 0xf834,
+    Algolia = 0xf36c,
+    Alipay = 0xf642,
+    Amazon = 0xf270,
+    AmazonPay = 0xf42c,
+    Amilia = 0xf36d,
+    Android = 0xf17b,
+    Angellist = 0xf209,
+    Angrycreative = 0xf36e,
+    Angular = 0xf420,
+    AppStore = 0xf36f,
+    AppStoreIos = 0xf370,
+    Apper = 0xf371,
+    Apple = 0xf179,
+    ApplePay = 0xf415,
+    ArchLinux = 0xe867,
+    Artstation = 0xf77a,
+    Asymmetrik = 0xf372,
+    Atlassian = 0xf77b,
+    Audible = 0xf373,
+    Autoprefixer = 0xf41c,
+    Avianex = 0xf374,
+    Aviato = 0xf421,
+    Aws = 0xf375,
+    Bandcamp = 0xf2d5,
+    BattleNet = 0xf835,
+    Behance = 0xf1b4,
+    Bilibili = 0xe3d9,
+    Bimobject = 0xf378,
+    Bitbucket = 0xf171,
+    Bitcoin = 0xf379,
+    Bity = 0xf37a,
+    BlackTie = 0xf27e,
+    Blackberry = 0xf37b,
+    Blogger = 0xf37c,
+    BloggerB = 0xf37d,
+    Bluesky = 0xe671,
+    Bluetooth = 0xf293,
+    BluetoothB = 0xf294,
+    BoardGameGeek = 0xe855,
+    Bootstrap = 0xf836,
+    Bots = 0xe340,
+    Brave = 0xe63c,
+    BraveReverse = 0xe63d,
+    Btc = 0xf15a,
+    Buffer = 0xf837,
+    Buromobelexperte = 0xf37f,
+    BuyNLarge = 0xf8a6,
+    Buysellads = 0xf20d,
+    CanadianMapleLeaf = 0xf785,
+    CashApp = 0xe7d4,
+    CcAmazonPay = 0xf42d,
+    CcAmex = 0xf1f3,
+    CcApplePay = 0xf416,
+    CcDinersClub = 0xf24c,
+    CcDiscover = 0xf1f2,
+    CcJcb = 0xf24b,
+    CcMastercard = 0xf1f1,
+    CcPaypal = 0xf1f4,
+    CcStripe = 0xf1f5,
+    CcVisa = 0xf1f0,
+    Centercode = 0xf380,
+    Centos = 0xf789,
+    Chrome = 0xf268,
+    Chromecast = 0xf838,
+    CircleZulip = 0xe851,
+    Claude = 0xe861,
+    Cloudflare = 0xe07d,
+    Cloudscale = 0xf383,
+    Cloudsmith = 0xf384,
+    Cloudversify = 0xf385,
+    Cmplid = 0xe360,
+    Codepen = 0xf1cb,
+    Codiepie = 0xf284,
+    Confluence = 0xf78d,
+    Connectdevelop = 0xf20e,
+    Contao = 0xf26d,
+    CottonBureau = 0xf89e,
+    Cpanel = 0xf388,
+    CreativeCommons = 0xf25e,
+    CreativeCommonsBy = 0xf4e7,
+    CreativeCommonsNc = 0xf4e8,
+    CreativeCommonsNcEu = 0xf4e9,
+    CreativeCommonsNcJp = 0xf4ea,
+    CreativeCommonsNd = 0xf4eb,
+    CreativeCommonsPd = 0xf4ec,
+    CreativeCommonsPdAlt = 0xf4ed,
+    CreativeCommonsRemix = 0xf4ee,
+    CreativeCommonsSa = 0xf4ef,
+    CreativeCommonsSampling = 0xf4f0,
+    CreativeCommonsSamplingPlus = 0xf4f1,
+    CreativeCommonsShare = 0xf4f2,
+    CreativeCommonsZero = 0xf4f3,
+    CriticalRole = 0xf6c9,
+    Css = 0xe6a2,
+    Css3 = 0xf13c,
+    Css3Alt = 0xf38b,
+    Cuttlefish = 0xf38c,
+    DAndD = 0xf38d,
+    DAndDBeyond = 0xf6ca,
+    Dailymotion = 0xe052,
+    DartLang = 0xe693,
+    Dashcube = 0xf210,
+    Debian = 0xe60b,
+    Deezer = 0xe077,
+    Delicious = 0xf1a5,
+    Deploydog = 0xf38e,
+    Deskpro = 0xf38f,
+    Dev = 0xf6cc,
+    Deviantart = 0xf1bd,
+    Dhl = 0xf790,
+    Diaspora = 0xf791,
+    Digg = 0xf1a6,
+    DigitalOcean = 0xf391,
+    Discord = 0xf392,
+    Discourse = 0xf393,
+    Disqus = 0xe7d5,
+    Dochub = 0xf394,
+    Docker = 0xf395,
+    Draft2digital = 0xf396,
+    Dribbble = 0xf17d,
+    Dropbox = 0xf16b,
+    Drupal = 0xf1a9,
+    Duolingo = 0xe812,
+    Dyalog = 0xf399,
+    Earlybirds = 0xf39a,
+    Ebay = 0xf4f4,
+    Edge = 0xf282,
+    EdgeLegacy = 0xe078,
+    Elementor = 0xf430,
+    Eleventy = 0xe7d6,
+    Ello = 0xf5f1,
+    Ember = 0xf423,
+    Empire = 0xf1d1,
+    Envira = 0xf299,
+    Erlang = 0xf39d,
+    Ethereum = 0xf42e,
+    Etsy = 0xf2d7,
+    Evernote = 0xf839,
+    Expeditedssl = 0xf23e,
+    Facebook = 0xf09a,
+    FacebookF = 0xf39e,
+    FacebookMessenger = 0xf39f,
+    FantasyFlightGames = 0xf6dc,
+    Fedex = 0xf797,
+    Fediverse = 0xe865,
+    Fedora = 0xf798,
+    Figma = 0xf799,
+    FilesPinwheel = 0xe69f,
+    Firefox = 0xf269,
+    FirefoxBrowser = 0xe007,
+    FirstOrder = 0xf2b0,
+    FirstOrderAlt = 0xf50a,
+    Firstdraft = 0xf3a1,
+    Flickr = 0xf16e,
+    Flipboard = 0xf44d,
+    Flutter = 0xe694,
+    Fly = 0xf417,
+    FontAwesome = 0xf2b4,
+    Fonticons = 0xf280,
+    FonticonsFi = 0xf3a2,
+    Forgejo = 0xe860,
+    FortAwesome = 0xf286,
+    FortAwesomeAlt = 0xf3a3,
+    Forumbee = 0xf211,
+    Foursquare = 0xf180,
+    FreeCodeCamp = 0xf2c5,
+    Freebsd = 0xf3a4,
+    Fulcrum = 0xf50b,
+    GalacticRepublic = 0xf50c,
+    GalacticSenate = 0xf50d,
+    GetPocket = 0xf265,
+    Gg = 0xf260,
+    GgCircle = 0xf261,
+    Git = 0xf1d3,
+    GitAlt = 0xf841,
+    Gitee = 0xe863,
+    Github = 0xf09b,
+    GithubAlt = 0xf113,
+    Gitkraken = 0xf3a6,
+    Gitlab = 0xf296,
+    Gitter = 0xf426,
+    Glide = 0xf2a5,
+    GlideG = 0xf2a6,
+    Globaleaks = 0xe85d,
+    Gofore = 0xf3a7,
+    Golang = 0xe40f,
+    Goodreads = 0xf3a8,
+    GoodreadsG = 0xf3a9,
+    Google = 0xf1a0,
+    GoogleDrive = 0xf3aa,
+    GooglePay = 0xe079,
+    GooglePlay = 0xf3ab,
+    GooglePlus = 0xf2b3,
+    GooglePlusG = 0xf0d5,
+    GoogleScholar = 0xe63b,
+    GoogleWallet = 0xf1ee,
+    Gratipay = 0xf184,
+    Grav = 0xf2d6,
+    Gripfire = 0xf3ac,
+    Grunt = 0xf3ad,
+    Guilded = 0xe07e,
+    Gulp = 0xf3ae,
+    HackerNews = 0xf1d4,
+    Hackerrank = 0xf5f7,
+    Hashnode = 0xe499,
+    Hips = 0xf452,
+    HireAHelper = 0xf3b0,
+    Hive = 0xe07f,
+    Hooli = 0xf427,
+    Hornbill = 0xf592,
+    Hotjar = 0xf3b1,
+    Houzz = 0xf27c,
+    Html5 = 0xf13b,
+    Hubspot = 0xf3b2,
+    HuggingFace = 0xe869,
+    Ideal = 0xe013,
+    Imdb = 0xf2d8,
+    Instagram = 0xf16d,
+    Instalod = 0xe081,
+    Intercom = 0xf7af,
+    InternetExplorer = 0xf26b,
+    Invision = 0xf7b0,
+    Ioxhost = 0xf208,
+    ItchIo = 0xf83a,
+    Itunes = 0xf3b4,
+    ItunesNote = 0xf3b5,
+    Java = 0xf4e4,
+    JediOrder = 0xf50e,
+    Jenkins = 0xf3b6,
+    Jira = 0xf7b1,
+    Joget = 0xf3b7,
+    Joomla = 0xf1aa,
+    Js = 0xf3b8,
+    Jsfiddle = 0xf1cc,
+    Julia = 0xe852,
+    Jxl = 0xe67b,
+    Kaggle = 0xf5fa,
+    KakaoTalk = 0xe7d7,
+    Keybase = 0xf4f5,
+    Keycdn = 0xf3ba,
+    Kickstarter = 0xf3bb,
+    KickstarterK = 0xf3bc,
+    KoFi = 0xe856,
+    Korvue = 0xf42f,
+    Kubernetes = 0xe857,
+    Laravel = 0xf3bd,
+    Lastfm = 0xf202,
+    Leanpub = 0xf212,
+    Leetcode = 0xe86a,
+    Less = 0xf41d,
+    Letterboxd = 0xe62d,
+    Line = 0xf3c0,
+    Linkedin = 0xf08c,
+    LinkedinIn = 0xf0e1,
+    Linktree = 0xe7d8,
+    Linode = 0xf2b8,
+    Linux = 0xf17c,
+    Lumon = 0xe7e2,
+    LumonDrop = 0xe7e3,
+    Lyft = 0xf3c3,
+    Magento = 0xf3c4,
+    Mailchimp = 0xf59e,
+    Mandalorian = 0xf50f,
+    Markdown = 0xf60f,
+    Mastodon = 0xf4f6,
+    Maxcdn = 0xf136,
+    Mdb = 0xf8ca,
+    Medapps = 0xf3c6,
+    Medium = 0xf23a,
+    Medrt = 0xf3c8,
+    Meetup = 0xf2e0,
+    Megaport = 0xf5a3,
+    Mendeley = 0xf7b3,
+    Meta = 0xe49b,
+    Microblog = 0xe01a,
+    Microsoft = 0xf3ca,
+    Mintbit = 0xe62f,
+    Mix = 0xf3cb,
+    Mixcloud = 0xf289,
+    Mixer = 0xe056,
+    Mizuni = 0xf3cc,
+    Modx = 0xf285,
+    Monero = 0xf3d0,
+    Napster = 0xf3d2,
+    Neos = 0xf612,
+    NfcDirectional = 0xe530,
+    NfcSymbol = 0xe531,
+    Nimblr = 0xf5a8,
+    Node = 0xf419,
+    NodeJs = 0xf3d3,
+    Notion = 0xe7d9,
+    Npm = 0xf3d4,
+    Ns8 = 0xf3d5,
+    Nutritionix = 0xf3d6,
+    Obsidian = 0xe879,
+    OctopusDeploy = 0xe082,
+    Odnoklassniki = 0xf263,
+    Odysee = 0xe5c6,
+    OldRepublic = 0xf510,
+    Openai = 0xe7cf,
+    Opencart = 0xf23d,
+    Openid = 0xf19b,
+    Openstreetmap = 0xe86b,
+    Opensuse = 0xe62b,
+    Opera = 0xf26a,
+    OptinMonster = 0xf23c,
+    Orcid = 0xf8d2,
+    Osi = 0xf41a,
+    Padlet = 0xe4a0,
+    Page4 = 0xf3d7,
+    Pagelines = 0xf18c,
+    Palfed = 0xf3d8,
+    Pandora = 0xe7da,
+    Patreon = 0xf3d9,
+    Paypal = 0xf1ed,
+    Perbyte = 0xe083,
+    Periscope = 0xf3da,
+    Phabricator = 0xf3db,
+    PhoenixFramework = 0xf3dc,
+    PhoenixSquadron = 0xf511,
+    Php = 0xf457,
+    PiedPiper = 0xf2ae,
+    PiedPiperAlt = 0xf1a8,
+    PiedPiperHat = 0xf4e5,
+    PiedPiperPp = 0xf1a7,
+    Pinterest = 0xf0d2,
+    PinterestP = 0xf231,
+    Pix = 0xe43a,
+    Pixelfed = 0xe7db,
+    Pixiv = 0xe640,
+    Playstation = 0xf3df,
+    Postgresql = 0xe858,
+    ProductHunt = 0xf288,
+    Pushed = 0xf3e1,
+    Python = 0xf3e2,
+    Qq = 0xf1d6,
+    Quinscape = 0xf459,
+    Quora = 0xf2c4,
+    RProject = 0xf4f7,
+    RaspberryPi = 0xf7bb,
+    Ravelry = 0xf2d9,
+    React = 0xf41b,
+    Reacteurope = 0xf75d,
+    Readme = 0xf4d5,
+    Rebel = 0xf1d0,
+    RedRiver = 0xf3e3,
+    Reddit = 0xf1a1,
+    RedditAlien = 0xf281,
+    Redhat = 0xf7bc,
+    Renren = 0xf18b,
+    Replyd = 0xf3e6,
+    Researchgate = 0xf4f8,
+    Resolving = 0xf3e7,
+    Rev = 0xf5b2,
+    Rocketchat = 0xf3e8,
+    Rockrms = 0xf3e9,
+    Rust = 0xe07a,
+    Safari = 0xf267,
+    Salesforce = 0xf83b,
+    Sass = 0xf41e,
+    Scaleway = 0xe859,
+    Schlix = 0xf3ea,
+    Screenpal = 0xe570,
+    Scribd = 0xf28a,
+    Searchengin = 0xf3eb,
+    Sellcast = 0xf2da,
+    Sellsy = 0xf213,
+    Servicestack = 0xf3ec,
+    Shirtsinbulk = 0xf214,
+    Shoelace = 0xe60c,
+    Shopify = 0xe057,
+    Shopware = 0xf5b5,
+    SignalMessenger = 0xe663,
+    Simplybuilt = 0xf215,
+    Sistrix = 0xf3ee,
+    Sith = 0xf512,
+    Sitrox = 0xe44a,
+    Sketch = 0xf7c6,
+    Skyatlas = 0xf216,
+    Skype = 0xf17e,
+    Slack = 0xf198,
+    Slideshare = 0xf1e7,
+    Snapchat = 0xf2ab,
+    Solana = 0xe85e,
+    Soundcloud = 0xf1be,
+    Sourcetree = 0xf7d3,
+    SpaceAwesome = 0xe5ac,
+    Speakap = 0xf3f3,
+    SpeakerDeck = 0xf83c,
+    Spotify = 0xf1bc,
+    SquareBehance = 0xf1b5,
+    SquareBluesky = 0xe6a3,
+    SquareDeskpro = 0xe844,
+    SquareDribbble = 0xf397,
+    SquareFacebook = 0xf082,
+    SquareFigma = 0xe7e4,
+    SquareFontAwesome = 0xe5ad,
+    SquareFontAwesomeStroke = 0xf35c,
+    SquareGit = 0xf1d2,
+    SquareGithub = 0xf092,
+    SquareGitlab = 0xe5ae,
+    SquareGooglePlus = 0xf0d4,
+    SquareHackerNews = 0xf3af,
+    SquareInstagram = 0xe055,
+    SquareJs = 0xf3b9,
+    SquareLastfm = 0xf203,
+    SquareLetterboxd = 0xe62e,
+    SquareLinkedin = 0xe7d0,
+    SquareOdnoklassniki = 0xf264,
+    SquarePiedPiper = 0xe01e,
+    SquarePinterest = 0xf0d3,
+    SquareReddit = 0xf1a2,
+    SquareSnapchat = 0xf2ad,
+    SquareSteam = 0xf1b7,
+    SquareThreads = 0xe619,
+    SquareTumblr = 0xf174,
+    SquareTwitter = 0xf081,
+    SquareUpwork = 0xe67c,
+    SquareViadeo = 0xf2aa,
+    SquareVimeo = 0xf194,
+    SquareWebAwesome = 0xe683,
+    SquareWebAwesomeStroke = 0xe684,
+    SquareWhatsapp = 0xf40c,
+    SquareXTwitter = 0xe61a,
+    SquareXing = 0xf169,
+    SquareYoutube = 0xf431,
+    Squarespace = 0xf5be,
+    StackExchange = 0xf18d,
+    StackOverflow = 0xf16c,
+    Stackpath = 0xf842,
+    Staylinked = 0xf3f5,
+    Steam = 0xf1b6,
+    SteamSymbol = 0xf3f6,
+    StickerMule = 0xf3f7,
+    Strava = 0xf428,
+    Stripe = 0xf429,
+    StripeS = 0xf42a,
+    Stubber = 0xe5c7,
+    Studiovinari = 0xf3f8,
+    Stumbleupon = 0xf1a4,
+    StumbleuponCircle = 0xf1a3,
+    Superpowers = 0xf2dd,
+    Supple = 0xf3f9,
+    Supportnow = 0xe833,
+    Suse = 0xf7d6,
+    Svelte = 0xe868,
+    Swift = 0xf8e1,
+    Symfony = 0xf83d,
+    Symfonycasts = 0xe8ab,
+    TailwindCss = 0xe866,
+    Teamspeak = 0xf4f9,
+    Telegram = 0xf2c6,
+    TencentWeibo = 0xf1d5,
+    Tex = 0xe7ff,
+    TheRedYeti = 0xf69d,
+    Themeco = 0xf5c6,
+    Themeisle = 0xf2b2,
+    ThinkPeaks = 0xf731,
+    Threads = 0xe618,
+    Threema = 0xe85f,
+    Tidal = 0xe7dc,
+    Tiktok = 0xe07b,
+    TorBrowser = 0xe838,
+    TradeFederation = 0xf513,
+    Trello = 0xf181,
+    Tumblr = 0xf173,
+    Twitch = 0xf1e8,
+    Twitter = 0xf099,
+    Typescript = 0xe840,
+    Typo3 = 0xf42b,
+    Uber = 0xf402,
+    Ubuntu = 0xf7df,
+    Uikit = 0xf403,
+    Ultralytics = 0xe86d,
+    UltralyticsHub = 0xe86e,
+    UltralyticsYolo = 0xe86f,
+    Umbraco = 0xf8e8,
+    Uncharted = 0xe084,
+    Uniregistry = 0xf404,
+    Unison = 0xe854,
+    Unity = 0xe049,
+    UnrealEngine = 0xe85c,
+    Unsplash = 0xe07c,
+    Untappd = 0xf405,
+    Ups = 0xf7e0,
+    Upwork = 0xe641,
+    Usb = 0xf287,
+    Usps = 0xf7e1,
+    Ussunnah = 0xf407,
+    Vaadin = 0xf408,
+    Venmo = 0xe85a,
+    VenmoV = 0xe85b,
+    Viacoin = 0xf237,
+    Viadeo = 0xf2a9,
+    Viber = 0xf409,
+    Vim = 0xe88a,
+    Vimeo = 0xf40a,
+    VimeoV = 0xf27d,
+    Vine = 0xf1ca,
+    Vk = 0xf189,
+    Vnv = 0xf40b,
+    Vsco = 0xe7dd,
+    Vuejs = 0xf41f,
+    W3c = 0xe7de,
+    WatchmanMonitoring = 0xe087,
+    Waze = 0xf83f,
+    WebAwesome = 0xe682,
+    Webflow = 0xe65c,
+    Weebly = 0xf5cc,
+    Weibo = 0xf18a,
+    Weixin = 0xf1d7,
+    Whatsapp = 0xf232,
+    Whmcs = 0xf40d,
+    WikipediaW = 0xf266,
+    Windows = 0xf17a,
+    Wirsindhandwerk = 0xe2d0,
+    Wix = 0xf5cf,
+    WizardsOfTheCoast = 0xf730,
+    Wodu = 0xe088,
+    WolfPackBattalion = 0xf514,
+    Wordpress = 0xf19a,
+    WordpressSimple = 0xf411,
+    Wpbeginner = 0xf297,
+    Wpexplorer = 0xf2de,
+    Wpforms = 0xf298,
+    Wpressr = 0xf3e4,
+    XTwitter = 0xe61b,
+    Xbox = 0xf412,
+    Xing = 0xf168,
+    Xmpp = 0xe864,
+    YCombinator = 0xf23b,
+    Yahoo = 0xf19e,
+    Yammer = 0xf232,
+    Yandex = 0xf413,
+    YandexInternational = 0xf414,
+    Yarn = 0xf7e3,
+    Yelp = 0xf1e9,
+    Yoast = 0xf2b1,
+    Youtube = 0xf167,
+    Zhihu = 0xf63f,
+    Zoom = 0xe87b,
+    Zulip = 0xe853,
 }

@@ -1,2851 +1,1431 @@
-﻿using System.ComponentModel;
+﻿using MauiIcons.Core.Attributes;
+using System.ComponentModel;
 
 namespace MauiIcons.FontAwesome.Solid;
 
+[IconFont(FontAwesomeSolidFont.FontAlias)]
 public enum FontAwesomeSolidIcons
 {
-    [Description("\u0030")]
-    Zero,
-    [Description("\u0031")]
-    One,
-    [Description("\u0032")]
-    Two,
-    [Description("\u0033")]
-    Three,
-    [Description("\u0034")]
-    Four,
-    [Description("\u0035")]
-    Five,
-    [Description("\u0036")]
-    Six,
-    [Description("\u0037")]
-    Seven,
-    [Description("\u0038")]
-    Eight,
-    [Description("\u0039")]
-    Nine,
-    [Description("\u0041")]
-    A,
-    [Description("\uf2b9")]
-    AddressBook,
-    [Description("\uf2bb")]
-    AddressCard,
-    [Description("\uf34e")]
-    AlarmClock,
-    [Description("\uf037")]
-    AlignCenter,
-    [Description("\uf039")]
-    AlignJustify,
-    [Description("\uf036")]
-    AlignLeft,
-    [Description("\uf038")]
-    AlignRight,
-    [Description("\uf13d")]
-    Anchor,
-    [Description("\ue4aa")]
-    AnchorCircleCheck,
-    [Description("\ue4ab")]
-    AnchorCircleExclamation,
-    [Description("\ue4ac")]
-    AnchorCircleXmark,
-    [Description("\ue4ad")]
-    AnchorLock,
-    [Description("\uf107")]
-    AngleDown,
-    [Description("\uf104")]
-    AngleLeft,
-    [Description("\uf105")]
-    AngleRight,
-    [Description("\uf106")]
-    AngleUp,
-    [Description("\uf103")]
-    AnglesDown,
-    [Description("\uf100")]
-    AnglesLeft,
-    [Description("\uf101")]
-    AnglesRight,
-    [Description("\uf102")]
-    AnglesUp,
-    [Description("\uf644")]
-    Ankh,
-    [Description("\uf5d1")]
-    AppleWhole,
-    [Description("\ue845")]
-    Aquarius,
-    [Description("\uf557")]
-    Archway,
-    [Description("\ue846")]
-    Aries,
-    [Description("\uf063")]
-    ArrowDown,
-    [Description("\uf162")]
-    ArrowDown19,
-    [Description("\uf886")]
-    ArrowDown91,
-    [Description("\uf15d")]
-    ArrowDownAZ,
-    [Description("\uf175")]
-    ArrowDownLong,
-    [Description("\uf884")]
-    ArrowDownShortWide,
-    [Description("\ue4af")]
-    ArrowDownUpAcrossLine,
-    [Description("\ue4b0")]
-    ArrowDownUpLock,
-    [Description("\uf160")]
-    ArrowDownWideShort,
-    [Description("\uf881")]
-    ArrowDownZA,
-    [Description("\uf060")]
-    ArrowLeft,
-    [Description("\uf177")]
-    ArrowLeftLong,
-    [Description("\uf245")]
-    ArrowPointer,
-    [Description("\uf061")]
-    ArrowRight,
-    [Description("\uf0ec")]
-    ArrowRightArrowLeft,
-    [Description("\uf08b")]
-    ArrowRightFromBracket,
-    [Description("\uf178")]
-    ArrowRightLong,
-    [Description("\uf090")]
-    ArrowRightToBracket,
-    [Description("\ue4b3")]
-    ArrowRightToCity,
-    [Description("\uf0e2")]
-    ArrowRotateLeft,
-    [Description("\uf01e")]
-    ArrowRotateRight,
-    [Description("\ue097")]
-    ArrowTrendDown,
-    [Description("\ue098")]
-    ArrowTrendUp,
-    [Description("\uf149")]
-    ArrowTurnDown,
-    [Description("\uf148")]
-    ArrowTurnUp,
-    [Description("\uf062")]
-    ArrowUp,
-    [Description("\uf163")]
-    ArrowUp19,
-    [Description("\uf887")]
-    ArrowUp91,
-    [Description("\uf15e")]
-    ArrowUpAZ,
-    [Description("\ue09a")]
-    ArrowUpFromBracket,
-    [Description("\ue4b5")]
-    ArrowUpFromGroundWater,
-    [Description("\ue4b6")]
-    ArrowUpFromWaterPump,
-    [Description("\uf176")]
-    ArrowUpLong,
-    [Description("\ue4b7")]
-    ArrowUpRightDots,
-    [Description("\uf08e")]
-    ArrowUpRightFromSquare,
-    [Description("\uf885")]
-    ArrowUpShortWide,
-    [Description("\uf161")]
-    ArrowUpWideShort,
-    [Description("\uf882")]
-    ArrowUpZA,
-    [Description("\ue4b8")]
-    ArrowsDownToLine,
-    [Description("\ue4b9")]
-    ArrowsDownToPeople,
-    [Description("\uf07e")]
-    ArrowsLeftRight,
-    [Description("\ue4ba")]
-    ArrowsLeftRightToLine,
-    [Description("\uf021")]
-    ArrowsRotate,
-    [Description("\ue4bb")]
-    ArrowsSpin,
-    [Description("\ue4bc")]
-    ArrowsSplitUpAndLeft,
-    [Description("\ue4bd")]
-    ArrowsToCircle,
-    [Description("\ue4be")]
-    ArrowsToDot,
-    [Description("\ue4bf")]
-    ArrowsToEye,
-    [Description("\ue4c0")]
-    ArrowsTurnRight,
-    [Description("\ue4c1")]
-    ArrowsTurnToDots,
-    [Description("\uf07d")]
-    ArrowsUpDown,
-    [Description("\uf047")]
-    ArrowsUpDownLeftRight,
-    [Description("\ue4c2")]
-    ArrowsUpToLine,
-    [Description("\u002a")]
-    Asterisk,
-    [Description("\u0040")]
-    At,
-    [Description("\uf5d2")]
-    Atom,
-    [Description("\uf29e")]
-    AudioDescription,
-    [Description("\ue0a9")]
-    AustralSign,
-    [Description("\uf559")]
-    Award,
-    [Description("\u0042")]
-    B,
-    [Description("\uf77c")]
-    Baby,
-    [Description("\uf77d")]
-    BabyCarriage,
-    [Description("\uf04a")]
-    Backward,
-    [Description("\uf049")]
-    BackwardFast,
-    [Description("\uf048")]
-    BackwardStep,
-    [Description("\uf7e5")]
-    Bacon,
-    [Description("\ue059")]
-    Bacteria,
-    [Description("\ue05a")]
-    Bacterium,
-    [Description("\uf290")]
-    BagShopping,
-    [Description("\uf666")]
-    Bahai,
-    [Description("\ue0ac")]
-    BahtSign,
-    [Description("\uf05e")]
-    Ban,
-    [Description("\uf54d")]
-    BanSmoking,
-    [Description("\uf462")]
-    Bandage,
-    [Description("\ue2e6")]
-    BangladeshiTakaSign,
-    [Description("\uf02a")]
-    Barcode,
-    [Description("\uf0c9")]
-    Bars,
-    [Description("\uf828")]
-    BarsProgress,
-    [Description("\uf550")]
-    BarsStaggered,
-    [Description("\uf433")]
-    Baseball,
-    [Description("\uf432")]
-    BaseballBatBall,
-    [Description("\uf291")]
-    BasketShopping,
-    [Description("\uf434")]
-    Basketball,
-    [Description("\uf2cd")]
-    Bath,
-    [Description("\uf244")]
-    BatteryEmpty,
-    [Description("\uf240")]
-    BatteryFull,
-    [Description("\uf242")]
-    BatteryHalf,
-    [Description("\uf243")]
-    BatteryQuarter,
-    [Description("\uf241")]
-    BatteryThreeQuarters,
-    [Description("\uf236")]
-    Bed,
-    [Description("\uf487")]
-    BedPulse,
-    [Description("\uf0fc")]
-    BeerMugEmpty,
-    [Description("\uf0f3")]
-    Bell,
-    [Description("\uf562")]
-    BellConcierge,
-    [Description("\uf1f6")]
-    BellSlash,
-    [Description("\uf55b")]
-    BezierCurve,
-    [Description("\uf206")]
-    Bicycle,
-    [Description("\uf1e5")]
-    Binoculars,
-    [Description("\uf780")]
-    Biohazard,
-    [Description("\ue0b4")]
-    BitcoinSign,
-    [Description("\uf517")]
-    Blender,
-    [Description("\uf6b6")]
-    BlenderPhone,
-    [Description("\uf781")]
-    Blog,
-    [Description("\uf032")]
-    Bold,
-    [Description("\uf0e7")]
-    Bolt,
-    [Description("\ue0b7")]
-    BoltLightning,
-    [Description("\uf1e2")]
-    Bomb,
-    [Description("\uf5d7")]
-    Bone,
-    [Description("\uf55c")]
-    Bong,
-    [Description("\uf02d")]
-    Book,
-    [Description("\uf558")]
-    BookAtlas,
-    [Description("\uf647")]
-    BookBible,
-    [Description("\ue0bb")]
-    BookBookmark,
-    [Description("\uf66a")]
-    BookJournalWhills,
-    [Description("\uf7e6")]
-    BookMedical,
-    [Description("\uf518")]
-    BookOpen,
-    [Description("\uf5da")]
-    BookOpenReader,
-    [Description("\uf687")]
-    BookQuran,
-    [Description("\uf6b7")]
-    BookSkull,
-    [Description("\uf827")]
-    BookTanakh,
-    [Description("\uf02e")]
-    Bookmark,
-    [Description("\uf84c")]
-    BorderAll,
-    [Description("\uf850")]
-    BorderNone,
-    [Description("\uf853")]
-    BorderTopLeft,
-    [Description("\ue4c3")]
-    BoreHole,
-    [Description("\ue4c4")]
-    BottleDroplet,
-    [Description("\ue4c5")]
-    BottleWater,
-    [Description("\ue4c6")]
-    BowlFood,
-    [Description("\ue2eb")]
-    BowlRice,
-    [Description("\uf436")]
-    BowlingBall,
-    [Description("\uf466")]
-    Box,
-    [Description("\uf187")]
-    BoxArchive,
-    [Description("\uf49e")]
-    BoxOpen,
-    [Description("\ue05b")]
-    BoxTissue,
-    [Description("\ue4c7")]
-    BoxesPacking,
-    [Description("\uf468")]
-    BoxesStacked,
-    [Description("\uf2a1")]
-    Braille,
-    [Description("\uf5dc")]
-    Brain,
-    [Description("\ue46c")]
-    BrazilianRealSign,
-    [Description("\uf7ec")]
-    BreadSlice,
-    [Description("\ue4c8")]
-    Bridge,
-    [Description("\ue4c9")]
-    BridgeCircleCheck,
-    [Description("\ue4ca")]
-    BridgeCircleExclamation,
-    [Description("\ue4cb")]
-    BridgeCircleXmark,
-    [Description("\ue4cc")]
-    BridgeLock,
-    [Description("\ue4ce")]
-    BridgeWater,
-    [Description("\uf0b1")]
-    Briefcase,
-    [Description("\uf469")]
-    BriefcaseMedical,
-    [Description("\uf51a")]
-    Broom,
-    [Description("\uf458")]
-    BroomBall,
-    [Description("\uf55d")]
-    Brush,
-    [Description("\ue4cf")]
-    Bucket,
-    [Description("\uf188")]
-    Bug,
-    [Description("\ue490")]
-    BugSlash,
-    [Description("\ue4d0")]
-    Bugs,
-    [Description("\uf1ad")]
-    Building,
-    [Description("\ue4d1")]
-    BuildingCircleArrowRight,
-    [Description("\ue4d2")]
-    BuildingCircleCheck,
-    [Description("\ue4d3")]
-    BuildingCircleExclamation,
-    [Description("\ue4d4")]
-    BuildingCircleXmark,
-    [Description("\uf19c")]
-    BuildingColumns,
-    [Description("\ue4d5")]
-    BuildingFlag,
-    [Description("\ue4d6")]
-    BuildingLock,
-    [Description("\ue4d7")]
-    BuildingNgo,
-    [Description("\ue4d8")]
-    BuildingShield,
-    [Description("\ue4d9")]
-    BuildingUn,
-    [Description("\ue4da")]
-    BuildingUser,
-    [Description("\ue4db")]
-    BuildingWheat,
-    [Description("\uf0a1")]
-    Bullhorn,
-    [Description("\uf140")]
-    Bullseye,
-    [Description("\uf805")]
-    Burger,
-    [Description("\ue4dc")]
-    Burst,
-    [Description("\uf207")]
-    Bus,
-    [Description("\ue81d")]
-    BusSide,
-    [Description("\uf55e")]
-    BusSimple,
-    [Description("\uf64a")]
-    BusinessTime,
-    [Description("\u0043")]
-    C,
-    [Description("\uf7da")]
-    CableCar,
-    [Description("\uf1fd")]
-    CakeCandles,
-    [Description("\uf1ec")]
-    Calculator,
-    [Description("\uf133")]
-    Calendar,
-    [Description("\uf274")]
-    CalendarCheck,
-    [Description("\uf783")]
-    CalendarDay,
-    [Description("\uf073")]
-    CalendarDays,
-    [Description("\uf272")]
-    CalendarMinus,
-    [Description("\uf271")]
-    CalendarPlus,
-    [Description("\uf784")]
-    CalendarWeek,
-    [Description("\uf273")]
-    CalendarXmark,
-    [Description("\uf030")]
-    Camera,
-    [Description("\uf083")]
-    CameraRetro,
-    [Description("\ue0d8")]
-    CameraRotate,
-    [Description("\uf6bb")]
-    Campground,
-    [Description("\ue847")]
-    Cancer,
-    [Description("\uf786")]
-    CandyCane,
-    [Description("\uf55f")]
-    Cannabis,
-    [Description("\ue848")]
-    Capricorn,
-    [Description("\uf46b")]
-    Capsules,
-    [Description("\uf1b9")]
-    Car,
-    [Description("\uf5df")]
-    CarBattery,
-    [Description("\uf5e1")]
-    CarBurst,
-    [Description("\ue4dd")]
-    CarOn,
-    [Description("\uf5de")]
-    CarRear,
-    [Description("\uf5e4")]
-    CarSide,
-    [Description("\ue4de")]
-    CarTunnel,
-    [Description("\uf8ff")]
-    Caravan,
-    [Description("\uf0d7")]
-    CaretDown,
-    [Description("\uf0d9")]
-    CaretLeft,
-    [Description("\uf0da")]
-    CaretRight,
-    [Description("\uf0d8")]
-    CaretUp,
-    [Description("\uf787")]
-    Carrot,
-    [Description("\uf218")]
-    CartArrowDown,
-    [Description("\uf474")]
-    CartFlatbed,
-    [Description("\uf59d")]
-    CartFlatbedSuitcase,
-    [Description("\uf217")]
-    CartPlus,
-    [Description("\uf07a")]
-    CartShopping,
-    [Description("\uf788")]
-    CashRegister,
-    [Description("\uf6be")]
-    Cat,
-    [Description("\ue0df")]
-    CediSign,
-    [Description("\ue3f5")]
-    CentSign,
-    [Description("\uf0a3")]
-    Certificate,
-    [Description("\uf6c0")]
-    Chair,
-    [Description("\uf51b")]
-    Chalkboard,
-    [Description("\uf51c")]
-    ChalkboardUser,
-    [Description("\uf79f")]
-    ChampagneGlasses,
-    [Description("\uf5e7")]
-    ChargingStation,
-    [Description("\uf1fe")]
-    ChartArea,
-    [Description("\uf080")]
-    ChartBar,
-    [Description("\ue0e3")]
-    ChartColumn,
-    [Description("\ue695")]
-    ChartDiagram,
-    [Description("\ue0e4")]
-    ChartGantt,
-    [Description("\uf201")]
-    ChartLine,
-    [Description("\uf200")]
-    ChartPie,
-    [Description("\ue473")]
-    ChartSimple,
-    [Description("\uf00c")]
-    Check,
-    [Description("\uf560")]
-    CheckDouble,
-    [Description("\uf772")]
-    CheckToSlot,
-    [Description("\uf7ef")]
-    Cheese,
-    [Description("\uf439")]
-    Chess,
-    [Description("\uf43a")]
-    ChessBishop,
-    [Description("\uf43c")]
-    ChessBoard,
-    [Description("\uf43f")]
-    ChessKing,
-    [Description("\uf441")]
-    ChessKnight,
-    [Description("\uf443")]
-    ChessPawn,
-    [Description("\uf445")]
-    ChessQueen,
-    [Description("\uf447")]
-    ChessRook,
-    [Description("\uf078")]
-    ChevronDown,
-    [Description("\uf053")]
-    ChevronLeft,
-    [Description("\uf054")]
-    ChevronRight,
-    [Description("\uf077")]
-    ChevronUp,
-    [Description("\uf1ae")]
-    Child,
-    [Description("\ue4e0")]
-    ChildCombatant,
-    [Description("\ue59c")]
-    ChildDress,
-    [Description("\ue59d")]
-    ChildReaching,
-    [Description("\ue4e1")]
-    Children,
-    [Description("\uf51d")]
-    Church,
-    [Description("\uf111")]
-    Circle,
-    [Description("\uf0ab")]
-    CircleArrowDown,
-    [Description("\uf0a8")]
-    CircleArrowLeft,
-    [Description("\uf0a9")]
-    CircleArrowRight,
-    [Description("\uf0aa")]
-    CircleArrowUp,
-    [Description("\uf058")]
-    CircleCheck,
-    [Description("\uf13a")]
-    CircleChevronDown,
-    [Description("\uf137")]
-    CircleChevronLeft,
-    [Description("\uf138")]
-    CircleChevronRight,
-    [Description("\uf139")]
-    CircleChevronUp,
-    [Description("\uf4b9")]
-    CircleDollarToSlot,
-    [Description("\uf192")]
-    CircleDot,
-    [Description("\uf358")]
-    CircleDown,
-    [Description("\uf06a")]
-    CircleExclamation,
-    [Description("\uf47e")]
-    CircleH,
-    [Description("\uf042")]
-    CircleHalfStroke,
-    [Description("\uf05a")]
-    CircleInfo,
-    [Description("\uf359")]
-    CircleLeft,
-    [Description("\uf056")]
-    CircleMinus,
-    [Description("\ue4e2")]
-    CircleNodes,
-    [Description("\uf1ce")]
-    CircleNotch,
-    [Description("\uf28b")]
-    CirclePause,
-    [Description("\uf144")]
-    CirclePlay,
-    [Description("\uf055")]
-    CirclePlus,
-    [Description("\uf059")]
-    CircleQuestion,
-    [Description("\uf7ba")]
-    CircleRadiation,
-    [Description("\uf35a")]
-    CircleRight,
-    [Description("\uf28d")]
-    CircleStop,
-    [Description("\uf35b")]
-    CircleUp,
-    [Description("\uf2bd")]
-    CircleUser,
-    [Description("\uf057")]
-    CircleXmark,
-    [Description("\uf64f")]
-    City,
-    [Description("\ue131")]
-    Clapperboard,
-    [Description("\uf328")]
-    Clipboard,
-    [Description("\uf46c")]
-    ClipboardCheck,
-    [Description("\uf46d")]
-    ClipboardList,
-    [Description("\ue4e3")]
-    ClipboardQuestion,
-    [Description("\uf7f3")]
-    ClipboardUser,
-    [Description("\uf017")]
-    Clock,
-    [Description("\uf1da")]
-    ClockRotateLeft,
-    [Description("\uf24d")]
-    Clone,
-    [Description("\uf20a")]
-    ClosedCaptioning,
-    [Description("\ue135")]
-    ClosedCaptioningSlash,
-    [Description("\uf0c2")]
-    Cloud,
-    [Description("\uf0ed")]
-    CloudArrowDown,
-    [Description("\uf0ee")]
-    CloudArrowUp,
-    [Description("\uf76c")]
-    CloudBolt,
-    [Description("\uf73b")]
-    CloudMeatball,
-    [Description("\uf6c3")]
-    CloudMoon,
-    [Description("\uf73c")]
-    CloudMoonRain,
-    [Description("\uf73d")]
-    CloudRain,
-    [Description("\uf740")]
-    CloudShowersHeavy,
-    [Description("\ue4e4")]
-    CloudShowersWater,
-    [Description("\uf6c4")]
-    CloudSun,
-    [Description("\uf743")]
-    CloudSunRain,
-    [Description("\ue139")]
-    Clover,
-    [Description("\uf121")]
-    Code,
-    [Description("\uf126")]
-    CodeBranch,
-    [Description("\uf386")]
-    CodeCommit,
-    [Description("\ue13a")]
-    CodeCompare,
-    [Description("\ue13b")]
-    CodeFork,
-    [Description("\uf387")]
-    CodeMerge,
-    [Description("\ue13c")]
-    CodePullRequest,
-    [Description("\uf51e")]
-    Coins,
-    [Description("\ue140")]
-    ColonSign,
-    [Description("\uf075")]
-    Comment,
-    [Description("\uf651")]
-    CommentDollar,
-    [Description("\uf4ad")]
-    CommentDots,
-    [Description("\uf7f5")]
-    CommentMedical,
-    [Description("\ue696")]
-    CommentNodes,
-    [Description("\uf4b3")]
-    CommentSlash,
-    [Description("\uf7cd")]
-    CommentSms,
-    [Description("\uf086")]
-    Comments,
-    [Description("\uf653")]
-    CommentsDollar,
-    [Description("\uf51f")]
-    CompactDisc,
-    [Description("\uf14e")]
-    Compass,
-    [Description("\uf568")]
-    CompassDrafting,
-    [Description("\uf066")]
-    Compress,
-    [Description("\ue4e5")]
-    Computer,
-    [Description("\uf8cc")]
-    ComputerMouse,
-    [Description("\uf563")]
-    Cookie,
-    [Description("\uf564")]
-    CookieBite,
-    [Description("\uf0c5")]
-    Copy,
-    [Description("\uf1f9")]
-    Copyright,
-    [Description("\uf4b8")]
-    Couch,
-    [Description("\uf6c8")]
-    Cow,
-    [Description("\uf09d")]
-    CreditCard,
-    [Description("\uf125")]
-    Crop,
-    [Description("\uf565")]
-    CropSimple,
-    [Description("\uf654")]
-    Cross,
-    [Description("\uf05b")]
-    Crosshairs,
-    [Description("\uf520")]
-    Crow,
-    [Description("\uf521")]
-    Crown,
-    [Description("\uf7f7")]
-    Crutch,
-    [Description("\ue152")]
-    CruzeiroSign,
-    [Description("\uf1b2")]
-    Cube,
-    [Description("\uf1b3")]
-    Cubes,
-    [Description("\ue4e6")]
-    CubesStacked,
-    [Description("\u0044")]
-    D,
-    [Description("\uf1c0")]
-    Database,
-    [Description("\uf55a")]
-    DeleteLeft,
-    [Description("\uf747")]
-    Democrat,
-    [Description("\uf390")]
-    Desktop,
-    [Description("\uf655")]
-    Dharmachakra,
-    [Description("\ue476")]
-    DiagramNext,
-    [Description("\ue477")]
-    DiagramPredecessor,
-    [Description("\uf542")]
-    DiagramProject,
-    [Description("\ue47a")]
-    DiagramSuccessor,
-    [Description("\uf219")]
-    Diamond,
-    [Description("\uf5eb")]
-    DiamondTurnRight,
-    [Description("\uf522")]
-    Dice,
-    [Description("\uf6cf")]
-    DiceD20,
-    [Description("\uf6d1")]
-    DiceD6,
-    [Description("\uf523")]
-    DiceFive,
-    [Description("\uf524")]
-    DiceFour,
-    [Description("\uf525")]
-    DiceOne,
-    [Description("\uf526")]
-    DiceSix,
-    [Description("\uf527")]
-    DiceThree,
-    [Description("\uf528")]
-    DiceTwo,
-    [Description("\uf7fa")]
-    Disease,
-    [Description("\ue163")]
-    Display,
-    [Description("\uf529")]
-    Divide,
-    [Description("\uf471")]
-    Dna,
-    [Description("\uf6d3")]
-    Dog,
-    [Description("\u0024")]
-    DollarSign,
-    [Description("\uf472")]
-    Dolly,
-    [Description("\ue169")]
-    DongSign,
-    [Description("\uf52a")]
-    DoorClosed,
-    [Description("\uf52b")]
-    DoorOpen,
-    [Description("\uf4ba")]
-    Dove,
-    [Description("\uf422")]
-    DownLeftAndUpRightToCenter,
-    [Description("\uf309")]
-    DownLong,
-    [Description("\uf019")]
-    Download,
-    [Description("\uf6d5")]
-    Dragon,
-    [Description("\uf5ee")]
-    DrawPolygon,
-    [Description("\uf043")]
-    Droplet,
-    [Description("\uf5c7")]
-    DropletSlash,
-    [Description("\uf569")]
-    Drum,
-    [Description("\uf56a")]
-    DrumSteelpan,
-    [Description("\uf6d7")]
-    DrumstickBite,
-    [Description("\uf44b")]
-    Dumbbell,
-    [Description("\uf793")]
-    Dumpster,
-    [Description("\uf794")]
-    DumpsterFire,
-    [Description("\uf6d9")]
-    Dungeon,
-    [Description("\u0045")]
-    E,
-    [Description("\uf2a4")]
-    EarDeaf,
-    [Description("\uf2a2")]
-    EarListen,
-    [Description("\uf57c")]
-    EarthAfrica,
-    [Description("\uf57d")]
-    EarthAmericas,
-    [Description("\uf57e")]
-    EarthAsia,
-    [Description("\uf7a2")]
-    EarthEurope,
-    [Description("\ue47b")]
-    EarthOceania,
-    [Description("\uf7fb")]
-    Egg,
-    [Description("\uf052")]
-    Eject,
-    [Description("\ue16d")]
-    Elevator,
-    [Description("\uf141")]
-    Ellipsis,
-    [Description("\uf142")]
-    EllipsisVertical,
-    [Description("\uf0e0")]
-    Envelope,
-    [Description("\ue4e8")]
-    EnvelopeCircleCheck,
-    [Description("\uf2b6")]
-    EnvelopeOpen,
-    [Description("\uf658")]
-    EnvelopeOpenText,
-    [Description("\uf674")]
-    EnvelopesBulk,
-    [Description("\u003d")]
-    Equals,
-    [Description("\uf12d")]
-    Eraser,
-    [Description("\uf796")]
-    Ethernet,
-    [Description("\uf153")]
-    EuroSign,
-    [Description("\u0021")]
-    Exclamation,
-    [Description("\uf065")]
-    Expand,
-    [Description("\ue4e9")]
-    Explosion,
-    [Description("\uf06e")]
-    Eye,
-    [Description("\uf1fb")]
-    EyeDropper,
-    [Description("\uf2a8")]
-    EyeLowVision,
-    [Description("\uf070")]
-    EyeSlash,
-    [Description("\u0046")]
-    F,
-    [Description("\uf556")]
-    FaceAngry,
-    [Description("\uf567")]
-    FaceDizzy,
-    [Description("\uf579")]
-    FaceFlushed,
-    [Description("\uf119")]
-    FaceFrown,
-    [Description("\uf57a")]
-    FaceFrownOpen,
-    [Description("\uf57f")]
-    FaceGrimace,
-    [Description("\uf580")]
-    FaceGrin,
-    [Description("\uf582")]
-    FaceGrinBeam,
-    [Description("\uf583")]
-    FaceGrinBeamSweat,
-    [Description("\uf584")]
-    FaceGrinHearts,
-    [Description("\uf585")]
-    FaceGrinSquint,
-    [Description("\uf586")]
-    FaceGrinSquintTears,
-    [Description("\uf587")]
-    FaceGrinStars,
-    [Description("\uf588")]
-    FaceGrinTears,
-    [Description("\uf589")]
-    FaceGrinTongue,
-    [Description("\uf58a")]
-    FaceGrinTongueSquint,
-    [Description("\uf58b")]
-    FaceGrinTongueWink,
-    [Description("\uf581")]
-    FaceGrinWide,
-    [Description("\uf58c")]
-    FaceGrinWink,
-    [Description("\uf596")]
-    FaceKiss,
-    [Description("\uf597")]
-    FaceKissBeam,
-    [Description("\uf598")]
-    FaceKissWinkHeart,
-    [Description("\uf599")]
-    FaceLaugh,
-    [Description("\uf59a")]
-    FaceLaughBeam,
-    [Description("\uf59b")]
-    FaceLaughSquint,
-    [Description("\uf59c")]
-    FaceLaughWink,
-    [Description("\uf11a")]
-    FaceMeh,
-    [Description("\uf5a4")]
-    FaceMehBlank,
-    [Description("\uf5a5")]
-    FaceRollingEyes,
-    [Description("\uf5b3")]
-    FaceSadCry,
-    [Description("\uf5b4")]
-    FaceSadTear,
-    [Description("\uf118")]
-    FaceSmile,
-    [Description("\uf5b8")]
-    FaceSmileBeam,
-    [Description("\uf4da")]
-    FaceSmileWink,
-    [Description("\uf5c2")]
-    FaceSurprise,
-    [Description("\uf5c8")]
-    FaceTired,
-    [Description("\uf863")]
-    Fan,
-    [Description("\ue005")]
-    Faucet,
-    [Description("\ue006")]
-    FaucetDrip,
-    [Description("\uf1ac")]
-    Fax,
-    [Description("\uf52d")]
-    Feather,
-    [Description("\uf56b")]
-    FeatherPointed,
-    [Description("\ue4ea")]
-    Ferry,
-    [Description("\uf15b")]
-    File,
-    [Description("\uf56d")]
-    FileArrowDown,
-    [Description("\uf574")]
-    FileArrowUp,
-    [Description("\uf1c7")]
-    FileAudio,
-    [Description("\ue5a0")]
-    FileCircleCheck,
-    [Description("\ue4eb")]
-    FileCircleExclamation,
-    [Description("\ue4ed")]
-    FileCircleMinus,
-    [Description("\ue494")]
-    FileCirclePlus,
-    [Description("\ue4ef")]
-    FileCircleQuestion,
-    [Description("\ue5a1")]
-    FileCircleXmark,
-    [Description("\uf1c9")]
-    FileCode,
-    [Description("\uf56c")]
-    FileContract,
-    [Description("\uf6dd")]
-    FileCsv,
-    [Description("\uf1c3")]
-    FileExcel,
-    [Description("\uf56e")]
-    FileExport,
-    [Description("\ue697")]
-    FileFragment,
-    [Description("\ue698")]
-    FileHalfDashed,
-    [Description("\uf1c5")]
-    FileImage,
-    [Description("\uf56f")]
-    FileImport,
-    [Description("\uf570")]
-    FileInvoice,
-    [Description("\uf571")]
-    FileInvoiceDollar,
-    [Description("\uf15c")]
-    FileLines,
-    [Description("\uf477")]
-    FileMedical,
-    [Description("\uf1c1")]
-    FilePdf,
-    [Description("\uf31c")]
-    FilePen,
-    [Description("\uf1c4")]
-    FilePowerpoint,
-    [Description("\uf572")]
-    FilePrescription,
-    [Description("\ue4f0")]
-    FileShield,
-    [Description("\uf573")]
-    FileSignature,
-    [Description("\uf1c8")]
-    FileVideo,
-    [Description("\uf478")]
-    FileWaveform,
-    [Description("\uf1c2")]
-    FileWord,
-    [Description("\uf1c6")]
-    FileZipper,
-    [Description("\uf575")]
-    Fill,
-    [Description("\uf576")]
-    FillDrip,
-    [Description("\uf008")]
-    Film,
-    [Description("\uf0b0")]
-    Filter,
-    [Description("\uf662")]
-    FilterCircleDollar,
-    [Description("\ue17b")]
-    FilterCircleXmark,
-    [Description("\uf577")]
-    Fingerprint,
-    [Description("\uf06d")]
-    Fire,
-    [Description("\ue4f1")]
-    FireBurner,
-    [Description("\uf134")]
-    FireExtinguisher,
-    [Description("\uf7e4")]
-    FireFlameCurved,
-    [Description("\uf46a")]
-    FireFlameSimple,
-    [Description("\uf578")]
-    Fish,
-    [Description("\ue4f2")]
-    FishFins,
-    [Description("\uf024")]
-    Flag,
-    [Description("\uf11e")]
-    FlagCheckered,
-    [Description("\uf74d")]
-    FlagUsa,
-    [Description("\uf0c3")]
-    Flask,
-    [Description("\ue4f3")]
-    FlaskVial,
-    [Description("\uf0c7")]
-    FloppyDisk,
-    [Description("\ue184")]
-    FlorinSign,
-    [Description("\uf07b")]
-    Folder,
-    [Description("\ue185")]
-    FolderClosed,
-    [Description("\uf65d")]
-    FolderMinus,
-    [Description("\uf07c")]
-    FolderOpen,
-    [Description("\uf65e")]
-    FolderPlus,
-    [Description("\uf802")]
-    FolderTree,
-    [Description("\uf031")]
-    Font,
-    [Description("\uf2b4")]
-    FontAwesome,
-    [Description("\uf44e")]
-    Football,
-    [Description("\uf04e")]
-    Forward,
-    [Description("\uf050")]
-    ForwardFast,
-    [Description("\uf051")]
-    ForwardStep,
-    [Description("\ue18f")]
-    FrancSign,
-    [Description("\uf52e")]
-    Frog,
-    [Description("\uf1e3")]
-    Futbol,
-    [Description("\u0047")]
-    G,
-    [Description("\uf11b")]
-    Gamepad,
-    [Description("\uf52f")]
-    GasPump,
-    [Description("\uf624")]
-    Gauge,
-    [Description("\uf625")]
-    GaugeHigh,
-    [Description("\uf629")]
-    GaugeSimple,
-    [Description("\uf62a")]
-    GaugeSimpleHigh,
-    [Description("\uf0e3")]
-    Gavel,
-    [Description("\uf013")]
-    Gear,
-    [Description("\uf085")]
-    Gears,
-    [Description("\uf3a5")]
-    Gem,
-    [Description("\ue849")]
-    Gemini,
-    [Description("\uf22d")]
-    Genderless,
-    [Description("\uf6e2")]
-    Ghost,
-    [Description("\uf06b")]
-    Gift,
-    [Description("\uf79c")]
-    Gifts,
-    [Description("\ue4f4")]
-    GlassWater,
-    [Description("\ue4f5")]
-    GlassWaterDroplet,
-    [Description("\uf530")]
-    Glasses,
-    [Description("\uf0ac")]
-    Globe,
-    [Description("\uf450")]
-    GolfBallTee,
-    [Description("\uf664")]
-    Gopuram,
-    [Description("\uf19d")]
-    GraduationCap,
-    [Description("\u003e")]
-    GreaterThan,
-    [Description("\uf532")]
-    GreaterThanEqual,
-    [Description("\uf58d")]
-    Grip,
-    [Description("\uf7a4")]
-    GripLines,
-    [Description("\uf7a5")]
-    GripLinesVertical,
-    [Description("\uf58e")]
-    GripVertical,
-    [Description("\ue4f6")]
-    GroupArrowsRotate,
-    [Description("\ue19a")]
-    GuaraniSign,
-    [Description("\uf7a6")]
-    Guitar,
-    [Description("\ue19b")]
-    Gun,
-    [Description("\u0048")]
-    H,
-    [Description("\uf6e3")]
-    Hammer,
-    [Description("\uf665")]
-    Hamsa,
-    [Description("\uf256")]
-    Hand,
-    [Description("\uf255")]
-    HandBackFist,
-    [Description("\uf461")]
-    HandDots,
-    [Description("\uf6de")]
-    HandFist,
-    [Description("\uf4bd")]
-    HandHolding,
-    [Description("\uf4c0")]
-    HandHoldingDollar,
-    [Description("\uf4c1")]
-    HandHoldingDroplet,
-    [Description("\ue4f7")]
-    HandHoldingHand,
-    [Description("\uf4be")]
-    HandHoldingHeart,
-    [Description("\ue05c")]
-    HandHoldingMedical,
-    [Description("\uf258")]
-    HandLizard,
-    [Description("\uf806")]
-    HandMiddleFinger,
-    [Description("\uf25b")]
-    HandPeace,
-    [Description("\uf0a7")]
-    HandPointDown,
-    [Description("\uf0a5")]
-    HandPointLeft,
-    [Description("\uf0a4")]
-    HandPointRight,
-    [Description("\uf0a6")]
-    HandPointUp,
-    [Description("\uf25a")]
-    HandPointer,
-    [Description("\uf257")]
-    HandScissors,
-    [Description("\ue05d")]
-    HandSparkles,
-    [Description("\uf259")]
-    HandSpock,
-    [Description("\ue4f8")]
-    Handcuffs,
-    [Description("\uf2a7")]
-    Hands,
-    [Description("\uf2a3")]
-    HandsAslInterpreting,
-    [Description("\ue4f9")]
-    HandsBound,
-    [Description("\ue05e")]
-    HandsBubbles,
-    [Description("\ue1a8")]
-    HandsClapping,
-    [Description("\uf4c2")]
-    HandsHolding,
-    [Description("\ue4fa")]
-    HandsHoldingChild,
-    [Description("\ue4fb")]
-    HandsHoldingCircle,
-    [Description("\uf684")]
-    HandsPraying,
-    [Description("\uf2b5")]
-    Handshake,
-    [Description("\uf4c4")]
-    HandshakeAngle,
-    [Description("\ue060")]
-    HandshakeSlash,
-    [Description("\uf6e6")]
-    Hanukiah,
-    [Description("\uf0a0")]
-    HardDrive,
-    [Description("\u0023")]
-    Hashtag,
-    [Description("\uf8c0")]
-    HatCowboy,
-    [Description("\uf8c1")]
-    HatCowboySide,
-    [Description("\uf6e8")]
-    HatWizard,
-    [Description("\ue061")]
-    HeadSideCough,
-    [Description("\ue062")]
-    HeadSideCoughSlash,
-    [Description("\ue063")]
-    HeadSideMask,
-    [Description("\ue064")]
-    HeadSideVirus,
-    [Description("\uf1dc")]
-    Heading,
-    [Description("\uf025")]
-    Headphones,
-    [Description("\uf590")]
-    Headset,
-    [Description("\uf004")]
-    Heart,
-    [Description("\ue4fc")]
-    HeartCircleBolt,
-    [Description("\ue4fd")]
-    HeartCircleCheck,
-    [Description("\ue4fe")]
-    HeartCircleExclamation,
-    [Description("\ue4ff")]
-    HeartCircleMinus,
-    [Description("\ue500")]
-    HeartCirclePlus,
-    [Description("\ue501")]
-    HeartCircleXmark,
-    [Description("\uf7a9")]
-    HeartCrack,
-    [Description("\uf21e")]
-    HeartPulse,
-    [Description("\uf533")]
-    Helicopter,
-    [Description("\ue502")]
-    HelicopterSymbol,
-    [Description("\uf807")]
-    HelmetSafety,
-    [Description("\ue503")]
-    HelmetUn,
-    [Description("\uf312")]
-    Hexagon,
-    [Description("\ue699")]
-    HexagonNodes,
-    [Description("\ue69a")]
-    HexagonNodesBolt,
-    [Description("\uf591")]
-    Highlighter,
-    [Description("\ue507")]
-    HillAvalanche,
-    [Description("\ue508")]
-    HillRockslide,
-    [Description("\uf6ed")]
-    Hippo,
-    [Description("\uf453")]
-    HockeyPuck,
-    [Description("\uf7aa")]
-    HollyBerry,
-    [Description("\uf6f0")]
-    Horse,
-    [Description("\uf7ab")]
-    HorseHead,
-    [Description("\uf0f8")]
-    Hospital,
-    [Description("\uf80d")]
-    HospitalUser,
-    [Description("\uf593")]
-    HotTubPerson,
-    [Description("\uf80f")]
-    Hotdog,
-    [Description("\uf594")]
-    Hotel,
-    [Description("\uf254")]
-    Hourglass,
-    [Description("\uf253")]
-    HourglassEnd,
-    [Description("\uf252")]
-    HourglassHalf,
-    [Description("\uf251")]
-    HourglassStart,
-    [Description("\uf015")]
-    House,
-    [Description("\ue3af")]
-    HouseChimney,
-    [Description("\uf6f1")]
-    HouseChimneyCrack,
-    [Description("\uf7f2")]
-    HouseChimneyMedical,
-    [Description("\ue065")]
-    HouseChimneyUser,
-    [Description("\ue00d")]
-    HouseChimneyWindow,
-    [Description("\ue509")]
-    HouseCircleCheck,
-    [Description("\ue50a")]
-    HouseCircleExclamation,
-    [Description("\ue50b")]
-    HouseCircleXmark,
-    [Description("\ue3b1")]
-    HouseCrack,
-    [Description("\ue50c")]
-    HouseFire,
-    [Description("\ue50d")]
-    HouseFlag,
-    [Description("\ue50e")]
-    HouseFloodWater,
-    [Description("\ue50f")]
-    HouseFloodWaterCircleArrowRight,
-    [Description("\ue066")]
-    HouseLaptop,
-    [Description("\ue510")]
-    HouseLock,
-    [Description("\ue3b2")]
-    HouseMedical,
-    [Description("\ue511")]
-    HouseMedicalCircleCheck,
-    [Description("\ue512")]
-    HouseMedicalCircleExclamation,
-    [Description("\ue513")]
-    HouseMedicalCircleXmark,
-    [Description("\ue514")]
-    HouseMedicalFlag,
-    [Description("\ue012")]
-    HouseSignal,
-    [Description("\ue515")]
-    HouseTsunami,
-    [Description("\ue1b0")]
-    HouseUser,
-    [Description("\uf6f2")]
-    HryvniaSign,
-    [Description("\uf751")]
-    Hurricane,
-    [Description("\u0049")]
-    I,
-    [Description("\uf246")]
-    ICursor,
-    [Description("\uf810")]
-    IceCream,
-    [Description("\uf7ad")]
-    Icicles,
-    [Description("\uf86d")]
-    Icons,
-    [Description("\uf2c1")]
-    IdBadge,
-    [Description("\uf2c2")]
-    IdCard,
-    [Description("\uf47f")]
-    IdCardClip,
-    [Description("\uf7ae")]
-    Igloo,
-    [Description("\uf03e")]
-    Image,
-    [Description("\uf3e0")]
-    ImagePortrait,
-    [Description("\uf302")]
-    Images,
-    [Description("\uf01c")]
-    Inbox,
-    [Description("\uf03c")]
-    Indent,
-    [Description("\ue1bc")]
-    IndianRupeeSign,
-    [Description("\uf275")]
-    Industry,
-    [Description("\uf534")]
-    Infinity,
-    [Description("\uf129")]
-    Info,
-    [Description("\uf033")]
-    Italic,
-    [Description("\u004a")]
-    J,
-    [Description("\ue516")]
-    Jar,
-    [Description("\ue517")]
-    JarWheat,
-    [Description("\uf669")]
-    Jedi,
-    [Description("\uf0fb")]
-    JetFighter,
-    [Description("\ue518")]
-    JetFighterUp,
-    [Description("\uf595")]
-    Joint,
-    [Description("\ue519")]
-    JugDetergent,
-    [Description("\u004b")]
-    K,
-    [Description("\uf66b")]
-    Kaaba,
-    [Description("\uf084")]
-    Key,
-    [Description("\uf11c")]
-    Keyboard,
-    [Description("\uf66d")]
-    Khanda,
-    [Description("\ue1c4")]
-    KipSign,
-    [Description("\uf479")]
-    KitMedical,
-    [Description("\ue51a")]
-    KitchenSet,
-    [Description("\uf535")]
-    KiwiBird,
-    [Description("\u004c")]
-    L,
-    [Description("\ue51b")]
-    LandMineOn,
-    [Description("\uf66f")]
-    Landmark,
-    [Description("\uf752")]
-    LandmarkDome,
-    [Description("\ue51c")]
-    LandmarkFlag,
-    [Description("\uf1ab")]
-    Language,
-    [Description("\uf109")]
-    Laptop,
-    [Description("\uf5fc")]
-    LaptopCode,
-    [Description("\ue51d")]
-    LaptopFile,
-    [Description("\uf812")]
-    LaptopMedical,
-    [Description("\ue1c8")]
-    LariSign,
-    [Description("\uf5fd")]
-    LayerGroup,
-    [Description("\uf06c")]
-    Leaf,
-    [Description("\uf30a")]
-    LeftLong,
-    [Description("\uf337")]
-    LeftRight,
-    [Description("\uf094")]
-    Lemon,
-    [Description("\ue84a")]
-    Leo,
-    [Description("\u003c")]
-    LessThan,
-    [Description("\uf537")]
-    LessThanEqual,
-    [Description("\ue84b")]
-    Libra,
-    [Description("\uf1cd")]
-    LifeRing,
-    [Description("\uf0eb")]
-    Lightbulb,
-    [Description("\ue51e")]
-    LinesLeaning,
-    [Description("\uf0c1")]
-    Link,
-    [Description("\uf127")]
-    LinkSlash,
-    [Description("\uf195")]
-    LiraSign,
-    [Description("\uf03a")]
-    List,
-    [Description("\uf0ae")]
-    ListCheck,
-    [Description("\uf0cb")]
-    ListOl,
-    [Description("\uf0ca")]
-    ListUl,
-    [Description("\ue1d3")]
-    LitecoinSign,
-    [Description("\uf124")]
-    LocationArrow,
-    [Description("\uf601")]
-    LocationCrosshairs,
-    [Description("\uf3c5")]
-    LocationDot,
-    [Description("\uf041")]
-    LocationPin,
-    [Description("\ue51f")]
-    LocationPinLock,
-    [Description("\uf023")]
-    Lock,
-    [Description("\uf3c1")]
-    LockOpen,
-    [Description("\ue520")]
-    Locust,
-    [Description("\uf604")]
-    Lungs,
-    [Description("\ue067")]
-    LungsVirus,
-    [Description("\u004d")]
-    M,
-    [Description("\uf076")]
-    Magnet,
-    [Description("\uf002")]
-    MagnifyingGlass,
-    [Description("\ue521")]
-    MagnifyingGlassArrowRight,
-    [Description("\ue522")]
-    MagnifyingGlassChart,
-    [Description("\uf688")]
-    MagnifyingGlassDollar,
-    [Description("\uf689")]
-    MagnifyingGlassLocation,
-    [Description("\uf010")]
-    MagnifyingGlassMinus,
-    [Description("\uf00e")]
-    MagnifyingGlassPlus,
-    [Description("\ue1d5")]
-    ManatSign,
-    [Description("\uf279")]
-    Map,
-    [Description("\uf59f")]
-    MapLocation,
-    [Description("\uf5a0")]
-    MapLocationDot,
-    [Description("\uf276")]
-    MapPin,
-    [Description("\uf5a1")]
-    Marker,
-    [Description("\uf222")]
-    Mars,
-    [Description("\uf224")]
-    MarsAndVenus,
-    [Description("\ue523")]
-    MarsAndVenusBurst,
-    [Description("\uf227")]
-    MarsDouble,
-    [Description("\uf229")]
-    MarsStroke,
-    [Description("\uf22b")]
-    MarsStrokeRight,
-    [Description("\uf22a")]
-    MarsStrokeUp,
-    [Description("\uf57b")]
-    MartiniGlass,
-    [Description("\uf561")]
-    MartiniGlassCitrus,
-    [Description("\uf000")]
-    MartiniGlassEmpty,
-    [Description("\uf6fa")]
-    Mask,
-    [Description("\ue1d7")]
-    MaskFace,
-    [Description("\ue524")]
-    MaskVentilator,
-    [Description("\uf630")]
-    MasksTheater,
-    [Description("\ue525")]
-    MattressPillow,
-    [Description("\uf31e")]
-    Maximize,
-    [Description("\uf5a2")]
-    Medal,
-    [Description("\uf538")]
-    Memory,
-    [Description("\uf676")]
-    Menorah,
-    [Description("\uf223")]
-    Mercury,
-    [Description("\uf27a")]
-    Message,
-    [Description("\uf753")]
-    Meteor,
-    [Description("\uf2db")]
-    Microchip,
-    [Description("\uf130")]
-    Microphone,
-    [Description("\uf3c9")]
-    MicrophoneLines,
-    [Description("\uf539")]
-    MicrophoneLinesSlash,
-    [Description("\uf131")]
-    MicrophoneSlash,
-    [Description("\uf610")]
-    Microscope,
-    [Description("\ue1ed")]
-    MillSign,
-    [Description("\uf78c")]
-    Minimize,
-    [Description("\uf068")]
-    Minus,
-    [Description("\uf7b5")]
-    Mitten,
-    [Description("\uf3ce")]
-    Mobile,
-    [Description("\uf10b")]
-    MobileButton,
-    [Description("\ue527")]
-    MobileRetro,
-    [Description("\uf3cf")]
-    MobileScreen,
-    [Description("\uf3cd")]
-    MobileScreenButton,
-    [Description("\ue816")]
-    MobileVibrate,
-    [Description("\uf0d6")]
-    MoneyBill,
-    [Description("\uf3d1")]
-    MoneyBill1,
-    [Description("\uf53b")]
-    MoneyBill1Wave,
-    [Description("\ue528")]
-    MoneyBillTransfer,
-    [Description("\ue529")]
-    MoneyBillTrendUp,
-    [Description("\uf53a")]
-    MoneyBillWave,
-    [Description("\ue52a")]
-    MoneyBillWheat,
-    [Description("\ue1f3")]
-    MoneyBills,
-    [Description("\uf53c")]
-    MoneyCheck,
-    [Description("\uf53d")]
-    MoneyCheckDollar,
-    [Description("\uf5a6")]
-    Monument,
-    [Description("\uf186")]
-    Moon,
-    [Description("\uf5a7")]
-    MortarPestle,
-    [Description("\uf678")]
-    Mosque,
-    [Description("\ue52b")]
-    Mosquito,
-    [Description("\ue52c")]
-    MosquitoNet,
-    [Description("\uf21c")]
-    Motorcycle,
-    [Description("\ue52d")]
-    Mound,
-    [Description("\uf6fc")]
-    Mountain,
-    [Description("\ue52e")]
-    MountainCity,
-    [Description("\ue52f")]
-    MountainSun,
-    [Description("\uf7b6")]
-    MugHot,
-    [Description("\uf0f4")]
-    MugSaucer,
-    [Description("\uf001")]
-    Music,
-    [Description("\u004e")]
-    N,
-    [Description("\ue1f6")]
-    NairaSign,
-    [Description("\uf6ff")]
-    NetworkWired,
-    [Description("\uf22c")]
-    Neuter,
-    [Description("\uf1ea")]
-    Newspaper,
-    [Description("\ue807")]
-    NonBinary,
-    [Description("\uf53e")]
-    NotEqual,
-    [Description("\ue1fe")]
-    Notdef,
-    [Description("\uf249")]
-    NoteSticky,
-    [Description("\uf481")]
-    NotesMedical,
-    [Description("\u004f")]
-    O,
-    [Description("\uf247")]
-    ObjectGroup,
-    [Description("\uf248")]
-    ObjectUngroup,
-    [Description("\uf306")]
-    Octagon,
-    [Description("\uf613")]
-    OilCan,
-    [Description("\ue532")]
-    OilWell,
-    [Description("\uf679")]
-    Om,
-    [Description("\uf700")]
-    Otter,
-    [Description("\uf03b")]
-    Outdent,
-    [Description("\u0050")]
-    P,
-    [Description("\uf815")]
-    Pager,
-    [Description("\uf5aa")]
-    PaintRoller,
-    [Description("\uf1fc")]
-    Paintbrush,
-    [Description("\uf53f")]
-    Palette,
-    [Description("\uf482")]
-    Pallet,
-    [Description("\ue209")]
-    Panorama,
-    [Description("\uf1d8")]
-    PaperPlane,
-    [Description("\uf0c6")]
-    Paperclip,
-    [Description("\uf4cd")]
-    ParachuteBox,
-    [Description("\uf1dd")]
-    Paragraph,
-    [Description("\uf5ab")]
-    Passport,
-    [Description("\uf0ea")]
-    Paste,
-    [Description("\uf04c")]
-    Pause,
-    [Description("\uf1b0")]
-    Paw,
-    [Description("\uf67c")]
-    Peace,
-    [Description("\uf304")]
-    Pen,
-    [Description("\uf305")]
-    PenClip,
-    [Description("\uf5ac")]
-    PenFancy,
-    [Description("\uf5ad")]
-    PenNib,
-    [Description("\uf5ae")]
-    PenRuler,
-    [Description("\uf044")]
-    PenToSquare,
-    [Description("\uf303")]
-    Pencil,
-    [Description("\ue790")]
-    Pentagon,
-    [Description("\ue068")]
-    PeopleArrows,
-    [Description("\uf4ce")]
-    PeopleCarryBox,
-    [Description("\ue533")]
-    PeopleGroup,
-    [Description("\ue534")]
-    PeopleLine,
-    [Description("\ue535")]
-    PeoplePulling,
-    [Description("\ue536")]
-    PeopleRobbery,
-    [Description("\ue537")]
-    PeopleRoof,
-    [Description("\uf816")]
-    PepperHot,
-    [Description("\u0025")]
-    Percent,
-    [Description("\uf183")]
-    Person,
-    [Description("\ue538")]
-    PersonArrowDownToLine,
-    [Description("\ue539")]
-    PersonArrowUpFromLine,
-    [Description("\uf84a")]
-    PersonBiking,
-    [Description("\uf756")]
-    PersonBooth,
-    [Description("\ue53a")]
-    PersonBreastfeeding,
-    [Description("\ue53b")]
-    PersonBurst,
-    [Description("\ue53c")]
-    PersonCane,
-    [Description("\ue53d")]
-    PersonChalkboard,
-    [Description("\ue53e")]
-    PersonCircleCheck,
-    [Description("\ue53f")]
-    PersonCircleExclamation,
-    [Description("\ue540")]
-    PersonCircleMinus,
-    [Description("\ue541")]
-    PersonCirclePlus,
-    [Description("\ue542")]
-    PersonCircleQuestion,
-    [Description("\ue543")]
-    PersonCircleXmark,
-    [Description("\uf85e")]
-    PersonDigging,
-    [Description("\uf470")]
-    PersonDotsFromLine,
-    [Description("\uf182")]
-    PersonDress,
-    [Description("\ue544")]
-    PersonDressBurst,
-    [Description("\ue545")]
-    PersonDrowning,
-    [Description("\ue546")]
-    PersonFalling,
-    [Description("\ue547")]
-    PersonFallingBurst,
-    [Description("\ue548")]
-    PersonHalfDress,
-    [Description("\ue549")]
-    PersonHarassing,
-    [Description("\uf6ec")]
-    PersonHiking,
-    [Description("\ue54a")]
-    PersonMilitaryPointing,
-    [Description("\ue54b")]
-    PersonMilitaryRifle,
-    [Description("\ue54c")]
-    PersonMilitaryToPerson,
-    [Description("\uf683")]
-    PersonPraying,
-    [Description("\ue31e")]
-    PersonPregnant,
-    [Description("\ue54d")]
-    PersonRays,
-    [Description("\ue54e")]
-    PersonRifle,
-    [Description("\uf70c")]
-    PersonRunning,
-    [Description("\ue54f")]
-    PersonShelter,
-    [Description("\uf7c5")]
-    PersonSkating,
-    [Description("\uf7c9")]
-    PersonSkiing,
-    [Description("\uf7ca")]
-    PersonSkiingNordic,
-    [Description("\uf7ce")]
-    PersonSnowboarding,
-    [Description("\uf5c4")]
-    PersonSwimming,
-    [Description("\ue5a9")]
-    PersonThroughWindow,
-    [Description("\uf554")]
-    PersonWalking,
-    [Description("\ue551")]
-    PersonWalkingArrowLoopLeft,
-    [Description("\ue552")]
-    PersonWalkingArrowRight,
-    [Description("\ue553")]
-    PersonWalkingDashedLineArrowRight,
-    [Description("\ue554")]
-    PersonWalkingLuggage,
-    [Description("\uf29d")]
-    PersonWalkingWithCane,
-    [Description("\ue221")]
-    PesetaSign,
-    [Description("\ue222")]
-    PesoSign,
-    [Description("\uf095")]
-    Phone,
-    [Description("\uf879")]
-    PhoneFlip,
-    [Description("\uf3dd")]
-    PhoneSlash,
-    [Description("\uf2a0")]
-    PhoneVolume,
-    [Description("\uf87c")]
-    PhotoFilm,
-    [Description("\ue80b")]
-    PictureInPicture,
-    [Description("\uf4d3")]
-    PiggyBank,
-    [Description("\uf484")]
-    Pills,
-    [Description("\ue84c")]
-    Pisces,
-    [Description("\uf818")]
-    PizzaSlice,
-    [Description("\uf67f")]
-    PlaceOfWorship,
-    [Description("\uf072")]
-    Plane,
-    [Description("\uf5af")]
-    PlaneArrival,
-    [Description("\ue555")]
-    PlaneCircleCheck,
-    [Description("\ue556")]
-    PlaneCircleExclamation,
-    [Description("\ue557")]
-    PlaneCircleXmark,
-    [Description("\uf5b0")]
-    PlaneDeparture,
-    [Description("\ue558")]
-    PlaneLock,
-    [Description("\ue069")]
-    PlaneSlash,
-    [Description("\ue22d")]
-    PlaneUp,
-    [Description("\ue5aa")]
-    PlantWilt,
-    [Description("\ue55a")]
-    PlateWheat,
-    [Description("\uf04b")]
-    Play,
-    [Description("\uf1e6")]
-    Plug,
-    [Description("\ue55b")]
-    PlugCircleBolt,
-    [Description("\ue55c")]
-    PlugCircleCheck,
-    [Description("\ue55d")]
-    PlugCircleExclamation,
-    [Description("\ue55e")]
-    PlugCircleMinus,
-    [Description("\ue55f")]
-    PlugCirclePlus,
-    [Description("\ue560")]
-    PlugCircleXmark,
-    [Description("\u002b")]
-    Plus,
-    [Description("\ue43c")]
-    PlusMinus,
-    [Description("\uf2ce")]
-    Podcast,
-    [Description("\uf2fe")]
-    Poo,
-    [Description("\uf75a")]
-    PooStorm,
-    [Description("\uf619")]
-    Poop,
-    [Description("\uf011")]
-    PowerOff,
-    [Description("\uf5b1")]
-    Prescription,
-    [Description("\uf485")]
-    PrescriptionBottle,
-    [Description("\uf486")]
-    PrescriptionBottleMedical,
-    [Description("\uf02f")]
-    Print,
-    [Description("\ue06a")]
-    PumpMedical,
-    [Description("\ue06b")]
-    PumpSoap,
-    [Description("\uf12e")]
-    PuzzlePiece,
-    [Description("\u0051")]
-    Q,
-    [Description("\uf029")]
-    Qrcode,
-    [Description("\u003f")]
-    Question,
-    [Description("\uf10d")]
-    QuoteLeft,
-    [Description("\uf10e")]
-    QuoteRight,
-    [Description("\u0052")]
-    R,
-    [Description("\uf7b9")]
-    Radiation,
-    [Description("\uf8d7")]
-    Radio,
-    [Description("\uf75b")]
-    Rainbow,
-    [Description("\ue561")]
-    RankingStar,
-    [Description("\uf543")]
-    Receipt,
-    [Description("\uf8d9")]
-    RecordVinyl,
-    [Description("\uf641")]
-    RectangleAd,
-    [Description("\uf022")]
-    RectangleList,
-    [Description("\uf410")]
-    RectangleXmark,
-    [Description("\uf1b8")]
-    Recycle,
-    [Description("\uf25d")]
-    Registered,
-    [Description("\uf363")]
-    Repeat,
-    [Description("\uf3e5")]
-    Reply,
-    [Description("\uf122")]
-    ReplyAll,
-    [Description("\uf75e")]
-    Republican,
-    [Description("\uf7bd")]
-    Restroom,
-    [Description("\uf079")]
-    Retweet,
-    [Description("\uf4d6")]
-    Ribbon,
-    [Description("\uf2f5")]
-    RightFromBracket,
-    [Description("\uf362")]
-    RightLeft,
-    [Description("\uf30b")]
-    RightLong,
-    [Description("\uf2f6")]
-    RightToBracket,
-    [Description("\uf70b")]
-    Ring,
-    [Description("\uf018")]
-    Road,
-    [Description("\ue562")]
-    RoadBarrier,
-    [Description("\ue563")]
-    RoadBridge,
-    [Description("\ue564")]
-    RoadCircleCheck,
-    [Description("\ue565")]
-    RoadCircleExclamation,
-    [Description("\ue566")]
-    RoadCircleXmark,
-    [Description("\ue567")]
-    RoadLock,
-    [Description("\ue568")]
-    RoadSpikes,
-    [Description("\uf544")]
-    Robot,
-    [Description("\uf135")]
-    Rocket,
-    [Description("\uf2f1")]
-    Rotate,
-    [Description("\uf2ea")]
-    RotateLeft,
-    [Description("\uf2f9")]
-    RotateRight,
-    [Description("\uf4d7")]
-    Route,
-    [Description("\uf09e")]
-    Rss,
-    [Description("\uf158")]
-    RubleSign,
-    [Description("\ue569")]
-    Rug,
-    [Description("\uf545")]
-    Ruler,
-    [Description("\uf546")]
-    RulerCombined,
-    [Description("\uf547")]
-    RulerHorizontal,
-    [Description("\uf548")]
-    RulerVertical,
-    [Description("\uf156")]
-    RupeeSign,
-    [Description("\ue23d")]
-    RupiahSign,
-    [Description("\u0053")]
-    S,
-    [Description("\uf81d")]
-    SackDollar,
-    [Description("\ue56a")]
-    SackXmark,
-    [Description("\ue84d")]
-    Sagittarius,
-    [Description("\ue445")]
-    Sailboat,
-    [Description("\uf7bf")]
-    Satellite,
-    [Description("\uf7c0")]
-    SatelliteDish,
-    [Description("\uf24e")]
-    ScaleBalanced,
-    [Description("\uf515")]
-    ScaleUnbalanced,
-    [Description("\uf516")]
-    ScaleUnbalancedFlip,
-    [Description("\uf549")]
-    School,
-    [Description("\ue56b")]
-    SchoolCircleCheck,
-    [Description("\ue56c")]
-    SchoolCircleExclamation,
-    [Description("\ue56d")]
-    SchoolCircleXmark,
-    [Description("\ue56e")]
-    SchoolFlag,
-    [Description("\ue56f")]
-    SchoolLock,
-    [Description("\uf0c4")]
-    Scissors,
-    [Description("\ue84e")]
-    Scorpio,
-    [Description("\uf54a")]
-    Screwdriver,
-    [Description("\uf7d9")]
-    ScrewdriverWrench,
-    [Description("\uf70e")]
-    Scroll,
-    [Description("\uf6a0")]
-    ScrollTorah,
-    [Description("\uf7c2")]
-    SdCard,
-    [Description("\ue447")]
-    Section,
-    [Description("\uf4d8")]
-    Seedling,
-    [Description("\ue820")]
-    Septagon,
-    [Description("\uf233")]
-    Server,
-    [Description("\uf61f")]
-    Shapes,
-    [Description("\uf064")]
-    Share,
-    [Description("\uf14d")]
-    ShareFromSquare,
-    [Description("\uf1e0")]
-    ShareNodes,
-    [Description("\ue571")]
-    SheetPlastic,
-    [Description("\uf20b")]
-    ShekelSign,
-    [Description("\uf132")]
-    Shield,
-    [Description("\ue572")]
-    ShieldCat,
-    [Description("\ue573")]
-    ShieldDog,
-    [Description("\uf3ed")]
-    ShieldHalved,
-    [Description("\ue574")]
-    ShieldHeart,
-    [Description("\ue06c")]
-    ShieldVirus,
-    [Description("\uf21a")]
-    Ship,
-    [Description("\uf553")]
-    Shirt,
-    [Description("\uf54b")]
-    ShoePrints,
-    [Description("\uf54f")]
-    Shop,
-    [Description("\ue4a5")]
-    ShopLock,
-    [Description("\ue070")]
-    ShopSlash,
-    [Description("\uf2cc")]
-    Shower,
-    [Description("\ue448")]
-    Shrimp,
-    [Description("\uf074")]
-    Shuffle,
-    [Description("\uf197")]
-    ShuttleSpace,
-    [Description("\uf4d9")]
-    SignHanging,
-    [Description("\uf012")]
-    Signal,
-    [Description("\uf5b7")]
-    Signature,
-    [Description("\uf277")]
-    SignsPost,
-    [Description("\uf7c4")]
-    SimCard,
-    [Description("\ue81b")]
-    SingleQuoteLeft,
-    [Description("\ue81c")]
-    SingleQuoteRight,
-    [Description("\ue06d")]
-    Sink,
-    [Description("\uf0e8")]
-    Sitemap,
-    [Description("\uf54c")]
-    Skull,
-    [Description("\uf714")]
-    SkullCrossbones,
-    [Description("\uf715")]
-    Slash,
-    [Description("\uf7cc")]
-    Sleigh,
-    [Description("\uf1de")]
-    Sliders,
-    [Description("\uf75f")]
-    Smog,
-    [Description("\uf48d")]
-    Smoking,
-    [Description("\uf2dc")]
-    Snowflake,
-    [Description("\uf7d0")]
-    Snowman,
-    [Description("\uf7d2")]
-    Snowplow,
-    [Description("\ue06e")]
-    Soap,
-    [Description("\uf696")]
-    Socks,
-    [Description("\uf5ba")]
-    SolarPanel,
-    [Description("\uf0dc")]
-    Sort,
-    [Description("\uf0dd")]
-    SortDown,
-    [Description("\uf0de")]
-    SortUp,
-    [Description("\uf5bb")]
-    Spa,
-    [Description("\uf67b")]
-    SpaghettiMonsterFlying,
-    [Description("\uf891")]
-    SpellCheck,
-    [Description("\uf717")]
-    Spider,
-    [Description("\uf110")]
-    Spinner,
-    [Description("\ue80a")]
-    Spiral,
-    [Description("\uf5bc")]
-    Splotch,
-    [Description("\uf2e5")]
-    Spoon,
-    [Description("\uf5bd")]
-    SprayCan,
-    [Description("\uf5d0")]
-    SprayCanSparkles,
-    [Description("\uf0c8")]
-    Square,
-    [Description("\uf14c")]
-    SquareArrowUpRight,
-    [Description("\ue69b")]
-    SquareBinary,
-    [Description("\uf150")]
-    SquareCaretDown,
-    [Description("\uf191")]
-    SquareCaretLeft,
-    [Description("\uf152")]
-    SquareCaretRight,
-    [Description("\uf151")]
-    SquareCaretUp,
-    [Description("\uf14a")]
-    SquareCheck,
-    [Description("\uf199")]
-    SquareEnvelope,
-    [Description("\uf45c")]
-    SquareFull,
-    [Description("\uf0fd")]
-    SquareH,
-    [Description("\uf146")]
-    SquareMinus,
-    [Description("\ue576")]
-    SquareNfi,
-    [Description("\uf540")]
-    SquareParking,
-    [Description("\uf14b")]
-    SquarePen,
-    [Description("\ue577")]
-    SquarePersonConfined,
-    [Description("\uf098")]
-    SquarePhone,
-    [Description("\uf87b")]
-    SquarePhoneFlip,
-    [Description("\uf0fe")]
-    SquarePlus,
-    [Description("\uf682")]
-    SquarePollHorizontal,
-    [Description("\uf681")]
-    SquarePollVertical,
-    [Description("\uf698")]
-    SquareRootVariable,
-    [Description("\uf143")]
-    SquareRss,
-    [Description("\uf1e1")]
-    SquareShareNodes,
-    [Description("\uf360")]
-    SquareUpRight,
-    [Description("\ue578")]
-    SquareVirus,
-    [Description("\uf2d3")]
-    SquareXmark,
-    [Description("\ue579")]
-    StaffSnake,
-    [Description("\ue289")]
-    Stairs,
-    [Description("\uf5bf")]
-    Stamp,
-    [Description("\ue5af")]
-    Stapler,
-    [Description("\uf005")]
-    Star,
-    [Description("\uf699")]
-    StarAndCrescent,
-    [Description("\uf089")]
-    StarHalf,
-    [Description("\uf5c0")]
-    StarHalfStroke,
-    [Description("\uf69a")]
-    StarOfDavid,
-    [Description("\uf621")]
-    StarOfLife,
-    [Description("\uf154")]
-    SterlingSign,
-    [Description("\uf0f1")]
-    Stethoscope,
-    [Description("\uf04d")]
-    Stop,
-    [Description("\uf2f2")]
-    Stopwatch,
-    [Description("\ue06f")]
-    Stopwatch20,
-    [Description("\uf54e")]
-    Store,
-    [Description("\ue071")]
-    StoreSlash,
-    [Description("\uf21d")]
-    StreetView,
-    [Description("\uf0cc")]
-    Strikethrough,
-    [Description("\uf551")]
-    Stroopwafel,
-    [Description("\uf12c")]
-    Subscript,
-    [Description("\uf0f2")]
-    Suitcase,
-    [Description("\uf0fa")]
-    SuitcaseMedical,
-    [Description("\uf5c1")]
-    SuitcaseRolling,
-    [Description("\uf185")]
-    Sun,
-    [Description("\ue57a")]
-    SunPlantWilt,
-    [Description("\uf12b")]
-    Superscript,
-    [Description("\uf5c3")]
-    Swatchbook,
-    [Description("\uf69b")]
-    Synagogue,
-    [Description("\uf48e")]
-    Syringe,
-    [Description("\u0054")]
-    T,
-    [Description("\uf0ce")]
-    Table,
-    [Description("\uf00a")]
-    TableCells,
-    [Description("\ue678")]
-    TableCellsColumnLock,
-    [Description("\uf009")]
-    TableCellsLarge,
-    [Description("\ue67a")]
-    TableCellsRowLock,
-    [Description("\ue691")]
-    TableCellsRowUnlock,
-    [Description("\uf0db")]
-    TableColumns,
-    [Description("\uf00b")]
-    TableList,
-    [Description("\uf45d")]
-    TableTennisPaddleBall,
-    [Description("\uf3fb")]
-    Tablet,
-    [Description("\uf10a")]
-    TabletButton,
-    [Description("\uf3fa")]
-    TabletScreenButton,
-    [Description("\uf490")]
-    Tablets,
-    [Description("\uf566")]
-    TachographDigital,
-    [Description("\uf02b")]
-    Tag,
-    [Description("\uf02c")]
-    Tags,
-    [Description("\uf4db")]
-    Tape,
-    [Description("\ue57b")]
-    Tarp,
-    [Description("\ue57c")]
-    TarpDroplet,
-    [Description("\ue84f")]
-    Taurus,
-    [Description("\uf1ba")]
-    Taxi,
-    [Description("\uf62e")]
-    Teeth,
-    [Description("\uf62f")]
-    TeethOpen,
-    [Description("\ue03f")]
-    TemperatureArrowDown,
-    [Description("\ue040")]
-    TemperatureArrowUp,
-    [Description("\uf2cb")]
-    TemperatureEmpty,
-    [Description("\uf2c7")]
-    TemperatureFull,
-    [Description("\uf2c9")]
-    TemperatureHalf,
-    [Description("\uf769")]
-    TemperatureHigh,
-    [Description("\uf76b")]
-    TemperatureLow,
-    [Description("\uf2ca")]
-    TemperatureQuarter,
-    [Description("\uf2c8")]
-    TemperatureThreeQuarters,
-    [Description("\uf7d7")]
-    TengeSign,
-    [Description("\ue57d")]
-    Tent,
-    [Description("\ue57e")]
-    TentArrowDownToLine,
-    [Description("\ue57f")]
-    TentArrowLeftRight,
-    [Description("\ue580")]
-    TentArrowTurnLeft,
-    [Description("\ue581")]
-    TentArrowsDown,
-    [Description("\ue582")]
-    Tents,
-    [Description("\uf120")]
-    Terminal,
-    [Description("\uf034")]
-    TextHeight,
-    [Description("\uf87d")]
-    TextSlash,
-    [Description("\uf035")]
-    TextWidth,
-    [Description("\uf491")]
-    Thermometer,
-    [Description("\uf165")]
-    ThumbsDown,
-    [Description("\uf164")]
-    ThumbsUp,
-    [Description("\uf08d")]
-    Thumbtack,
-    [Description("\ue68f")]
-    ThumbtackSlash,
-    [Description("\uf145")]
-    Ticket,
-    [Description("\uf3ff")]
-    TicketSimple,
-    [Description("\ue29c")]
-    Timeline,
-    [Description("\uf204")]
-    ToggleOff,
-    [Description("\uf205")]
-    ToggleOn,
-    [Description("\uf7d8")]
-    Toilet,
-    [Description("\uf71e")]
-    ToiletPaper,
-    [Description("\ue072")]
-    ToiletPaperSlash,
-    [Description("\ue583")]
-    ToiletPortable,
-    [Description("\ue584")]
-    ToiletsPortable,
-    [Description("\uf552")]
-    Toolbox,
-    [Description("\uf5c9")]
-    Tooth,
-    [Description("\uf6a1")]
-    ToriiGate,
-    [Description("\uf76f")]
-    Tornado,
-    [Description("\uf519")]
-    TowerBroadcast,
-    [Description("\ue585")]
-    TowerCell,
-    [Description("\ue586")]
-    TowerObservation,
-    [Description("\uf722")]
-    Tractor,
-    [Description("\uf25c")]
-    Trademark,
-    [Description("\uf637")]
-    TrafficLight,
-    [Description("\ue041")]
-    Trailer,
-    [Description("\uf238")]
-    Train,
-    [Description("\uf239")]
-    TrainSubway,
-    [Description("\ue5b4")]
-    TrainTram,
-    [Description("\uf225")]
-    Transgender,
-    [Description("\uf1f8")]
-    Trash,
-    [Description("\uf829")]
-    TrashArrowUp,
-    [Description("\uf2ed")]
-    TrashCan,
-    [Description("\uf82a")]
-    TrashCanArrowUp,
-    [Description("\uf1bb")]
-    Tree,
-    [Description("\ue587")]
-    TreeCity,
-    [Description("\uf071")]
-    TriangleExclamation,
-    [Description("\uf091")]
-    Trophy,
-    [Description("\ue589")]
-    Trowel,
-    [Description("\ue58a")]
-    TrowelBricks,
-    [Description("\uf0d1")]
-    Truck,
-    [Description("\ue58b")]
-    TruckArrowRight,
-    [Description("\ue58c")]
-    TruckDroplet,
-    [Description("\uf48b")]
-    TruckFast,
-    [Description("\ue58d")]
-    TruckField,
-    [Description("\ue58e")]
-    TruckFieldUn,
-    [Description("\ue2b7")]
-    TruckFront,
-    [Description("\uf0f9")]
-    TruckMedical,
-    [Description("\uf63b")]
-    TruckMonster,
-    [Description("\uf4df")]
-    TruckMoving,
-    [Description("\uf63c")]
-    TruckPickup,
-    [Description("\ue58f")]
-    TruckPlane,
-    [Description("\uf4de")]
-    TruckRampBox,
-    [Description("\uf1e4")]
-    Tty,
-    [Description("\ue2bb")]
-    TurkishLiraSign,
-    [Description("\uf3be")]
-    TurnDown,
-    [Description("\uf3bf")]
-    TurnUp,
-    [Description("\uf26c")]
-    Tv,
-    [Description("\u0055")]
-    U,
-    [Description("\uf0e9")]
-    Umbrella,
-    [Description("\uf5ca")]
-    UmbrellaBeach,
-    [Description("\uf0cd")]
-    Underline,
-    [Description("\uf29a")]
-    UniversalAccess,
-    [Description("\uf09c")]
-    Unlock,
-    [Description("\uf13e")]
-    UnlockKeyhole,
-    [Description("\uf338")]
-    UpDown,
-    [Description("\uf0b2")]
-    UpDownLeftRight,
-    [Description("\uf30c")]
-    UpLong,
-    [Description("\uf424")]
-    UpRightAndDownLeftFromCenter,
-    [Description("\uf35d")]
-    UpRightFromSquare,
-    [Description("\uf093")]
-    Upload,
-    [Description("\uf007")]
-    User,
-    [Description("\uf4fb")]
-    UserAstronaut,
-    [Description("\uf4fc")]
-    UserCheck,
-    [Description("\uf4fd")]
-    UserClock,
-    [Description("\uf0f0")]
-    UserDoctor,
-    [Description("\uf4fe")]
-    UserGear,
-    [Description("\uf501")]
-    UserGraduate,
-    [Description("\uf500")]
-    UserGroup,
-    [Description("\uf728")]
-    UserInjured,
-    [Description("\uf502")]
-    UserLock,
-    [Description("\uf503")]
-    UserMinus,
-    [Description("\uf504")]
-    UserNinja,
-    [Description("\uf82f")]
-    UserNurse,
-    [Description("\uf4ff")]
-    UserPen,
-    [Description("\uf234")]
-    UserPlus,
-    [Description("\uf21b")]
-    UserSecret,
-    [Description("\uf505")]
-    UserShield,
-    [Description("\uf506")]
-    UserSlash,
-    [Description("\uf507")]
-    UserTag,
-    [Description("\uf508")]
-    UserTie,
-    [Description("\uf235")]
-    UserXmark,
-    [Description("\uf0c0")]
-    Users,
-    [Description("\ue591")]
-    UsersBetweenLines,
-    [Description("\uf509")]
-    UsersGear,
-    [Description("\ue592")]
-    UsersLine,
-    [Description("\ue593")]
-    UsersRays,
-    [Description("\ue594")]
-    UsersRectangle,
-    [Description("\ue073")]
-    UsersSlash,
-    [Description("\ue595")]
-    UsersViewfinder,
-    [Description("\uf2e7")]
-    Utensils,
-    [Description("\u0056")]
-    V,
-    [Description("\uf5b6")]
-    VanShuttle,
-    [Description("\ue2c5")]
-    Vault,
-    [Description("\uf221")]
-    Venus,
-    [Description("\uf226")]
-    VenusDouble,
-    [Description("\uf228")]
-    VenusMars,
-    [Description("\ue085")]
-    Vest,
-    [Description("\ue086")]
-    VestPatches,
-    [Description("\uf492")]
-    Vial,
-    [Description("\ue596")]
-    VialCircleCheck,
-    [Description("\ue597")]
-    VialVirus,
-    [Description("\uf493")]
-    Vials,
-    [Description("\uf03d")]
-    Video,
-    [Description("\uf4e2")]
-    VideoSlash,
-    [Description("\uf6a7")]
-    Vihara,
-    [Description("\ue850")]
-    Virgo,
-    [Description("\ue074")]
-    Virus,
-    [Description("\ue4a8")]
-    VirusCovid,
-    [Description("\ue4a9")]
-    VirusCovidSlash,
-    [Description("\ue075")]
-    VirusSlash,
-    [Description("\ue076")]
-    Viruses,
-    [Description("\uf897")]
-    Voicemail,
-    [Description("\uf770")]
-    Volcano,
-    [Description("\uf45f")]
-    Volleyball,
-    [Description("\uf6a8")]
-    Volume,
-    [Description("\uf028")]
-    VolumeHigh,
-    [Description("\uf027")]
-    VolumeLow,
-    [Description("\uf026")]
-    VolumeOff,
-    [Description("\uf6a9")]
-    VolumeXmark,
-    [Description("\uf729")]
-    VrCardboard,
-    [Description("\u0057")]
-    W,
-    [Description("\uf8ef")]
-    WalkieTalkie,
-    [Description("\uf555")]
-    Wallet,
-    [Description("\uf0d0")]
-    WandMagic,
-    [Description("\ue2ca")]
-    WandMagicSparkles,
-    [Description("\uf72b")]
-    WandSparkles,
-    [Description("\uf494")]
-    Warehouse,
-    [Description("\uf773")]
-    Water,
-    [Description("\uf5c5")]
-    WaterLadder,
-    [Description("\uf83e")]
-    WaveSquare,
-    [Description("\ue682")]
-    WebAwesome,
-    [Description("\uf5cd")]
-    WeightHanging,
-    [Description("\uf496")]
-    WeightScale,
-    [Description("\ue2cd")]
-    WheatAwn,
-    [Description("\ue598")]
-    WheatAwnCircleExclamation,
-    [Description("\uf193")]
-    Wheelchair,
-    [Description("\ue2ce")]
-    WheelchairMove,
-    [Description("\uf7a0")]
-    WhiskeyGlass,
-    [Description("\uf1eb")]
-    Wifi,
-    [Description("\uf72e")]
-    Wind,
-    [Description("\uf2d0")]
-    WindowMaximize,
-    [Description("\uf2d1")]
-    WindowMinimize,
-    [Description("\uf2d2")]
-    WindowRestore,
-    [Description("\uf72f")]
-    WineBottle,
-    [Description("\uf4e3")]
-    WineGlass,
-    [Description("\uf5ce")]
-    WineGlassEmpty,
-    [Description("\uf159")]
-    WonSign,
-    [Description("\ue599")]
-    Worm,
-    [Description("\uf0ad")]
-    Wrench,
-    [Description("\u0058")]
-    X,
-    [Description("\uf497")]
-    XRay,
-    [Description("\uf00d")]
-    Xmark,
-    [Description("\ue59a")]
-    XmarksLines,
-    [Description("\u0059")]
-    Y,
-    [Description("\uf157")]
-    YenSign,
-    [Description("\uf6ad")]
-    YinYang,
-    [Description("\u005a")]
-    Z,
+    Zero = 0x0030,
+    One = 0x0031,
+    Two = 0x0032,
+    Three = 0x0033,
+    Four = 0x0034,
+    Five = 0x0035,
+    Six = 0x0036,
+    Seven = 0x0037,
+    Eight = 0x0038,
+    Nine = 0x0039,
+    A = 0x0041,
+    AddressBook = 0xf2b9,
+    AddressCard = 0xf2bb,
+    AlarmClock = 0xf34e,
+    AlignCenter = 0xf037,
+    AlignJustify = 0xf039,
+    AlignLeft = 0xf036,
+    AlignRight = 0xf038,
+    Anchor = 0xf13d,
+    AnchorCircleCheck = 0xe4aa,
+    AnchorCircleExclamation = 0xe4ab,
+    AnchorCircleXmark = 0xe4ac,
+    AnchorLock = 0xe4ad,
+    AngleDown = 0xf107,
+    AngleLeft = 0xf104,
+    AngleRight = 0xf105,
+    AngleUp = 0xf106,
+    AnglesDown = 0xf103,
+    AnglesLeft = 0xf100,
+    AnglesRight = 0xf101,
+    AnglesUp = 0xf102,
+    Ankh = 0xf644,
+    AppleWhole = 0xf5d1,
+    Aquarius = 0xe845,
+    Archway = 0xf557,
+    Aries = 0xe846,
+    ArrowDown = 0xf063,
+    ArrowDown19 = 0xf162,
+    ArrowDown91 = 0xf886,
+    ArrowDownAZ = 0xf15d,
+    ArrowDownLong = 0xf175,
+    ArrowDownShortWide = 0xf884,
+    ArrowDownUpAcrossLine = 0xe4af,
+    ArrowDownUpLock = 0xe4b0,
+    ArrowDownWideShort = 0xf160,
+    ArrowDownZA = 0xf881,
+    ArrowLeft = 0xf060,
+    ArrowLeftLong = 0xf177,
+    ArrowPointer = 0xf245,
+    ArrowRight = 0xf061,
+    ArrowRightArrowLeft = 0xf0ec,
+    ArrowRightFromBracket = 0xf08b,
+    ArrowRightLong = 0xf178,
+    ArrowRightToBracket = 0xf090,
+    ArrowRightToCity = 0xe4b3,
+    ArrowRotateLeft = 0xf0e2,
+    ArrowRotateRight = 0xf01e,
+    ArrowTrendDown = 0xe097,
+    ArrowTrendUp = 0xe098,
+    ArrowTurnDown = 0xf149,
+    ArrowTurnUp = 0xf148,
+    ArrowUp = 0xf062,
+    ArrowUp19 = 0xf163,
+    ArrowUp91 = 0xf887,
+    ArrowUpAZ = 0xf15e,
+    ArrowUpFromBracket = 0xe09a,
+    ArrowUpFromGroundWater = 0xe4b5,
+    ArrowUpFromWaterPump = 0xe4b6,
+    ArrowUpLong = 0xf176,
+    ArrowUpRightDots = 0xe4b7,
+    ArrowUpRightFromSquare = 0xf08e,
+    ArrowUpShortWide = 0xf885,
+    ArrowUpWideShort = 0xf161,
+    ArrowUpZA = 0xf882,
+    ArrowsDownToLine = 0xe4b8,
+    ArrowsDownToPeople = 0xe4b9,
+    ArrowsLeftRight = 0xf07e,
+    ArrowsLeftRightToLine = 0xe4ba,
+    ArrowsRotate = 0xf021,
+    ArrowsSpin = 0xe4bb,
+    ArrowsSplitUpAndLeft = 0xe4bc,
+    ArrowsToCircle = 0xe4bd,
+    ArrowsToDot = 0xe4be,
+    ArrowsToEye = 0xe4bf,
+    ArrowsTurnRight = 0xe4c0,
+    ArrowsTurnToDots = 0xe4c1,
+    ArrowsUpDown = 0xf07d,
+    ArrowsUpDownLeftRight = 0xf047,
+    ArrowsUpToLine = 0xe4c2,
+    Asterisk = 0x002a,
+    At = 0x0040,
+    Atom = 0xf5d2,
+    AudioDescription = 0xf29e,
+    AustralSign = 0xe0a9,
+    Award = 0xf559,
+    B = 0x0042,
+    Baby = 0xf77c,
+    BabyCarriage = 0xf77d,
+    Backward = 0xf04a,
+    BackwardFast = 0xf049,
+    BackwardStep = 0xf048,
+    Bacon = 0xf7e5,
+    Bacteria = 0xe059,
+    Bacterium = 0xe05a,
+    BagShopping = 0xf290,
+    Bahai = 0xf666,
+    BahtSign = 0xe0ac,
+    Ban = 0xf05e,
+    BanSmoking = 0xf54d,
+    Bandage = 0xf462,
+    BangladeshiTakaSign = 0xe2e6,
+    Barcode = 0xf02a,
+    Bars = 0xf0c9,
+    BarsProgress = 0xf828,
+    BarsStaggered = 0xf550,
+    Baseball = 0xf433,
+    BaseballBatBall = 0xf432,
+    BasketShopping = 0xf291,
+    Basketball = 0xf434,
+    Bath = 0xf2cd,
+    BatteryEmpty = 0xf244,
+    BatteryFull = 0xf240,
+    BatteryHalf = 0xf242,
+    BatteryQuarter = 0xf243,
+    BatteryThreeQuarters = 0xf241,
+    Bed = 0xf236,
+    BedPulse = 0xf487,
+    BeerMugEmpty = 0xf0fc,
+    Bell = 0xf0f3,
+    BellConcierge = 0xf562,
+    BellSlash = 0xf1f6,
+    BezierCurve = 0xf55b,
+    Bicycle = 0xf206,
+    Binoculars = 0xf1e5,
+    Biohazard = 0xf780,
+    BitcoinSign = 0xe0b4,
+    Blender = 0xf517,
+    BlenderPhone = 0xf6b6,
+    Blog = 0xf781,
+    Bold = 0xf032,
+    Bolt = 0xf0e7,
+    BoltLightning = 0xe0b7,
+    Bomb = 0xf1e2,
+    Bone = 0xf5d7,
+    Bong = 0xf55c,
+    Book = 0xf02d,
+    BookAtlas = 0xf558,
+    BookBible = 0xf647,
+    BookBookmark = 0xe0bb,
+    BookJournalWhills = 0xf66a,
+    BookMedical = 0xf7e6,
+    BookOpen = 0xf518,
+    BookOpenReader = 0xf5da,
+    BookQuran = 0xf687,
+    BookSkull = 0xf6b7,
+    BookTanakh = 0xf827,
+    Bookmark = 0xf02e,
+    BorderAll = 0xf84c,
+    BorderNone = 0xf850,
+    BorderTopLeft = 0xf853,
+    BoreHole = 0xe4c3,
+    BottleDroplet = 0xe4c4,
+    BottleWater = 0xe4c5,
+    BowlFood = 0xe4c6,
+    BowlRice = 0xe2eb,
+    BowlingBall = 0xf436,
+    Box = 0xf466,
+    BoxArchive = 0xf187,
+    BoxOpen = 0xf49e,
+    BoxTissue = 0xe05b,
+    BoxesPacking = 0xe4c7,
+    BoxesStacked = 0xf468,
+    Braille = 0xf2a1,
+    Brain = 0xf5dc,
+    BrazilianRealSign = 0xe46c,
+    BreadSlice = 0xf7ec,
+    Bridge = 0xe4c8,
+    BridgeCircleCheck = 0xe4c9,
+    BridgeCircleExclamation = 0xe4ca,
+    BridgeCircleXmark = 0xe4cb,
+    BridgeLock = 0xe4cc,
+    BridgeWater = 0xe4ce,
+    Briefcase = 0xf0b1,
+    BriefcaseMedical = 0xf469,
+    Broom = 0xf51a,
+    BroomBall = 0xf458,
+    Brush = 0xf55d,
+    Bucket = 0xe4cf,
+    Bug = 0xf188,
+    BugSlash = 0xe490,
+    Bugs = 0xe4d0,
+    Building = 0xf1ad,
+    BuildingCircleArrowRight = 0xe4d1,
+    BuildingCircleCheck = 0xe4d2,
+    BuildingCircleExclamation = 0xe4d3,
+    BuildingCircleXmark = 0xe4d4,
+    BuildingColumns = 0xf19c,
+    BuildingFlag = 0xe4d5,
+    BuildingLock = 0xe4d6,
+    BuildingNgo = 0xe4d7,
+    BuildingShield = 0xe4d8,
+    BuildingUn = 0xe4d9,
+    BuildingUser = 0xe4da,
+    BuildingWheat = 0xe4db,
+    Bullhorn = 0xf0a1,
+    Bullseye = 0xf140,
+    Burger = 0xf805,
+    Burst = 0xe4dc,
+    Bus = 0xf207,
+    BusSide = 0xe81d,
+    BusSimple = 0xf55e,
+    BusinessTime = 0xf64a,
+    C = 0x0043,
+    CableCar = 0xf7da,
+    CakeCandles = 0xf1fd,
+    Calculator = 0xf1ec,
+    Calendar = 0xf133,
+    CalendarCheck = 0xf274,
+    CalendarDay = 0xf783,
+    CalendarDays = 0xf073,
+    CalendarMinus = 0xf272,
+    CalendarPlus = 0xf271,
+    CalendarWeek = 0xf784,
+    CalendarXmark = 0xf273,
+    Camera = 0xf030,
+    CameraRetro = 0xf083,
+    CameraRotate = 0xe0d8,
+    Campground = 0xf6bb,
+    Cancer = 0xe847,
+    CandyCane = 0xf786,
+    Cannabis = 0xf55f,
+    Capricorn = 0xe848,
+    Capsules = 0xf46b,
+    Car = 0xf1b9,
+    CarBattery = 0xf5df,
+    CarBurst = 0xf5e1,
+    CarOn = 0xe4dd,
+    CarRear = 0xf5de,
+    CarSide = 0xf5e4,
+    CarTunnel = 0xe4de,
+    Caravan = 0xf8ff,
+    CaretDown = 0xf0d7,
+    CaretLeft = 0xf0d9,
+    CaretRight = 0xf0da,
+    CaretUp = 0xf0d8,
+    Carrot = 0xf787,
+    CartArrowDown = 0xf218,
+    CartFlatbed = 0xf474,
+    CartFlatbedSuitcase = 0xf59d,
+    CartPlus = 0xf217,
+    CartShopping = 0xf07a,
+    CashRegister = 0xf788,
+    Cat = 0xf6be,
+    CediSign = 0xe0df,
+    CentSign = 0xe3f5,
+    Certificate = 0xf0a3,
+    Chair = 0xf6c0,
+    Chalkboard = 0xf51b,
+    ChalkboardUser = 0xf51c,
+    ChampagneGlasses = 0xf79f,
+    ChargingStation = 0xf5e7,
+    ChartArea = 0xf1fe,
+    ChartBar = 0xf080,
+    ChartColumn = 0xe0e3,
+    ChartDiagram = 0xe695,
+    ChartGantt = 0xe0e4,
+    ChartLine = 0xf201,
+    ChartPie = 0xf200,
+    ChartSimple = 0xe473,
+    Check = 0xf00c,
+    CheckDouble = 0xf560,
+    CheckToSlot = 0xf772,
+    Cheese = 0xf7ef,
+    Chess = 0xf439,
+    ChessBishop = 0xf43a,
+    ChessBoard = 0xf43c,
+    ChessKing = 0xf43f,
+    ChessKnight = 0xf441,
+    ChessPawn = 0xf443,
+    ChessQueen = 0xf445,
+    ChessRook = 0xf447,
+    ChevronDown = 0xf078,
+    ChevronLeft = 0xf053,
+    ChevronRight = 0xf054,
+    ChevronUp = 0xf077,
+    Child = 0xf1ae,
+    ChildCombatant = 0xe4e0,
+    ChildDress = 0xe59c,
+    ChildReaching = 0xe59d,
+    Children = 0xe4e1,
+    Church = 0xf51d,
+    Circle = 0xf111,
+    CircleArrowDown = 0xf0ab,
+    CircleArrowLeft = 0xf0a8,
+    CircleArrowRight = 0xf0a9,
+    CircleArrowUp = 0xf0aa,
+    CircleCheck = 0xf058,
+    CircleChevronDown = 0xf13a,
+    CircleChevronLeft = 0xf137,
+    CircleChevronRight = 0xf138,
+    CircleChevronUp = 0xf139,
+    CircleDollarToSlot = 0xf4b9,
+    CircleDot = 0xf192,
+    CircleDown = 0xf358,
+    CircleExclamation = 0xf06a,
+    CircleH = 0xf47e,
+    CircleHalfStroke = 0xf042,
+    CircleInfo = 0xf05a,
+    CircleLeft = 0xf359,
+    CircleMinus = 0xf056,
+    CircleNodes = 0xe4e2,
+    CircleNotch = 0xf1ce,
+    CirclePause = 0xf28b,
+    CirclePlay = 0xf144,
+    CirclePlus = 0xf055,
+    CircleQuestion = 0xf059,
+    CircleRadiation = 0xf7ba,
+    CircleRight = 0xf35a,
+    CircleStop = 0xf28d,
+    CircleUp = 0xf35b,
+    CircleUser = 0xf2bd,
+    CircleXmark = 0xf057,
+    City = 0xf64f,
+    Clapperboard = 0xe131,
+    Clipboard = 0xf328,
+    ClipboardCheck = 0xf46c,
+    ClipboardList = 0xf46d,
+    ClipboardQuestion = 0xe4e3,
+    ClipboardUser = 0xf7f3,
+    Clock = 0xf017,
+    ClockRotateLeft = 0xf1da,
+    Clone = 0xf24d,
+    ClosedCaptioning = 0xf20a,
+    ClosedCaptioningSlash = 0xe135,
+    Cloud = 0xf0c2,
+    CloudArrowDown = 0xf0ed,
+    CloudArrowUp = 0xf0ee,
+    CloudBolt = 0xf76c,
+    CloudMeatball = 0xf73b,
+    CloudMoon = 0xf6c3,
+    CloudMoonRain = 0xf73c,
+    CloudRain = 0xf73d,
+    CloudShowersHeavy = 0xf740,
+    CloudShowersWater = 0xe4e4,
+    CloudSun = 0xf6c4,
+    CloudSunRain = 0xf743,
+    Clover = 0xe139,
+    Code = 0xf121,
+    CodeBranch = 0xf126,
+    CodeCommit = 0xf386,
+    CodeCompare = 0xe13a,
+    CodeFork = 0xe13b,
+    CodeMerge = 0xf387,
+    CodePullRequest = 0xe13c,
+    Coins = 0xf51e,
+    ColonSign = 0xe140,
+    Comment = 0xf075,
+    CommentDollar = 0xf651,
+    CommentDots = 0xf4ad,
+    CommentMedical = 0xf7f5,
+    CommentNodes = 0xe696,
+    CommentSlash = 0xf4b3,
+    CommentSms = 0xf7cd,
+    Comments = 0xf086,
+    CommentsDollar = 0xf653,
+    CompactDisc = 0xf51f,
+    Compass = 0xf14e,
+    CompassDrafting = 0xf568,
+    Compress = 0xf066,
+    Computer = 0xe4e5,
+    ComputerMouse = 0xf8cc,
+    Cookie = 0xf563,
+    CookieBite = 0xf564,
+    Copy = 0xf0c5,
+    Copyright = 0xf1f9,
+    Couch = 0xf4b8,
+    Cow = 0xf6c8,
+    CreditCard = 0xf09d,
+    Crop = 0xf125,
+    CropSimple = 0xf565,
+    Cross = 0xf654,
+    Crosshairs = 0xf05b,
+    Crow = 0xf520,
+    Crown = 0xf521,
+    Crutch = 0xf7f7,
+    CruzeiroSign = 0xe152,
+    Cube = 0xf1b2,
+    Cubes = 0xf1b3,
+    CubesStacked = 0xe4e6,
+    D = 0x0044,
+    Database = 0xf1c0,
+    DeleteLeft = 0xf55a,
+    Democrat = 0xf747,
+    Desktop = 0xf390,
+    Dharmachakra = 0xf655,
+    DiagramNext = 0xe476,
+    DiagramPredecessor = 0xe477,
+    DiagramProject = 0xf542,
+    DiagramSuccessor = 0xe47a,
+    Diamond = 0xf219,
+    DiamondTurnRight = 0xf5eb,
+    Dice = 0xf522,
+    DiceD20 = 0xf6cf,
+    DiceD6 = 0xf6d1,
+    DiceFive = 0xf523,
+    DiceFour = 0xf524,
+    DiceOne = 0xf525,
+    DiceSix = 0xf526,
+    DiceThree = 0xf527,
+    DiceTwo = 0xf528,
+    Disease = 0xf7fa,
+    Display = 0xe163,
+    Divide = 0xf529,
+    Dna = 0xf471,
+    Dog = 0xf6d3,
+    DollarSign = 0x0024,
+    Dolly = 0xf472,
+    DongSign = 0xe169,
+    DoorClosed = 0xf52a,
+    DoorOpen = 0xf52b,
+    Dove = 0xf4ba,
+    DownLeftAndUpRightToCenter = 0xf422,
+    DownLong = 0xf309,
+    Download = 0xf019,
+    Dragon = 0xf6d5,
+    DrawPolygon = 0xf5ee,
+    Droplet = 0xf043,
+    DropletSlash = 0xf5c7,
+    Drum = 0xf569,
+    DrumSteelpan = 0xf56a,
+    DrumstickBite = 0xf6d7,
+    Dumbbell = 0xf44b,
+    Dumpster = 0xf793,
+    DumpsterFire = 0xf794,
+    Dungeon = 0xf6d9,
+    E = 0x0045,
+    EarDeaf = 0xf2a4,
+    EarListen = 0xf2a2,
+    EarthAfrica = 0xf57c,
+    EarthAmericas = 0xf57d,
+    EarthAsia = 0xf57e,
+    EarthEurope = 0xf7a2,
+    EarthOceania = 0xe47b,
+    Egg = 0xf7fb,
+    Eject = 0xf052,
+    Elevator = 0xe16d,
+    Ellipsis = 0xf141,
+    EllipsisVertical = 0xf142,
+    Envelope = 0xf0e0,
+    EnvelopeCircleCheck = 0xe4e8,
+    EnvelopeOpen = 0xf2b6,
+    EnvelopeOpenText = 0xf658,
+    EnvelopesBulk = 0xf674,
+    Equals = 0x003d,
+    Eraser = 0xf12d,
+    Ethernet = 0xf796,
+    EuroSign = 0xf153,
+    Exclamation = 0x0021,
+    Expand = 0xf065,
+    Explosion = 0xe4e9,
+    Eye = 0xf06e,
+    EyeDropper = 0xf1fb,
+    EyeLowVision = 0xf2a8,
+    EyeSlash = 0xf070,
+    F = 0x0046,
+    FaceAngry = 0xf556,
+    FaceDizzy = 0xf567,
+    FaceFlushed = 0xf579,
+    FaceFrown = 0xf119,
+    FaceFrownOpen = 0xf57a,
+    FaceGrimace = 0xf57f,
+    FaceGrin = 0xf580,
+    FaceGrinBeam = 0xf582,
+    FaceGrinBeamSweat = 0xf583,
+    FaceGrinHearts = 0xf584,
+    FaceGrinSquint = 0xf585,
+    FaceGrinSquintTears = 0xf586,
+    FaceGrinStars = 0xf587,
+    FaceGrinTears = 0xf588,
+    FaceGrinTongue = 0xf589,
+    FaceGrinTongueSquint = 0xf58a,
+    FaceGrinTongueWink = 0xf58b,
+    FaceGrinWide = 0xf581,
+    FaceGrinWink = 0xf58c,
+    FaceKiss = 0xf596,
+    FaceKissBeam = 0xf597,
+    FaceKissWinkHeart = 0xf598,
+    FaceLaugh = 0xf599,
+    FaceLaughBeam = 0xf59a,
+    FaceLaughSquint = 0xf59b,
+    FaceLaughWink = 0xf59c,
+    FaceMeh = 0xf11a,
+    FaceMehBlank = 0xf5a4,
+    FaceRollingEyes = 0xf5a5,
+    FaceSadCry = 0xf5b3,
+    FaceSadTear = 0xf5b4,
+    FaceSmile = 0xf118,
+    FaceSmileBeam = 0xf5b8,
+    FaceSmileWink = 0xf4da,
+    FaceSurprise = 0xf5c2,
+    FaceTired = 0xf5c8,
+    Fan = 0xf863,
+    Faucet = 0xe005,
+    FaucetDrip = 0xe006,
+    Fax = 0xf1ac,
+    Feather = 0xf52d,
+    FeatherPointed = 0xf56b,
+    Ferry = 0xe4ea,
+    File = 0xf15b,
+    FileArrowDown = 0xf56d,
+    FileArrowUp = 0xf574,
+    FileAudio = 0xf1c7,
+    FileCircleCheck = 0xe5a0,
+    FileCircleExclamation = 0xe4eb,
+    FileCircleMinus = 0xe4ed,
+    FileCirclePlus = 0xe494,
+    FileCircleQuestion = 0xe4ef,
+    FileCircleXmark = 0xe5a1,
+    FileCode = 0xf1c9,
+    FileContract = 0xf56c,
+    FileCsv = 0xf6dd,
+    FileExcel = 0xf1c3,
+    FileExport = 0xf56e,
+    FileFragment = 0xe697,
+    FileHalfDashed = 0xe698,
+    FileImage = 0xf1c5,
+    FileImport = 0xf56f,
+    FileInvoice = 0xf570,
+    FileInvoiceDollar = 0xf571,
+    FileLines = 0xf15c,
+    FileMedical = 0xf477,
+    FilePdf = 0xf1c1,
+    FilePen = 0xf31c,
+    FilePowerpoint = 0xf1c4,
+    FilePrescription = 0xf572,
+    FileShield = 0xe4f0,
+    FileSignature = 0xf573,
+    FileVideo = 0xf1c8,
+    FileWaveform = 0xf478,
+    FileWord = 0xf1c2,
+    FileZipper = 0xf1c6,
+    Fill = 0xf575,
+    FillDrip = 0xf576,
+    Film = 0xf008,
+    Filter = 0xf0b0,
+    FilterCircleDollar = 0xf662,
+    FilterCircleXmark = 0xe17b,
+    Fingerprint = 0xf577,
+    Fire = 0xf06d,
+    FireBurner = 0xe4f1,
+    FireExtinguisher = 0xf134,
+    FireFlameCurved = 0xf7e4,
+    FireFlameSimple = 0xf46a,
+    Fish = 0xf578,
+    FishFins = 0xe4f2,
+    Flag = 0xf024,
+    FlagCheckered = 0xf11e,
+    FlagUsa = 0xf74d,
+    Flask = 0xf0c3,
+    FlaskVial = 0xe4f3,
+    FloppyDisk = 0xf0c7,
+    FlorinSign = 0xe184,
+    Folder = 0xf07b,
+    FolderClosed = 0xe185,
+    FolderMinus = 0xf65d,
+    FolderOpen = 0xf07c,
+    FolderPlus = 0xf65e,
+    FolderTree = 0xf802,
+    Font = 0xf031,
+    FontAwesome = 0xf2b4,
+    Football = 0xf44e,
+    Forward = 0xf04e,
+    ForwardFast = 0xf050,
+    ForwardStep = 0xf051,
+    FrancSign = 0xe18f,
+    Frog = 0xf52e,
+    Futbol = 0xf1e3,
+    G = 0x0047,
+    Gamepad = 0xf11b,
+    GasPump = 0xf52f,
+    Gauge = 0xf624,
+    GaugeHigh = 0xf625,
+    GaugeSimple = 0xf629,
+    GaugeSimpleHigh = 0xf62a,
+    Gavel = 0xf0e3,
+    Gear = 0xf013,
+    Gears = 0xf085,
+    Gem = 0xf3a5,
+    Gemini = 0xe849,
+    Genderless = 0xf22d,
+    Ghost = 0xf6e2,
+    Gift = 0xf06b,
+    Gifts = 0xf79c,
+    GlassWater = 0xe4f4,
+    GlassWaterDroplet = 0xe4f5,
+    Glasses = 0xf530,
+    Globe = 0xf0ac,
+    GolfBallTee = 0xf450,
+    Gopuram = 0xf664,
+    GraduationCap = 0xf19d,
+    GreaterThan = 0x003e,
+    GreaterThanEqual = 0xf532,
+    Grip = 0xf58d,
+    GripLines = 0xf7a4,
+    GripLinesVertical = 0xf7a5,
+    GripVertical = 0xf58e,
+    GroupArrowsRotate = 0xe4f6,
+    GuaraniSign = 0xe19a,
+    Guitar = 0xf7a6,
+    Gun = 0xe19b,
+    H = 0x0048,
+    Hammer = 0xf6e3,
+    Hamsa = 0xf665,
+    Hand = 0xf256,
+    HandBackFist = 0xf255,
+    HandDots = 0xf461,
+    HandFist = 0xf6de,
+    HandHolding = 0xf4bd,
+    HandHoldingDollar = 0xf4c0,
+    HandHoldingDroplet = 0xf4c1,
+    HandHoldingHand = 0xe4f7,
+    HandHoldingHeart = 0xf4be,
+    HandHoldingMedical = 0xe05c,
+    HandLizard = 0xf258,
+    HandMiddleFinger = 0xf806,
+    HandPeace = 0xf25b,
+    HandPointDown = 0xf0a7,
+    HandPointLeft = 0xf0a5,
+    HandPointRight = 0xf0a4,
+    HandPointUp = 0xf0a6,
+    HandPointer = 0xf25a,
+    HandScissors = 0xf257,
+    HandSparkles = 0xe05d,
+    HandSpock = 0xf259,
+    Handcuffs = 0xe4f8,
+    Hands = 0xf2a7,
+    HandsAslInterpreting = 0xf2a3,
+    HandsBound = 0xe4f9,
+    HandsBubbles = 0xe05e,
+    HandsClapping = 0xe1a8,
+    HandsHolding = 0xf4c2,
+    HandsHoldingChild = 0xe4fa,
+    HandsHoldingCircle = 0xe4fb,
+    HandsPraying = 0xf684,
+    Handshake = 0xf2b5,
+    HandshakeAngle = 0xf4c4,
+    HandshakeSlash = 0xe060,
+    Hanukiah = 0xf6e6,
+    HardDrive = 0xf0a0,
+    Hashtag = 0x0023,
+    HatCowboy = 0xf8c0,
+    HatCowboySide = 0xf8c1,
+    HatWizard = 0xf6e8,
+    HeadSideCough = 0xe061,
+    HeadSideCoughSlash = 0xe062,
+    HeadSideMask = 0xe063,
+    HeadSideVirus = 0xe064,
+    Heading = 0xf1dc,
+    Headphones = 0xf025,
+    Headset = 0xf590,
+    Heart = 0xf004,
+    HeartCircleBolt = 0xe4fc,
+    HeartCircleCheck = 0xe4fd,
+    HeartCircleExclamation = 0xe4fe,
+    HeartCircleMinus = 0xe4ff,
+    HeartCirclePlus = 0xe500,
+    HeartCircleXmark = 0xe501,
+    HeartCrack = 0xf7a9,
+    HeartPulse = 0xf21e,
+    Helicopter = 0xf533,
+    HelicopterSymbol = 0xe502,
+    HelmetSafety = 0xf807,
+    HelmetUn = 0xe503,
+    Hexagon = 0xf312,
+    HexagonNodes = 0xe699,
+    HexagonNodesBolt = 0xe69a,
+    Highlighter = 0xf591,
+    HillAvalanche = 0xe507,
+    HillRockslide = 0xe508,
+    Hippo = 0xf6ed,
+    HockeyPuck = 0xf453,
+    HollyBerry = 0xf7aa,
+    Horse = 0xf6f0,
+    HorseHead = 0xf7ab,
+    Hospital = 0xf0f8,
+    HospitalUser = 0xf80d,
+    HotTubPerson = 0xf593,
+    Hotdog = 0xf80f,
+    Hotel = 0xf594,
+    Hourglass = 0xf254,
+    HourglassEnd = 0xf253,
+    HourglassHalf = 0xf252,
+    HourglassStart = 0xf251,
+    House = 0xf015,
+    HouseChimney = 0xe3af,
+    HouseChimneyCrack = 0xf6f1,
+    HouseChimneyMedical = 0xf7f2,
+    HouseChimneyUser = 0xe065,
+    HouseChimneyWindow = 0xe00d,
+    HouseCircleCheck = 0xe509,
+    HouseCircleExclamation = 0xe50a,
+    HouseCircleXmark = 0xe50b,
+    HouseCrack = 0xe3b1,
+    HouseFire = 0xe50c,
+    HouseFlag = 0xe50d,
+    HouseFloodWater = 0xe50e,
+    HouseFloodWaterCircleArrowRight = 0xe50f,
+    HouseLaptop = 0xe066,
+    HouseLock = 0xe510,
+    HouseMedical = 0xe3b2,
+    HouseMedicalCircleCheck = 0xe511,
+    HouseMedicalCircleExclamation = 0xe512,
+    HouseMedicalCircleXmark = 0xe513,
+    HouseMedicalFlag = 0xe514,
+    HouseSignal = 0xe012,
+    HouseTsunami = 0xe515,
+    HouseUser = 0xe1b0,
+    HryvniaSign = 0xf6f2,
+    Hurricane = 0xf751,
+    I = 0x0049,
+    ICursor = 0xf246,
+    IceCream = 0xf810,
+    Icicles = 0xf7ad,
+    Icons = 0xf86d,
+    IdBadge = 0xf2c1,
+    IdCard = 0xf2c2,
+    IdCardClip = 0xf47f,
+    Igloo = 0xf7ae,
+    Image = 0xf03e,
+    ImagePortrait = 0xf3e0,
+    Images = 0xf302,
+    Inbox = 0xf01c,
+    Indent = 0xf03c,
+    IndianRupeeSign = 0xe1bc,
+    Industry = 0xf275,
+    Infinity = 0xf534,
+    Info = 0xf129,
+    Italic = 0xf033,
+    J = 0x004a,
+    Jar = 0xe516,
+    JarWheat = 0xe517,
+    Jedi = 0xf669,
+    JetFighter = 0xf0fb,
+    JetFighterUp = 0xe518,
+    Joint = 0xf595,
+    JugDetergent = 0xe519,
+    K = 0x004b,
+    Kaaba = 0xf66b,
+    Key = 0xf084,
+    Keyboard = 0xf11c,
+    Khanda = 0xf66d,
+    KipSign = 0xe1c4,
+    KitMedical = 0xf479,
+    KitchenSet = 0xe51a,
+    KiwiBird = 0xf535,
+    L = 0x004c,
+    LandMineOn = 0xe51b,
+    Landmark = 0xf66f,
+    LandmarkDome = 0xf752,
+    LandmarkFlag = 0xe51c,
+    Language = 0xf1ab,
+    Laptop = 0xf109,
+    LaptopCode = 0xf5fc,
+    LaptopFile = 0xe51d,
+    LaptopMedical = 0xf812,
+    LariSign = 0xe1c8,
+    LayerGroup = 0xf5fd,
+    Leaf = 0xf06c,
+    LeftLong = 0xf30a,
+    LeftRight = 0xf337,
+    Lemon = 0xf094,
+    Leo = 0xe84a,
+    LessThan = 0x003c,
+    LessThanEqual = 0xf537,
+    Libra = 0xe84b,
+    LifeRing = 0xf1cd,
+    Lightbulb = 0xf0eb,
+    LinesLeaning = 0xe51e,
+    Link = 0xf0c1,
+    LinkSlash = 0xf127,
+    LiraSign = 0xf195,
+    List = 0xf03a,
+    ListCheck = 0xf0ae,
+    ListOl = 0xf0cb,
+    ListUl = 0xf0ca,
+    LitecoinSign = 0xe1d3,
+    LocationArrow = 0xf124,
+    LocationCrosshairs = 0xf601,
+    LocationDot = 0xf3c5,
+    LocationPin = 0xf041,
+    LocationPinLock = 0xe51f,
+    Lock = 0xf023,
+    LockOpen = 0xf3c1,
+    Locust = 0xe520,
+    Lungs = 0xf604,
+    LungsVirus = 0xe067,
+    M = 0x004d,
+    Magnet = 0xf076,
+    MagnifyingGlass = 0xf002,
+    MagnifyingGlassArrowRight = 0xe521,
+    MagnifyingGlassChart = 0xe522,
+    MagnifyingGlassDollar = 0xf688,
+    MagnifyingGlassLocation = 0xf689,
+    MagnifyingGlassMinus = 0xf010,
+    MagnifyingGlassPlus = 0xf00e,
+    ManatSign = 0xe1d5,
+    Map = 0xf279,
+    MapLocation = 0xf59f,
+    MapLocationDot = 0xf5a0,
+    MapPin = 0xf276,
+    Marker = 0xf5a1,
+    Mars = 0xf222,
+    MarsAndVenus = 0xf224,
+    MarsAndVenusBurst = 0xe523,
+    MarsDouble = 0xf227,
+    MarsStroke = 0xf229,
+    MarsStrokeRight = 0xf22b,
+    MarsStrokeUp = 0xf22a,
+    MartiniGlass = 0xf57b,
+    MartiniGlassCitrus = 0xf561,
+    MartiniGlassEmpty = 0xf000,
+    Mask = 0xf6fa,
+    MaskFace = 0xe1d7,
+    MaskVentilator = 0xe524,
+    MasksTheater = 0xf630,
+    MattressPillow = 0xe525,
+    Maximize = 0xf31e,
+    Medal = 0xf5a2,
+    Memory = 0xf538,
+    Menorah = 0xf676,
+    Mercury = 0xf223,
+    Message = 0xf27a,
+    Meteor = 0xf753,
+    Microchip = 0xf2db,
+    Microphone = 0xf130,
+    MicrophoneLines = 0xf3c9,
+    MicrophoneLinesSlash = 0xf539,
+    MicrophoneSlash = 0xf131,
+    Microscope = 0xf610,
+    MillSign = 0xe1ed,
+    Minimize = 0xf78c,
+    Minus = 0xf068,
+    Mitten = 0xf7b5,
+    Mobile = 0xf3ce,
+    MobileButton = 0xf10b,
+    MobileRetro = 0xe527,
+    MobileScreen = 0xf3cf,
+    MobileScreenButton = 0xf3cd,
+    MobileVibrate = 0xe816,
+    MoneyBill = 0xf0d6,
+    MoneyBill1 = 0xf3d1,
+    MoneyBill1Wave = 0xf53b,
+    MoneyBillTransfer = 0xe528,
+    MoneyBillTrendUp = 0xe529,
+    MoneyBillWave = 0xf53a,
+    MoneyBillWheat = 0xe52a,
+    MoneyBills = 0xe1f3,
+    MoneyCheck = 0xf53c,
+    MoneyCheckDollar = 0xf53d,
+    Monument = 0xf5a6,
+    Moon = 0xf186,
+    MortarPestle = 0xf5a7,
+    Mosque = 0xf678,
+    Mosquito = 0xe52b,
+    MosquitoNet = 0xe52c,
+    Motorcycle = 0xf21c,
+    Mound = 0xe52d,
+    Mountain = 0xf6fc,
+    MountainCity = 0xe52e,
+    MountainSun = 0xe52f,
+    MugHot = 0xf7b6,
+    MugSaucer = 0xf0f4,
+    Music = 0xf001,
+    N = 0x004e,
+    NairaSign = 0xe1f6,
+    NetworkWired = 0xf6ff,
+    Neuter = 0xf22c,
+    Newspaper = 0xf1ea,
+    NonBinary = 0xe807,
+    NotEqual = 0xf53e,
+    Notdef = 0xe1fe,
+    NoteSticky = 0xf249,
+    NotesMedical = 0xf481,
+    O = 0x004f,
+    ObjectGroup = 0xf247,
+    ObjectUngroup = 0xf248,
+    Octagon = 0xf306,
+    OilCan = 0xf613,
+    OilWell = 0xe532,
+    Om = 0xf679,
+    Otter = 0xf700,
+    Outdent = 0xf03b,
+    P = 0x0050,
+    Pager = 0xf815,
+    PaintRoller = 0xf5aa,
+    Paintbrush = 0xf1fc,
+    Palette = 0xf53f,
+    Pallet = 0xf482,
+    Panorama = 0xe209,
+    PaperPlane = 0xf1d8,
+    Paperclip = 0xf0c6,
+    ParachuteBox = 0xf4cd,
+    Paragraph = 0xf1dd,
+    Passport = 0xf5ab,
+    Paste = 0xf0ea,
+    Pause = 0xf04c,
+    Paw = 0xf1b0,
+    Peace = 0xf67c,
+    Pen = 0xf304,
+    PenClip = 0xf305,
+    PenFancy = 0xf5ac,
+    PenNib = 0xf5ad,
+    PenRuler = 0xf5ae,
+    PenToSquare = 0xf044,
+    Pencil = 0xf303,
+    Pentagon = 0xe790,
+    PeopleArrows = 0xe068,
+    PeopleCarryBox = 0xf4ce,
+    PeopleGroup = 0xe533,
+    PeopleLine = 0xe534,
+    PeoplePulling = 0xe535,
+    PeopleRobbery = 0xe536,
+    PeopleRoof = 0xe537,
+    PepperHot = 0xf816,
+    Percent = 0x0025,
+    Person = 0xf183,
+    PersonArrowDownToLine = 0xe538,
+    PersonArrowUpFromLine = 0xe539,
+    PersonBiking = 0xf84a,
+    PersonBooth = 0xf756,
+    PersonBreastfeeding = 0xe53a,
+    PersonBurst = 0xe53b,
+    PersonCane = 0xe53c,
+    PersonChalkboard = 0xe53d,
+    PersonCircleCheck = 0xe53e,
+    PersonCircleExclamation = 0xe53f,
+    PersonCircleMinus = 0xe540,
+    PersonCirclePlus = 0xe541,
+    PersonCircleQuestion = 0xe542,
+    PersonCircleXmark = 0xe543,
+    PersonDigging = 0xf85e,
+    PersonDotsFromLine = 0xf470,
+    PersonDress = 0xf182,
+    PersonDressBurst = 0xe544,
+    PersonDrowning = 0xe545,
+    PersonFalling = 0xe546,
+    PersonFallingBurst = 0xe547,
+    PersonHalfDress = 0xe548,
+    PersonHarassing = 0xe549,
+    PersonHiking = 0xf6ec,
+    PersonMilitaryPointing = 0xe54a,
+    PersonMilitaryRifle = 0xe54b,
+    PersonMilitaryToPerson = 0xe54c,
+    PersonPraying = 0xf683,
+    PersonPregnant = 0xe31e,
+    PersonRays = 0xe54d,
+    PersonRifle = 0xe54e,
+    PersonRunning = 0xf70c,
+    PersonShelter = 0xe54f,
+    PersonSkating = 0xf7c5,
+    PersonSkiing = 0xf7c9,
+    PersonSkiingNordic = 0xf7ca,
+    PersonSnowboarding = 0xf7ce,
+    PersonSwimming = 0xf5c4,
+    PersonThroughWindow = 0xe5a9,
+    PersonWalking = 0xf554,
+    PersonWalkingArrowLoopLeft = 0xe551,
+    PersonWalkingArrowRight = 0xe552,
+    PersonWalkingDashedLineArrowRight = 0xe553,
+    PersonWalkingLuggage = 0xe554,
+    PersonWalkingWithCane = 0xf29d,
+    PesetaSign = 0xe221,
+    PesoSign = 0xe222,
+    Phone = 0xf095,
+    PhoneFlip = 0xf879,
+    PhoneSlash = 0xf3dd,
+    PhoneVolume = 0xf2a0,
+    PhotoFilm = 0xf87c,
+    PictureInPicture = 0xe80b,
+    PiggyBank = 0xf4d3,
+    Pills = 0xf484,
+    Pisces = 0xe84c,
+    PizzaSlice = 0xf818,
+    PlaceOfWorship = 0xf67f,
+    Plane = 0xf072,
+    PlaneArrival = 0xf5af,
+    PlaneCircleCheck = 0xe555,
+    PlaneCircleExclamation = 0xe556,
+    PlaneCircleXmark = 0xe557,
+    PlaneDeparture = 0xf5b0,
+    PlaneLock = 0xe558,
+    PlaneSlash = 0xe069,
+    PlaneUp = 0xe22d,
+    PlantWilt = 0xe5aa,
+    PlateWheat = 0xe55a,
+    Play = 0xf04b,
+    Plug = 0xf1e6,
+    PlugCircleBolt = 0xe55b,
+    PlugCircleCheck = 0xe55c,
+    PlugCircleExclamation = 0xe55d,
+    PlugCircleMinus = 0xe55e,
+    PlugCirclePlus = 0xe55f,
+    PlugCircleXmark = 0xe560,
+    Plus = 0x002b,
+    PlusMinus = 0xe43c,
+    Podcast = 0xf2ce,
+    Poo = 0xf2fe,
+    PooStorm = 0xf75a,
+    Poop = 0xf619,
+    PowerOff = 0xf011,
+    Prescription = 0xf5b1,
+    PrescriptionBottle = 0xf485,
+    PrescriptionBottleMedical = 0xf486,
+    Print = 0xf02f,
+    PumpMedical = 0xe06a,
+    PumpSoap = 0xe06b,
+    PuzzlePiece = 0xf12e,
+    Q = 0x0051,
+    Qrcode = 0xf029,
+    Question = 0x003f,
+    QuoteLeft = 0xf10d,
+    QuoteRight = 0xf10e,
+    R = 0x0052,
+    Radiation = 0xf7b9,
+    Radio = 0xf8d7,
+    Rainbow = 0xf75b,
+    RankingStar = 0xe561,
+    Receipt = 0xf543,
+    RecordVinyl = 0xf8d9,
+    RectangleAd = 0xf641,
+    RectangleList = 0xf022,
+    RectangleXmark = 0xf410,
+    Recycle = 0xf1b8,
+    Registered = 0xf25d,
+    Repeat = 0xf363,
+    Reply = 0xf3e5,
+    ReplyAll = 0xf122,
+    Republican = 0xf75e,
+    Restroom = 0xf7bd,
+    Retweet = 0xf079,
+    Ribbon = 0xf4d6,
+    RightFromBracket = 0xf2f5,
+    RightLeft = 0xf362,
+    RightLong = 0xf30b,
+    RightToBracket = 0xf2f6,
+    Ring = 0xf70b,
+    Road = 0xf018,
+    RoadBarrier = 0xe562,
+    RoadBridge = 0xe563,
+    RoadCircleCheck = 0xe564,
+    RoadCircleExclamation = 0xe565,
+    RoadCircleXmark = 0xe566,
+    RoadLock = 0xe567,
+    RoadSpikes = 0xe568,
+    Robot = 0xf544,
+    Rocket = 0xf135,
+    Rotate = 0xf2f1,
+    RotateLeft = 0xf2ea,
+    RotateRight = 0xf2f9,
+    Route = 0xf4d7,
+    Rss = 0xf09e,
+    RubleSign = 0xf158,
+    Rug = 0xe569,
+    Ruler = 0xf545,
+    RulerCombined = 0xf546,
+    RulerHorizontal = 0xf547,
+    RulerVertical = 0xf548,
+    RupeeSign = 0xf156,
+    RupiahSign = 0xe23d,
+    S = 0x0053,
+    SackDollar = 0xf81d,
+    SackXmark = 0xe56a,
+    Sagittarius = 0xe84d,
+    Sailboat = 0xe445,
+    Satellite = 0xf7bf,
+    SatelliteDish = 0xf7c0,
+    ScaleBalanced = 0xf24e,
+    ScaleUnbalanced = 0xf515,
+    ScaleUnbalancedFlip = 0xf516,
+    School = 0xf549,
+    SchoolCircleCheck = 0xe56b,
+    SchoolCircleExclamation = 0xe56c,
+    SchoolCircleXmark = 0xe56d,
+    SchoolFlag = 0xe56e,
+    SchoolLock = 0xe56f,
+    Scissors = 0xf0c4,
+    Scorpio = 0xe84e,
+    Screwdriver = 0xf54a,
+    ScrewdriverWrench = 0xf7d9,
+    Scroll = 0xf70e,
+    ScrollTorah = 0xf6a0,
+    SdCard = 0xf7c2,
+    Section = 0xe447,
+    Seedling = 0xf4d8,
+    Septagon = 0xe820,
+    Server = 0xf233,
+    Shapes = 0xf61f,
+    Share = 0xf064,
+    ShareFromSquare = 0xf14d,
+    ShareNodes = 0xf1e0,
+    SheetPlastic = 0xe571,
+    ShekelSign = 0xf20b,
+    Shield = 0xf132,
+    ShieldCat = 0xe572,
+    ShieldDog = 0xe573,
+    ShieldHalved = 0xf3ed,
+    ShieldHeart = 0xe574,
+    ShieldVirus = 0xe06c,
+    Ship = 0xf21a,
+    Shirt = 0xf553,
+    ShoePrints = 0xf54b,
+    Shop = 0xf54f,
+    ShopLock = 0xe4a5,
+    ShopSlash = 0xe070,
+    Shower = 0xf2cc,
+    Shrimp = 0xe448,
+    Shuffle = 0xf074,
+    ShuttleSpace = 0xf197,
+    SignHanging = 0xf4d9,
+    Signal = 0xf012,
+    Signature = 0xf5b7,
+    SignsPost = 0xf277,
+    SimCard = 0xf7c4,
+    SingleQuoteLeft = 0xe81b,
+    SingleQuoteRight = 0xe81c,
+    Sink = 0xe06d,
+    Sitemap = 0xf0e8,
+    Skull = 0xf54c,
+    SkullCrossbones = 0xf714,
+    Slash = 0xf715,
+    Sleigh = 0xf7cc,
+    Sliders = 0xf1de,
+    Smog = 0xf75f,
+    Smoking = 0xf48d,
+    Snowflake = 0xf2dc,
+    Snowman = 0xf7d0,
+    Snowplow = 0xf7d2,
+    Soap = 0xe06e,
+    Socks = 0xf696,
+    SolarPanel = 0xf5ba,
+    Sort = 0xf0dc,
+    SortDown = 0xf0dd,
+    SortUp = 0xf0de,
+    Spa = 0xf5bb,
+    SpaghettiMonsterFlying = 0xf67b,
+    SpellCheck = 0xf891,
+    Spider = 0xf717,
+    Spinner = 0xf110,
+    Spiral = 0xe80a,
+    Splotch = 0xf5bc,
+    Spoon = 0xf2e5,
+    SprayCan = 0xf5bd,
+    SprayCanSparkles = 0xf5d0,
+    Square = 0xf0c8,
+    SquareArrowUpRight = 0xf14c,
+    SquareBinary = 0xe69b,
+    SquareCaretDown = 0xf150,
+    SquareCaretLeft = 0xf191,
+    SquareCaretRight = 0xf152,
+    SquareCaretUp = 0xf151,
+    SquareCheck = 0xf14a,
+    SquareEnvelope = 0xf199,
+    SquareFull = 0xf45c,
+    SquareH = 0xf0fd,
+    SquareMinus = 0xf146,
+    SquareNfi = 0xe576,
+    SquareParking = 0xf540,
+    SquarePen = 0xf14b,
+    SquarePersonConfined = 0xe577,
+    SquarePhone = 0xf098,
+    SquarePhoneFlip = 0xf87b,
+    SquarePlus = 0xf0fe,
+    SquarePollHorizontal = 0xf682,
+    SquarePollVertical = 0xf681,
+    SquareRootVariable = 0xf698,
+    SquareRss = 0xf143,
+    SquareShareNodes = 0xf1e1,
+    SquareUpRight = 0xf360,
+    SquareVirus = 0xe578,
+    SquareXmark = 0xf2d3,
+    StaffSnake = 0xe579,
+    Stairs = 0xe289,
+    Stamp = 0xf5bf,
+    Stapler = 0xe5af,
+    Star = 0xf005,
+    StarAndCrescent = 0xf699,
+    StarHalf = 0xf089,
+    StarHalfStroke = 0xf5c0,
+    StarOfDavid = 0xf69a,
+    StarOfLife = 0xf621,
+    SterlingSign = 0xf154,
+    Stethoscope = 0xf0f1,
+    Stop = 0xf04d,
+    Stopwatch = 0xf2f2,
+    Stopwatch20 = 0xe06f,
+    Store = 0xf54e,
+    StoreSlash = 0xe071,
+    StreetView = 0xf21d,
+    Strikethrough = 0xf0cc,
+    Stroopwafel = 0xf551,
+    Subscript = 0xf12c,
+    Suitcase = 0xf0f2,
+    SuitcaseMedical = 0xf0fa,
+    SuitcaseRolling = 0xf5c1,
+    Sun = 0xf185,
+    SunPlantWilt = 0xe57a,
+    Superscript = 0xf12b,
+    Swatchbook = 0xf5c3,
+    Synagogue = 0xf69b,
+    Syringe = 0xf48e,
+    T = 0x0054,
+    Table = 0xf0ce,
+    TableCells = 0xf00a,
+    TableCellsColumnLock = 0xe678,
+    TableCellsLarge = 0xf009,
+    TableCellsRowLock = 0xe67a,
+    TableCellsRowUnlock = 0xe691,
+    TableColumns = 0xf0db,
+    TableList = 0xf00b,
+    TableTennisPaddleBall = 0xf45d,
+    Tablet = 0xf3fb,
+    TabletButton = 0xf10a,
+    TabletScreenButton = 0xf3fa,
+    Tablets = 0xf490,
+    TachographDigital = 0xf566,
+    Tag = 0xf02b,
+    Tags = 0xf02c,
+    Tape = 0xf4db,
+    Tarp = 0xe57b,
+    TarpDroplet = 0xe57c,
+    Taurus = 0xe84f,
+    Taxi = 0xf1ba,
+    Teeth = 0xf62e,
+    TeethOpen = 0xf62f,
+    TemperatureArrowDown = 0xe03f,
+    TemperatureArrowUp = 0xe040,
+    TemperatureEmpty = 0xf2cb,
+    TemperatureFull = 0xf2c7,
+    TemperatureHalf = 0xf2c9,
+    TemperatureHigh = 0xf769,
+    TemperatureLow = 0xf76b,
+    TemperatureQuarter = 0xf2ca,
+    TemperatureThreeQuarters = 0xf2c8,
+    TengeSign = 0xf7d7,
+    Tent = 0xe57d,
+    TentArrowDownToLine = 0xe57e,
+    TentArrowLeftRight = 0xe57f,
+    TentArrowTurnLeft = 0xe580,
+    TentArrowsDown = 0xe581,
+    Tents = 0xe582,
+    Terminal = 0xf120,
+    TextHeight = 0xf034,
+    TextSlash = 0xf87d,
+    TextWidth = 0xf035,
+    Thermometer = 0xf491,
+    ThumbsDown = 0xf165,
+    ThumbsUp = 0xf164,
+    Thumbtack = 0xf08d,
+    ThumbtackSlash = 0xe68f,
+    Ticket = 0xf145,
+    TicketSimple = 0xf3ff,
+    Timeline = 0xe29c,
+    ToggleOff = 0xf204,
+    ToggleOn = 0xf205,
+    Toilet = 0xf7d8,
+    ToiletPaper = 0xf71e,
+    ToiletPaperSlash = 0xe072,
+    ToiletPortable = 0xe583,
+    ToiletsPortable = 0xe584,
+    Toolbox = 0xf552,
+    Tooth = 0xf5c9,
+    ToriiGate = 0xf6a1,
+    Tornado = 0xf76f,
+    TowerBroadcast = 0xf519,
+    TowerCell = 0xe585,
+    TowerObservation = 0xe586,
+    Tractor = 0xf722,
+    Trademark = 0xf25c,
+    TrafficLight = 0xf637,
+    Trailer = 0xe041,
+    Train = 0xf238,
+    TrainSubway = 0xf239,
+    TrainTram = 0xe5b4,
+    Transgender = 0xf225,
+    Trash = 0xf1f8,
+    TrashArrowUp = 0xf829,
+    TrashCan = 0xf2ed,
+    TrashCanArrowUp = 0xf82a,
+    Tree = 0xf1bb,
+    TreeCity = 0xe587,
+    TriangleExclamation = 0xf071,
+    Trophy = 0xf091,
+    Trowel = 0xe589,
+    TrowelBricks = 0xe58a,
+    Truck = 0xf0d1,
+    TruckArrowRight = 0xe58b,
+    TruckDroplet = 0xe58c,
+    TruckFast = 0xf48b,
+    TruckField = 0xe58d,
+    TruckFieldUn = 0xe58e,
+    TruckFront = 0xe2b7,
+    TruckMedical = 0xf0f9,
+    TruckMonster = 0xf63b,
+    TruckMoving = 0xf4df,
+    TruckPickup = 0xf63c,
+    TruckPlane = 0xe58f,
+    TruckRampBox = 0xf4de,
+    Tty = 0xf1e4,
+    TurkishLiraSign = 0xe2bb,
+    TurnDown = 0xf3be,
+    TurnUp = 0xf3bf,
+    Tv = 0xf26c,
+    U = 0x0055,
+    Umbrella = 0xf0e9,
+    UmbrellaBeach = 0xf5ca,
+    Underline = 0xf0cd,
+    UniversalAccess = 0xf29a,
+    Unlock = 0xf09c,
+    UnlockKeyhole = 0xf13e,
+    UpDown = 0xf338,
+    UpDownLeftRight = 0xf0b2,
+    UpLong = 0xf30c,
+    UpRightAndDownLeftFromCenter = 0xf424,
+    UpRightFromSquare = 0xf35d,
+    Upload = 0xf093,
+    User = 0xf007,
+    UserAstronaut = 0xf4fb,
+    UserCheck = 0xf4fc,
+    UserClock = 0xf4fd,
+    UserDoctor = 0xf0f0,
+    UserGear = 0xf4fe,
+    UserGraduate = 0xf501,
+    UserGroup = 0xf500,
+    UserInjured = 0xf728,
+    UserLock = 0xf502,
+    UserMinus = 0xf503,
+    UserNinja = 0xf504,
+    UserNurse = 0xf82f,
+    UserPen = 0xf4ff,
+    UserPlus = 0xf234,
+    UserSecret = 0xf21b,
+    UserShield = 0xf505,
+    UserSlash = 0xf506,
+    UserTag = 0xf507,
+    UserTie = 0xf508,
+    UserXmark = 0xf235,
+    Users = 0xf0c0,
+    UsersBetweenLines = 0xe591,
+    UsersGear = 0xf509,
+    UsersLine = 0xe592,
+    UsersRays = 0xe593,
+    UsersRectangle = 0xe594,
+    UsersSlash = 0xe073,
+    UsersViewfinder = 0xe595,
+    Utensils = 0xf2e7,
+    V = 0x0056,
+    VanShuttle = 0xf5b6,
+    Vault = 0xe2c5,
+    Venus = 0xf221,
+    VenusDouble = 0xf226,
+    VenusMars = 0xf228,
+    Vest = 0xe085,
+    VestPatches = 0xe086,
+    Vial = 0xf492,
+    VialCircleCheck = 0xe596,
+    VialVirus = 0xe597,
+    Vials = 0xf493,
+    Video = 0xf03d,
+    VideoSlash = 0xf4e2,
+    Vihara = 0xf6a7,
+    Virgo = 0xe850,
+    Virus = 0xe074,
+    VirusCovid = 0xe4a8,
+    VirusCovidSlash = 0xe4a9,
+    VirusSlash = 0xe075,
+    Viruses = 0xe076,
+    Voicemail = 0xf897,
+    Volcano = 0xf770,
+    Volleyball = 0xf45f,
+    Volume = 0xf6a8,
+    VolumeHigh = 0xf028,
+    VolumeLow = 0xf027,
+    VolumeOff = 0xf026,
+    VolumeXmark = 0xf6a9,
+    VrCardboard = 0xf729,
+    W = 0x0057,
+    WalkieTalkie = 0xf8ef,
+    Wallet = 0xf555,
+    WandMagic = 0xf0d0,
+    WandMagicSparkles = 0xe2ca,
+    WandSparkles = 0xf72b,
+    Warehouse = 0xf494,
+    Water = 0xf773,
+    WaterLadder = 0xf5c5,
+    WaveSquare = 0xf83e,
+    WebAwesome = 0xe682,
+    WeightHanging = 0xf5cd,
+    WeightScale = 0xf496,
+    WheatAwn = 0xe2cd,
+    WheatAwnCircleExclamation = 0xe598,
+    Wheelchair = 0xf193,
+    WheelchairMove = 0xe2ce,
+    WhiskeyGlass = 0xf7a0,
+    Wifi = 0xf1eb,
+    Wind = 0xf72e,
+    WindowMaximize = 0xf2d0,
+    WindowMinimize = 0xf2d1,
+    WindowRestore = 0xf2d2,
+    WineBottle = 0xf72f,
+    WineGlass = 0xf4e3,
+    WineGlassEmpty = 0xf5ce,
+    WonSign = 0xf159,
+    Worm = 0xe599,
+    Wrench = 0xf0ad,
+    X = 0x0058,
+    XRay = 0xf497,
+    Xmark = 0xf00d,
+    XmarksLines = 0xe59a,
+    Y = 0x0059,
+    YenSign = 0xf157,
+    YinYang = 0xf6ad,
+    Z = 0x005a,
 }

@@ -6,7 +6,7 @@ public static class BuilderExtensions
     {
         return builder.ConfigureFonts(fonts =>
         {
-            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "fa-regular-400.otf", nameof(FontAwesomeRegularIcons));
+            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "fa-regular-400.otf", FontAwesomeRegularFont.FontAlias);
         });
     }
 }

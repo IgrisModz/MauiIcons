@@ -1,4477 +1,2243 @@
-using System.ComponentModel;
+using MauiIcons.Core.Attributes;
 
 namespace MauiIcons.Material.Outlined;
 
+[IconFont(MaterialOutlinedFont.FontAlias)]
 public enum MaterialOutlinedIcons
 {
-    [Description("\uE951")]
-    TenK,
-    [Description("\uE952")]
-    TenMp,
-    [Description("\uE953")]
-    ElevenMp,
-    [Description("\uEB8D")]
-    OneHundredTwentyThree,
-    [Description("\uE954")]
-    TwelveMp,
-    [Description("\uE955")]
-    ThirteenMp,
-    [Description("\uE956")]
-    FourteenMp,
-    [Description("\uE957")]
-    FifteenMp,
-    [Description("\uE958")]
-    SixteenMp,
-    [Description("\uE959")]
-    SeventeenMp,
-    [Description("\uF8FD")]
-    EighteenUpRating,
-    [Description("\uE95A")]
-    EighteenMp,
-    [Description("\uE95B")]
-    NineteenMp,
-    [Description("\uE95C")]
-    OneK,
-    [Description("\uE95D")]
-    OneKPlus,
-    [Description("\uEFCD")]
-    OneXMobiledata,
-    [Description("\uE95E")]
-    TwentyMp,
-    [Description("\uE95F")]
-    TwentyOneMp,
-    [Description("\uE960")]
-    TwentyTwoMp,
-    [Description("\uE961")]
-    TwentyThreeMp,
-    [Description("\uE962")]
-    TwentyFourMp,
-    [Description("\uE963")]
-    TwoK,
-    [Description("\uE964")]
-    TwoKPlus,
-    [Description("\uE965")]
-    TwoMp,
-    [Description("\uEFCE")]
-    ThirtyFps,
-    [Description("\uEFCF")]
-    ThirtyFpsSelect,
-    [Description("\uE577")]
-    ThreeHundredSixty,
-    [Description("\uE84D")]
-    ThreeDRotation,
-    [Description("\uEFD0")]
-    ThreeGMobiledata,
-    [Description("\uE966")]
-    ThreeK,
-    [Description("\uE967")]
-    ThreeKPlus,
-    [Description("\uE968")]
-    ThreeMp,
-    [Description("\uEFD1")]
-    ThreeP,
-    [Description("\uEFD2")]
-    FourGMobiledata,
-    [Description("\uEFD3")]
-    FourGPlusMobiledata,
-    [Description("\uE072")]
-    FourK,
-    [Description("\uE969")]
-    FourKPlus,
-    [Description("\uE96A")]
-    FourMp,
-    [Description("\uEF38")]
-    FiveG,
-    [Description("\uE96B")]
-    FiveK,
-    [Description("\uE96C")]
-    FiveKPlus,
-    [Description("\uE96D")]
-    FiveMp,
-    [Description("\uEFD4")]
-    SixtyFps,
-    [Description("\uEFD5")]
-    SixtyFpsSelect,
-    [Description("\uF21E")]
-    SixFtApart,
-    [Description("\uE96E")]
-    SixK,
-    [Description("\uE96F")]
-    SixKPlus,
-    [Description("\uE970")]
-    SixMp,
-    [Description("\uE971")]
-    SevenK,
-    [Description("\uE972")]
-    SevenKPlus,
-    [Description("\uE973")]
-    SevenMp,
-    [Description("\uE974")]
-    EightK,
-    [Description("\uE975")]
-    EightKPlus,
-    [Description("\uE976")]
-    EightMp,
-    [Description("\uE977")]
-    NineK,
-    [Description("\uE978")]
-    NineKPlus,
-    [Description("\uE979")]
-    NineMp,
-    [Description("\uEB94")]
-    Abc,
-    [Description("\uEB3B")]
-    AcUnit,
-    [Description("\uE190")]
-    AccessAlarm,
-    [Description("\uE191")]
-    AccessAlarms,
-    [Description("\uE192")]
-    AccessTime,
-    [Description("\uEFD6")]
-    AccessTimeFilled,
-    [Description("\uE84E")]
-    Accessibility,
-    [Description("\uE92C")]
-    AccessibilityNew,
-    [Description("\uE914")]
-    Accessible,
-    [Description("\uE934")]
-    AccessibleForward,
-    [Description("\uE84F")]
-    AccountBalance,
-    [Description("\uE850")]
-    AccountBalanceWallet,
-    [Description("\uE851")]
-    AccountBox,
-    [Description("\uE853")]
-    AccountCircle,
-    [Description("\uE97A")]
-    AccountTree,
-    [Description("\uEF39")]
-    AdUnits,
-    [Description("\uE60E")]
-    Adb,
-    [Description("\uE145")]
-    Add,
-    [Description("\uE439")]
-    AddAPhoto,
-    [Description("\uE193")]
-    AddAlarm,
-    [Description("\uE003")]
-    AddAlert,
-    [Description("\uE146")]
-    AddBox,
-    [Description("\uE729")]
-    AddBusiness,
-    [Description("\uE0E8")]
-    AddCall,
-    [Description("\uEB86")]
-    AddCard,
-    [Description("\uE97B")]
-    AddChart,
-    [Description("\uE147")]
-    AddCircle,
-    [Description("\uE148")]
-    AddCircleOutline,
-    [Description("\uE266")]
-    AddComment,
-    [Description("\uF8EB")]
-    AddHome,
-    [Description("\uF8ED")]
-    AddHomeWork,
-    [Description("\uE97C")]
-    AddIcCall,
-    [Description("\uE178")]
-    AddLink,
-    [Description("\uE567")]
-    AddLocation,
-    [Description("\uEF3A")]
-    AddLocationAlt,
-    [Description("\uE97D")]
-    AddModerator,
-    [Description("\uE43E")]
-    AddPhotoAlternate,
-    [Description("\uE1D3")]
-    AddReaction,
-    [Description("\uEF3B")]
-    AddRoad,
-    [Description("\uE854")]
-    AddShoppingCart,
-    [Description("\uF23A")]
-    AddTask,
-    [Description("\uE65C")]
-    AddToDrive,
-    [Description("\uE1FE")]
-    AddToHomeScreen,
-    [Description("\uE39D")]
-    AddToPhotos,
-    [Description("\uE05C")]
-    AddToQueue,
-    [Description("\uEF3C")]
-    Addchart,
-    [Description("\uEADA")]
-    AdfScanner,
-    [Description("\uE39E")]
-    Adjust,
-    [Description("\uEF3D")]
-    AdminPanelSettings,
-    [Description("\uEA96")]
-    Adobe,
-    [Description("\uE762")]
-    AdsClick,
-    [Description("\uEA79")]
-    Agriculture,
-    [Description("\uEFD8")]
-    Air,
-    [Description("\uE630")]
-    AirlineSeatFlat,
-    [Description("\uE631")]
-    AirlineSeatFlatAngled,
-    [Description("\uE632")]
-    AirlineSeatIndividualSuite,
-    [Description("\uE633")]
-    AirlineSeatLegroomExtra,
-    [Description("\uE634")]
-    AirlineSeatLegroomNormal,
-    [Description("\uE635")]
-    AirlineSeatLegroomReduced,
-    [Description("\uE636")]
-    AirlineSeatReclineExtra,
-    [Description("\uE637")]
-    AirlineSeatReclineNormal,
-    [Description("\uE7D0")]
-    AirlineStops,
-    [Description("\uE7CA")]
-    Airlines,
-    [Description("\uEFD9")]
-    AirplaneTicket,
-    [Description("\uE195")]
-    AirplanemodeActive,
-    [Description("\uE194")]
-    AirplanemodeInactive,
-    [Description("\uE194")]
-    AirplanemodeOff,
-    [Description("\uE195")]
-    AirplanemodeOn,
-    [Description("\uE055")]
-    Airplay,
-    [Description("\uEB3C")]
-    AirportShuttle,
-    [Description("\uE855")]
-    Alarm,
-    [Description("\uE856")]
-    AlarmAdd,
-    [Description("\uE857")]
-    AlarmOff,
-    [Description("\uE858")]
-    AlarmOn,
-    [Description("\uE019")]
-    Album,
-    [Description("\uE00F")]
-    AlignHorizontalCenter,
-    [Description("\uE00D")]
-    AlignHorizontalLeft,
-    [Description("\uE010")]
-    AlignHorizontalRight,
-    [Description("\uE015")]
-    AlignVerticalBottom,
-    [Description("\uE011")]
-    AlignVerticalCenter,
-    [Description("\uE00C")]
-    AlignVerticalTop,
-    [Description("\uE97F")]
-    AllInbox,
-    [Description("\uEB3D")]
-    AllInclusive,
-    [Description("\uE90B")]
-    AllOut,
-    [Description("\uF184")]
-    AltRoute,
-    [Description("\uE0E6")]
-    AlternateEmail,
-    [Description("\uEA13")]
-    AmpStories,
-    [Description("\uEF3E")]
-    Analytics,
-    [Description("\uF1CD")]
-    Anchor,
-    [Description("\uE859")]
-    Android,
-    [Description("\uE71C")]
-    Animation,
-    [Description("\uE85A")]
-    Announcement,
-    [Description("\uEFDA")]
-    Aod,
-    [Description("\uEA40")]
-    Apartment,
-    [Description("\uF1B7")]
-    Api,
-    [Description("\uEF3F")]
-    AppBlocking,
-    [Description("\uEF40")]
-    AppRegistration,
-    [Description("\uEF41")]
-    AppSettingsAlt,
-    [Description("\uEAE4")]
-    AppShortcut,
-    [Description("\uEA80")]
-    Apple,
-    [Description("\uE982")]
-    Approval,
-    [Description("\uE5C3")]
-    Apps,
-    [Description("\uE7CC")]
-    AppsOutage,
-    [Description("\uEA3B")]
-    Architecture,
-    [Description("\uE149")]
-    Archive,
-    [Description("\uE770")]
-    AreaChart,
-    [Description("\uE5C4")]
-    ArrowBack,
-    [Description("\uE5E0")]
-    ArrowBackIos,
-    [Description("\uE2EA")]
-    ArrowBackIosNew,
-    [Description("\uF181")]
-    ArrowCircleDown,
-    [Description("\uEAA7")]
-    ArrowCircleLeft,
-    [Description("\uEAAA")]
-    ArrowCircleRight,
-    [Description("\uF182")]
-    ArrowCircleUp,
-    [Description("\uE5DB")]
-    ArrowDownward,
-    [Description("\uE5C5")]
-    ArrowDropDown,
-    [Description("\uE5C6")]
-    ArrowDropDownCircle,
-    [Description("\uE5C7")]
-    ArrowDropUp,
-    [Description("\uE5C8")]
-    ArrowForward,
-    [Description("\uE5E1")]
-    ArrowForwardIos,
-    [Description("\uE5DE")]
-    ArrowLeft,
-    [Description("\uF8CE")]
-    ArrowOutward,
-    [Description("\uE5DF")]
-    ArrowRight,
-    [Description("\uE941")]
-    ArrowRightAlt,
-    [Description("\uE5D8")]
-    ArrowUpward,
-    [Description("\uE060")]
-    ArtTrack,
-    [Description("\uEF42")]
-    Article,
-    [Description("\uE85B")]
-    AspectRatio,
-    [Description("\uE85C")]
-    Assessment,
-    [Description("\uE85D")]
-    Assignment,
-    [Description("\uF848")]
-    AssignmentAdd,
-    [Description("\uE85E")]
-    AssignmentInd,
-    [Description("\uE85F")]
-    AssignmentLate,
-    [Description("\uE860")]
-    AssignmentReturn,
-    [Description("\uE861")]
-    AssignmentReturned,
-    [Description("\uE862")]
-    AssignmentTurnedIn,
-    [Description("\uF8D5")]
-    AssistWalker,
-    [Description("\uE39F")]
-    Assistant,
-    [Description("\uE988")]
-    AssistantDirection,
-    [Description("\uE989")]
-    AssistantNavigation,
-    [Description("\uE3A0")]
-    AssistantPhoto,
-    [Description("\uEB6F")]
-    AssuredWorkload,
-    [Description("\uE573")]
-    Atm,
-    [Description("\uEA5E")]
-    AttachEmail,
-    [Description("\uE226")]
-    AttachFile,
-    [Description("\uE227")]
-    AttachMoney,
-    [Description("\uE2BC")]
-    Attachment,
-    [Description("\uEA52")]
-    Attractions,
-    [Description("\uEFDB")]
-    Attribution,
-    [Description("\uEB82")]
-    AudioFile,
-    [Description("\uE3A1")]
-    Audiotrack,
-    [Description("\uE65F")]
-    AutoAwesome,
-    [Description("\uE660")]
-    AutoAwesomeMosaic,
-    [Description("\uE661")]
-    AutoAwesomeMotion,
-    [Description("\uEA4C")]
-    AutoDelete,
-    [Description("\uE663")]
-    AutoFixHigh,
-    [Description("\uE664")]
-    AutoFixNormal,
-    [Description("\uE665")]
-    AutoFixOff,
-    [Description("\uE4FB")]
-    AutoGraph,
-    [Description("\uEC20")]
-    AutoMode,
-    [Description("\uE666")]
-    AutoStories,
-    [Description("\uEFDC")]
-    AutofpsSelect,
-    [Description("\uE863")]
-    Autorenew,
-    [Description("\uE01B")]
-    AvTimer,
-    [Description("\uF19B")]
-    BabyChangingStation,
-    [Description("\uE764")]
-    BackHand,
-    [Description("\uF19C")]
-    Backpack,
-    [Description("\uE14A")]
-    Backspace,
-    [Description("\uE864")]
-    Backup,
-    [Description("\uEF43")]
-    BackupTable,
-    [Description("\uEA67")]
-    Badge,
-    [Description("\uEA53")]
-    BakeryDining,
-    [Description("\uEAF6")]
-    Balance,
-    [Description("\uE58F")]
-    Balcony,
-    [Description("\uE172")]
-    Ballot,
-    [Description("\uE26B")]
-    BarChart,
-    [Description("\uF85C")]
-    BarcodeReader,
-    [Description("\uF0F5")]
-    BatchPrediction,
-    [Description("\uEFDD")]
-    Bathroom,
-    [Description("\uEA41")]
-    Bathtub,
-    [Description("\uEBDC")]
-    Battery0Bar,
-    [Description("\uEBD9")]
-    Battery1Bar,
-    [Description("\uEBE0")]
-    Battery2Bar,
-    [Description("\uEBDD")]
-    Battery3Bar,
-    [Description("\uEBE2")]
-    Battery4Bar,
-    [Description("\uEBD4")]
-    Battery5Bar,
-    [Description("\uEBD2")]
-    Battery6Bar,
-    [Description("\uE19C")]
-    BatteryAlert,
-    [Description("\uE1A3")]
-    BatteryChargingFull,
-    [Description("\uE1A4")]
-    BatteryFull,
-    [Description("\uEFDE")]
-    BatterySaver,
-    [Description("\uE1A5")]
-    BatteryStd,
-    [Description("\uE1A6")]
-    BatteryUnknown,
-    [Description("\uEB3E")]
-    BeachAccess,
-    [Description("\uEFDF")]
-    Bed,
-    [Description("\uEFE0")]
-    BedroomBaby,
-    [Description("\uEFE1")]
-    BedroomChild,
-    [Description("\uEFE2")]
-    BedroomParent,
-    [Description("\uEF44")]
-    Bedtime,
-    [Description("\uEB76")]
-    BedtimeOff,
-    [Description("\uE52D")]
-    Beenhere,
-    [Description("\uF1F4")]
-    Bento,
-    [Description("\uEF45")]
-    BikeScooter,
-    [Description("\uEA3A")]
-    Biotech,
-    [Description("\uEFE3")]
-    Blender,
-    [Description("\uF8D6")]
-    Blind,
-    [Description("\uE286")]
-    Blinds,
-    [Description("\uEC1F")]
-    BlindsClosed,
-    [Description("\uE14B")]
-    Block,
-    [Description("\uEF46")]
-    BlockFlipped,
-    [Description("\uEFE4")]
-    Bloodtype,
-    [Description("\uE1A7")]
-    Bluetooth,
-    [Description("\uE60F")]
-    BluetoothAudio,
-    [Description("\uE1A8")]
-    BluetoothConnected,
-    [Description("\uE1A9")]
-    BluetoothDisabled,
-    [Description("\uEFE5")]
-    BluetoothDrive,
-    [Description("\uE1AA")]
-    BluetoothSearching,
-    [Description("\uE3A2")]
-    BlurCircular,
-    [Description("\uE3A3")]
-    BlurLinear,
-    [Description("\uE3A4")]
-    BlurOff,
-    [Description("\uE3A5")]
-    BlurOn,
-    [Description("\uEA0B")]
-    Bolt,
-    [Description("\uE865")]
-    Book,
-    [Description("\uF217")]
-    BookOnline,
-    [Description("\uE866")]
-    Bookmark,
-    [Description("\uE598")]
-    BookmarkAdd,
-    [Description("\uE599")]
-    BookmarkAdded,
-    [Description("\uE867")]
-    BookmarkBorder,
-    [Description("\uE867")]
-    BookmarkOutline,
-    [Description("\uE59A")]
-    BookmarkRemove,
-    [Description("\uE98B")]
-    Bookmarks,
-    [Description("\uE228")]
-    BorderAll,
-    [Description("\uE229")]
-    BorderBottom,
-    [Description("\uE22A")]
-    BorderClear,
-    [Description("\uE22B")]
-    BorderColor,
-    [Description("\uE22C")]
-    BorderHorizontal,
-    [Description("\uE22D")]
-    BorderInner,
-    [Description("\uE22E")]
-    BorderLeft,
-    [Description("\uE22F")]
-    BorderOuter,
-    [Description("\uE230")]
-    BorderRight,
-    [Description("\uE231")]
-    BorderStyle,
-    [Description("\uE232")]
-    BorderTop,
-    [Description("\uE233")]
-    BorderVertical,
-    [Description("\uEB67")]
-    Boy,
-    [Description("\uE06B")]
-    BrandingWatermark,
-    [Description("\uEA54")]
-    BreakfastDining,
-    [Description("\uE3A6")]
-    Brightness1,
-    [Description("\uE3A7")]
-    Brightness2,
-    [Description("\uE3A8")]
-    Brightness3,
-    [Description("\uE3A9")]
-    Brightness4,
-    [Description("\uE3AA")]
-    Brightness5,
-    [Description("\uE3AB")]
-    Brightness6,
-    [Description("\uE3AC")]
-    Brightness7,
-    [Description("\uE1AB")]
-    BrightnessAuto,
-    [Description("\uE1AC")]
-    BrightnessHigh,
-    [Description("\uE1AD")]
-    BrightnessLow,
-    [Description("\uE1AE")]
-    BrightnessMedium,
-    [Description("\uF8F8")]
-    BroadcastOnHome,
-    [Description("\uF8F9")]
-    BroadcastOnPersonal,
-    [Description("\uE3AD")]
-    BrokenImage,
-    [Description("\uEBD1")]
-    BrowseGallery,
-    [Description("\uEF47")]
-    BrowserNotSupported,
-    [Description("\uE7CF")]
-    BrowserUpdated,
-    [Description("\uEA73")]
-    BrunchDining,
-    [Description("\uE3AE")]
-    Brush,
-    [Description("\uE6DD")]
-    BubbleChart,
-    [Description("\uE868")]
-    BugReport,
-    [Description("\uE869")]
-    Build,
-    [Description("\uEF48")]
-    BuildCircle,
-    [Description("\uE591")]
-    Bungalow,
-    [Description("\uE43C")]
-    BurstMode,
-    [Description("\uE98F")]
-    BusAlert,
-    [Description("\uE0AF")]
-    Business,
-    [Description("\uEB3F")]
-    BusinessCenter,
-    [Description("\uE589")]
-    Cabin,
-    [Description("\uEFE6")]
-    Cable,
-    [Description("\uE86A")]
-    Cached,
-    [Description("\uE7E9")]
-    Cake,
-    [Description("\uEA5F")]
-    Calculate,
-    [Description("\uEBCC")]
-    CalendarMonth,
-    [Description("\uE935")]
-    CalendarToday,
-    [Description("\uE936")]
-    CalendarViewDay,
-    [Description("\uEFE7")]
-    CalendarViewMonth,
-    [Description("\uEFE8")]
-    CalendarViewWeek,
-    [Description("\uE0B0")]
-    Call,
-    [Description("\uE0B1")]
-    CallEnd,
-    [Description("\uE0B2")]
-    CallMade,
-    [Description("\uE0B3")]
-    CallMerge,
-    [Description("\uE0B4")]
-    CallMissed,
-    [Description("\uE0E4")]
-    CallMissedOutgoing,
-    [Description("\uE0B5")]
-    CallReceived,
-    [Description("\uE0B6")]
-    CallSplit,
-    [Description("\uE06C")]
-    CallToAction,
-    [Description("\uE3AF")]
-    Camera,
-    [Description("\uE3B0")]
-    CameraAlt,
-    [Description("\uE8FC")]
-    CameraEnhance,
-    [Description("\uE3B1")]
-    CameraFront,
-    [Description("\uEFE9")]
-    CameraIndoor,
-    [Description("\uEFEA")]
-    CameraOutdoor,
-    [Description("\uE3B2")]
-    CameraRear,
-    [Description("\uE3B3")]
-    CameraRoll,
-    [Description("\uEFEB")]
-    Cameraswitch,
-    [Description("\uEF49")]
-    Campaign,
-    [Description("\uE5C9")]
-    Cancel,
-    [Description("\uE0E9")]
-    CancelPresentation,
-    [Description("\uEA39")]
-    CancelScheduleSend,
-    [Description("\uEAD4")]
-    CandlestickChart,
-    [Description("\uEBF2")]
-    CarCrash,
-    [Description("\uEA55")]
-    CarRental,
-    [Description("\uEA56")]
-    CarRepair,
-    [Description("\uE8F6")]
-    CardGiftcard,
-    [Description("\uE8F7")]
-    CardMembership,
-    [Description("\uE8F8")]
-    CardTravel,
-    [Description("\uF1F8")]
-    Carpenter,
-    [Description("\uE992")]
-    Cases,
-    [Description("\uEB40")]
-    Casino,
-    [Description("\uE307")]
-    Cast,
-    [Description("\uE308")]
-    CastConnected,
-    [Description("\uEFEC")]
-    CastForEducation,
-    [Description("\uEAB1")]
-    Castle,
-    [Description("\uE508")]
-    CatchingPokemon,
-    [Description("\uE574")]
-    Category,
-    [Description("\uEA65")]
-    Celebration,
-    [Description("\uEBBA")]
-    CellTower,
-    [Description("\uE0EC")]
-    CellWifi,
-    [Description("\uE3B4")]
-    CenterFocusStrong,
-    [Description("\uE3B5")]
-    CenterFocusWeak,
-    [Description("\uEFED")]
-    Chair,
-    [Description("\uEFEE")]
-    ChairAlt,
-    [Description("\uE585")]
-    Chalet,
-    [Description("\uE2E7")]
-    ChangeCircle,
-    [Description("\uE86B")]
-    ChangeHistory,
-    [Description("\uF19D")]
-    ChargingStation,
-    [Description("\uE0B7")]
-    Chat,
-    [Description("\uE0CA")]
-    ChatBubble,
-    [Description("\uE0CB")]
-    ChatBubbleOutline,
-    [Description("\uE5CA")]
-    Check,
-    [Description("\uE834")]
-    CheckBox,
-    [Description("\uE835")]
-    CheckBoxOutlineBlank,
-    [Description("\uE86C")]
-    CheckCircle,
-    [Description("\uE92D")]
-    CheckCircleOutline,
-    [Description("\uE6B1")]
-    Checklist,
-    [Description("\uE6B3")]
-    ChecklistRtl,
-    [Description("\uF19E")]
-    Checkroom,
-    [Description("\uE5CB")]
-    ChevronLeft,
-    [Description("\uE5CC")]
-    ChevronRight,
-    [Description("\uEB41")]
-    ChildCare,
-    [Description("\uEB42")]
-    ChildFriendly,
-    [Description("\uE86D")]
-    ChromeReaderMode,
-    [Description("\uEAAE")]
-    Church,
-    [Description("\uEF4A")]
-    Circle,
-    [Description("\uE994")]
-    CircleNotifications,
-    [Description("\uE86E")]
-    Class,
-    [Description("\uF21F")]
-    CleanHands,
-    [Description("\uF0FF")]
-    CleaningServices,
-    [Description("\uE14C")]
-    Clear,
-    [Description("\uE0B8")]
-    ClearAll,
-    [Description("\uE5CD")]
-    Close,
-    [Description("\uF1CF")]
-    CloseFullscreen,
-    [Description("\uE01C")]
-    ClosedCaption,
-    [Description("\uF1DC")]
-    ClosedCaptionDisabled,
-    [Description("\uE996")]
-    ClosedCaptionOff,
-    [Description("\uE2BD")]
-    Cloud,
-    [Description("\uE2BE")]
-    CloudCircle,
-    [Description("\uE2BF")]
-    CloudDone,
-    [Description("\uE2C0")]
-    CloudDownload,
-    [Description("\uE2C1")]
-    CloudOff,
-    [Description("\uE2C2")]
-    CloudQueue,
-    [Description("\uEB5A")]
-    CloudSync,
-    [Description("\uE2C3")]
-    CloudUpload,
-    [Description("\uE810")]
-    CloudySnowing,
-    [Description("\uE7B0")]
-    Co2,
-    [Description("\uEAF0")]
-    CoPresent,
-    [Description("\uE86F")]
-    Code,
-    [Description("\uE4F3")]
-    CodeOff,
-    [Description("\uEFEF")]
-    Coffee,
-    [Description("\uEFF0")]
-    CoffeeMaker,
-    [Description("\uE3B6")]
-    Collections,
-    [Description("\uE431")]
-    CollectionsBookmark,
-    [Description("\uE3B7")]
-    ColorLens,
-    [Description("\uE3B8")]
-    Colorize,
-    [Description("\uE0B9")]
-    Comment,
-    [Description("\uEA4E")]
-    CommentBank,
-    [Description("\uE7A2")]
-    CommentsDisabled,
-    [Description("\uEAF5")]
-    Commit,
-    [Description("\uE940")]
-    Commute,
-    [Description("\uE3B9")]
-    Compare,
-    [Description("\uE915")]
-    CompareArrows,
-    [Description("\uE57C")]
-    CompassCalibration,
-    [Description("\uE761")]
-    Compost,
-    [Description("\uE94D")]
-    Compress,
-    [Description("\uE30A")]
-    Computer,
-    [Description("\uE638")]
-    ConfirmationNum,
-    [Description("\uE638")]
-    ConfirmationNumber,
-    [Description("\uF223")]
-    ConnectWithoutContact,
-    [Description("\uE998")]
-    ConnectedTv,
-    [Description("\uE7C9")]
-    ConnectingAirports,
-    [Description("\uEA3C")]
-    Construction,
-    [Description("\uF8D1")]
-    ContactEmergency,
-    [Description("\uE0D0")]
-    ContactMail,
-    [Description("\uF22E")]
-    ContactPage,
-    [Description("\uE0CF")]
-    ContactPhone,
-    [Description("\uE94C")]
-    ContactSupport,
-    [Description("\uEA71")]
-    Contactless,
-    [Description("\uE0BA")]
-    Contacts,
-    [Description("\uE14D")]
-    ContentCopy,
-    [Description("\uE14E")]
-    ContentCut,
-    [Description("\uE14F")]
-    ContentPaste,
-    [Description("\uEA8E")]
-    ContentPasteGo,
-    [Description("\uE4F8")]
-    ContentPasteOff,
-    [Description("\uEA9B")]
-    ContentPasteSearch,
-    [Description("\uEB37")]
-    Contrast,
-    [Description("\uE074")]
-    ControlCamera,
-    [Description("\uE3BA")]
-    ControlPoint,
-    [Description("\uE3BB")]
-    ControlPointDuplicate,
-    [Description("\uF867")]
-    ConveyorBelt,
-    [Description("\uEAAC")]
-    Cookie,
-    [Description("\uE2EC")]
-    CopyAll,
-    [Description("\uE90C")]
-    Copyright,
-    [Description("\uF221")]
-    Coronavirus,
-    [Description("\uF1D0")]
-    CorporateFare,
-    [Description("\uE587")]
-    Cottage,
-    [Description("\uF1F7")]
-    Countertops,
-    [Description("\uE150")]
-    Create,
-    [Description("\uE2CC")]
-    CreateNewFolder,
-    [Description("\uE870")]
-    CreditCard,
-    [Description("\uE4F4")]
-    CreditCardOff,
-    [Description("\uEFF1")]
-    CreditScore,
-    [Description("\uE588")]
-    Crib,
-    [Description("\uEBE9")]
-    CrisisAlert,
-    [Description("\uE3BE")]
-    Crop,
-    [Description("\uE3BC")]
-    Crop169,
-    [Description("\uE3BD")]
-    Crop32,
-    [Description("\uE3BF")]
-    Crop54,
-    [Description("\uE3C0")]
-    Crop75,
-    [Description("\uE3C1")]
-    CropDin,
-    [Description("\uE3C2")]
-    CropFree,
-    [Description("\uE3C3")]
-    CropLandscape,
-    [Description("\uE3C4")]
-    CropOriginal,
-    [Description("\uE3C5")]
-    CropPortrait,
-    [Description("\uE437")]
-    CropRotate,
-    [Description("\uE3C6")]
-    CropSquare,
-    [Description("\uE799")]
-    CrueltyFree,
-    [Description("\uEB93")]
-    Css,
-    [Description("\uEBC5")]
-    CurrencyBitcoin,
-    [Description("\uEB70")]
-    CurrencyExchange,
-    [Description("\uEAFA")]
-    CurrencyFranc,
-    [Description("\uEAEF")]
-    CurrencyLira,
-    [Description("\uEAF1")]
-    CurrencyPound,
-    [Description("\uEAEC")]
-    CurrencyRuble,
-    [Description("\uEAF7")]
-    CurrencyRupee,
-    [Description("\uEAFB")]
-    CurrencyYen,
-    [Description("\uEAF9")]
-    CurrencyYuan,
-    [Description("\uEC1E")]
-    Curtains,
-    [Description("\uEC1D")]
-    CurtainsClosed,
-    [Description("\uEBD5")]
-    Cyclone,
-    [Description("\uE99A")]
-    Dangerous,
-    [Description("\uE51C")]
-    DarkMode,
-    [Description("\uE871")]
-    Dashboard,
-    [Description("\uE99B")]
-    DashboardCustomize,
-    [Description("\uEAD1")]
-    DataArray,
-    [Description("\uE76F")]
-    DataExploration,
-    [Description("\uEAD3")]
-    DataObject,
-    [Description("\uEFF2")]
-    DataSaverOff,
-    [Description("\uEFF3")]
-    DataSaverOn,
-    [Description("\uEB9F")]
-    DataThresholding,
-    [Description("\uE1AF")]
-    DataUsage,
-    [Description("\uF8EE")]
-    Dataset,
-    [Description("\uF8EF")]
-    DatasetLinked,
-    [Description("\uE916")]
-    DateRange,
-    [Description("\uEB77")]
-    Deblur,
-    [Description("\uEA42")]
-    Deck,
-    [Description("\uE3C7")]
-    Dehaze,
-    [Description("\uE872")]
-    Delete,
-    [Description("\uE92B")]
-    DeleteForever,
-    [Description("\uE92E")]
-    DeleteOutline,
-    [Description("\uE16C")]
-    DeleteSweep,
-    [Description("\uEA72")]
-    DeliveryDining,
-    [Description("\uEBA9")]
-    DensityLarge,
-    [Description("\uEB9E")]
-    DensityMedium,
-    [Description("\uEBA8")]
-    DensitySmall,
-    [Description("\uE576")]
-    DepartureBoard,
-    [Description("\uE873")]
-    Description,
-    [Description("\uEBB6")]
-    Deselect,
-    [Description("\uF10A")]
-    DesignServices,
-    [Description("\uF8F4")]
-    Desk,
-    [Description("\uE99D")]
-    DesktopAccessDisabled,
-    [Description("\uE30B")]
-    DesktopMac,
-    [Description("\uE30C")]
-    DesktopWindows,
-    [Description("\uE3C8")]
-    Details,
-    [Description("\uE30D")]
-    DeveloperBoard,
-    [Description("\uE4FF")]
-    DeveloperBoardOff,
-    [Description("\uE1B0")]
-    DeveloperMode,
-    [Description("\uE335")]
-    DeviceHub,
-    [Description("\uE1FF")]
-    DeviceThermostat,
-    [Description("\uE339")]
-    DeviceUnknown,
-    [Description("\uE1B1")]
-    Devices,
-    [Description("\uEBDE")]
-    DevicesFold,
-    [Description("\uE337")]
-    DevicesOther,
-    [Description("\uF879")]
-    DewPoint,
-    [Description("\uE0BB")]
-    DialerSip,
-    [Description("\uE0BC")]
-    Dialpad,
-    [Description("\uEAD5")]
-    Diamond,
-    [Description("\uEB7D")]
-    Difference,
-    [Description("\uEFF4")]
-    Dining,
-    [Description("\uEA57")]
-    DinnerDining,
-    [Description("\uE52E")]
-    Directions,
-    [Description("\uE52F")]
-    DirectionsBike,
-    [Description("\uE532")]
-    DirectionsBoat,
-    [Description("\uEFF5")]
-    DirectionsBoatFilled,
-    [Description("\uE530")]
-    DirectionsBus,
-    [Description("\uEFF6")]
-    DirectionsBusFilled,
-    [Description("\uE531")]
-    DirectionsCar,
-    [Description("\uEFF7")]
-    DirectionsCarFilled,
-    [Description("\uE532")]
-    DirectionsFerry,
-    [Description("\uF10F")]
-    DirectionsOff,
-    [Description("\uE534")]
-    DirectionsRailway,
-    [Description("\uEFF8")]
-    DirectionsRailwayFilled,
-    [Description("\uE566")]
-    DirectionsRun,
-    [Description("\uE533")]
-    DirectionsSubway,
-    [Description("\uEFF9")]
-    DirectionsSubwayFilled,
-    [Description("\uE534")]
-    DirectionsTrain,
-    [Description("\uE535")]
-    DirectionsTransit,
-    [Description("\uEFFA")]
-    DirectionsTransitFilled,
-    [Description("\uE536")]
-    DirectionsWalk,
-    [Description("\uEF4B")]
-    DirtyLens,
-    [Description("\uF230")]
-    DisabledByDefault,
-    [Description("\uE76E")]
-    DisabledVisible,
-    [Description("\uE610")]
-    DiscFull,
-    [Description("\uEA6C")]
-    Discord,
-    [Description("\uEBC9")]
-    Discount,
-    [Description("\uEB97")]
-    DisplaySettings,
-    [Description("\uF8D7")]
-    Diversity1,
-    [Description("\uF8D8")]
-    Diversity2,
-    [Description("\uF8D9")]
-    Diversity3,
-    [Description("\uE611")]
-    DndForwardslash,
-    [Description("\uE875")]
-    Dns,
-    [Description("\uF08C")]
-    DoDisturb,
-    [Description("\uF08D")]
-    DoDisturbAlt,
-    [Description("\uF08E")]
-    DoDisturbOff,
-    [Description("\uF08F")]
-    DoDisturbOn,
-    [Description("\uE612")]
-    DoNotDisturb,
-    [Description("\uE611")]
-    DoNotDisturbAlt,
-    [Description("\uE643")]
-    DoNotDisturbOff,
-    [Description("\uE644")]
-    DoNotDisturbOn,
-    [Description("\uEFFB")]
-    DoNotDisturbOnTotalSilence,
-    [Description("\uF19F")]
-    DoNotStep,
-    [Description("\uF1B0")]
-    DoNotTouch,
-    [Description("\uE30E")]
-    Dock,
-    [Description("\uE5FA")]
-    DocumentScanner,
-    [Description("\uE7EE")]
-    Domain,
-    [Description("\uEB62")]
-    DomainAdd,
-    [Description("\uE0EF")]
-    DomainDisabled,
-    [Description("\uEF4C")]
-    DomainVerification,
-    [Description("\uE876")]
-    Done,
-    [Description("\uE877")]
-    DoneAll,
-    [Description("\uE92F")]
-    DoneOutline,
-    [Description("\uE917")]
-    DonutLarge,
-    [Description("\uE918")]
-    DonutSmall,
-    [Description("\uEFFC")]
-    DoorBack,
-    [Description("\uEFFD")]
-    DoorFront,
-    [Description("\uEFFE")]
-    DoorSliding,
-    [Description("\uEFFF")]
-    Doorbell,
-    [Description("\uEA50")]
-    DoubleArrow,
-    [Description("\uE509")]
-    DownhillSkiing,
-    [Description("\uF090")]
-    Download,
-    [Description("\uF091")]
-    DownloadDone,
-    [Description("\uF000")]
-    DownloadForOffline,
-    [Description("\uF001")]
-    Downloading,
-    [Description("\uE151")]
-    Drafts,
-    [Description("\uE25D")]
-    DragHandle,
-    [Description("\uE945")]
-    DragIndicator,
-    [Description("\uE746")]
-    Draw,
-    [Description("\uE613")]
-    DriveEta,
-    [Description("\uE675")]
-    DriveFileMove,
-    [Description("\uE9A1")]
-    DriveFileMoveOutline,
-    [Description("\uE76D")]
-    DriveFileMoveRtl,
-    [Description("\uE9A2")]
-    DriveFileRenameOutline,
-    [Description("\uE9A3")]
-    DriveFolderUpload,
-    [Description("\uF1B3")]
-    Dry,
-    [Description("\uEA58")]
-    DryCleaning,
-    [Description("\uE9A5")]
-    Duo,
-    [Description("\uE1B2")]
-    Dvr,
-    [Description("\uEA14")]
-    DynamicFeed,
-    [Description("\uF1BF")]
-    DynamicForm,
-    [Description("\uF002")]
-    EMobiledata,
-    [Description("\uF003")]
-    Earbuds,
-    [Description("\uF004")]
-    EarbudsBattery,
-    [Description("\uF1DF")]
-    East,
-    [Description("\uEA35")]
-    Eco,
-    [Description("\uF005")]
-    EdgesensorHigh,
-    [Description("\uF006")]
-    EdgesensorLow,
-    [Description("\uE3C9")]
-    Edit,
-    [Description("\uE578")]
-    EditAttributes,
-    [Description("\uE742")]
-    EditCalendar,
-    [Description("\uF88C")]
-    EditDocument,
-    [Description("\uE568")]
-    EditLocation,
-    [Description("\uE1C5")]
-    EditLocationAlt,
-    [Description("\uE745")]
-    EditNote,
-    [Description("\uE525")]
-    EditNotifications,
-    [Description("\uE950")]
-    EditOff,
-    [Description("\uEF4D")]
-    EditRoad,
-    [Description("\uF88D")]
-    EditSquare,
-    [Description("\uEACC")]
-    Egg,
-    [Description("\uEAC8")]
-    EggAlt,
-    [Description("\uE8FB")]
-    Eject,
-    [Description("\uF21A")]
-    Elderly,
-    [Description("\uEB69")]
-    ElderlyWoman,
-    [Description("\uEB1B")]
-    ElectricBike,
-    [Description("\uEC1C")]
-    ElectricBolt,
-    [Description("\uEB1C")]
-    ElectricCar,
-    [Description("\uEC1B")]
-    ElectricMeter,
-    [Description("\uEB1D")]
-    ElectricMoped,
-    [Description("\uEB1E")]
-    ElectricRickshaw,
-    [Description("\uEB1F")]
-    ElectricScooter,
-    [Description("\uF102")]
-    ElectricalServices,
-    [Description("\uF1A0")]
-    Elevator,
-    [Description("\uE0BE")]
-    Email,
-    [Description("\uE1EB")]
-    Emergency,
-    [Description("\uEBF4")]
-    EmergencyRecording,
-    [Description("\uEBF6")]
-    EmergencyShare,
-    [Description("\uEA22")]
-    EmojiEmotions,
-    [Description("\uEA23")]
-    EmojiEvents,
-    [Description("\uEA1A")]
-    EmojiFlags,
-    [Description("\uEA1B")]
-    EmojiFoodBeverage,
-    [Description("\uEA1C")]
-    EmojiNature,
-    [Description("\uEA24")]
-    EmojiObjects,
-    [Description("\uEA1D")]
-    EmojiPeople,
-    [Description("\uEA1E")]
-    EmojiSymbols,
-    [Description("\uEA1F")]
-    EmojiTransportation,
-    [Description("\uEC1A")]
-    EnergySavingsLeaf,
-    [Description("\uEA3D")]
-    Engineering,
-    [Description("\uE8FC")]
-    EnhancePhotoTranslate,
-    [Description("\uE63F")]
-    EnhancedEncryption,
-    [Description("\uE01D")]
-    Equalizer,
-    [Description("\uE000")]
-    Error,
-    [Description("\uE001")]
-    ErrorOutline,
-    [Description("\uF1A1")]
-    Escalator,
-    [Description("\uF1AC")]
-    EscalatorWarning,
-    [Description("\uEA15")]
-    Euro,
-    [Description("\uE926")]
-    EuroSymbol,
-    [Description("\uE56D")]
-    EvStation,
-    [Description("\uE878")]
-    Event,
-    [Description("\uE614")]
-    EventAvailable,
-    [Description("\uE615")]
-    EventBusy,
-    [Description("\uE616")]
-    EventNote,
-    [Description("\uEB7B")]
-    EventRepeat,
-    [Description("\uE903")]
-    EventSeat,
-    [Description("\uE879")]
-    ExitToApp,
-    [Description("\uE94F")]
-    Expand,
-    [Description("\uE7CD")]
-    ExpandCircleDown,
-    [Description("\uE5CE")]
-    ExpandLess,
-    [Description("\uE5CF")]
-    ExpandMore,
-    [Description("\uE01E")]
-    Explicit,
-    [Description("\uE87A")]
-    Explore,
-    [Description("\uE9A8")]
-    ExploreOff,
-    [Description("\uE3CA")]
-    Exposure,
-    [Description("\uE3CB")]
-    ExposureMinus1,
-    [Description("\uE3CC")]
-    ExposureMinus2,
-    [Description("\uE3CB")]
-    ExposureNeg1,
-    [Description("\uE3CC")]
-    ExposureNeg2,
-    [Description("\uE3CD")]
-    ExposurePlus1,
-    [Description("\uE3CE")]
-    ExposurePlus2,
-    [Description("\uE3CF")]
-    ExposureZero,
-    [Description("\uE87B")]
-    Extension,
-    [Description("\uE4F5")]
-    ExtensionOff,
-    [Description("\uE87C")]
-    Face,
-    [Description("\uF8DA")]
-    Face2,
-    [Description("\uF8DB")]
-    Face3,
-    [Description("\uF8DC")]
-    Face4,
-    [Description("\uF8DD")]
-    Face5,
-    [Description("\uF8DE")]
-    Face6,
-    [Description("\uEF4E")]
-    FaceRetouchingNatural,
-    [Description("\uF007")]
-    FaceRetouchingOff,
-    [Description("\uF234")]
-    Facebook,
-    [Description("\uF0C5")]
-    FactCheck,
-    [Description("\uEBBC")]
-    Factory,
-    [Description("\uF1A2")]
-    FamilyRestroom,
-    [Description("\uE01F")]
-    FastForward,
-    [Description("\uE020")]
-    FastRewind,
-    [Description("\uE57A")]
-    Fastfood,
-    [Description("\uE87D")]
-    Favorite,
-    [Description("\uE87E")]
-    FavoriteBorder,
-    [Description("\uE87E")]
-    FavoriteOutline,
-    [Description("\uEAD8")]
-    Fax,
-    [Description("\uE06D")]
-    FeaturedPlayList,
-    [Description("\uE06E")]
-    FeaturedVideo,
-    [Description("\uF009")]
-    Feed,
-    [Description("\uE87F")]
-    Feedback,
-    [Description("\uE590")]
-    Female,
-    [Description("\uF1F6")]
-    Fence,
-    [Description("\uEA68")]
-    Festival,
-    [Description("\uE05D")]
-    FiberDvr,
-    [Description("\uE061")]
-    FiberManualRecord,
-    [Description("\uE05E")]
-    FiberNew,
-    [Description("\uE06A")]
-    FiberPin,
-    [Description("\uE062")]
-    FiberSmartRecord,
-    [Description("\uE173")]
-    FileCopy,
-    [Description("\uE2C4")]
-    FileDownload,
-    [Description("\uE9AA")]
-    FileDownloadDone,
-    [Description("\uE4FE")]
-    FileDownloadOff,
-    [Description("\uEAF3")]
-    FileOpen,
-    [Description("\uEA0E")]
-    FilePresent,
-    [Description("\uE2C6")]
-    FileUpload,
-    [Description("\uF886")]
-    FileUploadOff,
-    [Description("\uE3D3")]
-    Filter,
-    [Description("\uE3D0")]
-    Filter1,
-    [Description("\uE3D1")]
-    Filter2,
-    [Description("\uE3D2")]
-    Filter3,
-    [Description("\uE3D4")]
-    Filter4,
-    [Description("\uE3D5")]
-    Filter5,
-    [Description("\uE3D6")]
-    Filter6,
-    [Description("\uE3D7")]
-    Filter7,
-    [Description("\uE3D8")]
-    Filter8,
-    [Description("\uE3D9")]
-    Filter9,
-    [Description("\uE3DA")]
-    Filter9Plus,
-    [Description("\uEF4F")]
-    FilterAlt,
-    [Description("\uEB32")]
-    FilterAltOff,
-    [Description("\uE3DB")]
-    FilterBAndW,
-    [Description("\uE3DC")]
-    FilterCenterFocus,
-    [Description("\uE3DD")]
-    FilterDrama,
-    [Description("\uE3DE")]
-    FilterFrames,
-    [Description("\uE3DF")]
-    FilterHdr,
-    [Description("\uE152")]
-    FilterList,
-    [Description("\uE94E")]
-    FilterListAlt,
-    [Description("\uEB57")]
-    FilterListOff,
-    [Description("\uE3E0")]
-    FilterNone,
-    [Description("\uE3E2")]
-    FilterTiltShift,
-    [Description("\uE3E3")]
-    FilterVintage,
-    [Description("\uE880")]
-    FindInPage,
-    [Description("\uE881")]
-    FindReplace,
-    [Description("\uE90D")]
-    Fingerprint,
-    [Description("\uF1D8")]
-    FireExtinguisher,
-    [Description("\uF1A3")]
-    FireHydrant,
-    [Description("\uF8F1")]
-    FireHydrantAlt,
-    [Description("\uF8F2")]
-    FireTruck,
-    [Description("\uEA43")]
-    Fireplace,
-    [Description("\uE5DC")]
-    FirstPage,
-    [Description("\uEA10")]
-    FitScreen,
-    [Description("\uE82B")]
-    Fitbit,
-    [Description("\uEB43")]
-    FitnessCenter,
-    [Description("\uE153")]
-    Flag,
-    [Description("\uEAF8")]
-    FlagCircle,
-    [Description("\uEF50")]
-    Flaky,
-    [Description("\uE3E4")]
-    Flare,
-    [Description("\uE3E5")]
-    FlashAuto,
-    [Description("\uE3E6")]
-    FlashOff,
-    [Description("\uE3E7")]
-    FlashOn,
-    [Description("\uF00A")]
-    FlashlightOff,
-    [Description("\uF00B")]
-    FlashlightOn,
-    [Description("\uF00C")]
-    Flatware,
-    [Description("\uE539")]
-    Flight,
-    [Description("\uE7CB")]
-    FlightClass,
-    [Description("\uE904")]
-    FlightLand,
-    [Description("\uE905")]
-    FlightTakeoff,
-    [Description("\uE3E8")]
-    Flip,
-    [Description("\uEA37")]
-    FlipCameraAndroid,
-    [Description("\uEA38")]
-    FlipCameraIos,
-    [Description("\uE882")]
-    FlipToBack,
-    [Description("\uE883")]
-    FlipToFront,
-    [Description("\uEBE6")]
-    Flood,
-    [Description("\uEC31")]
-    Flourescent,
-    [Description("\uF00D")]
-    Flourescent1,
-    [Description("\uEC31")]
-    Fluorescent2,
-    [Description("\uE00B")]
-    FlutterDash,
-    [Description("\uF00E")]
-    FmdBad,
-    [Description("\uF00F")]
-    FmdGood,
-    [Description("\uE818")]
-    Foggy,
-    [Description("\uE2C7")]
-    Folder,
-    [Description("\uEBBD")]
-    FolderCopy,
-    [Description("\uEB34")]
-    FolderDelete,
-    [Description("\uEB83")]
-    FolderOff,
-    [Description("\uE2C8")]
-    FolderOpen,
-    [Description("\uE2C9")]
-    FolderShared,
-    [Description("\uE617")]
-    FolderSpecial,
-    [Description("\uEB2C")]
-    FolderZip,
-    [Description("\uF222")]
-    FollowTheSigns,
-    [Description("\uE167")]
-    FontDownload,
-    [Description("\uE4F9")]
-    FontDownloadOff,
-    [Description("\uF1F2")]
-    FoodBank,
-    [Description("\uEA99")]
-    Forest,
-    [Description("\uEBA0")]
-    ForkLeft,
-    [Description("\uEBAC")]
-    ForkRight,
-    [Description("\uF868")]
-    Forklift,
-    [Description("\uE234")]
-    FormatAlignCenter,
-    [Description("\uE235")]
-    FormatAlignJustify,
-    [Description("\uE236")]
-    FormatAlignLeft,
-    [Description("\uE237")]
-    FormatAlignRight,
-    [Description("\uE238")]
-    FormatBold,
-    [Description("\uE239")]
-    FormatClear,
-    [Description("\uE23A")]
-    FormatColorFill,
-    [Description("\uE23B")]
-    FormatColorReset,
-    [Description("\uE23C")]
-    FormatColorText,
-    [Description("\uE23D")]
-    FormatIndentDecrease,
-    [Description("\uE23E")]
-    FormatIndentIncrease,
-    [Description("\uE23F")]
-    FormatItalic,
-    [Description("\uE240")]
-    FormatLineSpacing,
-    [Description("\uE241")]
-    FormatListBulleted,
-    [Description("\uF849")]
-    FormatListBulletedAdd,
-    [Description("\uE242")]
-    FormatListNumbered,
-    [Description("\uE267")]
-    FormatListNumberedRtl,
-    [Description("\uEB65")]
-    FormatOverline,
-    [Description("\uE243")]
-    FormatPaint,
-    [Description("\uE244")]
-    FormatQuote,
-    [Description("\uE25E")]
-    FormatShapes,
-    [Description("\uE245")]
-    FormatSize,
-    [Description("\uE246")]
-    FormatStrikethrough,
-    [Description("\uE247")]
-    FormatTextdirectionLToR,
-    [Description("\uE248")]
-    FormatTextdirectionRToL,
-    [Description("\uE249")]
-    FormatUnderline,
-    [Description("\uE249")]
-    FormatUnderlined,
-    [Description("\uEAAD")]
-    Fort,
-    [Description("\uE0BF")]
-    Forum,
-    [Description("\uE154")]
-    Forward,
-    [Description("\uE056")]
-    Forward10,
-    [Description("\uE057")]
-    Forward30,
-    [Description("\uE058")]
-    Forward5,
-    [Description("\uF187")]
-    ForwardToInbox,
-    [Description("\uF200")]
-    Foundation,
-    [Description("\uEB44")]
-    FreeBreakfast,
-    [Description("\uE748")]
-    FreeCancellation,
-    [Description("\uE769")]
-    FrontHand,
-    [Description("\uF869")]
-    FrontLoader,
-    [Description("\uE5D0")]
-    Fullscreen,
-    [Description("\uE5D1")]
-    FullscreenExit,
-    [Description("\uE24A")]
-    Functions,
-    [Description("\uF010")]
-    GMobiledata,
-    [Description("\uE927")]
-    GTranslate,
-    [Description("\uE30F")]
-    Gamepad,
-    [Description("\uE021")]
-    Games,
-    [Description("\uF011")]
-    Garage,
-    [Description("\uEC19")]
-    GasMeter,
-    [Description("\uE90E")]
-    Gavel,
-    [Description("\uE749")]
-    GeneratingTokens,
-    [Description("\uE155")]
-    Gesture,
-    [Description("\uE884")]
-    GetApp,
-    [Description("\uE908")]
-    Gif,
-    [Description("\uE7A3")]
-    GifBox,
-    [Description("\uEB68")]
-    Girl,
-    [Description("\uE58B")]
-    Gite,
-    [Description("\u10FFFD")]
-    Goat,
-    [Description("\uEB45")]
-    GolfCourse,
-    [Description("\uF012")]
-    GppBad,
-    [Description("\uF013")]
-    GppGood,
-    [Description("\uF014")]
-    GppMaybe,
-    [Description("\uE1B3")]
-    GpsFixed,
-    [Description("\uE1B4")]
-    GpsNotFixed,
-    [Description("\uE1B5")]
-    GpsOff,
-    [Description("\uE885")]
-    Grade,
-    [Description("\uE3E9")]
-    Gradient,
-    [Description("\uEA4F")]
-    Grading,
-    [Description("\uE3EA")]
-    Grain,
-    [Description("\uE1B8")]
-    GraphicEq,
-    [Description("\uF205")]
-    Grass,
-    [Description("\uF015")]
-    Grid3x3,
-    [Description("\uF016")]
-    Grid4x4,
-    [Description("\uF017")]
-    GridGoldenratio,
-    [Description("\uE3EB")]
-    GridOff,
-    [Description("\uE3EC")]
-    GridOn,
-    [Description("\uE9B0")]
-    GridView,
-    [Description("\uE7EF")]
-    Group,
-    [Description("\uE7F0")]
-    GroupAdd,
-    [Description("\uE747")]
-    GroupOff,
-    [Description("\uE7AD")]
-    GroupRemove,
-    [Description("\uE886")]
-    GroupWork,
-    [Description("\uF233")]
-    Groups,
-    [Description("\uF8DF")]
-    Groups2,
-    [Description("\uF8E0")]
-    Groups3,
-    [Description("\uF018")]
-    HMobiledata,
-    [Description("\uF019")]
-    HPlusMobiledata,
-    [Description("\uE9B1")]
-    Hail,
-    [Description("\uEBCB")]
-    Handshake,
-    [Description("\uF10B")]
-    Handyman,
-    [Description("\uEA59")]
-    Hardware,
-    [Description("\uE052")]
-    Hd,
-    [Description("\uF01A")]
-    HdrAuto,
-    [Description("\uF01B")]
-    HdrAutoSelect,
-    [Description("\uEF51")]
-    HdrEnhancedSelect,
-    [Description("\uE3ED")]
-    HdrOff,
-    [Description("\uF01C")]
-    HdrOffSelect,
-    [Description("\uE3EE")]
-    HdrOn,
-    [Description("\uF01D")]
-    HdrOnSelect,
-    [Description("\uF01E")]
-    HdrPlus,
-    [Description("\uE3F1")]
-    HdrStrong,
-    [Description("\uE3F2")]
-    HdrWeak,
-    [Description("\uF01F")]
-    Headphones,
-    [Description("\uF020")]
-    HeadphonesBattery,
-    [Description("\uE310")]
-    Headset,
-    [Description("\uE311")]
-    HeadsetMic,
-    [Description("\uE33A")]
-    HeadsetOff,
-    [Description("\uE3F3")]
-    Healing,
-    [Description("\uE1D5")]
-    HealthAndSafety,
-    [Description("\uE023")]
-    Hearing,
-    [Description("\uF104")]
-    HearingDisabled,
-    [Description("\uEAC2")]
-    HeartBroken,
-    [Description("\uEC18")]
-    HeatPump,
-    [Description("\uEA16")]
-    Height,
-    [Description("\uE887")]
-    Help,
-    [Description("\uF1C0")]
-    HelpCenter,
-    [Description("\uE8FD")]
-    HelpOutline,
-    [Description("\uF021")]
-    Hevc,
-    [Description("\uEB39")]
-    Hexagon,
-    [Description("\uF022")]
-    HideImage,
-    [Description("\uF023")]
-    HideSource,
-    [Description("\uE024")]
-    HighQuality,
-    [Description("\uE25F")]
-    Highlight,
-    [Description("\uEF52")]
-    HighlightAlt,
-    [Description("\uE888")]
-    HighlightOff,
-    [Description("\uE888")]
-    HighlightRemove,
-    [Description("\uE50A")]
-    Hiking,
-    [Description("\uE889")]
-    History,
-    [Description("\uEA3E")]
-    HistoryEdu,
-    [Description("\uF17D")]
-    HistoryToggleOff,
-    [Description("\uEAA6")]
-    Hive,
-    [Description("\uEB8A")]
-    Hls,
-    [Description("\uEB8C")]
-    HlsOff,
-    [Description("\uE58A")]
-    HolidayVillage,
-    [Description("\uE88A")]
-    Home,
-    [Description("\uE9B2")]
-    HomeFilled,
-    [Description("\uF024")]
-    HomeMax,
-    [Description("\uF025")]
-    HomeMini,
-    [Description("\uF100")]
-    HomeRepairService,
-    [Description("\uEA09")]
-    HomeWork,
-    [Description("\uE014")]
-    HorizontalDistribute,
-    [Description("\uF108")]
-    HorizontalRule,
-    [Description("\uE947")]
-    HorizontalSplit,
-    [Description("\uEB46")]
-    HotTub,
-    [Description("\uE53A")]
-    Hotel,
-    [Description("\uE743")]
-    HotelClass,
-    [Description("\uEA5C")]
-    HourglassBottom,
-    [Description("\uEF53")]
-    HourglassDisabled,
-    [Description("\uE88B")]
-    HourglassEmpty,
-    [Description("\uE88C")]
-    HourglassFull,
-    [Description("\uEA5B")]
-    HourglassTop,
-    [Description("\uEA44")]
-    House,
-    [Description("\uF202")]
-    HouseSiding,
-    [Description("\uE584")]
-    Houseboat,
-    [Description("\uE174")]
-    HowToReg,
-    [Description("\uE175")]
-    HowToVote,
-    [Description("\uEB7E")]
-    Html,
-    [Description("\uE902")]
-    Http,
-    [Description("\uE88D")]
-    Https,
-    [Description("\uE9F4")]
-    Hub,
-    [Description("\uF10E")]
-    Hvac,
-    [Description("\uE50B")]
-    IceSkating,
-    [Description("\uEA69")]
-    Icecream,
-    [Description("\uE3F4")]
-    Image,
-    [Description("\uE3F5")]
-    ImageAspectRatio,
-    [Description("\uF116")]
-    ImageNotSupported,
-    [Description("\uE43F")]
-    ImageSearch,
-    [Description("\uE9B4")]
-    ImagesearchRoller,
-    [Description("\uE0E0")]
-    ImportContacts,
-    [Description("\uE0C3")]
-    ImportExport,
-    [Description("\uE912")]
-    ImportantDevices,
-    [Description("\uE156")]
-    Inbox,
-    [Description("\uE79B")]
-    IncompleteCircle,
-    [Description("\uE909")]
-    IndeterminateCheckBox,
-    [Description("\uE88E")]
-    Info,
-    [Description("\uE88F")]
-    InfoOutline,
-    [Description("\uE890")]
-    Input,
-    [Description("\uE24B")]
-    InsertChart,
-    [Description("\uE26A")]
-    InsertChartOutlined,
-    [Description("\uE24C")]
-    InsertComment,
-    [Description("\uE24D")]
-    InsertDriveFile,
-    [Description("\uE24E")]
-    InsertEmoticon,
-    [Description("\uE24F")]
-    InsertInvitation,
-    [Description("\uE250")]
-    InsertLink,
-    [Description("\uEACA")]
-    InsertPageBreak,
-    [Description("\uE251")]
-    InsertPhoto,
-    [Description("\uF092")]
-    Insights,
-    [Description("\uEB71")]
-    InstallDesktop,
-    [Description("\uEB72")]
-    InstallMobile,
-    [Description("\uEF54")]
-    IntegrationInstructions,
-    [Description("\uE7C8")]
-    Interests,
-    [Description("\uE83B")]
-    InterpreterMode,
-    [Description("\uE179")]
-    Inventory,
-    [Description("\uE1A1")]
-    Inventory2,
-    [Description("\uE891")]
-    InvertColors,
-    [Description("\uE0C4")]
-    InvertColorsOff,
-    [Description("\uE891")]
-    InvertColorsOn,
-    [Description("\uE6B8")]
-    IosShare,
-    [Description("\uE583")]
-    Iron,
-    [Description("\uE3F6")]
-    Iso,
-    [Description("\uEB7C")]
-    Javascript,
-    [Description("\uEAEB")]
-    JoinFull,
-    [Description("\uEAF4")]
-    JoinInner,
-    [Description("\uEAF2")]
-    JoinLeft,
-    [Description("\uEAEA")]
-    JoinRight,
-    [Description("\uE50C")]
-    Kayaking,
-    [Description("\uE842")]
-    KebabDining,
-    [Description("\uE73C")]
-    Key,
-    [Description("\uEB84")]
-    KeyOff,
-    [Description("\uE312")]
-    Keyboard,
-    [Description("\uF028")]
-    KeyboardAlt,
-    [Description("\uE313")]
-    KeyboardArrowDown,
-    [Description("\uE314")]
-    KeyboardArrowLeft,
-    [Description("\uE315")]
-    KeyboardArrowRight,
-    [Description("\uE316")]
-    KeyboardArrowUp,
-    [Description("\uE317")]
-    KeyboardBackspace,
-    [Description("\uE318")]
-    KeyboardCapslock,
-    [Description("\uEAE0")]
-    KeyboardCommand,
-    [Description("\uEAE7")]
-    KeyboardCommandKey,
-    [Description("\uE5D3")]
-    KeyboardControl,
-    [Description("\uEAE6")]
-    KeyboardControlKey,
-    [Description("\uEAD0")]
-    KeyboardDoubleArrowDown,
-    [Description("\uEAC3")]
-    KeyboardDoubleArrowLeft,
-    [Description("\uEAC9")]
-    KeyboardDoubleArrowRight,
-    [Description("\uEACF")]
-    KeyboardDoubleArrowUp,
-    [Description("\uE31A")]
-    KeyboardHide,
-    [Description("\uEADF")]
-    KeyboardOption,
-    [Description("\uEAE8")]
-    KeyboardOptionKey,
-    [Description("\uE31B")]
-    KeyboardReturn,
-    [Description("\uE31C")]
-    KeyboardTab,
-    [Description("\uE31D")]
-    KeyboardVoice,
-    [Description("\uEA45")]
-    KingBed,
-    [Description("\uEB47")]
-    Kitchen,
-    [Description("\uE50D")]
-    Kitesurfing,
-    [Description("\uE892")]
-    Label,
-    [Description("\uE937")]
-    LabelImportant,
-    [Description("\uE948")]
-    LabelImportantOutline,
-    [Description("\uE9B6")]
-    LabelOff,
-    [Description("\uE893")]
-    LabelOutline,
-    [Description("\uEB2F")]
-    Lan,
-    [Description("\uE3F7")]
-    Landscape,
-    [Description("\uEBD7")]
-    Landslide,
-    [Description("\uE894")]
-    Language,
-    [Description("\uE31E")]
-    Laptop,
-    [Description("\uE31F")]
-    LaptopChromebook,
-    [Description("\uE320")]
-    LaptopMac,
-    [Description("\uE321")]
-    LaptopWindows,
-    [Description("\uE5DD")]
-    LastPage,
-    [Description("\uE895")]
-    Launch,
-    [Description("\uE53B")]
-    Layers,
-    [Description("\uE53C")]
-    LayersClear,
-    [Description("\uF20C")]
-    Leaderboard,
-    [Description("\uE3F8")]
-    LeakAdd,
-    [Description("\uE3F9")]
-    LeakRemove,
-    [Description("\uF21B")]
-    LeaveBagsAtHome,
-    [Description("\uF11B")]
-    LegendToggle,
-    [Description("\uE3FA")]
-    Lens,
-    [Description("\uF029")]
-    LensBlur,
-    [Description("\uE02E")]
-    LibraryAdd,
-    [Description("\uE9B7")]
-    LibraryAddCheck,
-    [Description("\uE02F")]
-    LibraryBooks,
-    [Description("\uE030")]
-    LibraryMusic,
-    [Description("\uF02A")]
-    Light,
-    [Description("\uE518")]
-    LightMode,
-    [Description("\uE0F0")]
-    Lightbulb,
-    [Description("\uEBFE")]
-    LightbulbCircle,
-    [Description("\uE90F")]
-    LightbulbOutline,
-    [Description("\uEA9A")]
-    LineAxis,
-    [Description("\uE919")]
-    LineStyle,
-    [Description("\uE91A")]
-    LineWeight,
-    [Description("\uE260")]
-    LinearScale,
-    [Description("\uE157")]
-    Link,
-    [Description("\uE16F")]
-    LinkOff,
-    [Description("\uE438")]
-    LinkedCamera,
-    [Description("\uEA60")]
-    Liquor,
-    [Description("\uE896")]
-    List,
-    [Description("\uE0EE")]
-    ListAlt,
-    [Description("\uE0C6")]
-    LiveHelp,
-    [Description("\uE639")]
-    LiveTv,
-    [Description("\uF02B")]
-    Living,
-    [Description("\uE53F")]
-    LocalActivity,
-    [Description("\uE53D")]
-    LocalAirport,
-    [Description("\uE53E")]
-    LocalAtm,
-    [Description("\uE53F")]
-    LocalAttraction,
-    [Description("\uE540")]
-    LocalBar,
-    [Description("\uE541")]
-    LocalCafe,
-    [Description("\uE542")]
-    LocalCarWash,
-    [Description("\uE543")]
-    LocalConvenienceStore,
-    [Description("\uE556")]
-    LocalDining,
-    [Description("\uE544")]
-    LocalDrink,
-    [Description("\uEF55")]
-    LocalFireDepartment,
-    [Description("\uE545")]
-    LocalFlorist,
-    [Description("\uE546")]
-    LocalGasStation,
-    [Description("\uE547")]
-    LocalGroceryStore,
-    [Description("\uE548")]
-    LocalHospital,
-    [Description("\uE549")]
-    LocalHotel,
-    [Description("\uE54A")]
-    LocalLaundryService,
-    [Description("\uE54B")]
-    LocalLibrary,
-    [Description("\uE54C")]
-    LocalMall,
-    [Description("\uE54D")]
-    LocalMovies,
-    [Description("\uE54E")]
-    LocalOffer,
-    [Description("\uE54F")]
-    LocalParking,
-    [Description("\uE550")]
-    LocalPharmacy,
-    [Description("\uE551")]
-    LocalPhone,
-    [Description("\uE552")]
-    LocalPizza,
-    [Description("\uE553")]
-    LocalPlay,
-    [Description("\uEF56")]
-    LocalPolice,
-    [Description("\uE554")]
-    LocalPostOffice,
-    [Description("\uE555")]
-    LocalPrintShop,
-    [Description("\uE555")]
-    LocalPrintshop,
-    [Description("\uE556")]
-    LocalRestaurant,
-    [Description("\uE557")]
-    LocalSee,
-    [Description("\uE558")]
-    LocalShipping,
-    [Description("\uE559")]
-    LocalTaxi,
-    [Description("\uE7F1")]
-    LocationCity,
-    [Description("\uE1B6")]
-    LocationDisabled,
-    [Description("\uE55A")]
-    LocationHistory,
-    [Description("\uE0C7")]
-    LocationOff,
-    [Description("\uE0C8")]
-    LocationOn,
-    [Description("\uF1DB")]
-    LocationPin,
-    [Description("\uE1B7")]
-    LocationSearching,
-    [Description("\uE897")]
-    Lock,
-    [Description("\uEF57")]
-    LockClock,
-    [Description("\uE898")]
-    LockOpen,
-    [Description("\uE899")]
-    LockOutline,
-    [Description("\uF8F3")]
-    LockPerson,
-    [Description("\uEADE")]
-    LockReset,
-    [Description("\uEA77")]
-    Login,
-    [Description("\uEAD6")]
-    LogoDev,
-    [Description("\uE9BA")]
-    Logout,
-    [Description("\uE3FC")]
-    Looks,
-    [Description("\uE3FB")]
-    Looks3,
-    [Description("\uE3FD")]
-    Looks4,
-    [Description("\uE3FE")]
-    Looks5,
-    [Description("\uE3FF")]
-    Looks6,
-    [Description("\uE400")]
-    LooksOne,
-    [Description("\uE401")]
-    LooksTwo,
-    [Description("\uE028")]
-    Loop,
-    [Description("\uE402")]
-    Loupe,
-    [Description("\uE16D")]
-    LowPriority,
-    [Description("\uE89A")]
-    Loyalty,
-    [Description("\uF02C")]
-    LteMobiledata,
-    [Description("\uF02D")]
-    LtePlusMobiledata,
-    [Description("\uF235")]
-    Luggage,
-    [Description("\uEA61")]
-    LunchDining,
-    [Description("\uEC0B")]
-    Lyrics,
-    [Description("\uF8D2")]
-    MacroOff,
-    [Description("\uE158")]
-    Mail,
-    [Description("\uEC0A")]
-    MailLock,
-    [Description("\uE0E1")]
-    MailOutline,
-    [Description("\uE58E")]
-    Male,
-    [Description("\uE4EB")]
-    Man,
-    [Description("\uF8E1")]
-    Man2,
-    [Description("\uF8E2")]
-    Man3,
-    [Description("\uF8E3")]
-    Man4,
-    [Description("\uF02E")]
-    ManageAccounts,
-    [Description("\uEBE7")]
-    ManageHistory,
-    [Description("\uF02F")]
-    ManageSearch,
-    [Description("\uE55B")]
-    Map,
-    [Description("\uF030")]
-    MapsHomeWork,
-    [Description("\uEF58")]
-    MapsUgc,
-    [Description("\uE9BB")]
-    Margin,
-    [Description("\uE9BC")]
-    MarkAsUnread,
-    [Description("\uF18B")]
-    MarkChatRead,
-    [Description("\uF189")]
-    MarkChatUnread,
-    [Description("\uF18C")]
-    MarkEmailRead,
-    [Description("\uF18A")]
-    MarkEmailUnread,
-    [Description("\uEB9D")]
-    MarkUnreadChatAlt,
-    [Description("\uE159")]
-    Markunread,
-    [Description("\uE89B")]
-    MarkunreadMailbox,
-    [Description("\uF218")]
-    Masks,
-    [Description("\uE930")]
-    Maximize,
-    [Description("\uF031")]
-    MediaBluetoothOff,
-    [Description("\uF032")]
-    MediaBluetoothOn,
-    [Description("\uEFA7")]
-    Mediation,
-    [Description("\uEBED")]
-    MedicalInformation,
-    [Description("\uF109")]
-    MedicalServices,
-    [Description("\uF033")]
-    Medication,
-    [Description("\uEA87")]
-    MedicationLiquid,
-    [Description("\uEB4F")]
-    MeetingRoom,
-    [Description("\uE322")]
-    Memory,
-    [Description("\uE5D2")]
-    Menu,
-    [Description("\uEA19")]
-    MenuBook,
-    [Description("\uE9BD")]
-    MenuOpen,
-    [Description("\uEB98")]
-    Merge,
-    [Description("\uE252")]
-    MergeType,
-    [Description("\uE0C9")]
-    Message,
-    [Description("\uE0CA")]
-    Messenger,
-    [Description("\uE0CB")]
-    MessengerOutline,
-    [Description("\uE029")]
-    Mic,
-    [Description("\uEF59")]
-    MicExternalOff,
-    [Description("\uEF5A")]
-    MicExternalOn,
-    [Description("\uE02A")]
-    MicNone,
-    [Description("\uE02B")]
-    MicOff,
-    [Description("\uF204")]
-    Microwave,
-    [Description("\uEA3F")]
-    MilitaryTech,
-    [Description("\uE931")]
-    Minimize,
-    [Description("\uEBF1")]
-    MinorCrash,
-    [Description("\uF10C")]
-    MiscellaneousServices,
-    [Description("\uE073")]
-    MissedVideoCall,
-    [Description("\uE618")]
-    Mms,
-    [Description("\uE200")]
-    MobileFriendly,
-    [Description("\uE201")]
-    MobileOff,
-    [Description("\uE0E7")]
-    MobileScreenShare,
-    [Description("\uF034")]
-    MobiledataOff,
-    [Description("\uF097")]
-    Mode,
-    [Description("\uE253")]
-    ModeComment,
-    [Description("\uE254")]
-    ModeEdit,
-    [Description("\uF035")]
-    ModeEditOutline,
-    [Description("\uEC17")]
-    ModeFanOff,
-    [Description("\uF036")]
-    ModeNight,
-    [Description("\uE7CE")]
-    ModeOfTravel,
-    [Description("\uF037")]
-    ModeStandby,
-    [Description("\uF0CF")]
-    ModelTraining,
-    [Description("\uE263")]
-    MonetizationOn,
-    [Description("\uE57D")]
-    Money,
-    [Description("\uE25C")]
-    MoneyOff,
-    [Description("\uF038")]
-    MoneyOffCsred,
-    [Description("\uEF5B")]
-    Monitor,
-    [Description("\uEAA2")]
-    MonitorHeart,
-    [Description("\uF039")]
-    MonitorWeight,
-    [Description("\uE403")]
-    MonochromePhotos,
-    [Description("\uE7F2")]
-    Mood,
-    [Description("\uE7F3")]
-    MoodBad,
-    [Description("\uEB28")]
-    Moped,
-    [Description("\uE619")]
-    More,
-    [Description("\uE5D3")]
-    MoreHoriz,
-    [Description("\uEA5D")]
-    MoreTime,
-    [Description("\uE5D4")]
-    MoreVert,
-    [Description("\uEAB2")]
-    Mosque,
-    [Description("\uF03A")]
-    MotionPhotosAuto,
-    [Description("\uE9C0")]
-    MotionPhotosOff,
-    [Description("\uE9C1")]
-    MotionPhotosOn,
-    [Description("\uF227")]
-    MotionPhotosPause,
-    [Description("\uE9C2")]
-    MotionPhotosPaused,
-    [Description("\uE91B")]
-    Motorcycle,
-    [Description("\uE323")]
-    Mouse,
-    [Description("\uEB61")]
-    MoveDown,
-    [Description("\uE168")]
-    MoveToInbox,
-    [Description("\uEB64")]
-    MoveUp,
-    [Description("\uE02C")]
-    Movie,
-    [Description("\uE404")]
-    MovieCreation,
-    [Description("\uF840")]
-    MovieEdit,
-    [Description("\uE43A")]
-    MovieFilter,
-    [Description("\uE501")]
-    Moving,
-    [Description("\uE9C3")]
-    Mp,
-    [Description("\uE6DF")]
-    MultilineChart,
-    [Description("\uF1B9")]
-    MultipleStop,
-    [Description("\uE1B8")]
-    MultitrackAudio,
-    [Description("\uEA36")]
-    Museum,
-    [Description("\uE405")]
-    MusicNote,
-    [Description("\uE440")]
-    MusicOff,
-    [Description("\uE063")]
-    MusicVideo,
-    [Description("\uE02E")]
-    MyLibraryAdd,
-    [Description("\uE02F")]
-    MyLibraryBooks,
-    [Description("\uE030")]
-    MyLibraryMusic,
-    [Description("\uE55C")]
-    MyLocation,
-    [Description("\uEF5C")]
-    Nat,
-    [Description("\uE406")]
-    Nature,
-    [Description("\uE407")]
-    NaturePeople,
-    [Description("\uE408")]
-    NavigateBefore,
-    [Description("\uE409")]
-    NavigateNext,
-    [Description("\uE55D")]
-    Navigation,
-    [Description("\uE569")]
-    NearMe,
-    [Description("\uF1EF")]
-    NearMeDisabled,
-    [Description("\uF03B")]
-    NearbyError,
-    [Description("\uF03C")]
-    NearbyOff,
-    [Description("\uEC16")]
-    NestCamWiredStand,
-    [Description("\uE1B9")]
-    NetworkCell,
-    [Description("\uE640")]
-    NetworkCheck,
-    [Description("\uE61A")]
-    NetworkLocked,
-    [Description("\uEBCA")]
-    NetworkPing,
-    [Description("\uE1BA")]
-    NetworkWifi,
-    [Description("\uEBE4")]
-    NetworkWifiOneBar,
-    [Description("\uEBD6")]
-    NetworkWifiTwoBar,
-    [Description("\uEBE1")]
-    NetworkWifiThreeBar,
-    [Description("\uE609")]
-    NewLabel,
-    [Description("\uE031")]
-    NewReleases,
-    [Description("\uEB81")]
-    Newspaper,
-    [Description("\uEF5D")]
-    NextPlan,
-    [Description("\uE16A")]
-    NextWeek,
-    [Description("\uE1BB")]
-    Nfc,
-    [Description("\uF1F1")]
-    NightShelter,
-    [Description("\uEA62")]
-    Nightlife,
-    [Description("\uF03D")]
-    Nightlight,
-    [Description("\uEF5E")]
-    NightlightRound,
-    [Description("\uEA46")]
-    NightsStay,
-    [Description("\uF03E")]
-    NoAccounts,
-    [Description("\uF8FE")]
-    NoAdultContent,
-    [Description("\uF237")]
-    NoBackpack,
-    [Description("\uF1A4")]
-    NoCell,
-    [Description("\uEBF0")]
-    NoCrash,
-    [Description("\uF1A5")]
-    NoDrinks,
-    [Description("\uE641")]
-    NoEncryption,
-    [Description("\uF03F")]
-    NoEncryptionGmailerrorred,
-    [Description("\uF1A6")]
-    NoFlash,
-    [Description("\uF1A7")]
-    NoFood,
-    [Description("\uF23B")]
-    NoLuggage,
-    [Description("\uF1D6")]
-    NoMeals,
-    [Description("\uF229")]
-    NoMealsOuline,
-    [Description("\uEB4E")]
-    NoMeetingRoom,
-    [Description("\uF1A8")]
-    NoPhotography,
-    [Description("\uE0CC")]
-    NoSim,
-    [Description("\uF1AF")]
-    NoStroller,
-    [Description("\uF1D5")]
-    NoTransfer,
-    [Description("\uEBEC")]
-    NoiseAware,
-    [Description("\uEBF3")]
-    NoiseControlOff,
-    [Description("\uE50E")]
-    NordicWalking,
-    [Description("\uF1E0")]
-    North,
-    [Description("\uF1E1")]
-    NorthEast,
-    [Description("\uF1E2")]
-    NorthWest,
-    [Description("\uF0FE")]
-    NotAccessible,
-    [Description("\uE033")]
-    NotInterested,
-    [Description("\uE575")]
-    NotListedLocation,
-    [Description("\uF0D1")]
-    NotStarted,
-    [Description("\uE06F")]
-    Note,
-    [Description("\uE89C")]
-    NoteAdd,
-    [Description("\uF040")]
-    NoteAlt,
-    [Description("\uE26C")]
-    Notes,
-    [Description("\uE399")]
-    NotificationAdd,
-    [Description("\uE004")]
-    NotificationImportant,
-    [Description("\uE7F4")]
-    Notifications,
-    [Description("\uE7F7")]
-    NotificationsActive,
-    [Description("\uE7F5")]
-    NotificationsNone,
-    [Description("\uE7F6")]
-    NotificationsOff,
-    [Description("\uE7F7")]
-    NotificationsOn,
-    [Description("\uE7F8")]
-    NotificationsPaused,
-    [Description("\uE1BC")]
-    NowWallpaper,
-    [Description("\uE1BD")]
-    NowWidgets,
-    [Description("\uEAC7")]
-    Numbers,
-    [Description("\uE932")]
-    OfflineBolt,
-    [Description("\uE90A")]
-    OfflinePin,
-    [Description("\uE9C5")]
-    OfflineShare,
-    [Description("\uEC15")]
-    OilBarrel,
-    [Description("\uEBFD")]
-    OnDeviceTraining,
-    [Description("\uE63A")]
-    OndemandVideo,
-    [Description("\uF0EB")]
-    OnlinePrediction,
-    [Description("\uE91C")]
-    Opacity,
-    [Description("\uE89D")]
-    OpenInBrowser,
-    [Description("\uF1CE")]
-    OpenInFull,
-    [Description("\uE89E")]
-    OpenInNew,
-    [Description("\uE4F6")]
-    OpenInNewOff,
-    [Description("\uE89F")]
-    OpenWith,
-    [Description("\uE58C")]
-    OtherHouses,
-    [Description("\uF228")]
-    Outbond,
-    [Description("\uE1CA")]
-    Outbound,
-    [Description("\uEF5F")]
-    Outbox,
-    [Description("\uEA47")]
-    OutdoorGrill,
-    [Description("\uF0D2")]
-    OutgoingMail,
-    [Description("\uF1D4")]
-    Outlet,
-    [Description("\uE16E")]
-    OutlinedFlag,
-    [Description("\uEBBE")]
-    Output,
-    [Description("\uE9C8")]
-    Padding,
-    [Description("\uE7F9")]
-    Pages,
-    [Description("\uE8A0")]
-    Pageview,
-    [Description("\uF041")]
-    Paid,
-    [Description("\uE40A")]
-    Palette,
-    [Description("\uF86A")]
-    Pallet,
-    [Description("\uE925")]
-    PanTool,
-    [Description("\uEBB9")]
-    PanToolAlt,
-    [Description("\uE40B")]
-    Panorama,
-    [Description("\uE40C")]
-    PanoramaFishEye,
-    [Description("\uE40C")]
-    PanoramaFisheye,
-    [Description("\uE40D")]
-    PanoramaHorizontal,
-    [Description("\uEF60")]
-    PanoramaHorizontalSelect,
-    [Description("\uE9C9")]
-    PanoramaPhotosphere,
-    [Description("\uE9CA")]
-    PanoramaPhotosphereSelect,
-    [Description("\uE40E")]
-    PanoramaVertical,
-    [Description("\uEF61")]
-    PanoramaVerticalSelect,
-    [Description("\uE40F")]
-    PanoramaWideAngle,
-    [Description("\uEF62")]
-    PanoramaWideAngleSelect,
-    [Description("\uE50F")]
-    Paragliding,
-    [Description("\uEA63")]
-    Park,
-    [Description("\uE7FA")]
-    PartyMode,
-    [Description("\uF042")]
-    Password,
-    [Description("\uF043")]
-    Pattern,
-    [Description("\uE034")]
-    Pause,
-    [Description("\uE1A2")]
-    PauseCircle,
-    [Description("\uE035")]
-    PauseCircleFilled,
-    [Description("\uE036")]
-    PauseCircleOutline,
-    [Description("\uE0EA")]
-    PausePresentation,
-    [Description("\uE8A1")]
-    Payment,
-    [Description("\uEF63")]
-    Payments,
-    [Description("\uEA8D")]
-    Paypal,
-    [Description("\uEB29")]
-    PedalBike,
-    [Description("\uEF64")]
-    Pending,
-    [Description("\uF1BB")]
-    PendingActions,
-    [Description("\uEB50")]
-    Pentagon,
-    [Description("\uE7FB")]
-    People,
-    [Description("\uEA21")]
-    PeopleAlt,
-    [Description("\uE7FC")]
-    PeopleOutline,
-    [Description("\uEB58")]
-    Percent,
-    [Description("\uE8A2")]
-    PermCameraMic,
-    [Description("\uE8A3")]
-    PermContactCal,
-    [Description("\uE8A3")]
-    PermContactCalendar,
-    [Description("\uE8A4")]
-    PermDataSetting,
-    [Description("\uE8A5")]
-    PermDeviceInfo,
-    [Description("\uE8A5")]
-    PermDeviceInformation,
-    [Description("\uE8A6")]
-    PermIdentity,
-    [Description("\uE8A7")]
-    PermMedia,
-    [Description("\uE8A8")]
-    PermPhoneMsg,
-    [Description("\uE8A9")]
-    PermScanWifi,
-    [Description("\uE7FD")]
-    Person,
-    [Description("\uF8E4")]
-    Person2,
-    [Description("\uF8E5")]
-    Person3,
-    [Description("\uF8E6")]
-    Person4,
-    [Description("\uE7FE")]
-    PersonAdd,
-    [Description("\uEA4D")]
-    PersonAddAlt,
-    [Description("\uEF65")]
-    PersonAddAlt1,
-    [Description("\uE9CB")]
-    PersonAddDisabled,
-    [Description("\uE510")]
-    PersonOff,
-    [Description("\uE7FF")]
-    PersonOutline,
-    [Description("\uE55A")]
-    PersonPin,
-    [Description("\uE56A")]
-    PersonPinCircle,
-    [Description("\uEF66")]
-    PersonRemove,
-    [Description("\uEF67")]
-    PersonRemoveAltOne,
-    [Description("\uF106")]
-    PersonSearch,
-    [Description("\uE6DA")]
-    PersonalInjury,
-    [Description("\uE63B")]
-    PersonalVideo,
-    [Description("\uF0FA")]
-    PestControl,
-    [Description("\uF0FD")]
-    PestControlRodent,
-    [Description("\uE91D")]
-    Pets,
-    [Description("\uEAD7")]
-    Phishing,
-    [Description("\uE0CD")]
-    Phone,
-    [Description("\uE324")]
-    PhoneAndroid,
-    [Description("\uE61B")]
-    PhoneBluetoothSpeaker,
-    [Description("\uE649")]
-    PhoneCallback,
-    [Description("\uE9CC")]
-    PhoneDisabled,
-    [Description("\uE9CD")]
-    PhoneEnabled,
-    [Description("\uE61C")]
-    PhoneForwarded,
-    [Description("\uE61D")]
-    PhoneInTalk,
-    [Description("\uE325")]
-    PhoneIphone,
-    [Description("\uE61E")]
-    PhoneLocked,
-    [Description("\uE61F")]
-    PhoneMissed,
-    [Description("\uE620")]
-    PhonePaused,
-    [Description("\uE326")]
-    Phonelink,
-    [Description("\uE0DB")]
-    PhonelinkErase,
-    [Description("\uE0DC")]
-    PhonelinkLock,
-    [Description("\uE327")]
-    PhonelinkOff,
-    [Description("\uE0DD")]
-    PhonelinkRing,
-    [Description("\uE0DE")]
-    PhonelinkSetup,
-    [Description("\uE410")]
-    Photo,
-    [Description("\uE411")]
-    PhotoAlbum,
-    [Description("\uE412")]
-    PhotoCamera,
-    [Description("\uEF68")]
-    PhotoCameraBack,
-    [Description("\uEF69")]
-    PhotoCameraFront,
-    [Description("\uE43B")]
-    PhotoFilter,
-    [Description("\uE413")]
-    PhotoLibrary,
-    [Description("\uE432")]
-    PhotoSizeSelectActual,
-    [Description("\uE433")]
-    PhotoSizeSelectLarge,
-    [Description("\uE434")]
-    PhotoSizeSelectSmall,
-    [Description("\uEB8F")]
-    Php,
-    [Description("\uE521")]
-    Piano,
-    [Description("\uE520")]
-    PianoOff,
-    [Description("\uE415")]
-    PictureAsPdf,
-    [Description("\uE8AA")]
-    PictureInPicture,
-    [Description("\uE911")]
-    PictureInPictureAlt,
-    [Description("\uE6C4")]
-    PieChart,
-    [Description("\uF044")]
-    PieChartOutline,
-    [Description("\uE6C5")]
-    PieChartOutlined,
-    [Description("\uF045")]
-    Pin,
-    [Description("\uE55E")]
-    PinDrop,
-    [Description("\uE767")]
-    PinEnd,
-    [Description("\uE763")]
-    PinInvoke,
-    [Description("\uEB38")]
-    Pinch,
-    [Description("\uE9CE")]
-    PivotTableChart,
-    [Description("\uEAA3")]
-    Pix,
-    [Description("\uE55F")]
-    Place,
-    [Description("\uEA5A")]
-    Plagiarism,
-    [Description("\uE037")]
-    PlayArrow,
-    [Description("\uE1C4")]
-    PlayCircle,
-    [Description("\uE038")]
-    PlayCircleFill,
-    [Description("\uE038")]
-    PlayCircleFilled,
-    [Description("\uE039")]
-    PlayCircleOutline,
-    [Description("\uEF6A")]
-    PlayDisabled,
-    [Description("\uE906")]
-    PlayForWork,
-    [Description("\uF047")]
-    PlayLesson,
-    [Description("\uE03B")]
-    PlaylistAdd,
-    [Description("\uE065")]
-    PlaylistAddCheck,
-    [Description("\uE7E6")]
-    PlaylistAddCheckCircle,
-    [Description("\uE7E5")]
-    PlaylistAddCircle,
-    [Description("\uE05F")]
-    PlaylistPlay,
-    [Description("\uEB80")]
-    PlaylistRemove,
-    [Description("\uF107")]
-    Plumbing,
-    [Description("\uE800")]
-    PlusOne,
-    [Description("\uF048")]
-    Podcasts,
-    [Description("\uF17E")]
-    PointOfSale,
-    [Description("\uEA17")]
-    Policy,
-    [Description("\uE801")]
-    Poll,
-    [Description("\uEBBB")]
-    Polyline,
-    [Description("\uE8AB")]
-    Polymer,
-    [Description("\uEB48")]
-    Pool,
-    [Description("\uE0CE")]
-    PortableWifiOff,
-    [Description("\uE416")]
-    Portrait,
-    [Description("\uEA20")]
-    PostAdd,
-    [Description("\uE63C")]
-    Power,
-    [Description("\uE336")]
-    PowerInput,
-    [Description("\uE646")]
-    PowerOff,
-    [Description("\uE8AC")]
-    PowerSettingsNew,
-    [Description("\uF049")]
-    PrecisionManufacturing,
-    [Description("\uE91E")]
-    PregnantWoman,
-    [Description("\uE0DF")]
-    PresentToAll,
-    [Description("\uF1C5")]
-    Preview,
-    [Description("\uF04A")]
-    PriceChange,
-    [Description("\uF04B")]
-    PriceCheck,
-    [Description("\uE8AD")]
-    Print,
-    [Description("\uE9CF")]
-    PrintDisabled,
-    [Description("\uE645")]
-    PriorityHigh,
-    [Description("\uF0DC")]
-    PrivacyTip,
-    [Description("\uE744")]
-    PrivateConnectivity,
-    [Description("\uE1D1")]
-    ProductionQuantityLimits,
-    [Description("\uEC14")]
-    Propane,
-    [Description("\uEC13")]
-    PropaneTank,
-    [Description("\uEA4A")]
-    Psychology,
-    [Description("\uF8EA")]
-    PsychologyAlt,
-    [Description("\uE80B")]
-    Public,
-    [Description("\uF1CA")]
-    PublicOff,
-    [Description("\uE255")]
-    Publish,
-    [Description("\uF232")]
-    PublishedWithChanges,
-    [Description("\uEAA8")]
-    PunchClock,
-    [Description("\uF10D")]
-    PushPin,
-    [Description("\uEF6B")]
-    QrCode,
-    [Description("\uE00A")]
-    QrCode2,
-    [Description("\uF206")]
-    QrCodeScanner,
-    [Description("\uE8AE")]
-    QueryBuilder,
-    [Description("\uE4FC")]
-    QueryStats,
-    [Description("\uE8AF")]
-    QuestionAnswer,
-    [Description("\uEB8B")]
-    QuestionMark,
-    [Description("\uE03C")]
-    Queue,
-    [Description("\uE03D")]
-    QueueMusic,
-    [Description("\uE066")]
-    QueuePlayNext,
-    [Description("\uE0CF")]
-    QuickContactsDialer,
-    [Description("\uE0D0")]
-    QuickContactsMail,
-    [Description("\uEF6C")]
-    Quickreply,
-    [Description("\uF04C")]
-    Quiz,
-    [Description("\uEA98")]
-    Quora,
-    [Description("\uF04D")]
-    RMobiledata,
-    [Description("\uF04E")]
-    Radar,
-    [Description("\uE03E")]
-    Radio,
-    [Description("\uE837")]
-    RadioButtonChecked,
-    [Description("\uE836")]
-    RadioButtonOff,
-    [Description("\uE837")]
-    RadioButtonOn,
-    [Description("\uE836")]
-    RadioButtonUnchecked,
-    [Description("\uE9D1")]
-    RailwayAlert,
-    [Description("\uEA64")]
-    RamenDining,
-    [Description("\uEB9C")]
-    RampLeft,
-    [Description("\uEB96")]
-    RampRight,
-    [Description("\uE560")]
-    RateReview,
-    [Description("\uF04F")]
-    RawOff,
-    [Description("\uF050")]
-    RawOn,
-    [Description("\uEF6D")]
-    ReadMore,
-    [Description("\uE73A")]
-    RealEstateAgent,
-    [Description("\uF846")]
-    RebaseEdit,
-    [Description("\uE8B0")]
-    Receipt,
-    [Description("\uEF6E")]
-    ReceiptLong,
-    [Description("\uE03F")]
-    RecentActors,
-    [Description("\uE9D2")]
-    Recommend,
-    [Description("\uE91F")]
-    RecordVoiceOver,
-    [Description("\uEB54")]
-    Rectangle,
-    [Description("\uE760")]
-    Recycling,
-    [Description("\uEAA0")]
-    Reddit,
-    [Description("\uE8B1")]
-    Redeem,
-    [Description("\uE15A")]
-    Redo,
-    [Description("\uF21C")]
-    ReduceCapacity,
-    [Description("\uE5D5")]
-    Refresh,
-    [Description("\uF051")]
-    RememberMe,
-    [Description("\uE15B")]
-    Remove,
-    [Description("\uE15C")]
-    RemoveCircle,
-    [Description("\uE15D")]
-    RemoveCircleOutline,
-    [Description("\uE9D3")]
-    RemoveDone,
-    [Description("\uE067")]
-    RemoveFromQueue,
-    [Description("\uE9D4")]
-    RemoveModerator,
-    [Description("\uE417")]
-    RemoveRedEye,
-    [Description("\uEBFC")]
-    RemoveRoad,
-    [Description("\uE928")]
-    RemoveShoppingCart,
-    [Description("\uE8FE")]
-    Reorder,
-    [Description("\uF8E8")]
-    Repartition,
-    [Description("\uE040")]
-    Repeat,
-    [Description("\uE9D6")]
-    RepeatOn,
-    [Description("\uE041")]
-    RepeatOne,
-    [Description("\uE9D7")]
-    RepeatOneOn,
-    [Description("\uE042")]
-    Replay,
-    [Description("\uE059")]
-    Replay10,
-    [Description("\uE05A")]
-    Replay30,
-    [Description("\uE05B")]
-    Replay5,
-    [Description("\uE9D8")]
-    ReplayCircleFilled,
-    [Description("\uE15E")]
-    Reply,
-    [Description("\uE15F")]
-    ReplyAll,
-    [Description("\uE160")]
-    Report,
-    [Description("\uF052")]
-    ReportGmailerrorred,
-    [Description("\uE170")]
-    ReportOff,
-    [Description("\uE8B2")]
-    ReportProblem,
-    [Description("\uF22C")]
-    RequestPage,
-    [Description("\uF1B6")]
-    RequestQuote,
-    [Description("\uE9D9")]
-    ResetTv,
-    [Description("\uF053")]
-    RestartAlt,
-    [Description("\uE56C")]
-    Restaurant,
-    [Description("\uE561")]
-    RestaurantMenu,
-    [Description("\uE8B3")]
-    Restore,
-    [Description("\uE938")]
-    RestoreFromTrash,
-    [Description("\uE929")]
-    RestorePage,
-    [Description("\uF054")]
-    Reviews,
-    [Description("\uF1F5")]
-    RiceBowl,
-    [Description("\uE0D1")]
-    RingVolume,
-    [Description("\uEBA5")]
-    Rocket,
-    [Description("\uEB9B")]
-    RocketLaunch,
-    [Description("\uEC12")]
-    RollerShades,
-    [Description("\uEC11")]
-    RollerShadesClosed,
-    [Description("\uEBCD")]
-    RollerSkating,
-    [Description("\uF201")]
-    Roofing,
-    [Description("\uE8B4")]
-    Room,
-    [Description("\uF1B8")]
-    RoomPreferences,
-    [Description("\uEB49")]
-    RoomService,
-    [Description("\uE418")]
-    RotateNinetyDegreesCcw,
-    [Description("\uEAAB")]
-    RotateNinetyDegreesCw,
-    [Description("\uE419")]
-    RotateLeft,
-    [Description("\uE41A")]
-    RotateRight,
-    [Description("\uEB99")]
-    RoundaboutLeft,
-    [Description("\uEBA3")]
-    RoundaboutRight,
-    [Description("\uE920")]
-    RoundedCorner,
-    [Description("\uEACD")]
-    Route,
-    [Description("\uE328")]
-    Router,
-    [Description("\uE921")]
-    Rowing,
-    [Description("\uE0E5")]
-    RssFeed,
-    [Description("\uF055")]
-    Rsvp,
-    [Description("\uE9AD")]
-    Rtt,
-    [Description("\uF1C2")]
-    Rule,
-    [Description("\uF1C9")]
-    RuleFolder,
-    [Description("\uEF6F")]
-    RunCircle,
-    [Description("\uE51D")]
-    RunningWithErrors,
-    [Description("\uE642")]
-    RvHookup,
-    [Description("\uEBEF")]
-    SafetyCheck,
-    [Description("\uE1CC")]
-    SafetyDivider,
-    [Description("\uE502")]
-    Sailing,
-    [Description("\uF21D")]
-    Sanitizer,
-    [Description("\uE562")]
-    Satellite,
-    [Description("\uEB3A")]
-    SatelliteAlt,
-    [Description("\uE161")]
-    Save,
-    [Description("\uE171")]
-    SaveAlt,
-    [Description("\uEB60")]
-    SaveAs,
-    [Description("\uEA11")]
-    SavedSearch,
-    [Description("\uE2EB")]
-    Savings,
-    [Description("\uEB5F")]
-    Scale,
-    [Description("\uE329")]
-    Scanner,
-    [Description("\uE268")]
-    ScatterPlot,
-    [Description("\uE8B5")]
-    Schedule,
-    [Description("\uEA0A")]
-    ScheduleSend,
-    [Description("\uE4FD")]
-    Schema,
-    [Description("\uE80C")]
-    School,
-    [Description("\uEA4B")]
-    Science,
-    [Description("\uE269")]
-    Score,
-    [Description("\uEBD0")]
-    Scoreboard,
-    [Description("\uE1BE")]
-    ScreenLockLandscape,
-    [Description("\uE1BF")]
-    ScreenLockPortrait,
-    [Description("\uE1C0")]
-    ScreenLockRotation,
-    [Description("\uE1C1")]
-    ScreenRotation,
-    [Description("\uEBEE")]
-    ScreenRotationAlt,
-    [Description("\uEF70")]
-    ScreenSearchDesktop,
-    [Description("\uE0E2")]
-    ScreenShare,
-    [Description("\uF056")]
-    Screenshot,
-    [Description("\uEC08")]
-    ScreenshotMonitor,
-    [Description("\uEBCE")]
-    ScubaDiving,
-    [Description("\uE9DD")]
-    Sd,
-    [Description("\uE623")]
-    SdCard,
-    [Description("\uF057")]
-    SdCardAlert,
-    [Description("\uE1C2")]
-    SdStorage,
-    [Description("\uE8B6")]
-    Search,
-    [Description("\uEA76")]
-    SearchOff,
-    [Description("\uE32A")]
-    Security,
-    [Description("\uF058")]
-    SecurityUpdate,
-    [Description("\uF059")]
-    SecurityUpdateGood,
-    [Description("\uF05A")]
-    SecurityUpdateWarning,
-    [Description("\uE94B")]
-    Segment,
-    [Description("\uE162")]
-    SelectAll,
-    [Description("\uEA78")]
-    SelfImprovement,
-    [Description("\uF05B")]
-    Sell,
-    [Description("\uE163")]
-    Send,
-    [Description("\uEA0C")]
-    SendAndArchive,
-    [Description("\uEADB")]
-    SendTimeExtension,
-    [Description("\uF05C")]
-    SendToMobile,
-    [Description("\uF1B5")]
-    SensorDoor,
-    [Description("\uEC10")]
-    SensorOccupied,
-    [Description("\uF1B4")]
-    SensorWindow,
-    [Description("\uE51E")]
-    Sensors,
-    [Description("\uE51F")]
-    SensorsOff,
-    [Description("\uE811")]
-    SentimentDissatisfied,
-    [Description("\uE812")]
-    SentimentNeutral,
-    [Description("\uE813")]
-    SentimentSatisfied,
-    [Description("\uE0ED")]
-    SentimentSatisfiedAlt,
-    [Description("\uE814")]
-    SentimentVeryDissatisfied,
-    [Description("\uE815")]
-    SentimentVerySatisfied,
-    [Description("\uF1EA")]
-    SetMeal,
-    [Description("\uE8B8")]
-    Settings,
-    [Description("\uF05D")]
-    SettingsAccessibility,
-    [Description("\uE8B9")]
-    SettingsApplications,
-    [Description("\uE8BA")]
-    SettingsBackupRestore,
-    [Description("\uE8BB")]
-    SettingsBluetooth,
-    [Description("\uE8BD")]
-    SettingsBrightness,
-    [Description("\uE8BC")]
-    SettingsCell,
-    [Description("\uE8BD")]
-    SettingsDisplay,
-    [Description("\uE8BE")]
-    SettingsEthernet,
-    [Description("\uE8BF")]
-    SettingsInputAntenna,
-    [Description("\uE8C0")]
-    SettingsInputComponent,
-    [Description("\uE8C1")]
-    SettingsInputComposite,
-    [Description("\uE8C2")]
-    SettingsInputHdmi,
-    [Description("\uE8C3")]
-    SettingsInputSvideo,
-    [Description("\uE8C4")]
-    SettingsOverscan,
-    [Description("\uE8C5")]
-    SettingsPhone,
-    [Description("\uE8C6")]
-    SettingsPower,
-    [Description("\uE8C7")]
-    SettingsRemote,
-    [Description("\uF05E")]
-    SettingsSuggest,
-    [Description("\uE1C3")]
-    SettingsSystemDaydream,
-    [Description("\uE8C8")]
-    SettingsVoice,
-    [Description("\uEBD3")]
-    SevereCold,
-    [Description("\uF8D3")]
-    ShapeLine,
-    [Description("\uE80D")]
-    Share,
-    [Description("\uE524")]
-    ShareArrivalTime,
-    [Description("\uF05F")]
-    ShareLocation,
-    [Description("\uF86E")]
-    Shelves,
-    [Description("\uE9E0")]
-    Shield,
-    [Description("\uEAA9")]
-    ShieldMoon,
-    [Description("\uE8C9")]
-    Shop,
-    [Description("\uE19E")]
-    Shop2,
-    [Description("\uE8CA")]
-    ShopTwo,
-    [Description("\uEA9D")]
-    Shopify,
-    [Description("\uF1CC")]
-    ShoppingBag,
-    [Description("\uE8CB")]
-    ShoppingBasket,
-    [Description("\uE8CC")]
-    ShoppingCart,
-    [Description("\uEB88")]
-    ShoppingCartCheckout,
-    [Description("\uE261")]
-    ShortText,
-    [Description("\uF060")]
-    Shortcut,
-    [Description("\uE6E1")]
-    ShowChart,
-    [Description("\uF061")]
-    Shower,
-    [Description("\uE043")]
-    Shuffle,
-    [Description("\uE9E1")]
-    ShuffleOn,
-    [Description("\uE43D")]
-    ShutterSpeed,
-    [Description("\uF220")]
-    Sick,
-    [Description("\uEBE5")]
-    SignLanguage,
-    [Description("\uF0A8")]
-    SignalCellular0Bar,
-    [Description("\uE1C8")]
-    SignalCellular4Bar,
-    [Description("\uE202")]
-    SignalCellularAlt,
-    [Description("\uEBDF")]
-    SignalCellularAlt1Bar,
-    [Description("\uEBE3")]
-    SignalCellularAlt2Bar,
-    [Description("\uF0AC")]
-    SignalCellularConnectedNoInternet0Bar,
-    [Description("\uE1CD")]
-    SignalCellularConnectedNoInternet4Bar,
-    [Description("\uE1CE")]
-    SignalCellularNoSim,
-    [Description("\uF062")]
-    SignalCellularNodata,
-    [Description("\uE1CF")]
-    SignalCellularNull,
-    [Description("\uE1D0")]
-    SignalCellularOff,
-    [Description("\uF0B0")]
-    SignalWifi0Bar,
-    [Description("\uE1D8")]
-    SignalWifi4Bar,
-    [Description("\uE1D9")]
-    SignalWifi4BarLock,
-    [Description("\uF063")]
-    SignalWifiBad,
-    [Description("\uF064")]
-    SignalWifiConnectedNoInternet4,
-    [Description("\uE1DA")]
-    SignalWifiOff,
-    [Description("\uF065")]
-    SignalWifiStatusbar4Bar,
-    [Description("\uF066")]
-    SignalWifiStatusbarConnectedNoInternet4,
-    [Description("\uF067")]
-    SignalWifiStatusbarNull,
-    [Description("\uEB91")]
-    Signpost,
-    [Description("\uE32B")]
-    SimCard,
-    [Description("\uE624")]
-    SimCardAlert,
-    [Description("\uF068")]
-    SimCardDownload,
-    [Description("\uEA48")]
-    SingleBed,
-    [Description("\uF069")]
-    Sip,
-    [Description("\uE511")]
-    Skateboarding,
-    [Description("\uE044")]
-    SkipNext,
-    [Description("\uE045")]
-    SkipPrevious,
-    [Description("\uE512")]
-    Sledding,
-    [Description("\uE41B")]
-    Slideshow,
-    [Description("\uE068")]
-    SlowMotionVideo,
-    [Description("\uF1C1")]
-    SmartButton,
-    [Description("\uF06A")]
-    SmartDisplay,
-    [Description("\uF06B")]
-    SmartScreen,
-    [Description("\uF06C")]
-    SmartToy,
-    [Description("\uE32C")]
-    Smartphone,
-    [Description("\uEB4A")]
-    SmokeFree,
-    [Description("\uEB4B")]
-    SmokingRooms,
-    [Description("\uE625")]
-    Sms,
-    [Description("\uE626")]
-    SmsFailed,
-    [Description("\uEA6E")]
-    Snapchat,
-    [Description("\uF1C7")]
-    SnippetFolder,
-    [Description("\uE046")]
-    Snooze,
-    [Description("\uE513")]
-    Snowboarding,
-    [Description("\uE80F")]
-    Snowing,
-    [Description("\uE503")]
-    Snowmobile,
-    [Description("\uE514")]
-    Snowshoeing,
-    [Description("\uF1B2")]
-    Soap,
-    [Description("\uE1CB")]
-    SocialDistance,
-    [Description("\uEC0F")]
-    SolarPower,
-    [Description("\uE164")]
-    Sort,
-    [Description("\uE053")]
-    SortByAlpha,
-    [Description("\uEBF7")]
-    Sos,
-    [Description("\uE7D3")]
-    SoupKitchen,
-    [Description("\uF1C4")]
-    Source,
-    [Description("\uF1E3")]
-    South,
-    [Description("\uE7E4")]
-    SouthAmerica,
-    [Description("\uF1E4")]
-    SouthEast,
-    [Description("\uF1E5")]
-    SouthWest,
-    [Description("\uEB4C")]
-    Spa,
-    [Description("\uE256")]
-    SpaceBar,
-    [Description("\uE66B")]
-    SpaceDashboard,
-    [Description("\uEBEB")]
-    SpatialAudio,
-    [Description("\uEBE8")]
-    SpatialAudioOff,
-    [Description("\uEBEA")]
-    SpatialTracking,
-    [Description("\uE32D")]
-    Speaker,
-    [Description("\uE32E")]
-    SpeakerGroup,
-    [Description("\uE8CD")]
-    SpeakerNotes,
-    [Description("\uE92A")]
-    SpeakerNotesOff,
-    [Description("\uE0D2")]
-    SpeakerPhone,
-    [Description("\uE9E4")]
-    Speed,
-    [Description("\uE8CE")]
-    Spellcheck,
-    [Description("\uF06D")]
-    Splitscreen,
-    [Description("\uE9A7")]
-    Spoke,
-    [Description("\uEA30")]
-    Sports,
-    [Description("\uF1F3")]
-    SportsBar,
-    [Description("\uEA51")]
-    SportsBaseball,
-    [Description("\uEA26")]
-    SportsBasketball,
-    [Description("\uEA27")]
-    SportsCricket,
-    [Description("\uEA28")]
-    SportsEsports,
-    [Description("\uEA29")]
-    SportsFootball,
-    [Description("\uEA2A")]
-    SportsGolf,
-    [Description("\uEBC4")]
-    SportsGymnastics,
-    [Description("\uEA33")]
-    SportsHandball,
-    [Description("\uEA2B")]
-    SportsHockey,
-    [Description("\uEA34")]
-    SportsKabaddi,
-    [Description("\uEAE9")]
-    SportsMartialArts,
-    [Description("\uEA2C")]
-    SportsMma,
-    [Description("\uEA2D")]
-    SportsMotorsports,
-    [Description("\uEA2E")]
-    SportsRugby,
-    [Description("\uF06E")]
-    SportsScore,
-    [Description("\uEA2F")]
-    SportsSoccer,
-    [Description("\uEA32")]
-    SportsTennis,
-    [Description("\uEA31")]
-    SportsVolleyball,
-    [Description("\uEB36")]
-    Square,
-    [Description("\uEA49")]
-    SquareFoot,
-    [Description("\uEB66")]
-    SsidChart,
-    [Description("\uE9E6")]
-    StackedBarChart,
-    [Description("\uF22B")]
-    StackedLineChart,
-    [Description("\uEB90")]
-    Stadium,
-    [Description("\uF1A9")]
-    Stairs,
-    [Description("\uE838")]
-    Star,
-    [Description("\uE83A")]
-    StarBorder,
-    [Description("\uF099")]
-    StarBorderPurple500,
-    [Description("\uE839")]
-    StarHalf,
-    [Description("\uF06F")]
-    StarOutline,
-    [Description("\uF09A")]
-    StarPurple500,
-    [Description("\uF0EC")]
-    StarRate,
-    [Description("\uE8D0")]
-    Stars,
-    [Description("\uE089")]
-    Start,
-    [Description("\uE0D3")]
-    StayCurrentLandscape,
-    [Description("\uE0D4")]
-    StayCurrentPortrait,
-    [Description("\uE0D5")]
-    StayPrimaryLandscape,
-    [Description("\uE0D6")]
-    StayPrimaryPortrait,
-    [Description("\uF1FC")]
-    StickyNote2,
-    [Description("\uE047")]
-    Stop,
-    [Description("\uEF71")]
-    StopCircle,
-    [Description("\uE0E3")]
-    StopScreenShare,
-    [Description("\uE1DB")]
-    Storage,
-    [Description("\uE8D1")]
-    Store,
-    [Description("\uE563")]
-    StoreMallDirectory,
-    [Description("\uEA12")]
-    Storefront,
-    [Description("\uF070")]
-    Storm,
-    [Description("\uEB95")]
-    Straight,
-    [Description("\uE41C")]
-    Straighten,
-    [Description("\uE9E9")]
-    Stream,
-    [Description("\uE56E")]
-    Streetview,
-    [Description("\uE257")]
-    StrikethroughS,
-    [Description("\uF1AE")]
-    Stroller,
-    [Description("\uE41D")]
-    Style,
-    [Description("\uE5D9")]
-    SubdirectoryArrowLeft,
-    [Description("\uE5DA")]
-    SubdirectoryArrowRight,
-    [Description("\uE8D2")]
-    Subject,
-    [Description("\uF111")]
-    Subscript,
-    [Description("\uE064")]
-    Subscriptions,
-    [Description("\uE048")]
-    Subtitles,
-    [Description("\uEF72")]
-    SubtitlesOff,
-    [Description("\uE56F")]
-    Subway,
-    [Description("\uF071")]
-    Summarize,
-    [Description("\uE81A")]
-    Sunny,
-    [Description("\uE819")]
-    SunnySnowing,
-    [Description("\uF112")]
-    Superscript,
-    [Description("\uE939")]
-    SupervisedUserCircle,
-    [Description("\uE8D3")]
-    SupervisorAccount,
-    [Description("\uEF73")]
-    Support,
-    [Description("\uF0E2")]
-    SupportAgent,
-    [Description("\uE515")]
-    Surfing,
-    [Description("\uE049")]
-    SurroundSound,
-    [Description("\uE0D7")]
-    SwapCalls,
-    [Description("\uE8D4")]
-    SwapHoriz,
-    [Description("\uE933")]
-    SwapHorizontalCircle,
-    [Description("\uE8D5")]
-    SwapVert,
-    [Description("\uE8D6")]
-    SwapVertCircle,
-    [Description("\uE8D6")]
-    SwapVerticalCircle,
-    [Description("\uE9EC")]
-    Swipe,
-    [Description("\uEB53")]
-    SwipeDown,
-    [Description("\uEB30")]
-    SwipeDownAlt,
-    [Description("\uEB59")]
-    SwipeLeft,
-    [Description("\uEB33")]
-    SwipeLeftAlt,
-    [Description("\uEB52")]
-    SwipeRight,
-    [Description("\uEB56")]
-    SwipeRightAlt,
-    [Description("\uEB2E")]
-    SwipeUp,
-    [Description("\uEB35")]
-    SwipeUpAlt,
-    [Description("\uEB51")]
-    SwipeVertical,
-    [Description("\uE7E1")]
-    SwitchAccessShortcut,
-    [Description("\uE7E2")]
-    SwitchAccessShortcutAdd,
-    [Description("\uE9ED")]
-    SwitchAccount,
-    [Description("\uE41E")]
-    SwitchCamera,
-    [Description("\uF1D1")]
-    SwitchLeft,
-    [Description("\uF1D2")]
-    SwitchRight,
-    [Description("\uE41F")]
-    SwitchVideo,
-    [Description("\uEAB0")]
-    Synagogue,
-    [Description("\uE627")]
-    Sync,
-    [Description("\uEA18")]
-    SyncAlt,
-    [Description("\uE628")]
-    SyncDisabled,
-    [Description("\uEAEE")]
-    SyncLock,
-    [Description("\uE629")]
-    SyncProblem,
-    [Description("\uF072")]
-    SystemSecurityUpdate,
-    [Description("\uF073")]
-    SystemSecurityUpdateGood,
-    [Description("\uF074")]
-    SystemSecurityUpdateWarning,
-    [Description("\uE62A")]
-    SystemUpdate,
-    [Description("\uE8D7")]
-    SystemUpdateAlt,
-    [Description("\uE8D7")]
-    SystemUpdateTv,
-    [Description("\uE8D8")]
-    Tab,
-    [Description("\uE8D9")]
-    TabUnselected,
-    [Description("\uEAD2")]
-    TableBar,
-    [Description("\uE265")]
-    TableChart,
-    [Description("\uEAC6")]
-    TableRestaurant,
-    [Description("\uF101")]
-    TableRows,
-    [Description("\uF1BE")]
-    TableView,
-    [Description("\uE32F")]
-    Tablet,
-    [Description("\uE330")]
-    TabletAndroid,
-    [Description("\uE331")]
-    TabletMac,
-    [Description("\uE9EF")]
-    Tag,
-    [Description("\uE420")]
-    TagFaces,
-    [Description("\uEA74")]
-    TakeoutDining,
-    [Description("\uE62B")]
-    TapAndPlay,
-    [Description("\uF1E9")]
-    Tapas,
-    [Description("\uF075")]
-    Task,
-    [Description("\uE2E6")]
-    TaskAlt,
-    [Description("\uEF74")]
-    TaxiAlert,
-    [Description("\uEA6B")]
-    Telegram,
-    [Description("\uEAB3")]
-    TempleBuddhist,
-    [Description("\uEAAF")]
-    TempleHindu,
-    [Description("\uEB8E")]
-    Terminal,
-    [Description("\uE564")]
-    Terrain,
-    [Description("\uEADD")]
-    TextDecrease,
-    [Description("\uE262")]
-    TextFields,
-    [Description("\uE165")]
-    TextFormat,
-    [Description("\uEAE2")]
-    TextIncrease,
-    [Description("\uE93A")]
-    TextRotateUp,
-    [Description("\uE93B")]
-    TextRotateVertical,
-    [Description("\uE93C")]
-    TextRotationAngledown,
-    [Description("\uE93D")]
-    TextRotationAngleup,
-    [Description("\uE93E")]
-    TextRotationDown,
-    [Description("\uE93F")]
-    TextRotationNone,
-    [Description("\uF1C6")]
-    TextSnippet,
-    [Description("\uE0D8")]
-    Textsms,
-    [Description("\uE421")]
-    Texture,
-    [Description("\uEA66")]
-    TheaterComedy,
-    [Description("\uE8DA")]
-    Theaters,
-    [Description("\uF076")]
-    Thermostat,
-    [Description("\uF077")]
-    ThermostatAuto,
-    [Description("\uE8DB")]
-    ThumbDown,
-    [Description("\uE816")]
-    ThumbDownAlt,
-    [Description("\uE9F2")]
-    ThumbDownOffAlt,
-    [Description("\uE8DC")]
-    ThumbUp,
-    [Description("\uE817")]
-    ThumbUpAlt,
-    [Description("\uE9F3")]
-    ThumbUpOffAlt,
-    [Description("\uE8DD")]
-    ThumbsUpDown,
-    [Description("\uEBDB")]
-    Thunderstorm,
-    [Description("\uEA7E")]
-    Tiktok,
-    [Description("\uE62C")]
-    TimeToLeave,
-    [Description("\uE422")]
-    Timelapse,
-    [Description("\uE922")]
-    Timeline,
-    [Description("\uE425")]
-    Timer,
-    [Description("\uE423")]
-    TimerTen,
-    [Description("\uF07A")]
-    TimerTenSelect,
-    [Description("\uE424")]
-    TimerThree,
-    [Description("\uF07B")]
-    TimerThreeSelect,
-    [Description("\uE426")]
-    TimerOff,
-    [Description("\uE79A")]
-    TipsAndUpdates,
-    [Description("\uEBC8")]
-    TireRepair,
-    [Description("\uE264")]
-    Title,
-    [Description("\uE8DE")]
-    Toc,
-    [Description("\uE8DF")]
-    Today,
-    [Description("\uE9F5")]
-    ToggleOff,
-    [Description("\uE9F6")]
-    ToggleOn,
-    [Description("\uEA25")]
-    Token,
-    [Description("\uE8E0")]
-    Toll,
-    [Description("\uE427")]
-    Tonality,
-    [Description("\uF1C8")]
-    Topic,
-    [Description("\uE199")]
-    Tornado,
-    [Description("\uE913")]
-    TouchApp,
-    [Description("\uEF75")]
-    Tour,
-    [Description("\uE332")]
-    Toys,
-    [Description("\uE8E1")]
-    TrackChanges,
-    [Description("\uE565")]
-    Traffic,
-    [Description("\uE570")]
-    Train,
-    [Description("\uE571")]
-    Tram,
-    [Description("\uF8EC")]
-    Transcribe,
-    [Description("\uE572")]
-    TransferWithinAStation,
-    [Description("\uE428")]
-    Transform,
-    [Description("\uE58D")]
-    Transgender,
-    [Description("\uE579")]
-    TransitEnterexit,
-    [Description("\uE8E2")]
-    Translate,
-    [Description("\uE2DB")]
-    TravelExplore,
-    [Description("\uE8E3")]
-    TrendingDown,
-    [Description("\uE8E4")]
-    TrendingFlat,
-    [Description("\uE8E4")]
-    TrendingNeutral,
-    [Description("\uE8E5")]
-    TrendingUp,
-    [Description("\uE57B")]
-    TripOrigin,
-    [Description("\uF86B")]
-    Trolley,
-    [Description("\uE1D2")]
-    Troubleshoot,
-    [Description("\uF07C")]
-    Try,
-    [Description("\uEBD8")]
-    Tsunami,
-    [Description("\uF1AA")]
-    Tty,
-    [Description("\uE429")]
-    Tune,
-    [Description("\uF07D")]
-    Tungsten,
-    [Description("\uEBA6")]
-    TurnLeft,
-    [Description("\uEBAB")]
-    TurnRight,
-    [Description("\uEBA7")]
-    TurnSharpLeft,
-    [Description("\uEBAA")]
-    TurnSharpRight,
-    [Description("\uEBA4")]
-    TurnSlightLeft,
-    [Description("\uEB9A")]
-    TurnSlightRight,
-    [Description("\uE8E6")]
-    TurnedIn,
-    [Description("\uE8E7")]
-    TurnedInNot,
-    [Description("\uE333")]
-    Tv,
-    [Description("\uE647")]
-    TvOff,
-    [Description("\uE9F9")]
-    TwoWheeler,
-    [Description("\uF8F0")]
-    TypeSpecimen,
-    [Description("\uEBA1")]
-    UTurnLeft,
-    [Description("\uEBA2")]
-    UTurnRight,
-    [Description("\uF1AD")]
-    Umbrella,
-    [Description("\uE169")]
-    Unarchive,
-    [Description("\uE166")]
-    Undo,
-    [Description("\uE5D6")]
-    UnfoldLess,
-    [Description("\uF8CF")]
-    UnfoldLessDouble,
-    [Description("\uE5D7")]
-    UnfoldMore,
-    [Description("\uF8D0")]
-    UnfoldMoreDouble,
-    [Description("\uF236")]
-    Unpublished,
-    [Description("\uE0EB")]
-    Unsubscribe,
-    [Description("\uF07E")]
-    Upcoming,
-    [Description("\uE923")]
-    Update,
-    [Description("\uE075")]
-    UpdateDisabled,
-    [Description("\uF0FB")]
-    Upgrade,
-    [Description("\uF09B")]
-    Upload,
-    [Description("\uE9FC")]
-    UploadFile,
-    [Description("\uE1E0")]
-    Usb,
-    [Description("\uE4FA")]
-    UsbOff,
-    [Description("\uE138")]
-    Vaccines,
-    [Description("\uEBC6")]
-    VapeFree,
-    [Description("\uEBCF")]
-    VapingRooms,
-    [Description("\uEF76")]
-    Verified,
-    [Description("\uE8E8")]
-    VerifiedUser,
-    [Description("\uE258")]
-    VerticalAlignBottom,
-    [Description("\uE259")]
-    VerticalAlignCenter,
-    [Description("\uE25A")]
-    VerticalAlignTop,
-    [Description("\uE076")]
-    VerticalDistribute,
-    [Description("\uEC0E")]
-    VerticalShades,
-    [Description("\uEC0D")]
-    VerticalShadesClosed,
-    [Description("\uE949")]
-    VerticalSplit,
-    [Description("\uE62D")]
-    Vibration,
-    [Description("\uE070")]
-    VideoCall,
-    [Description("\uF07F")]
-    VideoCameraBack,
-    [Description("\uF080")]
-    VideoCameraFront,
-    [Description("\uF8A0")]
-    VideoChat,
-    [Description("\uE04A")]
-    VideoCollection,
-    [Description("\uEB87")]
-    VideoFile,
-    [Description("\uE071")]
-    VideoLabel,
-    [Description("\uE04A")]
-    VideoLibrary,
-    [Description("\uEA75")]
-    VideoSettings,
-    [Description("\uF081")]
-    VideoStable,
-    [Description("\uE04B")]
-    Videocam,
-    [Description("\uE04C")]
-    VideocamOff,
-    [Description("\uE338")]
-    VideogameAsset,
-    [Description("\uE500")]
-    VideogameAssetOff,
-    [Description("\uE8E9")]
-    ViewAgenda,
-    [Description("\uE8EA")]
-    ViewArray,
-    [Description("\uE8EB")]
-    ViewCarousel,
-    [Description("\uE8EC")]
-    ViewColumn,
-    [Description("\uE42A")]
-    ViewComfortable,
-    [Description("\uE42A")]
-    ViewComfy,
-    [Description("\uEB73")]
-    ViewComfyAlt,
-    [Description("\uE42B")]
-    ViewCompact,
-    [Description("\uEB74")]
-    ViewCompactAlt,
-    [Description("\uEB75")]
-    ViewCozy,
-    [Description("\uE8ED")]
-    ViewDay,
-    [Description("\uE8EE")]
-    ViewHeadline,
-    [Description("\uE9FE")]
-    ViewInAr,
-    [Description("\uEB7F")]
-    ViewKanban,
-    [Description("\uE8EF")]
-    ViewList,
-    [Description("\uE8F0")]
-    ViewModule,
-    [Description("\uE8F1")]
-    ViewQuilt,
-    [Description("\uF114")]
-    ViewSidebar,
-    [Description("\uE8F2")]
-    ViewStream,
-    [Description("\uEB85")]
-    ViewTimeline,
-    [Description("\uE8F3")]
-    ViewWeek,
-    [Description("\uE435")]
-    Vignette,
-    [Description("\uE586")]
-    Villa,
-    [Description("\uE8F4")]
-    Visibility,
-    [Description("\uE8F5")]
-    VisibilityOff,
-    [Description("\uE62E")]
-    VoiceChat,
-    [Description("\uE94A")]
-    VoiceOverOff,
-    [Description("\uE0D9")]
-    Voicemail,
-    [Description("\uEBDA")]
-    Volcano,
-    [Description("\uE04D")]
-    VolumeDown,
-    [Description("\uE79C")]
-    VolumeDownAlt,
-    [Description("\uE04E")]
-    VolumeMute,
-    [Description("\uE04F")]
-    VolumeOff,
-    [Description("\uE050")]
-    VolumeUp,
-    [Description("\uEA70")]
-    VolunteerActivism,
-    [Description("\uE0DA")]
-    VpnKey,
-    [Description("\uEB7A")]
-    VpnKeyOff,
-    [Description("\uE62F")]
-    VpnLock,
-    [Description("\uF082")]
-    Vrpano,
-    [Description("\uF8FF")]
-    Wallet,
-    [Description("\uE8F6")]
-    WalletGiftcard,
-    [Description("\uE8F7")]
-    WalletMembership,
-    [Description("\uE8F8")]
-    WalletTravel,
-    [Description("\uE1BC")]
-    Wallpaper,
-    [Description("\uEBB8")]
-    Warehouse,
-    [Description("\uE002")]
-    Warning,
-    [Description("\uF083")]
-    WarningAmber,
-    [Description("\uF1B1")]
-    Wash,
-    [Description("\uE334")]
-    Watch,
-    [Description("\uE924")]
-    WatchLater,
-    [Description("\uEAE3")]
-    WatchOff,
-    [Description("\uF084")]
-    Water,
-    [Description("\uF203")]
-    WaterDamage,
-    [Description("\uE798")]
-    WaterDrop,
-    [Description("\uEA00")]
-    WaterfallChart,
-    [Description("\uE176")]
-    Waves,
-    [Description("\uE766")]
-    WavingHand,
-    [Description("\uE42C")]
-    WbAuto,
-    [Description("\uE42D")]
-    WbCloudy,
-    [Description("\uE42E")]
-    WbIncandescent,
-    [Description("\uE436")]
-    WbIridescent,
-    [Description("\uEA01")]
-    WbShade,
-    [Description("\uE430")]
-    WbSunny,
-    [Description("\uEA02")]
-    WbTwighlight,
-    [Description("\uE1C6")]
-    WbTwilight,
-    [Description("\uE63D")]
-    Wc,
-    [Description("\uE051")]
-    Web,
-    [Description("\uE069")]
-    WebAsset,
-    [Description("\uE4F7")]
-    WebAssetOff,
-    [Description("\uE595")]
-    WebStories,
-    [Description("\uEB92")]
-    Webhook,
-    [Description("\uEA81")]
-    Wechat,
-    [Description("\uE16B")]
-    Weekend,
-    [Description("\uF1E6")]
-    West,
-    [Description("\uE80E")]
-    Whatshot,
-    [Description("\uF1AB")]
-    WheelchairPickup,
-    [Description("\uE177")]
-    WhereToVote,
-    [Description("\uE1BD")]
-    Widgets,
-    [Description("\uF8F5")]
-    WidthFull,
-    [Description("\uF8F6")]
-    WidthNormal,
-    [Description("\uF8F7")]
-    WidthWide,
-    [Description("\uE63E")]
-    Wifi,
-    [Description("\uE4CA")]
-    Wifi1Bar,
-    [Description("\uE4D9")]
-    Wifi2Bar,
-    [Description("\uEF77")]
-    WifiCalling,
-    [Description("\uF085")]
-    WifiCalling3,
-    [Description("\uEB6A")]
-    WifiChannel,
-    [Description("\uEB31")]
-    WifiFind,
-    [Description("\uE1E1")]
-    WifiLock,
-    [Description("\uE648")]
-    WifiOff,
-    [Description("\uEB6B")]
-    WifiPassword,
-    [Description("\uF0FC")]
-    WifiProtectedSetup,
-    [Description("\uE1E2")]
-    WifiTethering,
-    [Description("\uEAD9")]
-    WifiTetheringError,
-    [Description("\uF086")]
-    WifiTetheringErrorRounded,
-    [Description("\uF087")]
-    WifiTetheringOff,
-    [Description("\uEC0C")]
-    WindPower,
-    [Description("\uF088")]
-    Window,
-    [Description("\uF1E8")]
-    WineBar,
-    [Description("\uE13E")]
-    Woman,
-    [Description("\uF8E7")]
-    Woman2,
-    [Description("\uEA6D")]
-    WooCommerce,
-    [Description("\uEA9F")]
-    Wordpress,
-    [Description("\uE8F9")]
-    Work,
-    [Description("\uEC09")]
-    WorkHistory,
-    [Description("\uE942")]
-    WorkOff,
-    [Description("\uE943")]
-    WorkOutline,
-    [Description("\uE7AF")]
-    WorkspacePremium,
-    [Description("\uE1A0")]
-    Workspaces,
-    [Description("\uEA0D")]
-    WorkspacesFilled,
-    [Description("\uEA0F")]
-    WorkspacesOutline,
-    [Description("\uE25B")]
-    WrapText,
-    [Description("\uEF78")]
-    WrongLocation,
-    [Description("\uF1C3")]
-    Wysiwyg,
-    [Description("\uF089")]
-    Yard,
-    [Description("\uE8FA")]
-    YoutubeSearchedFor,
-    [Description("\uE8FF")]
-    ZoomIn,
-    [Description("\uEB2D")]
-    ZoomInMap,
-    [Description("\uE900")]
-    ZoomOut,
-    [Description("\uE56B")]
-    ZoomOutMap,
+    TenK = 0xE951,
+    TenMp = 0xE952,
+    ElevenMp = 0xE953,
+    OneHundredTwentyThree = 0xEB8D,
+    TwelveMp = 0xE954,
+    ThirteenMp = 0xE955,
+    FourteenMp = 0xE956,
+    FifteenMp = 0xE957,
+    SixteenMp = 0xE958,
+    SeventeenMp = 0xE959,
+    EighteenUpRating = 0xF8FD,
+    EighteenMp = 0xE95A,
+    NineteenMp = 0xE95B,
+    OneK = 0xE95C,
+    OneKPlus = 0xE95D,
+    OneXMobiledata = 0xEFCD,
+    TwentyMp = 0xE95E,
+    TwentyOneMp = 0xE95F,
+    TwentyTwoMp = 0xE960,
+    TwentyThreeMp = 0xE961,
+    TwentyFourMp = 0xE962,
+    TwoK = 0xE963,
+    TwoKPlus = 0xE964,
+    TwoMp = 0xE965,
+    ThirtyFps = 0xEFCE,
+    ThirtyFpsSelect = 0xEFCF,
+    ThreeHundredSixty = 0xE577,
+    ThreeDRotation = 0xE84D,
+    ThreeGMobiledata = 0xEFD0,
+    ThreeK = 0xE966,
+    ThreeKPlus = 0xE967,
+    ThreeMp = 0xE968,
+    ThreeP = 0xEFD1,
+    FourGMobiledata = 0xEFD2,
+    FourGPlusMobiledata = 0xEFD3,
+    FourK = 0xE072,
+    FourKPlus = 0xE969,
+    FourMp = 0xE96A,
+    FiveG = 0xEF38,
+    FiveK = 0xE96B,
+    FiveKPlus = 0xE96C,
+    FiveMp = 0xE96D,
+    SixtyFps = 0xEFD4,
+    SixtyFpsSelect = 0xEFD5,
+    SixFtApart = 0xF21E,
+    SixK = 0xE96E,
+    SixKPlus = 0xE96F,
+    SixMp = 0xE970,
+    SevenK = 0xE971,
+    SevenKPlus = 0xE972,
+    SevenMp = 0xE973,
+    EightK = 0xE974,
+    EightKPlus = 0xE975,
+    EightMp = 0xE976,
+    NineK = 0xE977,
+    NineKPlus = 0xE978,
+    NineMp = 0xE979,
+    Abc = 0xEB94,
+    AcUnit = 0xEB3B,
+    AccessAlarm = 0xE190,
+    AccessAlarms = 0xE191,
+    AccessTime = 0xE192,
+    AccessTimeFilled = 0xEFD6,
+    Accessibility = 0xE84E,
+    AccessibilityNew = 0xE92C,
+    Accessible = 0xE914,
+    AccessibleForward = 0xE934,
+    AccountBalance = 0xE84F,
+    AccountBalanceWallet = 0xE850,
+    AccountBox = 0xE851,
+    AccountCircle = 0xE853,
+    AccountTree = 0xE97A,
+    AdUnits = 0xEF39,
+    Adb = 0xE60E,
+    Add = 0xE145,
+    AddAPhoto = 0xE439,
+    AddAlarm = 0xE193,
+    AddAlert = 0xE003,
+    AddBox = 0xE146,
+    AddBusiness = 0xE729,
+    AddCall = 0xE0E8,
+    AddCard = 0xEB86,
+    AddChart = 0xE97B,
+    AddCircle = 0xE147,
+    AddCircleOutline = 0xE148,
+    AddComment = 0xE266,
+    AddHome = 0xF8EB,
+    AddHomeWork = 0xF8ED,
+    AddIcCall = 0xE97C,
+    AddLink = 0xE178,
+    AddLocation = 0xE567,
+    AddLocationAlt = 0xEF3A,
+    AddModerator = 0xE97D,
+    AddPhotoAlternate = 0xE43E,
+    AddReaction = 0xE1D3,
+    AddRoad = 0xEF3B,
+    AddShoppingCart = 0xE854,
+    AddTask = 0xF23A,
+    AddToDrive = 0xE65C,
+    AddToHomeScreen = 0xE1FE,
+    AddToPhotos = 0xE39D,
+    AddToQueue = 0xE05C,
+    Addchart = 0xEF3C,
+    AdfScanner = 0xEADA,
+    Adjust = 0xE39E,
+    AdminPanelSettings = 0xEF3D,
+    Adobe = 0xEA96,
+    AdsClick = 0xE762,
+    Agriculture = 0xEA79,
+    Air = 0xEFD8,
+    AirlineSeatFlat = 0xE630,
+    AirlineSeatFlatAngled = 0xE631,
+    AirlineSeatIndividualSuite = 0xE632,
+    AirlineSeatLegroomExtra = 0xE633,
+    AirlineSeatLegroomNormal = 0xE634,
+    AirlineSeatLegroomReduced = 0xE635,
+    AirlineSeatReclineExtra = 0xE636,
+    AirlineSeatReclineNormal = 0xE637,
+    AirlineStops = 0xE7D0,
+    Airlines = 0xE7CA,
+    AirplaneTicket = 0xEFD9,
+    AirplanemodeActive = 0xE195,
+    AirplanemodeInactive = 0xE194,
+    AirplanemodeOff = 0xE194,
+    AirplanemodeOn = 0xE195,
+    Airplay = 0xE055,
+    AirportShuttle = 0xEB3C,
+    Alarm = 0xE855,
+    AlarmAdd = 0xE856,
+    AlarmOff = 0xE857,
+    AlarmOn = 0xE858,
+    Album = 0xE019,
+    AlignHorizontalCenter = 0xE00F,
+    AlignHorizontalLeft = 0xE00D,
+    AlignHorizontalRight = 0xE010,
+    AlignVerticalBottom = 0xE015,
+    AlignVerticalCenter = 0xE011,
+    AlignVerticalTop = 0xE00C,
+    AllInbox = 0xE97F,
+    AllInclusive = 0xEB3D,
+    AllOut = 0xE90B,
+    AltRoute = 0xF184,
+    AlternateEmail = 0xE0E6,
+    AmpStories = 0xEA13,
+    Analytics = 0xEF3E,
+    Anchor = 0xF1CD,
+    Android = 0xE859,
+    Animation = 0xE71C,
+    Announcement = 0xE85A,
+    Aod = 0xEFDA,
+    Apartment = 0xEA40,
+    Api = 0xF1B7,
+    AppBlocking = 0xEF3F,
+    AppRegistration = 0xEF40,
+    AppSettingsAlt = 0xEF41,
+    AppShortcut = 0xEAE4,
+    Apple = 0xEA80,
+    Approval = 0xE982,
+    Apps = 0xE5C3,
+    AppsOutage = 0xE7CC,
+    Architecture = 0xEA3B,
+    Archive = 0xE149,
+    AreaChart = 0xE770,
+    ArrowBack = 0xE5C4,
+    ArrowBackIos = 0xE5E0,
+    ArrowBackIosNew = 0xE2EA,
+    ArrowCircleDown = 0xF181,
+    ArrowCircleLeft = 0xEAA7,
+    ArrowCircleRight = 0xEAAA,
+    ArrowCircleUp = 0xF182,
+    ArrowDownward = 0xE5DB,
+    ArrowDropDown = 0xE5C5,
+    ArrowDropDownCircle = 0xE5C6,
+    ArrowDropUp = 0xE5C7,
+    ArrowForward = 0xE5C8,
+    ArrowForwardIos = 0xE5E1,
+    ArrowLeft = 0xE5DE,
+    ArrowOutward = 0xF8CE,
+    ArrowRight = 0xE5DF,
+    ArrowRightAlt = 0xE941,
+    ArrowUpward = 0xE5D8,
+    ArtTrack = 0xE060,
+    Article = 0xEF42,
+    AspectRatio = 0xE85B,
+    Assessment = 0xE85C,
+    Assignment = 0xE85D,
+    AssignmentAdd = 0xF848,
+    AssignmentInd = 0xE85E,
+    AssignmentLate = 0xE85F,
+    AssignmentReturn = 0xE860,
+    AssignmentReturned = 0xE861,
+    AssignmentTurnedIn = 0xE862,
+    AssistWalker = 0xF8D5,
+    Assistant = 0xE39F,
+    AssistantDirection = 0xE988,
+    AssistantNavigation = 0xE989,
+    AssistantPhoto = 0xE3A0,
+    AssuredWorkload = 0xEB6F,
+    Atm = 0xE573,
+    AttachEmail = 0xEA5E,
+    AttachFile = 0xE226,
+    AttachMoney = 0xE227,
+    Attachment = 0xE2BC,
+    Attractions = 0xEA52,
+    Attribution = 0xEFDB,
+    AudioFile = 0xEB82,
+    Audiotrack = 0xE3A1,
+    AutoAwesome = 0xE65F,
+    AutoAwesomeMosaic = 0xE660,
+    AutoAwesomeMotion = 0xE661,
+    AutoDelete = 0xEA4C,
+    AutoFixHigh = 0xE663,
+    AutoFixNormal = 0xE664,
+    AutoFixOff = 0xE665,
+    AutoGraph = 0xE4FB,
+    AutoMode = 0xEC20,
+    AutoStories = 0xE666,
+    AutofpsSelect = 0xEFDC,
+    Autorenew = 0xE863,
+    AvTimer = 0xE01B,
+    BabyChangingStation = 0xF19B,
+    BackHand = 0xE764,
+    Backpack = 0xF19C,
+    Backspace = 0xE14A,
+    Backup = 0xE864,
+    BackupTable = 0xEF43,
+    Badge = 0xEA67,
+    BakeryDining = 0xEA53,
+    Balance = 0xEAF6,
+    Balcony = 0xE58F,
+    Ballot = 0xE172,
+    BarChart = 0xE26B,
+    BarcodeReader = 0xF85C,
+    BatchPrediction = 0xF0F5,
+    Bathroom = 0xEFDD,
+    Bathtub = 0xEA41,
+    Battery0Bar = 0xEBDC,
+    Battery1Bar = 0xEBD9,
+    Battery2Bar = 0xEBE0,
+    Battery3Bar = 0xEBDD,
+    Battery4Bar = 0xEBE2,
+    Battery5Bar = 0xEBD4,
+    Battery6Bar = 0xEBD2,
+    BatteryAlert = 0xE19C,
+    BatteryChargingFull = 0xE1A3,
+    BatteryFull = 0xE1A4,
+    BatterySaver = 0xEFDE,
+    BatteryStd = 0xE1A5,
+    BatteryUnknown = 0xE1A6,
+    BeachAccess = 0xEB3E,
+    Bed = 0xEFDF,
+    BedroomBaby = 0xEFE0,
+    BedroomChild = 0xEFE1,
+    BedroomParent = 0xEFE2,
+    Bedtime = 0xEF44,
+    BedtimeOff = 0xEB76,
+    Beenhere = 0xE52D,
+    Bento = 0xF1F4,
+    BikeScooter = 0xEF45,
+    Biotech = 0xEA3A,
+    Blender = 0xEFE3,
+    Blind = 0xF8D6,
+    Blinds = 0xE286,
+    BlindsClosed = 0xEC1F,
+    Block = 0xE14B,
+    BlockFlipped = 0xEF46,
+    Bloodtype = 0xEFE4,
+    Bluetooth = 0xE1A7,
+    BluetoothAudio = 0xE60F,
+    BluetoothConnected = 0xE1A8,
+    BluetoothDisabled = 0xE1A9,
+    BluetoothDrive = 0xEFE5,
+    BluetoothSearching = 0xE1AA,
+    BlurCircular = 0xE3A2,
+    BlurLinear = 0xE3A3,
+    BlurOff = 0xE3A4,
+    BlurOn = 0xE3A5,
+    Bolt = 0xEA0B,
+    Book = 0xE865,
+    BookOnline = 0xF217,
+    Bookmark = 0xE866,
+    BookmarkAdd = 0xE598,
+    BookmarkAdded = 0xE599,
+    BookmarkBorder = 0xE867,
+    BookmarkOutline = 0xE867,
+    BookmarkRemove = 0xE59A,
+    Bookmarks = 0xE98B,
+    BorderAll = 0xE228,
+    BorderBottom = 0xE229,
+    BorderClear = 0xE22A,
+    BorderColor = 0xE22B,
+    BorderHorizontal = 0xE22C,
+    BorderInner = 0xE22D,
+    BorderLeft = 0xE22E,
+    BorderOuter = 0xE22F,
+    BorderRight = 0xE230,
+    BorderStyle = 0xE231,
+    BorderTop = 0xE232,
+    BorderVertical = 0xE233,
+    Boy = 0xEB67,
+    BrandingWatermark = 0xE06B,
+    BreakfastDining = 0xEA54,
+    Brightness1 = 0xE3A6,
+    Brightness2 = 0xE3A7,
+    Brightness3 = 0xE3A8,
+    Brightness4 = 0xE3A9,
+    Brightness5 = 0xE3AA,
+    Brightness6 = 0xE3AB,
+    Brightness7 = 0xE3AC,
+    BrightnessAuto = 0xE1AB,
+    BrightnessHigh = 0xE1AC,
+    BrightnessLow = 0xE1AD,
+    BrightnessMedium = 0xE1AE,
+    BroadcastOnHome = 0xF8F8,
+    BroadcastOnPersonal = 0xF8F9,
+    BrokenImage = 0xE3AD,
+    BrowseGallery = 0xEBD1,
+    BrowserNotSupported = 0xEF47,
+    BrowserUpdated = 0xE7CF,
+    BrunchDining = 0xEA73,
+    Brush = 0xE3AE,
+    BubbleChart = 0xE6DD,
+    BugReport = 0xE868,
+    Build = 0xE869,
+    BuildCircle = 0xEF48,
+    Bungalow = 0xE591,
+    BurstMode = 0xE43C,
+    BusAlert = 0xE98F,
+    Business = 0xE0AF,
+    BusinessCenter = 0xEB3F,
+    Cabin = 0xE589,
+    Cable = 0xEFE6,
+    Cached = 0xE86A,
+    Cake = 0xE7E9,
+    Calculate = 0xEA5F,
+    CalendarMonth = 0xEBCC,
+    CalendarToday = 0xE935,
+    CalendarViewDay = 0xE936,
+    CalendarViewMonth = 0xEFE7,
+    CalendarViewWeek = 0xEFE8,
+    Call = 0xE0B0,
+    CallEnd = 0xE0B1,
+    CallMade = 0xE0B2,
+    CallMerge = 0xE0B3,
+    CallMissed = 0xE0B4,
+    CallMissedOutgoing = 0xE0E4,
+    CallReceived = 0xE0B5,
+    CallSplit = 0xE0B6,
+    CallToAction = 0xE06C,
+    Camera = 0xE3AF,
+    CameraAlt = 0xE3B0,
+    CameraEnhance = 0xE8FC,
+    CameraFront = 0xE3B1,
+    CameraIndoor = 0xEFE9,
+    CameraOutdoor = 0xEFEA,
+    CameraRear = 0xE3B2,
+    CameraRoll = 0xE3B3,
+    Cameraswitch = 0xEFEB,
+    Campaign = 0xEF49,
+    Cancel = 0xE5C9,
+    CancelPresentation = 0xE0E9,
+    CancelScheduleSend = 0xEA39,
+    CandlestickChart = 0xEAD4,
+    CarCrash = 0xEBF2,
+    CarRental = 0xEA55,
+    CarRepair = 0xEA56,
+    CardGiftcard = 0xE8F6,
+    CardMembership = 0xE8F7,
+    CardTravel = 0xE8F8,
+    Carpenter = 0xF1F8,
+    Cases = 0xE992,
+    Casino = 0xEB40,
+    Cast = 0xE307,
+    CastConnected = 0xE308,
+    CastForEducation = 0xEFEC,
+    Castle = 0xEAB1,
+    CatchingPokemon = 0xE508,
+    Category = 0xE574,
+    Celebration = 0xEA65,
+    CellTower = 0xEBBA,
+    CellWifi = 0xE0EC,
+    CenterFocusStrong = 0xE3B4,
+    CenterFocusWeak = 0xE3B5,
+    Chair = 0xEFED,
+    ChairAlt = 0xEFEE,
+    Chalet = 0xE585,
+    ChangeCircle = 0xE2E7,
+    ChangeHistory = 0xE86B,
+    ChargingStation = 0xF19D,
+    Chat = 0xE0B7,
+    ChatBubble = 0xE0CA,
+    ChatBubbleOutline = 0xE0CB,
+    Check = 0xE5CA,
+    CheckBox = 0xE834,
+    CheckBoxOutlineBlank = 0xE835,
+    CheckCircle = 0xE86C,
+    CheckCircleOutline = 0xE92D,
+    Checklist = 0xE6B1,
+    ChecklistRtl = 0xE6B3,
+    Checkroom = 0xF19E,
+    ChevronLeft = 0xE5CB,
+    ChevronRight = 0xE5CC,
+    ChildCare = 0xEB41,
+    ChildFriendly = 0xEB42,
+    ChromeReaderMode = 0xE86D,
+    Church = 0xEAAE,
+    Circle = 0xEF4A,
+    CircleNotifications = 0xE994,
+    Class = 0xE86E,
+    CleanHands = 0xF21F,
+    CleaningServices = 0xF0FF,
+    Clear = 0xE14C,
+    ClearAll = 0xE0B8,
+    Close = 0xE5CD,
+    CloseFullscreen = 0xF1CF,
+    ClosedCaption = 0xE01C,
+    ClosedCaptionDisabled = 0xF1DC,
+    ClosedCaptionOff = 0xE996,
+    Cloud = 0xE2BD,
+    CloudCircle = 0xE2BE,
+    CloudDone = 0xE2BF,
+    CloudDownload = 0xE2C0,
+    CloudOff = 0xE2C1,
+    CloudQueue = 0xE2C2,
+    CloudSync = 0xEB5A,
+    CloudUpload = 0xE2C3,
+    CloudySnowing = 0xE810,
+    Co2 = 0xE7B0,
+    CoPresent = 0xEAF0,
+    Code = 0xE86F,
+    CodeOff = 0xE4F3,
+    Coffee = 0xEFEF,
+    CoffeeMaker = 0xEFF0,
+    Collections = 0xE3B6,
+    CollectionsBookmark = 0xE431,
+    ColorLens = 0xE3B7,
+    Colorize = 0xE3B8,
+    Comment = 0xE0B9,
+    CommentBank = 0xEA4E,
+    CommentsDisabled = 0xE7A2,
+    Commit = 0xEAF5,
+    Commute = 0xE940,
+    Compare = 0xE3B9,
+    CompareArrows = 0xE915,
+    CompassCalibration = 0xE57C,
+    Compost = 0xE761,
+    Compress = 0xE94D,
+    Computer = 0xE30A,
+    ConfirmationNum = 0xE638,
+    ConfirmationNumber = 0xE638,
+    ConnectWithoutContact = 0xF223,
+    ConnectedTv = 0xE998,
+    ConnectingAirports = 0xE7C9,
+    Construction = 0xEA3C,
+    ContactEmergency = 0xF8D1,
+    ContactMail = 0xE0D0,
+    ContactPage = 0xF22E,
+    ContactPhone = 0xE0CF,
+    ContactSupport = 0xE94C,
+    Contactless = 0xEA71,
+    Contacts = 0xE0BA,
+    ContentCopy = 0xE14D,
+    ContentCut = 0xE14E,
+    ContentPaste = 0xE14F,
+    ContentPasteGo = 0xEA8E,
+    ContentPasteOff = 0xE4F8,
+    ContentPasteSearch = 0xEA9B,
+    Contrast = 0xEB37,
+    ControlCamera = 0xE074,
+    ControlPoint = 0xE3BA,
+    ControlPointDuplicate = 0xE3BB,
+    ConveyorBelt = 0xF867,
+    Cookie = 0xEAAC,
+    CopyAll = 0xE2EC,
+    Copyright = 0xE90C,
+    Coronavirus = 0xF221,
+    CorporateFare = 0xF1D0,
+    Cottage = 0xE587,
+    Countertops = 0xF1F7,
+    Create = 0xE150,
+    CreateNewFolder = 0xE2CC,
+    CreditCard = 0xE870,
+    CreditCardOff = 0xE4F4,
+    CreditScore = 0xEFF1,
+    Crib = 0xE588,
+    CrisisAlert = 0xEBE9,
+    Crop = 0xE3BE,
+    Crop169 = 0xE3BC,
+    Crop32 = 0xE3BD,
+    Crop54 = 0xE3BF,
+    Crop75 = 0xE3C0,
+    CropDin = 0xE3C1,
+    CropFree = 0xE3C2,
+    CropLandscape = 0xE3C3,
+    CropOriginal = 0xE3C4,
+    CropPortrait = 0xE3C5,
+    CropRotate = 0xE437,
+    CropSquare = 0xE3C6,
+    CrueltyFree = 0xE799,
+    Css = 0xEB93,
+    CurrencyBitcoin = 0xEBC5,
+    CurrencyExchange = 0xEB70,
+    CurrencyFranc = 0xEAFA,
+    CurrencyLira = 0xEAEF,
+    CurrencyPound = 0xEAF1,
+    CurrencyRuble = 0xEAEC,
+    CurrencyRupee = 0xEAF7,
+    CurrencyYen = 0xEAFB,
+    CurrencyYuan = 0xEAF9,
+    Curtains = 0xEC1E,
+    CurtainsClosed = 0xEC1D,
+    Cyclone = 0xEBD5,
+    Dangerous = 0xE99A,
+    DarkMode = 0xE51C,
+    Dashboard = 0xE871,
+    DashboardCustomize = 0xE99B,
+    DataArray = 0xEAD1,
+    DataExploration = 0xE76F,
+    DataObject = 0xEAD3,
+    DataSaverOff = 0xEFF2,
+    DataSaverOn = 0xEFF3,
+    DataThresholding = 0xEB9F,
+    DataUsage = 0xE1AF,
+    Dataset = 0xF8EE,
+    DatasetLinked = 0xF8EF,
+    DateRange = 0xE916,
+    Deblur = 0xEB77,
+    Deck = 0xEA42,
+    Dehaze = 0xE3C7,
+    Delete = 0xE872,
+    DeleteForever = 0xE92B,
+    DeleteOutline = 0xE92E,
+    DeleteSweep = 0xE16C,
+    DeliveryDining = 0xEA72,
+    DensityLarge = 0xEBA9,
+    DensityMedium = 0xEB9E,
+    DensitySmall = 0xEBA8,
+    DepartureBoard = 0xE576,
+    Description = 0xE873,
+    Deselect = 0xEBB6,
+    DesignServices = 0xF10A,
+    Desk = 0xF8F4,
+    DesktopAccessDisabled = 0xE99D,
+    DesktopMac = 0xE30B,
+    DesktopWindows = 0xE30C,
+    Details = 0xE3C8,
+    DeveloperBoard = 0xE30D,
+    DeveloperBoardOff = 0xE4FF,
+    DeveloperMode = 0xE1B0,
+    DeviceHub = 0xE335,
+    DeviceThermostat = 0xE1FF,
+    DeviceUnknown = 0xE339,
+    Devices = 0xE1B1,
+    DevicesFold = 0xEBDE,
+    DevicesOther = 0xE337,
+    DewPoint = 0xF879,
+    DialerSip = 0xE0BB,
+    Dialpad = 0xE0BC,
+    Diamond = 0xEAD5,
+    Difference = 0xEB7D,
+    Dining = 0xEFF4,
+    DinnerDining = 0xEA57,
+    Directions = 0xE52E,
+    DirectionsBike = 0xE52F,
+    DirectionsBoat = 0xE532,
+    DirectionsBoatFilled = 0xEFF5,
+    DirectionsBus = 0xE530,
+    DirectionsBusFilled = 0xEFF6,
+    DirectionsCar = 0xE531,
+    DirectionsCarFilled = 0xEFF7,
+    DirectionsFerry = 0xE532,
+    DirectionsOff = 0xF10F,
+    DirectionsRailway = 0xE534,
+    DirectionsRailwayFilled = 0xEFF8,
+    DirectionsRun = 0xE566,
+    DirectionsSubway = 0xE533,
+    DirectionsSubwayFilled = 0xEFF9,
+    DirectionsTrain = 0xE534,
+    DirectionsTransit = 0xE535,
+    DirectionsTransitFilled = 0xEFFA,
+    DirectionsWalk = 0xE536,
+    DirtyLens = 0xEF4B,
+    DisabledByDefault = 0xF230,
+    DisabledVisible = 0xE76E,
+    DiscFull = 0xE610,
+    Discord = 0xEA6C,
+    Discount = 0xEBC9,
+    DisplaySettings = 0xEB97,
+    Diversity1 = 0xF8D7,
+    Diversity2 = 0xF8D8,
+    Diversity3 = 0xF8D9,
+    DndForwardslash = 0xE611,
+    Dns = 0xE875,
+    DoDisturb = 0xF08C,
+    DoDisturbAlt = 0xF08D,
+    DoDisturbOff = 0xF08E,
+    DoDisturbOn = 0xF08F,
+    DoNotDisturb = 0xE612,
+    DoNotDisturbAlt = 0xE611,
+    DoNotDisturbOff = 0xE643,
+    DoNotDisturbOn = 0xE644,
+    DoNotDisturbOnTotalSilence = 0xEFFB,
+    DoNotStep = 0xF19F,
+    DoNotTouch = 0xF1B0,
+    Dock = 0xE30E,
+    DocumentScanner = 0xE5FA,
+    Domain = 0xE7EE,
+    DomainAdd = 0xEB62,
+    DomainDisabled = 0xE0EF,
+    DomainVerification = 0xEF4C,
+    Done = 0xE876,
+    DoneAll = 0xE877,
+    DoneOutline = 0xE92F,
+    DonutLarge = 0xE917,
+    DonutSmall = 0xE918,
+    DoorBack = 0xEFFC,
+    DoorFront = 0xEFFD,
+    DoorSliding = 0xEFFE,
+    Doorbell = 0xEFFF,
+    DoubleArrow = 0xEA50,
+    DownhillSkiing = 0xE509,
+    Download = 0xF090,
+    DownloadDone = 0xF091,
+    DownloadForOffline = 0xF000,
+    Downloading = 0xF001,
+    Drafts = 0xE151,
+    DragHandle = 0xE25D,
+    DragIndicator = 0xE945,
+    Draw = 0xE746,
+    DriveEta = 0xE613,
+    DriveFileMove = 0xE675,
+    DriveFileMoveOutline = 0xE9A1,
+    DriveFileMoveRtl = 0xE76D,
+    DriveFileRenameOutline = 0xE9A2,
+    DriveFolderUpload = 0xE9A3,
+    Dry = 0xF1B3,
+    DryCleaning = 0xEA58,
+    Duo = 0xE9A5,
+    Dvr = 0xE1B2,
+    DynamicFeed = 0xEA14,
+    DynamicForm = 0xF1BF,
+    EMobiledata = 0xF002,
+    Earbuds = 0xF003,
+    EarbudsBattery = 0xF004,
+    East = 0xF1DF,
+    Eco = 0xEA35,
+    EdgesensorHigh = 0xF005,
+    EdgesensorLow = 0xF006,
+    Edit = 0xE3C9,
+    EditAttributes = 0xE578,
+    EditCalendar = 0xE742,
+    EditDocument = 0xF88C,
+    EditLocation = 0xE568,
+    EditLocationAlt = 0xE1C5,
+    EditNote = 0xE745,
+    EditNotifications = 0xE525,
+    EditOff = 0xE950,
+    EditRoad = 0xEF4D,
+    EditSquare = 0xF88D,
+    Egg = 0xEACC,
+    EggAlt = 0xEAC8,
+    Eject = 0xE8FB,
+    Elderly = 0xF21A,
+    ElderlyWoman = 0xEB69,
+    ElectricBike = 0xEB1B,
+    ElectricBolt = 0xEC1C,
+    ElectricCar = 0xEB1C,
+    ElectricMeter = 0xEC1B,
+    ElectricMoped = 0xEB1D,
+    ElectricRickshaw = 0xEB1E,
+    ElectricScooter = 0xEB1F,
+    ElectricalServices = 0xF102,
+    Elevator = 0xF1A0,
+    Email = 0xE0BE,
+    Emergency = 0xE1EB,
+    EmergencyRecording = 0xEBF4,
+    EmergencyShare = 0xEBF6,
+    EmojiEmotions = 0xEA22,
+    EmojiEvents = 0xEA23,
+    EmojiFlags = 0xEA1A,
+    EmojiFoodBeverage = 0xEA1B,
+    EmojiNature = 0xEA1C,
+    EmojiObjects = 0xEA24,
+    EmojiPeople = 0xEA1D,
+    EmojiSymbols = 0xEA1E,
+    EmojiTransportation = 0xEA1F,
+    EnergySavingsLeaf = 0xEC1A,
+    Engineering = 0xEA3D,
+    EnhancePhotoTranslate = 0xE8FC,
+    EnhancedEncryption = 0xE63F,
+    Equalizer = 0xE01D,
+    Error = 0xE000,
+    ErrorOutline = 0xE001,
+    Escalator = 0xF1A1,
+    EscalatorWarning = 0xF1AC,
+    Euro = 0xEA15,
+    EuroSymbol = 0xE926,
+    EvStation = 0xE56D,
+    Event = 0xE878,
+    EventAvailable = 0xE614,
+    EventBusy = 0xE615,
+    EventNote = 0xE616,
+    EventRepeat = 0xEB7B,
+    EventSeat = 0xE903,
+    ExitToApp = 0xE879,
+    Expand = 0xE94F,
+    ExpandCircleDown = 0xE7CD,
+    ExpandLess = 0xE5CE,
+    ExpandMore = 0xE5CF,
+    Explicit = 0xE01E,
+    Explore = 0xE87A,
+    ExploreOff = 0xE9A8,
+    Exposure = 0xE3CA,
+    ExposureMinus1 = 0xE3CB,
+    ExposureMinus2 = 0xE3CC,
+    ExposureNeg1 = 0xE3CB,
+    ExposureNeg2 = 0xE3CC,
+    ExposurePlus1 = 0xE3CD,
+    ExposurePlus2 = 0xE3CE,
+    ExposureZero = 0xE3CF,
+    Extension = 0xE87B,
+    ExtensionOff = 0xE4F5,
+    Face = 0xE87C,
+    Face2 = 0xF8DA,
+    Face3 = 0xF8DB,
+    Face4 = 0xF8DC,
+    Face5 = 0xF8DD,
+    Face6 = 0xF8DE,
+    FaceRetouchingNatural = 0xEF4E,
+    FaceRetouchingOff = 0xF007,
+    Facebook = 0xF234,
+    FactCheck = 0xF0C5,
+    Factory = 0xEBBC,
+    FamilyRestroom = 0xF1A2,
+    FastForward = 0xE01F,
+    FastRewind = 0xE020,
+    Fastfood = 0xE57A,
+    Favorite = 0xE87D,
+    FavoriteBorder = 0xE87E,
+    FavoriteOutline = 0xE87E,
+    Fax = 0xEAD8,
+    FeaturedPlayList = 0xE06D,
+    FeaturedVideo = 0xE06E,
+    Feed = 0xF009,
+    Feedback = 0xE87F,
+    Female = 0xE590,
+    Fence = 0xF1F6,
+    Festival = 0xEA68,
+    FiberDvr = 0xE05D,
+    FiberManualRecord = 0xE061,
+    FiberNew = 0xE05E,
+    FiberPin = 0xE06A,
+    FiberSmartRecord = 0xE062,
+    FileCopy = 0xE173,
+    FileDownload = 0xE2C4,
+    FileDownloadDone = 0xE9AA,
+    FileDownloadOff = 0xE4FE,
+    FileOpen = 0xEAF3,
+    FilePresent = 0xEA0E,
+    FileUpload = 0xE2C6,
+    FileUploadOff = 0xF886,
+    Filter = 0xE3D3,
+    Filter1 = 0xE3D0,
+    Filter2 = 0xE3D1,
+    Filter3 = 0xE3D2,
+    Filter4 = 0xE3D4,
+    Filter5 = 0xE3D5,
+    Filter6 = 0xE3D6,
+    Filter7 = 0xE3D7,
+    Filter8 = 0xE3D8,
+    Filter9 = 0xE3D9,
+    Filter9Plus = 0xE3DA,
+    FilterAlt = 0xEF4F,
+    FilterAltOff = 0xEB32,
+    FilterBAndW = 0xE3DB,
+    FilterCenterFocus = 0xE3DC,
+    FilterDrama = 0xE3DD,
+    FilterFrames = 0xE3DE,
+    FilterHdr = 0xE3DF,
+    FilterList = 0xE152,
+    FilterListAlt = 0xE94E,
+    FilterListOff = 0xEB57,
+    FilterNone = 0xE3E0,
+    FilterTiltShift = 0xE3E2,
+    FilterVintage = 0xE3E3,
+    FindInPage = 0xE880,
+    FindReplace = 0xE881,
+    Fingerprint = 0xE90D,
+    FireExtinguisher = 0xF1D8,
+    FireHydrant = 0xF1A3,
+    FireHydrantAlt = 0xF8F1,
+    FireTruck = 0xF8F2,
+    Fireplace = 0xEA43,
+    FirstPage = 0xE5DC,
+    FitScreen = 0xEA10,
+    Fitbit = 0xE82B,
+    FitnessCenter = 0xEB43,
+    Flag = 0xE153,
+    FlagCircle = 0xEAF8,
+    Flaky = 0xEF50,
+    Flare = 0xE3E4,
+    FlashAuto = 0xE3E5,
+    FlashOff = 0xE3E6,
+    FlashOn = 0xE3E7,
+    FlashlightOff = 0xF00A,
+    FlashlightOn = 0xF00B,
+    Flatware = 0xF00C,
+    Flight = 0xE539,
+    FlightClass = 0xE7CB,
+    FlightLand = 0xE904,
+    FlightTakeoff = 0xE905,
+    Flip = 0xE3E8,
+    FlipCameraAndroid = 0xEA37,
+    FlipCameraIos = 0xEA38,
+    FlipToBack = 0xE882,
+    FlipToFront = 0xE883,
+    Flood = 0xEBE6,
+    Flourescent = 0xEC31,
+    Flourescent1 = 0xF00D,
+    Fluorescent2 = 0xEC31,
+    FlutterDash = 0xE00B,
+    FmdBad = 0xF00E,
+    FmdGood = 0xF00F,
+    Foggy = 0xE818,
+    Folder = 0xE2C7,
+    FolderCopy = 0xEBBD,
+    FolderDelete = 0xEB34,
+    FolderOff = 0xEB83,
+    FolderOpen = 0xE2C8,
+    FolderShared = 0xE2C9,
+    FolderSpecial = 0xE617,
+    FolderZip = 0xEB2C,
+    FollowTheSigns = 0xF222,
+    FontDownload = 0xE167,
+    FontDownloadOff = 0xE4F9,
+    FoodBank = 0xF1F2,
+    Forest = 0xEA99,
+    ForkLeft = 0xEBA0,
+    ForkRight = 0xEBAC,
+    Forklift = 0xF868,
+    FormatAlignCenter = 0xE234,
+    FormatAlignJustify = 0xE235,
+    FormatAlignLeft = 0xE236,
+    FormatAlignRight = 0xE237,
+    FormatBold = 0xE238,
+    FormatClear = 0xE239,
+    FormatColorFill = 0xE23A,
+    FormatColorReset = 0xE23B,
+    FormatColorText = 0xE23C,
+    FormatIndentDecrease = 0xE23D,
+    FormatIndentIncrease = 0xE23E,
+    FormatItalic = 0xE23F,
+    FormatLineSpacing = 0xE240,
+    FormatListBulleted = 0xE241,
+    FormatListBulletedAdd = 0xF849,
+    FormatListNumbered = 0xE242,
+    FormatListNumberedRtl = 0xE267,
+    FormatOverline = 0xEB65,
+    FormatPaint = 0xE243,
+    FormatQuote = 0xE244,
+    FormatShapes = 0xE25E,
+    FormatSize = 0xE245,
+    FormatStrikethrough = 0xE246,
+    FormatTextdirectionLToR = 0xE247,
+    FormatTextdirectionRToL = 0xE248,
+    FormatUnderline = 0xE249,
+    FormatUnderlined = 0xE249,
+    Fort = 0xEAAD,
+    Forum = 0xE0BF,
+    Forward = 0xE154,
+    Forward10 = 0xE056,
+    Forward30 = 0xE057,
+    Forward5 = 0xE058,
+    ForwardToInbox = 0xF187,
+    Foundation = 0xF200,
+    FreeBreakfast = 0xEB44,
+    FreeCancellation = 0xE748,
+    FrontHand = 0xE769,
+    FrontLoader = 0xF869,
+    Fullscreen = 0xE5D0,
+    FullscreenExit = 0xE5D1,
+    Functions = 0xE24A,
+    GMobiledata = 0xF010,
+    GTranslate = 0xE927,
+    Gamepad = 0xE30F,
+    Games = 0xE021,
+    Garage = 0xF011,
+    GasMeter = 0xEC19,
+    Gavel = 0xE90E,
+    GeneratingTokens = 0xE749,
+    Gesture = 0xE155,
+    GetApp = 0xE884,
+    Gif = 0xE908,
+    GifBox = 0xE7A3,
+    Girl = 0xEB68,
+    Gite = 0xE58B,
+    Goat = 0x10FFFD,
+    GolfCourse = 0xEB45,
+    GppBad = 0xF012,
+    GppGood = 0xF013,
+    GppMaybe = 0xF014,
+    GpsFixed = 0xE1B3,
+    GpsNotFixed = 0xE1B4,
+    GpsOff = 0xE1B5,
+    Grade = 0xE885,
+    Gradient = 0xE3E9,
+    Grading = 0xEA4F,
+    Grain = 0xE3EA,
+    GraphicEq = 0xE1B8,
+    Grass = 0xF205,
+    Grid3x3 = 0xF015,
+    Grid4x4 = 0xF016,
+    GridGoldenratio = 0xF017,
+    GridOff = 0xE3EB,
+    GridOn = 0xE3EC,
+    GridView = 0xE9B0,
+    Group = 0xE7EF,
+    GroupAdd = 0xE7F0,
+    GroupOff = 0xE747,
+    GroupRemove = 0xE7AD,
+    GroupWork = 0xE886,
+    Groups = 0xF233,
+    Groups2 = 0xF8DF,
+    Groups3 = 0xF8E0,
+    HMobiledata = 0xF018,
+    HPlusMobiledata = 0xF019,
+    Hail = 0xE9B1,
+    Handshake = 0xEBCB,
+    Handyman = 0xF10B,
+    Hardware = 0xEA59,
+    Hd = 0xE052,
+    HdrAuto = 0xF01A,
+    HdrAutoSelect = 0xF01B,
+    HdrEnhancedSelect = 0xEF51,
+    HdrOff = 0xE3ED,
+    HdrOffSelect = 0xF01C,
+    HdrOn = 0xE3EE,
+    HdrOnSelect = 0xF01D,
+    HdrPlus = 0xF01E,
+    HdrStrong = 0xE3F1,
+    HdrWeak = 0xE3F2,
+    Headphones = 0xF01F,
+    HeadphonesBattery = 0xF020,
+    Headset = 0xE310,
+    HeadsetMic = 0xE311,
+    HeadsetOff = 0xE33A,
+    Healing = 0xE3F3,
+    HealthAndSafety = 0xE1D5,
+    Hearing = 0xE023,
+    HearingDisabled = 0xF104,
+    HeartBroken = 0xEAC2,
+    HeatPump = 0xEC18,
+    Height = 0xEA16,
+    Help = 0xE887,
+    HelpCenter = 0xF1C0,
+    HelpOutline = 0xE8FD,
+    Hevc = 0xF021,
+    Hexagon = 0xEB39,
+    HideImage = 0xF022,
+    HideSource = 0xF023,
+    HighQuality = 0xE024,
+    Highlight = 0xE25F,
+    HighlightAlt = 0xEF52,
+    HighlightOff = 0xE888,
+    HighlightRemove = 0xE888,
+    Hiking = 0xE50A,
+    History = 0xE889,
+    HistoryEdu = 0xEA3E,
+    HistoryToggleOff = 0xF17D,
+    Hive = 0xEAA6,
+    Hls = 0xEB8A,
+    HlsOff = 0xEB8C,
+    HolidayVillage = 0xE58A,
+    Home = 0xE88A,
+    HomeFilled = 0xE9B2,
+    HomeMax = 0xF024,
+    HomeMini = 0xF025,
+    HomeRepairService = 0xF100,
+    HomeWork = 0xEA09,
+    HorizontalDistribute = 0xE014,
+    HorizontalRule = 0xF108,
+    HorizontalSplit = 0xE947,
+    HotTub = 0xEB46,
+    Hotel = 0xE53A,
+    HotelClass = 0xE743,
+    HourglassBottom = 0xEA5C,
+    HourglassDisabled = 0xEF53,
+    HourglassEmpty = 0xE88B,
+    HourglassFull = 0xE88C,
+    HourglassTop = 0xEA5B,
+    House = 0xEA44,
+    HouseSiding = 0xF202,
+    Houseboat = 0xE584,
+    HowToReg = 0xE174,
+    HowToVote = 0xE175,
+    Html = 0xEB7E,
+    Http = 0xE902,
+    Https = 0xE88D,
+    Hub = 0xE9F4,
+    Hvac = 0xF10E,
+    IceSkating = 0xE50B,
+    Icecream = 0xEA69,
+    Image = 0xE3F4,
+    ImageAspectRatio = 0xE3F5,
+    ImageNotSupported = 0xF116,
+    ImageSearch = 0xE43F,
+    ImagesearchRoller = 0xE9B4,
+    ImportContacts = 0xE0E0,
+    ImportExport = 0xE0C3,
+    ImportantDevices = 0xE912,
+    Inbox = 0xE156,
+    IncompleteCircle = 0xE79B,
+    IndeterminateCheckBox = 0xE909,
+    Info = 0xE88E,
+    InfoOutline = 0xE88F,
+    Input = 0xE890,
+    InsertChart = 0xE24B,
+    InsertChartOutlined = 0xE26A,
+    InsertComment = 0xE24C,
+    InsertDriveFile = 0xE24D,
+    InsertEmoticon = 0xE24E,
+    InsertInvitation = 0xE24F,
+    InsertLink = 0xE250,
+    InsertPageBreak = 0xEACA,
+    InsertPhoto = 0xE251,
+    Insights = 0xF092,
+    InstallDesktop = 0xEB71,
+    InstallMobile = 0xEB72,
+    IntegrationInstructions = 0xEF54,
+    Interests = 0xE7C8,
+    InterpreterMode = 0xE83B,
+    Inventory = 0xE179,
+    Inventory2 = 0xE1A1,
+    InvertColors = 0xE891,
+    InvertColorsOff = 0xE0C4,
+    InvertColorsOn = 0xE891,
+    IosShare = 0xE6B8,
+    Iron = 0xE583,
+    Iso = 0xE3F6,
+    Javascript = 0xEB7C,
+    JoinFull = 0xEAEB,
+    JoinInner = 0xEAF4,
+    JoinLeft = 0xEAF2,
+    JoinRight = 0xEAEA,
+    Kayaking = 0xE50C,
+    KebabDining = 0xE842,
+    Key = 0xE73C,
+    KeyOff = 0xEB84,
+    Keyboard = 0xE312,
+    KeyboardAlt = 0xF028,
+    KeyboardArrowDown = 0xE313,
+    KeyboardArrowLeft = 0xE314,
+    KeyboardArrowRight = 0xE315,
+    KeyboardArrowUp = 0xE316,
+    KeyboardBackspace = 0xE317,
+    KeyboardCapslock = 0xE318,
+    KeyboardCommand = 0xEAE0,
+    KeyboardCommandKey = 0xEAE7,
+    KeyboardControl = 0xE5D3,
+    KeyboardControlKey = 0xEAE6,
+    KeyboardDoubleArrowDown = 0xEAD0,
+    KeyboardDoubleArrowLeft = 0xEAC3,
+    KeyboardDoubleArrowRight = 0xEAC9,
+    KeyboardDoubleArrowUp = 0xEACF,
+    KeyboardHide = 0xE31A,
+    KeyboardOption = 0xEADF,
+    KeyboardOptionKey = 0xEAE8,
+    KeyboardReturn = 0xE31B,
+    KeyboardTab = 0xE31C,
+    KeyboardVoice = 0xE31D,
+    KingBed = 0xEA45,
+    Kitchen = 0xEB47,
+    Kitesurfing = 0xE50D,
+    Label = 0xE892,
+    LabelImportant = 0xE937,
+    LabelImportantOutline = 0xE948,
+    LabelOff = 0xE9B6,
+    LabelOutline = 0xE893,
+    Lan = 0xEB2F,
+    Landscape = 0xE3F7,
+    Landslide = 0xEBD7,
+    Language = 0xE894,
+    Laptop = 0xE31E,
+    LaptopChromebook = 0xE31F,
+    LaptopMac = 0xE320,
+    LaptopWindows = 0xE321,
+    LastPage = 0xE5DD,
+    Launch = 0xE895,
+    Layers = 0xE53B,
+    LayersClear = 0xE53C,
+    Leaderboard = 0xF20C,
+    LeakAdd = 0xE3F8,
+    LeakRemove = 0xE3F9,
+    LeaveBagsAtHome = 0xF21B,
+    LegendToggle = 0xF11B,
+    Lens = 0xE3FA,
+    LensBlur = 0xF029,
+    LibraryAdd = 0xE02E,
+    LibraryAddCheck = 0xE9B7,
+    LibraryBooks = 0xE02F,
+    LibraryMusic = 0xE030,
+    Light = 0xF02A,
+    LightMode = 0xE518,
+    Lightbulb = 0xE0F0,
+    LightbulbCircle = 0xEBFE,
+    LightbulbOutline = 0xE90F,
+    LineAxis = 0xEA9A,
+    LineStyle = 0xE919,
+    LineWeight = 0xE91A,
+    LinearScale = 0xE260,
+    Link = 0xE157,
+    LinkOff = 0xE16F,
+    LinkedCamera = 0xE438,
+    Liquor = 0xEA60,
+    List = 0xE896,
+    ListAlt = 0xE0EE,
+    LiveHelp = 0xE0C6,
+    LiveTv = 0xE639,
+    Living = 0xF02B,
+    LocalActivity = 0xE53F,
+    LocalAirport = 0xE53D,
+    LocalAtm = 0xE53E,
+    LocalAttraction = 0xE53F,
+    LocalBar = 0xE540,
+    LocalCafe = 0xE541,
+    LocalCarWash = 0xE542,
+    LocalConvenienceStore = 0xE543,
+    LocalDining = 0xE556,
+    LocalDrink = 0xE544,
+    LocalFireDepartment = 0xEF55,
+    LocalFlorist = 0xE545,
+    LocalGasStation = 0xE546,
+    LocalGroceryStore = 0xE547,
+    LocalHospital = 0xE548,
+    LocalHotel = 0xE549,
+    LocalLaundryService = 0xE54A,
+    LocalLibrary = 0xE54B,
+    LocalMall = 0xE54C,
+    LocalMovies = 0xE54D,
+    LocalOffer = 0xE54E,
+    LocalParking = 0xE54F,
+    LocalPharmacy = 0xE550,
+    LocalPhone = 0xE551,
+    LocalPizza = 0xE552,
+    LocalPlay = 0xE553,
+    LocalPolice = 0xEF56,
+    LocalPostOffice = 0xE554,
+    LocalPrintShop = 0xE555,
+    LocalPrintshop = 0xE555,
+    LocalRestaurant = 0xE556,
+    LocalSee = 0xE557,
+    LocalShipping = 0xE558,
+    LocalTaxi = 0xE559,
+    LocationCity = 0xE7F1,
+    LocationDisabled = 0xE1B6,
+    LocationHistory = 0xE55A,
+    LocationOff = 0xE0C7,
+    LocationOn = 0xE0C8,
+    LocationPin = 0xF1DB,
+    LocationSearching = 0xE1B7,
+    Lock = 0xE897,
+    LockClock = 0xEF57,
+    LockOpen = 0xE898,
+    LockOutline = 0xE899,
+    LockPerson = 0xF8F3,
+    LockReset = 0xEADE,
+    Login = 0xEA77,
+    LogoDev = 0xEAD6,
+    Logout = 0xE9BA,
+    Looks = 0xE3FC,
+    Looks3 = 0xE3FB,
+    Looks4 = 0xE3FD,
+    Looks5 = 0xE3FE,
+    Looks6 = 0xE3FF,
+    LooksOne = 0xE400,
+    LooksTwo = 0xE401,
+    Loop = 0xE028,
+    Loupe = 0xE402,
+    LowPriority = 0xE16D,
+    Loyalty = 0xE89A,
+    LteMobiledata = 0xF02C,
+    LtePlusMobiledata = 0xF02D,
+    Luggage = 0xF235,
+    LunchDining = 0xEA61,
+    Lyrics = 0xEC0B,
+    MacroOff = 0xF8D2,
+    Mail = 0xE158,
+    MailLock = 0xEC0A,
+    MailOutline = 0xE0E1,
+    Male = 0xE58E,
+    Man = 0xE4EB,
+    Man2 = 0xF8E1,
+    Man3 = 0xF8E2,
+    Man4 = 0xF8E3,
+    ManageAccounts = 0xF02E,
+    ManageHistory = 0xEBE7,
+    ManageSearch = 0xF02F,
+    Map = 0xE55B,
+    MapsHomeWork = 0xF030,
+    MapsUgc = 0xEF58,
+    Margin = 0xE9BB,
+    MarkAsUnread = 0xE9BC,
+    MarkChatRead = 0xF18B,
+    MarkChatUnread = 0xF189,
+    MarkEmailRead = 0xF18C,
+    MarkEmailUnread = 0xF18A,
+    MarkUnreadChatAlt = 0xEB9D,
+    Markunread = 0xE159,
+    MarkunreadMailbox = 0xE89B,
+    Masks = 0xF218,
+    Maximize = 0xE930,
+    MediaBluetoothOff = 0xF031,
+    MediaBluetoothOn = 0xF032,
+    Mediation = 0xEFA7,
+    MedicalInformation = 0xEBED,
+    MedicalServices = 0xF109,
+    Medication = 0xF033,
+    MedicationLiquid = 0xEA87,
+    MeetingRoom = 0xEB4F,
+    Memory = 0xE322,
+    Menu = 0xE5D2,
+    MenuBook = 0xEA19,
+    MenuOpen = 0xE9BD,
+    Merge = 0xEB98,
+    MergeType = 0xE252,
+    Message = 0xE0C9,
+    Messenger = 0xE0CA,
+    MessengerOutline = 0xE0CB,
+    Mic = 0xE029,
+    MicExternalOff = 0xEF59,
+    MicExternalOn = 0xEF5A,
+    MicNone = 0xE02A,
+    MicOff = 0xE02B,
+    Microwave = 0xF204,
+    MilitaryTech = 0xEA3F,
+    Minimize = 0xE931,
+    MinorCrash = 0xEBF1,
+    MiscellaneousServices = 0xF10C,
+    MissedVideoCall = 0xE073,
+    Mms = 0xE618,
+    MobileFriendly = 0xE200,
+    MobileOff = 0xE201,
+    MobileScreenShare = 0xE0E7,
+    MobiledataOff = 0xF034,
+    Mode = 0xF097,
+    ModeComment = 0xE253,
+    ModeEdit = 0xE254,
+    ModeEditOutline = 0xF035,
+    ModeFanOff = 0xEC17,
+    ModeNight = 0xF036,
+    ModeOfTravel = 0xE7CE,
+    ModeStandby = 0xF037,
+    ModelTraining = 0xF0CF,
+    MonetizationOn = 0xE263,
+    Money = 0xE57D,
+    MoneyOff = 0xE25C,
+    MoneyOffCsred = 0xF038,
+    Monitor = 0xEF5B,
+    MonitorHeart = 0xEAA2,
+    MonitorWeight = 0xF039,
+    MonochromePhotos = 0xE403,
+    Mood = 0xE7F2,
+    MoodBad = 0xE7F3,
+    Moped = 0xEB28,
+    More = 0xE619,
+    MoreHoriz = 0xE5D3,
+    MoreTime = 0xEA5D,
+    MoreVert = 0xE5D4,
+    Mosque = 0xEAB2,
+    MotionPhotosAuto = 0xF03A,
+    MotionPhotosOff = 0xE9C0,
+    MotionPhotosOn = 0xE9C1,
+    MotionPhotosPause = 0xF227,
+    MotionPhotosPaused = 0xE9C2,
+    Motorcycle = 0xE91B,
+    Mouse = 0xE323,
+    MoveDown = 0xEB61,
+    MoveToInbox = 0xE168,
+    MoveUp = 0xEB64,
+    Movie = 0xE02C,
+    MovieCreation = 0xE404,
+    MovieEdit = 0xF840,
+    MovieFilter = 0xE43A,
+    Moving = 0xE501,
+    Mp = 0xE9C3,
+    MultilineChart = 0xE6DF,
+    MultipleStop = 0xF1B9,
+    MultitrackAudio = 0xE1B8,
+    Museum = 0xEA36,
+    MusicNote = 0xE405,
+    MusicOff = 0xE440,
+    MusicVideo = 0xE063,
+    MyLibraryAdd = 0xE02E,
+    MyLibraryBooks = 0xE02F,
+    MyLibraryMusic = 0xE030,
+    MyLocation = 0xE55C,
+    Nat = 0xEF5C,
+    Nature = 0xE406,
+    NaturePeople = 0xE407,
+    NavigateBefore = 0xE408,
+    NavigateNext = 0xE409,
+    Navigation = 0xE55D,
+    NearMe = 0xE569,
+    NearMeDisabled = 0xF1EF,
+    NearbyError = 0xF03B,
+    NearbyOff = 0xF03C,
+    NestCamWiredStand = 0xEC16,
+    NetworkCell = 0xE1B9,
+    NetworkCheck = 0xE640,
+    NetworkLocked = 0xE61A,
+    NetworkPing = 0xEBCA,
+    NetworkWifi = 0xE1BA,
+    NetworkWifiOneBar = 0xEBE4,
+    NetworkWifiTwoBar = 0xEBD6,
+    NetworkWifiThreeBar = 0xEBE1,
+    NewLabel = 0xE609,
+    NewReleases = 0xE031,
+    Newspaper = 0xEB81,
+    NextPlan = 0xEF5D,
+    NextWeek = 0xE16A,
+    Nfc = 0xE1BB,
+    NightShelter = 0xF1F1,
+    Nightlife = 0xEA62,
+    Nightlight = 0xF03D,
+    NightlightRound = 0xEF5E,
+    NightsStay = 0xEA46,
+    NoAccounts = 0xF03E,
+    NoAdultContent = 0xF8FE,
+    NoBackpack = 0xF237,
+    NoCell = 0xF1A4,
+    NoCrash = 0xEBF0,
+    NoDrinks = 0xF1A5,
+    NoEncryption = 0xE641,
+    NoEncryptionGmailerrorred = 0xF03F,
+    NoFlash = 0xF1A6,
+    NoFood = 0xF1A7,
+    NoLuggage = 0xF23B,
+    NoMeals = 0xF1D6,
+    NoMealsOuline = 0xF229,
+    NoMeetingRoom = 0xEB4E,
+    NoPhotography = 0xF1A8,
+    NoSim = 0xE0CC,
+    NoStroller = 0xF1AF,
+    NoTransfer = 0xF1D5,
+    NoiseAware = 0xEBEC,
+    NoiseControlOff = 0xEBF3,
+    NordicWalking = 0xE50E,
+    North = 0xF1E0,
+    NorthEast = 0xF1E1,
+    NorthWest = 0xF1E2,
+    NotAccessible = 0xF0FE,
+    NotInterested = 0xE033,
+    NotListedLocation = 0xE575,
+    NotStarted = 0xF0D1,
+    Note = 0xE06F,
+    NoteAdd = 0xE89C,
+    NoteAlt = 0xF040,
+    Notes = 0xE26C,
+    NotificationAdd = 0xE399,
+    NotificationImportant = 0xE004,
+    Notifications = 0xE7F4,
+    NotificationsActive = 0xE7F7,
+    NotificationsNone = 0xE7F5,
+    NotificationsOff = 0xE7F6,
+    NotificationsOn = 0xE7F7,
+    NotificationsPaused = 0xE7F8,
+    NowWallpaper = 0xE1BC,
+    NowWidgets = 0xE1BD,
+    Numbers = 0xEAC7,
+    OfflineBolt = 0xE932,
+    OfflinePin = 0xE90A,
+    OfflineShare = 0xE9C5,
+    OilBarrel = 0xEC15,
+    OnDeviceTraining = 0xEBFD,
+    OndemandVideo = 0xE63A,
+    OnlinePrediction = 0xF0EB,
+    Opacity = 0xE91C,
+    OpenInBrowser = 0xE89D,
+    OpenInFull = 0xF1CE,
+    OpenInNew = 0xE89E,
+    OpenInNewOff = 0xE4F6,
+    OpenWith = 0xE89F,
+    OtherHouses = 0xE58C,
+    Outbond = 0xF228,
+    Outbound = 0xE1CA,
+    Outbox = 0xEF5F,
+    OutdoorGrill = 0xEA47,
+    OutgoingMail = 0xF0D2,
+    Outlet = 0xF1D4,
+    OutlinedFlag = 0xE16E,
+    Output = 0xEBBE,
+    Padding = 0xE9C8,
+    Pages = 0xE7F9,
+    Pageview = 0xE8A0,
+    Paid = 0xF041,
+    Palette = 0xE40A,
+    Pallet = 0xF86A,
+    PanTool = 0xE925,
+    PanToolAlt = 0xEBB9,
+    Panorama = 0xE40B,
+    PanoramaFishEye = 0xE40C,
+    PanoramaFisheye = 0xE40C,
+    PanoramaHorizontal = 0xE40D,
+    PanoramaHorizontalSelect = 0xEF60,
+    PanoramaPhotosphere = 0xE9C9,
+    PanoramaPhotosphereSelect = 0xE9CA,
+    PanoramaVertical = 0xE40E,
+    PanoramaVerticalSelect = 0xEF61,
+    PanoramaWideAngle = 0xE40F,
+    PanoramaWideAngleSelect = 0xEF62,
+    Paragliding = 0xE50F,
+    Park = 0xEA63,
+    PartyMode = 0xE7FA,
+    Password = 0xF042,
+    Pattern = 0xF043,
+    Pause = 0xE034,
+    PauseCircle = 0xE1A2,
+    PauseCircleFilled = 0xE035,
+    PauseCircleOutline = 0xE036,
+    PausePresentation = 0xE0EA,
+    Payment = 0xE8A1,
+    Payments = 0xEF63,
+    Paypal = 0xEA8D,
+    PedalBike = 0xEB29,
+    Pending = 0xEF64,
+    PendingActions = 0xF1BB,
+    Pentagon = 0xEB50,
+    People = 0xE7FB,
+    PeopleAlt = 0xEA21,
+    PeopleOutline = 0xE7FC,
+    Percent = 0xEB58,
+    PermCameraMic = 0xE8A2,
+    PermContactCal = 0xE8A3,
+    PermContactCalendar = 0xE8A3,
+    PermDataSetting = 0xE8A4,
+    PermDeviceInfo = 0xE8A5,
+    PermDeviceInformation = 0xE8A5,
+    PermIdentity = 0xE8A6,
+    PermMedia = 0xE8A7,
+    PermPhoneMsg = 0xE8A8,
+    PermScanWifi = 0xE8A9,
+    Person = 0xE7FD,
+    Person2 = 0xF8E4,
+    Person3 = 0xF8E5,
+    Person4 = 0xF8E6,
+    PersonAdd = 0xE7FE,
+    PersonAddAlt = 0xEA4D,
+    PersonAddAlt1 = 0xEF65,
+    PersonAddDisabled = 0xE9CB,
+    PersonOff = 0xE510,
+    PersonOutline = 0xE7FF,
+    PersonPin = 0xE55A,
+    PersonPinCircle = 0xE56A,
+    PersonRemove = 0xEF66,
+    PersonRemoveAltOne = 0xEF67,
+    PersonSearch = 0xF106,
+    PersonalInjury = 0xE6DA,
+    PersonalVideo = 0xE63B,
+    PestControl = 0xF0FA,
+    PestControlRodent = 0xF0FD,
+    Pets = 0xE91D,
+    Phishing = 0xEAD7,
+    Phone = 0xE0CD,
+    PhoneAndroid = 0xE324,
+    PhoneBluetoothSpeaker = 0xE61B,
+    PhoneCallback = 0xE649,
+    PhoneDisabled = 0xE9CC,
+    PhoneEnabled = 0xE9CD,
+    PhoneForwarded = 0xE61C,
+    PhoneInTalk = 0xE61D,
+    PhoneIphone = 0xE325,
+    PhoneLocked = 0xE61E,
+    PhoneMissed = 0xE61F,
+    PhonePaused = 0xE620,
+    Phonelink = 0xE326,
+    PhonelinkErase = 0xE0DB,
+    PhonelinkLock = 0xE0DC,
+    PhonelinkOff = 0xE327,
+    PhonelinkRing = 0xE0DD,
+    PhonelinkSetup = 0xE0DE,
+    Photo = 0xE410,
+    PhotoAlbum = 0xE411,
+    PhotoCamera = 0xE412,
+    PhotoCameraBack = 0xEF68,
+    PhotoCameraFront = 0xEF69,
+    PhotoFilter = 0xE43B,
+    PhotoLibrary = 0xE413,
+    PhotoSizeSelectActual = 0xE432,
+    PhotoSizeSelectLarge = 0xE433,
+    PhotoSizeSelectSmall = 0xE434,
+    Php = 0xEB8F,
+    Piano = 0xE521,
+    PianoOff = 0xE520,
+    PictureAsPdf = 0xE415,
+    PictureInPicture = 0xE8AA,
+    PictureInPictureAlt = 0xE911,
+    PieChart = 0xE6C4,
+    PieChartOutline = 0xF044,
+    PieChartOutlined = 0xE6C5,
+    Pin = 0xF045,
+    PinDrop = 0xE55E,
+    PinEnd = 0xE767,
+    PinInvoke = 0xE763,
+    Pinch = 0xEB38,
+    PivotTableChart = 0xE9CE,
+    Pix = 0xEAA3,
+    Place = 0xE55F,
+    Plagiarism = 0xEA5A,
+    PlayArrow = 0xE037,
+    PlayCircle = 0xE1C4,
+    PlayCircleFill = 0xE038,
+    PlayCircleFilled = 0xE038,
+    PlayCircleOutline = 0xE039,
+    PlayDisabled = 0xEF6A,
+    PlayForWork = 0xE906,
+    PlayLesson = 0xF047,
+    PlaylistAdd = 0xE03B,
+    PlaylistAddCheck = 0xE065,
+    PlaylistAddCheckCircle = 0xE7E6,
+    PlaylistAddCircle = 0xE7E5,
+    PlaylistPlay = 0xE05F,
+    PlaylistRemove = 0xEB80,
+    Plumbing = 0xF107,
+    PlusOne = 0xE800,
+    Podcasts = 0xF048,
+    PointOfSale = 0xF17E,
+    Policy = 0xEA17,
+    Poll = 0xE801,
+    Polyline = 0xEBBB,
+    Polymer = 0xE8AB,
+    Pool = 0xEB48,
+    PortableWifiOff = 0xE0CE,
+    Portrait = 0xE416,
+    PostAdd = 0xEA20,
+    Power = 0xE63C,
+    PowerInput = 0xE336,
+    PowerOff = 0xE646,
+    PowerSettingsNew = 0xE8AC,
+    PrecisionManufacturing = 0xF049,
+    PregnantWoman = 0xE91E,
+    PresentToAll = 0xE0DF,
+    Preview = 0xF1C5,
+    PriceChange = 0xF04A,
+    PriceCheck = 0xF04B,
+    Print = 0xE8AD,
+    PrintDisabled = 0xE9CF,
+    PriorityHigh = 0xE645,
+    PrivacyTip = 0xF0DC,
+    PrivateConnectivity = 0xE744,
+    ProductionQuantityLimits = 0xE1D1,
+    Propane = 0xEC14,
+    PropaneTank = 0xEC13,
+    Psychology = 0xEA4A,
+    PsychologyAlt = 0xF8EA,
+    Public = 0xE80B,
+    PublicOff = 0xF1CA,
+    Publish = 0xE255,
+    PublishedWithChanges = 0xF232,
+    PunchClock = 0xEAA8,
+    PushPin = 0xF10D,
+    QrCode = 0xEF6B,
+    QrCode2 = 0xE00A,
+    QrCodeScanner = 0xF206,
+    QueryBuilder = 0xE8AE,
+    QueryStats = 0xE4FC,
+    QuestionAnswer = 0xE8AF,
+    QuestionMark = 0xEB8B,
+    Queue = 0xE03C,
+    QueueMusic = 0xE03D,
+    QueuePlayNext = 0xE066,
+    QuickContactsDialer = 0xE0CF,
+    QuickContactsMail = 0xE0D0,
+    Quickreply = 0xEF6C,
+    Quiz = 0xF04C,
+    Quora = 0xEA98,
+    RMobiledata = 0xF04D,
+    Radar = 0xF04E,
+    Radio = 0xE03E,
+    RadioButtonChecked = 0xE837,
+    RadioButtonOff = 0xE836,
+    RadioButtonOn = 0xE837,
+    RadioButtonUnchecked = 0xE836,
+    RailwayAlert = 0xE9D1,
+    RamenDining = 0xEA64,
+    RampLeft = 0xEB9C,
+    RampRight = 0xEB96,
+    RateReview = 0xE560,
+    RawOff = 0xF04F,
+    RawOn = 0xF050,
+    ReadMore = 0xEF6D,
+    RealEstateAgent = 0xE73A,
+    RebaseEdit = 0xF846,
+    Receipt = 0xE8B0,
+    ReceiptLong = 0xEF6E,
+    RecentActors = 0xE03F,
+    Recommend = 0xE9D2,
+    RecordVoiceOver = 0xE91F,
+    Rectangle = 0xEB54,
+    Recycling = 0xE760,
+    Reddit = 0xEAA0,
+    Redeem = 0xE8B1,
+    Redo = 0xE15A,
+    ReduceCapacity = 0xF21C,
+    Refresh = 0xE5D5,
+    RememberMe = 0xF051,
+    Remove = 0xE15B,
+    RemoveCircle = 0xE15C,
+    RemoveCircleOutline = 0xE15D,
+    RemoveDone = 0xE9D3,
+    RemoveFromQueue = 0xE067,
+    RemoveModerator = 0xE9D4,
+    RemoveRedEye = 0xE417,
+    RemoveRoad = 0xEBFC,
+    RemoveShoppingCart = 0xE928,
+    Reorder = 0xE8FE,
+    Repartition = 0xF8E8,
+    Repeat = 0xE040,
+    RepeatOn = 0xE9D6,
+    RepeatOne = 0xE041,
+    RepeatOneOn = 0xE9D7,
+    Replay = 0xE042,
+    Replay10 = 0xE059,
+    Replay30 = 0xE05A,
+    Replay5 = 0xE05B,
+    ReplayCircleFilled = 0xE9D8,
+    Reply = 0xE15E,
+    ReplyAll = 0xE15F,
+    Report = 0xE160,
+    ReportGmailerrorred = 0xF052,
+    ReportOff = 0xE170,
+    ReportProblem = 0xE8B2,
+    RequestPage = 0xF22C,
+    RequestQuote = 0xF1B6,
+    ResetTv = 0xE9D9,
+    RestartAlt = 0xF053,
+    Restaurant = 0xE56C,
+    RestaurantMenu = 0xE561,
+    Restore = 0xE8B3,
+    RestoreFromTrash = 0xE938,
+    RestorePage = 0xE929,
+    Reviews = 0xF054,
+    RiceBowl = 0xF1F5,
+    RingVolume = 0xE0D1,
+    Rocket = 0xEBA5,
+    RocketLaunch = 0xEB9B,
+    RollerShades = 0xEC12,
+    RollerShadesClosed = 0xEC11,
+    RollerSkating = 0xEBCD,
+    Roofing = 0xF201,
+    Room = 0xE8B4,
+    RoomPreferences = 0xF1B8,
+    RoomService = 0xEB49,
+    RotateNinetyDegreesCcw = 0xE418,
+    RotateNinetyDegreesCw = 0xEAAB,
+    RotateLeft = 0xE419,
+    RotateRight = 0xE41A,
+    RoundaboutLeft = 0xEB99,
+    RoundaboutRight = 0xEBA3,
+    RoundedCorner = 0xE920,
+    Route = 0xEACD,
+    Router = 0xE328,
+    Rowing = 0xE921,
+    RssFeed = 0xE0E5,
+    Rsvp = 0xF055,
+    Rtt = 0xE9AD,
+    Rule = 0xF1C2,
+    RuleFolder = 0xF1C9,
+    RunCircle = 0xEF6F,
+    RunningWithErrors = 0xE51D,
+    RvHookup = 0xE642,
+    SafetyCheck = 0xEBEF,
+    SafetyDivider = 0xE1CC,
+    Sailing = 0xE502,
+    Sanitizer = 0xF21D,
+    Satellite = 0xE562,
+    SatelliteAlt = 0xEB3A,
+    Save = 0xE161,
+    SaveAlt = 0xE171,
+    SaveAs = 0xEB60,
+    SavedSearch = 0xEA11,
+    Savings = 0xE2EB,
+    Scale = 0xEB5F,
+    Scanner = 0xE329,
+    ScatterPlot = 0xE268,
+    Schedule = 0xE8B5,
+    ScheduleSend = 0xEA0A,
+    Schema = 0xE4FD,
+    School = 0xE80C,
+    Science = 0xEA4B,
+    Score = 0xE269,
+    Scoreboard = 0xEBD0,
+    ScreenLockLandscape = 0xE1BE,
+    ScreenLockPortrait = 0xE1BF,
+    ScreenLockRotation = 0xE1C0,
+    ScreenRotation = 0xE1C1,
+    ScreenRotationAlt = 0xEBEE,
+    ScreenSearchDesktop = 0xEF70,
+    ScreenShare = 0xE0E2,
+    Screenshot = 0xF056,
+    ScreenshotMonitor = 0xEC08,
+    ScubaDiving = 0xEBCE,
+    Sd = 0xE9DD,
+    SdCard = 0xE623,
+    SdCardAlert = 0xF057,
+    SdStorage = 0xE1C2,
+    Search = 0xE8B6,
+    SearchOff = 0xEA76,
+    Security = 0xE32A,
+    SecurityUpdate = 0xF058,
+    SecurityUpdateGood = 0xF059,
+    SecurityUpdateWarning = 0xF05A,
+    Segment = 0xE94B,
+    SelectAll = 0xE162,
+    SelfImprovement = 0xEA78,
+    Sell = 0xF05B,
+    Send = 0xE163,
+    SendAndArchive = 0xEA0C,
+    SendTimeExtension = 0xEADB,
+    SendToMobile = 0xF05C,
+    SensorDoor = 0xF1B5,
+    SensorOccupied = 0xEC10,
+    SensorWindow = 0xF1B4,
+    Sensors = 0xE51E,
+    SensorsOff = 0xE51F,
+    SentimentDissatisfied = 0xE811,
+    SentimentNeutral = 0xE812,
+    SentimentSatisfied = 0xE813,
+    SentimentSatisfiedAlt = 0xE0ED,
+    SentimentVeryDissatisfied = 0xE814,
+    SentimentVerySatisfied = 0xE815,
+    SetMeal = 0xF1EA,
+    Settings = 0xE8B8,
+    SettingsAccessibility = 0xF05D,
+    SettingsApplications = 0xE8B9,
+    SettingsBackupRestore = 0xE8BA,
+    SettingsBluetooth = 0xE8BB,
+    SettingsBrightness = 0xE8BD,
+    SettingsCell = 0xE8BC,
+    SettingsDisplay = 0xE8BD,
+    SettingsEthernet = 0xE8BE,
+    SettingsInputAntenna = 0xE8BF,
+    SettingsInputComponent = 0xE8C0,
+    SettingsInputComposite = 0xE8C1,
+    SettingsInputHdmi = 0xE8C2,
+    SettingsInputSvideo = 0xE8C3,
+    SettingsOverscan = 0xE8C4,
+    SettingsPhone = 0xE8C5,
+    SettingsPower = 0xE8C6,
+    SettingsRemote = 0xE8C7,
+    SettingsSuggest = 0xF05E,
+    SettingsSystemDaydream = 0xE1C3,
+    SettingsVoice = 0xE8C8,
+    SevereCold = 0xEBD3,
+    ShapeLine = 0xF8D3,
+    Share = 0xE80D,
+    ShareArrivalTime = 0xE524,
+    ShareLocation = 0xF05F,
+    Shelves = 0xF86E,
+    Shield = 0xE9E0,
+    ShieldMoon = 0xEAA9,
+    Shop = 0xE8C9,
+    Shop2 = 0xE19E,
+    ShopTwo = 0xE8CA,
+    Shopify = 0xEA9D,
+    ShoppingBag = 0xF1CC,
+    ShoppingBasket = 0xE8CB,
+    ShoppingCart = 0xE8CC,
+    ShoppingCartCheckout = 0xEB88,
+    ShortText = 0xE261,
+    Shortcut = 0xF060,
+    ShowChart = 0xE6E1,
+    Shower = 0xF061,
+    Shuffle = 0xE043,
+    ShuffleOn = 0xE9E1,
+    ShutterSpeed = 0xE43D,
+    Sick = 0xF220,
+    SignLanguage = 0xEBE5,
+    SignalCellular0Bar = 0xF0A8,
+    SignalCellular4Bar = 0xE1C8,
+    SignalCellularAlt = 0xE202,
+    SignalCellularAlt1Bar = 0xEBDF,
+    SignalCellularAlt2Bar = 0xEBE3,
+    SignalCellularConnectedNoInternet0Bar = 0xF0AC,
+    SignalCellularConnectedNoInternet4Bar = 0xE1CD,
+    SignalCellularNoSim = 0xE1CE,
+    SignalCellularNodata = 0xF062,
+    SignalCellularNull = 0xE1CF,
+    SignalCellularOff = 0xE1D0,
+    SignalWifi0Bar = 0xF0B0,
+    SignalWifi4Bar = 0xE1D8,
+    SignalWifi4BarLock = 0xE1D9,
+    SignalWifiBad = 0xF063,
+    SignalWifiConnectedNoInternet4 = 0xF064,
+    SignalWifiOff = 0xE1DA,
+    SignalWifiStatusbar4Bar = 0xF065,
+    SignalWifiStatusbarConnectedNoInternet4 = 0xF066,
+    SignalWifiStatusbarNull = 0xF067,
+    Signpost = 0xEB91,
+    SimCard = 0xE32B,
+    SimCardAlert = 0xE624,
+    SimCardDownload = 0xF068,
+    SingleBed = 0xEA48,
+    Sip = 0xF069,
+    Skateboarding = 0xE511,
+    SkipNext = 0xE044,
+    SkipPrevious = 0xE045,
+    Sledding = 0xE512,
+    Slideshow = 0xE41B,
+    SlowMotionVideo = 0xE068,
+    SmartButton = 0xF1C1,
+    SmartDisplay = 0xF06A,
+    SmartScreen = 0xF06B,
+    SmartToy = 0xF06C,
+    Smartphone = 0xE32C,
+    SmokeFree = 0xEB4A,
+    SmokingRooms = 0xEB4B,
+    Sms = 0xE625,
+    SmsFailed = 0xE626,
+    Snapchat = 0xEA6E,
+    SnippetFolder = 0xF1C7,
+    Snooze = 0xE046,
+    Snowboarding = 0xE513,
+    Snowing = 0xE80F,
+    Snowmobile = 0xE503,
+    Snowshoeing = 0xE514,
+    Soap = 0xF1B2,
+    SocialDistance = 0xE1CB,
+    SolarPower = 0xEC0F,
+    Sort = 0xE164,
+    SortByAlpha = 0xE053,
+    Sos = 0xEBF7,
+    SoupKitchen = 0xE7D3,
+    Source = 0xF1C4,
+    South = 0xF1E3,
+    SouthAmerica = 0xE7E4,
+    SouthEast = 0xF1E4,
+    SouthWest = 0xF1E5,
+    Spa = 0xEB4C,
+    SpaceBar = 0xE256,
+    SpaceDashboard = 0xE66B,
+    SpatialAudio = 0xEBEB,
+    SpatialAudioOff = 0xEBE8,
+    SpatialTracking = 0xEBEA,
+    Speaker = 0xE32D,
+    SpeakerGroup = 0xE32E,
+    SpeakerNotes = 0xE8CD,
+    SpeakerNotesOff = 0xE92A,
+    SpeakerPhone = 0xE0D2,
+    Speed = 0xE9E4,
+    Spellcheck = 0xE8CE,
+    Splitscreen = 0xF06D,
+    Spoke = 0xE9A7,
+    Sports = 0xEA30,
+    SportsBar = 0xF1F3,
+    SportsBaseball = 0xEA51,
+    SportsBasketball = 0xEA26,
+    SportsCricket = 0xEA27,
+    SportsEsports = 0xEA28,
+    SportsFootball = 0xEA29,
+    SportsGolf = 0xEA2A,
+    SportsGymnastics = 0xEBC4,
+    SportsHandball = 0xEA33,
+    SportsHockey = 0xEA2B,
+    SportsKabaddi = 0xEA34,
+    SportsMartialArts = 0xEAE9,
+    SportsMma = 0xEA2C,
+    SportsMotorsports = 0xEA2D,
+    SportsRugby = 0xEA2E,
+    SportsScore = 0xF06E,
+    SportsSoccer = 0xEA2F,
+    SportsTennis = 0xEA32,
+    SportsVolleyball = 0xEA31,
+    Square = 0xEB36,
+    SquareFoot = 0xEA49,
+    SsidChart = 0xEB66,
+    StackedBarChart = 0xE9E6,
+    StackedLineChart = 0xF22B,
+    Stadium = 0xEB90,
+    Stairs = 0xF1A9,
+    Star = 0xE838,
+    StarBorder = 0xE83A,
+    StarBorderPurple500 = 0xF099,
+    StarHalf = 0xE839,
+    StarOutline = 0xF06F,
+    StarPurple500 = 0xF09A,
+    StarRate = 0xF0EC,
+    Stars = 0xE8D0,
+    Start = 0xE089,
+    StayCurrentLandscape = 0xE0D3,
+    StayCurrentPortrait = 0xE0D4,
+    StayPrimaryLandscape = 0xE0D5,
+    StayPrimaryPortrait = 0xE0D6,
+    StickyNote2 = 0xF1FC,
+    Stop = 0xE047,
+    StopCircle = 0xEF71,
+    StopScreenShare = 0xE0E3,
+    Storage = 0xE1DB,
+    Store = 0xE8D1,
+    StoreMallDirectory = 0xE563,
+    Storefront = 0xEA12,
+    Storm = 0xF070,
+    Straight = 0xEB95,
+    Straighten = 0xE41C,
+    Stream = 0xE9E9,
+    Streetview = 0xE56E,
+    StrikethroughS = 0xE257,
+    Stroller = 0xF1AE,
+    Style = 0xE41D,
+    SubdirectoryArrowLeft = 0xE5D9,
+    SubdirectoryArrowRight = 0xE5DA,
+    Subject = 0xE8D2,
+    Subscript = 0xF111,
+    Subscriptions = 0xE064,
+    Subtitles = 0xE048,
+    SubtitlesOff = 0xEF72,
+    Subway = 0xE56F,
+    Summarize = 0xF071,
+    Sunny = 0xE81A,
+    SunnySnowing = 0xE819,
+    Superscript = 0xF112,
+    SupervisedUserCircle = 0xE939,
+    SupervisorAccount = 0xE8D3,
+    Support = 0xEF73,
+    SupportAgent = 0xF0E2,
+    Surfing = 0xE515,
+    SurroundSound = 0xE049,
+    SwapCalls = 0xE0D7,
+    SwapHoriz = 0xE8D4,
+    SwapHorizontalCircle = 0xE933,
+    SwapVert = 0xE8D5,
+    SwapVertCircle = 0xE8D6,
+    SwapVerticalCircle = 0xE8D6,
+    Swipe = 0xE9EC,
+    SwipeDown = 0xEB53,
+    SwipeDownAlt = 0xEB30,
+    SwipeLeft = 0xEB59,
+    SwipeLeftAlt = 0xEB33,
+    SwipeRight = 0xEB52,
+    SwipeRightAlt = 0xEB56,
+    SwipeUp = 0xEB2E,
+    SwipeUpAlt = 0xEB35,
+    SwipeVertical = 0xEB51,
+    SwitchAccessShortcut = 0xE7E1,
+    SwitchAccessShortcutAdd = 0xE7E2,
+    SwitchAccount = 0xE9ED,
+    SwitchCamera = 0xE41E,
+    SwitchLeft = 0xF1D1,
+    SwitchRight = 0xF1D2,
+    SwitchVideo = 0xE41F,
+    Synagogue = 0xEAB0,
+    Sync = 0xE627,
+    SyncAlt = 0xEA18,
+    SyncDisabled = 0xE628,
+    SyncLock = 0xEAEE,
+    SyncProblem = 0xE629,
+    SystemSecurityUpdate = 0xF072,
+    SystemSecurityUpdateGood = 0xF073,
+    SystemSecurityUpdateWarning = 0xF074,
+    SystemUpdate = 0xE62A,
+    SystemUpdateAlt = 0xE8D7,
+    SystemUpdateTv = 0xE8D7,
+    Tab = 0xE8D8,
+    TabUnselected = 0xE8D9,
+    TableBar = 0xEAD2,
+    TableChart = 0xE265,
+    TableRestaurant = 0xEAC6,
+    TableRows = 0xF101,
+    TableView = 0xF1BE,
+    Tablet = 0xE32F,
+    TabletAndroid = 0xE330,
+    TabletMac = 0xE331,
+    Tag = 0xE9EF,
+    TagFaces = 0xE420,
+    TakeoutDining = 0xEA74,
+    TapAndPlay = 0xE62B,
+    Tapas = 0xF1E9,
+    Task = 0xF075,
+    TaskAlt = 0xE2E6,
+    TaxiAlert = 0xEF74,
+    Telegram = 0xEA6B,
+    TempleBuddhist = 0xEAB3,
+    TempleHindu = 0xEAAF,
+    Terminal = 0xEB8E,
+    Terrain = 0xE564,
+    TextDecrease = 0xEADD,
+    TextFields = 0xE262,
+    TextFormat = 0xE165,
+    TextIncrease = 0xEAE2,
+    TextRotateUp = 0xE93A,
+    TextRotateVertical = 0xE93B,
+    TextRotationAngledown = 0xE93C,
+    TextRotationAngleup = 0xE93D,
+    TextRotationDown = 0xE93E,
+    TextRotationNone = 0xE93F,
+    TextSnippet = 0xF1C6,
+    Textsms = 0xE0D8,
+    Texture = 0xE421,
+    TheaterComedy = 0xEA66,
+    Theaters = 0xE8DA,
+    Thermostat = 0xF076,
+    ThermostatAuto = 0xF077,
+    ThumbDown = 0xE8DB,
+    ThumbDownAlt = 0xE816,
+    ThumbDownOffAlt = 0xE9F2,
+    ThumbUp = 0xE8DC,
+    ThumbUpAlt = 0xE817,
+    ThumbUpOffAlt = 0xE9F3,
+    ThumbsUpDown = 0xE8DD,
+    Thunderstorm = 0xEBDB,
+    Tiktok = 0xEA7E,
+    TimeToLeave = 0xE62C,
+    Timelapse = 0xE422,
+    Timeline = 0xE922,
+    Timer = 0xE425,
+    TimerTen = 0xE423,
+    TimerTenSelect = 0xF07A,
+    TimerThree = 0xE424,
+    TimerThreeSelect = 0xF07B,
+    TimerOff = 0xE426,
+    TipsAndUpdates = 0xE79A,
+    TireRepair = 0xEBC8,
+    Title = 0xE264,
+    Toc = 0xE8DE,
+    Today = 0xE8DF,
+    ToggleOff = 0xE9F5,
+    ToggleOn = 0xE9F6,
+    Token = 0xEA25,
+    Toll = 0xE8E0,
+    Tonality = 0xE427,
+    Topic = 0xF1C8,
+    Tornado = 0xE199,
+    TouchApp = 0xE913,
+    Tour = 0xEF75,
+    Toys = 0xE332,
+    TrackChanges = 0xE8E1,
+    Traffic = 0xE565,
+    Train = 0xE570,
+    Tram = 0xE571,
+    Transcribe = 0xF8EC,
+    TransferWithinAStation = 0xE572,
+    Transform = 0xE428,
+    Transgender = 0xE58D,
+    TransitEnterexit = 0xE579,
+    Translate = 0xE8E2,
+    TravelExplore = 0xE2DB,
+    TrendingDown = 0xE8E3,
+    TrendingFlat = 0xE8E4,
+    TrendingNeutral = 0xE8E4,
+    TrendingUp = 0xE8E5,
+    TripOrigin = 0xE57B,
+    Trolley = 0xF86B,
+    Troubleshoot = 0xE1D2,
+    Try = 0xF07C,
+    Tsunami = 0xEBD8,
+    Tty = 0xF1AA,
+    Tune = 0xE429,
+    Tungsten = 0xF07D,
+    TurnLeft = 0xEBA6,
+    TurnRight = 0xEBAB,
+    TurnSharpLeft = 0xEBA7,
+    TurnSharpRight = 0xEBAA,
+    TurnSlightLeft = 0xEBA4,
+    TurnSlightRight = 0xEB9A,
+    TurnedIn = 0xE8E6,
+    TurnedInNot = 0xE8E7,
+    Tv = 0xE333,
+    TvOff = 0xE647,
+    TwoWheeler = 0xE9F9,
+    TypeSpecimen = 0xF8F0,
+    UTurnLeft = 0xEBA1,
+    UTurnRight = 0xEBA2,
+    Umbrella = 0xF1AD,
+    Unarchive = 0xE169,
+    Undo = 0xE166,
+    UnfoldLess = 0xE5D6,
+    UnfoldLessDouble = 0xF8CF,
+    UnfoldMore = 0xE5D7,
+    UnfoldMoreDouble = 0xF8D0,
+    Unpublished = 0xF236,
+    Unsubscribe = 0xE0EB,
+    Upcoming = 0xF07E,
+    Update = 0xE923,
+    UpdateDisabled = 0xE075,
+    Upgrade = 0xF0FB,
+    Upload = 0xF09B,
+    UploadFile = 0xE9FC,
+    Usb = 0xE1E0,
+    UsbOff = 0xE4FA,
+    Vaccines = 0xE138,
+    VapeFree = 0xEBC6,
+    VapingRooms = 0xEBCF,
+    Verified = 0xEF76,
+    VerifiedUser = 0xE8E8,
+    VerticalAlignBottom = 0xE258,
+    VerticalAlignCenter = 0xE259,
+    VerticalAlignTop = 0xE25A,
+    VerticalDistribute = 0xE076,
+    VerticalShades = 0xEC0E,
+    VerticalShadesClosed = 0xEC0D,
+    VerticalSplit = 0xE949,
+    Vibration = 0xE62D,
+    VideoCall = 0xE070,
+    VideoCameraBack = 0xF07F,
+    VideoCameraFront = 0xF080,
+    VideoChat = 0xF8A0,
+    VideoCollection = 0xE04A,
+    VideoFile = 0xEB87,
+    VideoLabel = 0xE071,
+    VideoLibrary = 0xE04A,
+    VideoSettings = 0xEA75,
+    VideoStable = 0xF081,
+    Videocam = 0xE04B,
+    VideocamOff = 0xE04C,
+    VideogameAsset = 0xE338,
+    VideogameAssetOff = 0xE500,
+    ViewAgenda = 0xE8E9,
+    ViewArray = 0xE8EA,
+    ViewCarousel = 0xE8EB,
+    ViewColumn = 0xE8EC,
+    ViewComfortable = 0xE42A,
+    ViewComfy = 0xE42A,
+    ViewComfyAlt = 0xEB73,
+    ViewCompact = 0xE42B,
+    ViewCompactAlt = 0xEB74,
+    ViewCozy = 0xEB75,
+    ViewDay = 0xE8ED,
+    ViewHeadline = 0xE8EE,
+    ViewInAr = 0xE9FE,
+    ViewKanban = 0xEB7F,
+    ViewList = 0xE8EF,
+    ViewModule = 0xE8F0,
+    ViewQuilt = 0xE8F1,
+    ViewSidebar = 0xF114,
+    ViewStream = 0xE8F2,
+    ViewTimeline = 0xEB85,
+    ViewWeek = 0xE8F3,
+    Vignette = 0xE435,
+    Villa = 0xE586,
+    Visibility = 0xE8F4,
+    VisibilityOff = 0xE8F5,
+    VoiceChat = 0xE62E,
+    VoiceOverOff = 0xE94A,
+    Voicemail = 0xE0D9,
+    Volcano = 0xEBDA,
+    VolumeDown = 0xE04D,
+    VolumeDownAlt = 0xE79C,
+    VolumeMute = 0xE04E,
+    VolumeOff = 0xE04F,
+    VolumeUp = 0xE050,
+    VolunteerActivism = 0xEA70,
+    VpnKey = 0xE0DA,
+    VpnKeyOff = 0xEB7A,
+    VpnLock = 0xE62F,
+    Vrpano = 0xF082,
+    Wallet = 0xF8FF,
+    WalletGiftcard = 0xE8F6,
+    WalletMembership = 0xE8F7,
+    WalletTravel = 0xE8F8,
+    Wallpaper = 0xE1BC,
+    Warehouse = 0xEBB8,
+    Warning = 0xE002,
+    WarningAmber = 0xF083,
+    Wash = 0xF1B1,
+    Watch = 0xE334,
+    WatchLater = 0xE924,
+    WatchOff = 0xEAE3,
+    Water = 0xF084,
+    WaterDamage = 0xF203,
+    WaterDrop = 0xE798,
+    WaterfallChart = 0xEA00,
+    Waves = 0xE176,
+    WavingHand = 0xE766,
+    WbAuto = 0xE42C,
+    WbCloudy = 0xE42D,
+    WbIncandescent = 0xE42E,
+    WbIridescent = 0xE436,
+    WbShade = 0xEA01,
+    WbSunny = 0xE430,
+    WbTwighlight = 0xEA02,
+    WbTwilight = 0xE1C6,
+    Wc = 0xE63D,
+    Web = 0xE051,
+    WebAsset = 0xE069,
+    WebAssetOff = 0xE4F7,
+    WebStories = 0xE595,
+    Webhook = 0xEB92,
+    Wechat = 0xEA81,
+    Weekend = 0xE16B,
+    West = 0xF1E6,
+    Whatshot = 0xE80E,
+    WheelchairPickup = 0xF1AB,
+    WhereToVote = 0xE177,
+    Widgets = 0xE1BD,
+    WidthFull = 0xF8F5,
+    WidthNormal = 0xF8F6,
+    WidthWide = 0xF8F7,
+    Wifi = 0xE63E,
+    Wifi1Bar = 0xE4CA,
+    Wifi2Bar = 0xE4D9,
+    WifiCalling = 0xEF77,
+    WifiCalling3 = 0xF085,
+    WifiChannel = 0xEB6A,
+    WifiFind = 0xEB31,
+    WifiLock = 0xE1E1,
+    WifiOff = 0xE648,
+    WifiPassword = 0xEB6B,
+    WifiProtectedSetup = 0xF0FC,
+    WifiTethering = 0xE1E2,
+    WifiTetheringError = 0xEAD9,
+    WifiTetheringErrorRounded = 0xF086,
+    WifiTetheringOff = 0xF087,
+    WindPower = 0xEC0C,
+    Window = 0xF088,
+    WineBar = 0xF1E8,
+    Woman = 0xE13E,
+    Woman2 = 0xF8E7,
+    WooCommerce = 0xEA6D,
+    Wordpress = 0xEA9F,
+    Work = 0xE8F9,
+    WorkHistory = 0xEC09,
+    WorkOff = 0xE942,
+    WorkOutline = 0xE943,
+    WorkspacePremium = 0xE7AF,
+    Workspaces = 0xE1A0,
+    WorkspacesFilled = 0xEA0D,
+    WorkspacesOutline = 0xEA0F,
+    WrapText = 0xE25B,
+    WrongLocation = 0xEF78,
+    Wysiwyg = 0xF1C3,
+    Yard = 0xF089,
+    YoutubeSearchedFor = 0xE8FA,
+    ZoomIn = 0xE8FF,
+    ZoomInMap = 0xEB2D,
+    ZoomOut = 0xE900,
+    ZoomOutMap = 0xE56B,
 }

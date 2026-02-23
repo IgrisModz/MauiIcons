@@ -7,11 +7,23 @@ public class EnumToIconConverter : IValueConverter
 {
     public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
-        return (value is Enum icon) ? icon.GetDescription() : null;
+        if (value != null && value.GetType().IsEnum)
+        {
+            var method = typeof(EnumExtension).GetMethod(nameof(EnumExtension.GetGlyph))
+                ?.MakeGenericMethod(value.GetType());
+            return method?.Invoke(null, [value]);
+        }
+        return null;
     }
 
     public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
-        return (value is string str) ? str.GetEnumByDescription(targetType) : null;
+        if (value is string str && targetType.IsEnum)
+        {
+            var method = typeof(EnumExtension).GetMethod(nameof(EnumExtension.GetEnumByGlyph))
+                ?.MakeGenericMethod(targetType);
+            return method?.Invoke(null, [str]);
+        }
+        return null;
     }
 }

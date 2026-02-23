@@ -5,12 +5,12 @@ using System.Reflection;
 namespace MauiIcons.Core.Extensions;
 
 [ContentProperty(nameof(Icon))]
-public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> where TEnum : Enum
+public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> where TEnum : struct, Enum
 {
     private WeakReference<VisualElement>? _targetReference;
 
     // Propriétés Bindable
-    public static readonly BindableProperty IconProperty = BindableProperty.Create(nameof(Icon), typeof(TEnum), typeof(IconExtension<TEnum>), null);
+    public static readonly BindableProperty IconProperty = BindableProperty.Create(nameof(Icon), typeof(TEnum), typeof(IconExtension<TEnum>), default(TEnum));
     public static readonly BindableProperty ColorProperty = BindableProperty.Create(nameof(Color), typeof(Color), typeof(IconExtension<TEnum>), null);
     public static readonly BindableProperty BackgroundColorProperty = BindableProperty.Create(nameof(BackgroundColor), typeof(Color), typeof(IconExtension<TEnum>), null);
     public static readonly BindableProperty SizeProperty = BindableProperty.Create(nameof(Size), typeof(double), typeof(IconExtension<TEnum>), 30.0);
@@ -25,7 +25,8 @@ public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> whe
     public AnimationType Animation { get => (AnimationType)GetValue(AnimationProperty); set => SetValue(AnimationProperty, value); }
     public bool IsAnimationActive { get => (bool)GetValue(IsAnimationActiveProperty); set => SetValue(IsAnimationActiveProperty, value); }
 
-    public string FontFamily => Icon is not null ? Icon.GetFontFamily() : string.Empty;
+    public string FontFamily => Icon.GetFontFamily();
+    public string Glyph => Icon.GetGlyph();
 
     public object ProvideValue(IServiceProvider serviceProvider)
     {
@@ -64,7 +65,7 @@ public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> whe
                 AttachAnimationHandler(visualTarget);
         }
 
-        return Icon?.GetDescription() ?? string.Empty;
+        return Glyph;
     }
     private GenericIcon CreateBaseIconControl()
     {
@@ -98,12 +99,9 @@ public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> whe
     {
         SetPropertyValue(target, nameof(FontFamily), FontFamily);
         if (Size != 30.0) SetPropertyValue(target, "FontSize", Size);
-        if (Color != null)
-        {
-            SetPropertyValue(target, "TextColor", Color);
-            SetPropertyValue(target, "ForegroundColor", Color);
-        }
-        if (BackgroundColor != null) SetPropertyValue(target, nameof(BackgroundColor), BackgroundColor);
+        SetPropertyValue(target, "TextColor", Color);
+        SetPropertyValue(target, "ForegroundColor", Color);
+        SetPropertyValue(target, nameof(BackgroundColor), BackgroundColor);
     }
 
     private static void SetPropertyValue(BindableObject target, string propertyName, object value)
@@ -216,10 +214,7 @@ public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> whe
                     break;
             }
         }
-        catch (Exception)
-        {
-            // Capture silencieuse (ex: si l'utilisateur quitte la page pendant l'animation)
-        }
+        catch (Exception) { }
     }
 
     // Classe interne pour instancier BaseIcon<TEnum> qui est abstraite

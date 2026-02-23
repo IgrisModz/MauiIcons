@@ -6,7 +6,7 @@ public static class BuilderExtensions
     {
         return builder.ConfigureFonts(fonts =>
         {
-            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "material-twotone.otf", nameof(MaterialTwoToneIcons));
+            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, MaterialTwoToneFont.FontAlias);
         });
     }
 }

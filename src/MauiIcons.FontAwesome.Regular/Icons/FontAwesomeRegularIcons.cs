@@ -1,345 +1,177 @@
-﻿using System.ComponentModel;
+﻿using MauiIcons.Core.Attributes;
 
 namespace MauiIcons.FontAwesome.Regular;
 
+[IconFont(FontAwesomeRegularFont.FontAlias)]
 public enum FontAwesomeRegularIcons
 {
-    [Description("\uf2b9")]
-    AddressBook,
-    [Description("\uf2bb")]
-    AddressCard,
-    [Description("\uf34e")]
-    AlarmClock,
-    [Description("\uf0f3")]
-    Bell,
-    [Description("\uf1f6")]
-    BellSlash,
-    [Description("\uf02e")]
-    Bookmark,
-    [Description("\uf1ad")]
-    Building,
-    [Description("\uf133")]
-    Calendar,
-    [Description("\uf274")]
-    CalendarCheck,
-    [Description("\uf073")]
-    CalendarDays,
-    [Description("\uf272")]
-    CalendarMinus,
-    [Description("\uf271")]
-    CalendarPlus,
-    [Description("\uf273")]
-    CalendarXmark,
-    [Description("\uf030")]
-    Camera,
-    [Description("\uf080")]
-    ChartBar,
-    [Description("\uf43a")]
-    ChessBishop,
-    [Description("\uf43f")]
-    ChessKing,
-    [Description("\uf441")]
-    ChessKnight,
-    [Description("\uf443")]
-    ChessPawn,
-    [Description("\uf445")]
-    ChessQueen,
-    [Description("\uf447")]
-    ChessRook,
-    [Description("\uf111")]
-    Circle,
-    [Description("\uf058")]
-    CircleCheck,
-    [Description("\uf192")]
-    CircleDot,
-    [Description("\uf358")]
-    CircleDown,
-    [Description("\uf359")]
-    CircleLeft,
-    [Description("\uf28b")]
-    CirclePause,
-    [Description("\uf144")]
-    CirclePlay,
-    [Description("\uf059")]
-    CircleQuestion,
-    [Description("\uf35a")]
-    CircleRight,
-    [Description("\uf28d")]
-    CircleStop,
-    [Description("\uf35b")]
-    CircleUp,
-    [Description("\uf2bd")]
-    CircleUser,
-    [Description("\uf057")]
-    CircleXmark,
-    [Description("\uf328")]
-    Clipboard,
-    [Description("\uf017")]
-    Clock,
-    [Description("\uf24d")]
-    Clone,
-    [Description("\uf20a")]
-    ClosedCaptioning,
-    [Description("\uf0c2")]
-    Cloud,
-    [Description("\uf075")]
-    Comment,
-    [Description("\uf4ad")]
-    CommentDots,
-    [Description("\uf086")]
-    Comments,
-    [Description("\uf14e")]
-    Compass,
-    [Description("\uf0c5")]
-    Copy,
-    [Description("\uf1f9")]
-    Copyright,
-    [Description("\uf09d")]
-    CreditCard,
-    [Description("\uf0e0")]
-    Envelope,
-    [Description("\uf2b6")]
-    EnvelopeOpen,
-    [Description("\uf06e")]
-    Eye,
-    [Description("\uf070")]
-    EyeSlash,
-    [Description("\uf556")]
-    FaceAngry,
-    [Description("\uf567")]
-    FaceDizzy,
-    [Description("\uf579")]
-    FaceFlushed,
-    [Description("\uf119")]
-    FaceFrown,
-    [Description("\uf57a")]
-    FaceFrownOpen,
-    [Description("\uf57f")]
-    FaceGrimace,
-    [Description("\uf580")]
-    FaceGrin,
-    [Description("\uf582")]
-    FaceGrinBeam,
-    [Description("\uf583")]
-    FaceGrinBeamSweat,
-    [Description("\uf584")]
-    FaceGrinHearts,
-    [Description("\uf585")]
-    FaceGrinSquint,
-    [Description("\uf586")]
-    FaceGrinSquintTears,
-    [Description("\uf587")]
-    FaceGrinStars,
-    [Description("\uf588")]
-    FaceGrinTears,
-    [Description("\uf589")]
-    FaceGrinTongue,
-    [Description("\uf58a")]
-    FaceGrinTongueSquint,
-    [Description("\uf58b")]
-    FaceGrinTongueWink,
-    [Description("\uf581")]
-    FaceGrinWide,
-    [Description("\uf58c")]
-    FaceGrinWink,
-    [Description("\uf596")]
-    FaceKiss,
-    [Description("\uf597")]
-    FaceKissBeam,
-    [Description("\uf598")]
-    FaceKissWinkHeart,
-    [Description("\uf599")]
-    FaceLaugh,
-    [Description("\uf59a")]
-    FaceLaughBeam,
-    [Description("\uf59b")]
-    FaceLaughSquint,
-    [Description("\uf59c")]
-    FaceLaughWink,
-    [Description("\uf11a")]
-    FaceMeh,
-    [Description("\uf5a4")]
-    FaceMehBlank,
-    [Description("\uf5a5")]
-    FaceRollingEyes,
-    [Description("\uf5b3")]
-    FaceSadCry,
-    [Description("\uf5b4")]
-    FaceSadTear,
-    [Description("\uf118")]
-    FaceSmile,
-    [Description("\uf5b8")]
-    FaceSmileBeam,
-    [Description("\uf4da")]
-    FaceSmileWink,
-    [Description("\uf5c2")]
-    FaceSurprise,
-    [Description("\uf5c8")]
-    FaceTired,
-    [Description("\uf15b")]
-    File,
-    [Description("\uf1c7")]
-    FileAudio,
-    [Description("\uf1c9")]
-    FileCode,
-    [Description("\uf1c3")]
-    FileExcel,
-    [Description("\uf1c5")]
-    FileImage,
-    [Description("\uf15c")]
-    FileLines,
-    [Description("\uf1c1")]
-    FilePdf,
-    [Description("\uf1c4")]
-    FilePowerpoint,
-    [Description("\uf1c8")]
-    FileVideo,
-    [Description("\uf1c2")]
-    FileWord,
-    [Description("\uf1c6")]
-    FileZipper,
-    [Description("\uf024")]
-    Flag,
-    [Description("\uf0c7")]
-    FloppyDisk,
-    [Description("\uf07b")]
-    Folder,
-    [Description("\ue185")]
-    FolderClosed,
-    [Description("\uf07c")]
-    FolderOpen,
-    [Description("\uf2b4")]
-    FontAwesome,
-    [Description("\uf1e3")]
-    Futbol,
-    [Description("\uf3a5")]
-    Gem,
-    [Description("\uf256")]
-    Hand,
-    [Description("\uf255")]
-    HandBackFist,
-    [Description("\uf258")]
-    HandLizard,
-    [Description("\uf25b")]
-    HandPeace,
-    [Description("\uf0a7")]
-    HandPointDown,
-    [Description("\uf0a5")]
-    HandPointLeft,
-    [Description("\uf0a4")]
-    HandPointRight,
-    [Description("\uf0a6")]
-    HandPointUp,
-    [Description("\uf25a")]
-    HandPointer,
-    [Description("\uf257")]
-    HandScissors,
-    [Description("\uf259")]
-    HandSpock,
-    [Description("\uf2b5")]
-    Handshake,
-    [Description("\uf0a0")]
-    HardDrive,
-    [Description("\uf025")]
-    Headphones,
-    [Description("\uf004")]
-    Heart,
-    [Description("\uf0f8")]
-    Hospital,
-    [Description("\uf254")]
-    Hourglass,
-    [Description("\uf252")]
-    HourglassHalf,
-    [Description("\uf015")]
-    House,
-    [Description("\uf2c1")]
-    IdBadge,
-    [Description("\uf2c2")]
-    IdCard,
-    [Description("\uf03e")]
-    Image,
-    [Description("\uf302")]
-    Images,
-    [Description("\uf11c")]
-    Keyboard,
-    [Description("\uf094")]
-    Lemon,
-    [Description("\uf1cd")]
-    LifeRing,
-    [Description("\uf0eb")]
-    Lightbulb,
-    [Description("\uf279")]
-    Map,
-    [Description("\uf27a")]
-    Message,
-    [Description("\uf3d1")]
-    MoneyBill1,
-    [Description("\uf186")]
-    Moon,
-    [Description("\uf1ea")]
-    Newspaper,
-    [Description("\uf249")]
-    NoteSticky,
-    [Description("\uf247")]
-    ObjectGroup,
-    [Description("\uf248")]
-    ObjectUngroup,
-    [Description("\uf1d8")]
-    PaperPlane,
-    [Description("\uf0ea")]
-    Paste,
-    [Description("\uf044")]
-    PenToSquare,
-    [Description("\uf022")]
-    RectangleList,
-    [Description("\uf410")]
-    RectangleXmark,
-    [Description("\uf25d")]
-    Registered,
-    [Description("\uf14d")]
-    ShareFromSquare,
-    [Description("\uf2dc")]
-    Snowflake,
-    [Description("\uf0c8")]
-    Square,
-    [Description("\uf150")]
-    SquareCaretDown,
-    [Description("\uf191")]
-    SquareCaretLeft,
-    [Description("\uf152")]
-    SquareCaretRight,
-    [Description("\uf151")]
-    SquareCaretUp,
-    [Description("\uf14a")]
-    SquareCheck,
-    [Description("\uf45c")]
-    SquareFull,
-    [Description("\uf146")]
-    SquareMinus,
-    [Description("\uf0fe")]
-    SquarePlus,
-    [Description("\uf005")]
-    Star,
-    [Description("\uf089")]
-    StarHalf,
-    [Description("\uf5c0")]
-    StarHalfStroke,
-    [Description("\uf185")]
-    Sun,
-    [Description("\uf165")]
-    ThumbsDown,
-    [Description("\uf164")]
-    ThumbsUp,
-    [Description("\uf2ed")]
-    TrashCan,
-    [Description("\uf0d1")]
-    Truck,
-    [Description("\uf007")]
-    User,
-    [Description("\uf2d0")]
-    WindowMaximize,
-    [Description("\uf2d1")]
-    WindowMinimize,
-    [Description("\uf2d2")]
-    WindowRestore,
+    AddressBook = 0xf2b9,
+    AddressCard = 0xf2bb,
+    AlarmClock = 0xf34e,
+    Bell = 0xf0f3,
+    BellSlash = 0xf1f6,
+    Bookmark = 0xf02e,
+    Building = 0xf1ad,
+    Calendar = 0xf133,
+    CalendarCheck = 0xf274,
+    CalendarDays = 0xf073,
+    CalendarMinus = 0xf272,
+    CalendarPlus = 0xf271,
+    CalendarXmark = 0xf273,
+    Camera = 0xf030,
+    ChartBar = 0xf080,
+    ChessBishop = 0xf43a,
+    ChessKing = 0xf43f,
+    ChessKnight = 0xf441,
+    ChessPawn = 0xf443,
+    ChessQueen = 0xf445,
+    ChessRook = 0xf447,
+    Circle = 0xf111,
+    CircleCheck = 0xf058,
+    CircleDot = 0xf192,
+    CircleDown = 0xf358,
+    CircleLeft = 0xf359,
+    CirclePause = 0xf28b,
+    CirclePlay = 0xf144,
+    CircleQuestion = 0xf059,
+    CircleRight = 0xf35a,
+    CircleStop = 0xf28d,
+    CircleUp = 0xf35b,
+    CircleUser = 0xf2bd,
+    CircleXmark = 0xf057,
+    Clipboard = 0xf328,
+    Clock = 0xf017,
+    Clone = 0xf24d,
+    ClosedCaptioning = 0xf20a,
+    Cloud = 0xf0c2,
+    Comment = 0xf075,
+    CommentDots = 0xf4ad,
+    Comments = 0xf086,
+    Compass = 0xf14e,
+    Copy = 0xf0c5,
+    Copyright = 0xf1f9,
+    CreditCard = 0xf09d,
+    Envelope = 0xf0e0,
+    EnvelopeOpen = 0xf2b6,
+    Eye = 0xf06e,
+    EyeSlash = 0xf070,
+    FaceAngry = 0xf556,
+    FaceDizzy = 0xf567,
+    FaceFlushed = 0xf579,
+    FaceFrown = 0xf119,
+    FaceFrownOpen = 0xf57a,
+    FaceGrimace = 0xf57f,
+    FaceGrin = 0xf580,
+    FaceGrinBeam = 0xf582,
+    FaceGrinBeamSweat = 0xf583,
+    FaceGrinHearts = 0xf584,
+    FaceGrinSquint = 0xf585,
+    FaceGrinSquintTears = 0xf586,
+    FaceGrinStars = 0xf587,
+    FaceGrinTears = 0xf588,
+    FaceGrinTongue = 0xf589,
+    FaceGrinTongueSquint = 0xf58a,
+    FaceGrinTongueWink = 0xf58b,
+    FaceGrinWide = 0xf581,
+    FaceGrinWink = 0xf58c,
+    FaceKiss = 0xf596,
+    FaceKissBeam = 0xf597,
+    FaceKissWinkHeart = 0xf598,
+    FaceLaugh = 0xf599,
+    FaceLaughBeam = 0xf59a,
+    FaceLaughSquint = 0xf59b,
+    FaceLaughWink = 0xf59c,
+    FaceMeh = 0xf11a,
+    FaceMehBlank = 0xf5a4,
+    FaceRollingEyes = 0xf5a5,
+    FaceSadCry = 0xf5b3,
+    FaceSadTear = 0xf5b4,
+    FaceSmile = 0xf118,
+    FaceSmileBeam = 0xf5b8,
+    FaceSmileWink = 0xf4da,
+    FaceSurprise = 0xf5c2,
+    FaceTired = 0xf5c8,
+    File = 0xf15b,
+    FileAudio = 0xf1c7,
+    FileCode = 0xf1c9,
+    FileExcel = 0xf1c3,
+    FileImage = 0xf1c5,
+    FileLines = 0xf15c,
+    FilePdf = 0xf1c1,
+    FilePowerpoint = 0xf1c4,
+    FileVideo = 0xf1c8,
+    FileWord = 0xf1c2,
+    FileZipper = 0xf1c6,
+    Flag = 0xf024,
+    FloppyDisk = 0xf0c7,
+    Folder = 0xf07b,
+    FolderClosed = 0xe185,
+    FolderOpen = 0xf07c,
+    FontAwesome = 0xf2b4,
+    Futbol = 0xf1e3,
+    Gem = 0xf3a5,
+    Hand = 0xf256,
+    HandBackFist = 0xf255,
+    HandLizard = 0xf258,
+    HandPeace = 0xf25b,
+    HandPointDown = 0xf0a7,
+    HandPointLeft = 0xf0a5,
+    HandPointRight = 0xf0a4,
+    HandPointUp = 0xf0a6,
+    HandPointer = 0xf25a,
+    HandScissors = 0xf257,
+    HandSpock = 0xf259,
+    Handshake = 0xf2b5,
+    HardDrive = 0xf0a0,
+    Headphones = 0xf025,
+    Heart = 0xf004,
+    Hospital = 0xf0f8,
+    Hourglass = 0xf254,
+    HourglassHalf = 0xf252,
+    House = 0xf015,
+    IdBadge = 0xf2c1,
+    IdCard = 0xf2c2,
+    Image = 0xf03e,
+    Images = 0xf302,
+    Keyboard = 0xf11c,
+    Lemon = 0xf094,
+    LifeRing = 0xf1cd,
+    Lightbulb = 0xf0eb,
+    Map = 0xf279,
+    Message = 0xf27a,
+    MoneyBill1 = 0xf3d1,
+    Moon = 0xf186,
+    Newspaper = 0xf1ea,
+    NoteSticky = 0xf249,
+    ObjectGroup = 0xf247,
+    ObjectUngroup = 0xf248,
+    PaperPlane = 0xf1d8,
+    Paste = 0xf0ea,
+    PenToSquare = 0xf044,
+    RectangleList = 0xf022,
+    RectangleXmark = 0xf410,
+    Registered = 0xf25d,
+    ShareFromSquare = 0xf14d,
+    Snowflake = 0xf2dc,
+    Square = 0xf0c8,
+    SquareCaretDown = 0xf150,
+    SquareCaretLeft = 0xf191,
+    SquareCaretRight = 0xf152,
+    SquareCaretUp = 0xf151,
+    SquareCheck = 0xf14a,
+    SquareFull = 0xf45c,
+    SquareMinus = 0xf146,
+    SquarePlus = 0xf0fe,
+    Star = 0xf005,
+    StarHalf = 0xf089,
+    StarHalfStroke = 0xf5c0,
+    Sun = 0xf185,
+    ThumbsDown = 0xf165,
+    ThumbsUp = 0xf164,
+    TrashCan = 0xf2ed,
+    Truck = 0xf0d1,
+    User = 0xf007,
+    WindowMaximize = 0xf2d0,
+    WindowMinimize = 0xf2d1,
+    WindowRestore = 0xf2d2,
 }

@@ -12,7 +12,7 @@ public enum AnimationType
     Rotate  // Rotation simple une seule fois
 }
 
-public abstract class BaseIcon<TEnum> : Label where TEnum : Enum
+public abstract class BaseIcon<TEnum> : Label where TEnum : struct, Enum
 {
     private CancellationTokenSource? _animationSource;
     
@@ -34,43 +34,35 @@ public abstract class BaseIcon<TEnum> : Label where TEnum : Enum
         VerticalTextAlignment = TextAlignment.Center;
         HorizontalTextAlignment = TextAlignment.Center;
         FontSize = 30.0; // Taille par défaut de l'icône
+        UpdateIcon(Icon);
     }
 
     private static void OnIconChanged(BindableObject bindable, object oldValue, object newValue)
     {
-        if (bindable is BaseIcon<TEnum> baseIcon && newValue != null)
+        if (bindable is BaseIcon<TEnum> control && newValue is TEnum iconEnum)
         {
-            // Conversion manuelle sécurisée
-            if (newValue is TEnum iconEnum)
-            {
-                baseIcon.UpdateIcon(iconEnum);
-            }
-            else if (newValue is string iconName)
-            {
-                if (Enum.TryParse(typeof(TEnum), iconName, true, out var result))
-                {
-                    baseIcon.UpdateIcon((TEnum)result);
-                }
-            }
+            control.UpdateIcon(iconEnum);
         }
     }
 
     private void UpdateIcon(TEnum iconEnum)
     {
-        Text = iconEnum.GetDescription();
         FontFamily = iconEnum.GetFontFamily();
+        Text = iconEnum.GetGlyph();
     }
 
     private static void OnIsAnimationActiveChanged(BindableObject bindable, object oldValue, object newValue)
     {
-        var control = (BaseIcon<TEnum>)bindable;
-        if ((bool)newValue) control.StartAnimation();
-        else control.StopAnimation();
+        if (bindable is BaseIcon<TEnum> control)
+        {
+            if ((bool)newValue) control.StartAnimation();
+            else control.StopAnimation();
+        }
     }
 
     private async void StartAnimation()
     {
-        StopAnimation(); // Sécurité
+        StopAnimation(); // Security
 
         _animationSource?.Dispose();
         _animationSource = new CancellationTokenSource();
@@ -119,7 +111,6 @@ public abstract class BaseIcon<TEnum> : Label where TEnum : Enum
     {
         _animationSource?.Cancel();
         this.CancelAnimations();
-        // Reset des transformations
         Rotation = 0;
         Scale = 1;
         TranslationX = 0;

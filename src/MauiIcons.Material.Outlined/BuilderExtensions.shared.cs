@@ -6,7 +6,7 @@ public static class BuilderExtensions
     {
         return builder.ConfigureFonts(fonts =>
         {
-            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "material-outlined.otf", nameof(MaterialOutlinedIcons));
+            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "material-outlined.otf", MaterialOutlinedFont.FontAlias);
         });
     }
 }

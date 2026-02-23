@@ -6,7 +6,7 @@ public static class BuilderExtensions
     {
         return builder.ConfigureFonts(fonts =>
         {
-            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "material-sharp.otf", nameof(MaterialSharpIcons));
+            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "material-sharp.otf", MaterialSharpFont.FontAlias);
         });
     }
 }

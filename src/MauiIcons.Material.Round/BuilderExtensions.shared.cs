@@ -6,7 +6,7 @@ public static class BuilderExtensions
     {
         return builder.ConfigureFonts(fonts =>
         {
-            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "material-round.otf", nameof(MaterialRoundIcons));
+            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "material-round.otf", MaterialRoundFont.FontAlias);
         });
     }
 }
