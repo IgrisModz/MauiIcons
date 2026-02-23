@@ -58,14 +58,15 @@
 
             <mi:MaterialRegularIcon Icon="TvOff" TextColor="BlueViolet" FontSize="60"/>
 
-            <Label Text="&#xf024;" FontSize="60" FontFamily="FontAwesomeRegularIcons" TextColor="Aqua" VerticalOptions="Center"/>
+            <Label Text="&#xf024;" FontSize="60" FontFamily="FontAwesomeRegular" TextColor="Aqua" VerticalOptions="Center"/>
 
+            <!-- This icon is commented because she cause error to visual studio text editor but it work correctly at runtime -->
             <!--<mi:FontAwesomeBrandsIcon>
                 <mi:FontAwesomeBrandsIcon.Icon>
                     <mi:IconPlatform x:TypeArguments="mi:FontAwesomeBrandsIcons" WinUI="Angular" />
                 </mi:FontAwesomeBrandsIcon.Icon>
             </mi:FontAwesomeBrandsIcon>-->
-            
+
         </StackLayout>
     </ScrollView>
 
