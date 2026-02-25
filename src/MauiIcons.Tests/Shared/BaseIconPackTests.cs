@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using MauiIcons.Core.Attributes;
 
 namespace MauiIcons.Tests.Shared;
 
@@ -8,20 +9,73 @@ public abstract class BaseIconPackTests<TEnum, TControl, TExtension>
     where TExtension : IconExtension<TEnum>, new()
 {
     [Fact]
-    public void All_Enum_Values_Should_Have_Valid_Unicode_Description()
+    public void Enum_Should_Have_IconFont_Attribute()
+    {
+        var iconFontAttribute = typeof(TEnum).GetCustomAttribute<IconFontAttribute>();
+
+        Assert.NotNull(iconFontAttribute);
+        Assert.NotNull(iconFontAttribute.FontFamily);
+        Assert.NotEmpty(iconFontAttribute.FontFamily);
+    }
+
+    [Fact]
+    public void All_Enum_Values_Should_Have_Valid_Unicode_Glyph()
     {
         foreach (TEnum icon in Enum.GetValues<TEnum>())
         {
-            var description = icon.GetDescription();
+            var glyph = icon.GetGlyph();
 
-            Assert.NotNull(description);
-            Assert.NotEmpty(description);
+            Assert.NotNull(glyph);
+            Assert.NotEmpty(glyph);
+        }
+    }
 
-            // Vérifie que l'attribut Description existe réellement sur la valeur d'énumération
-            var fieldInfo = typeof(TEnum).GetField(icon.ToString());
-            Assert.NotNull(fieldInfo);
-            var descriptionAttribute = fieldInfo.GetCustomAttribute<System.ComponentModel.DescriptionAttribute>();
-            Assert.NotNull(descriptionAttribute);
+    // Maybe later to test if there are no duplicate values in the enum, but it can be tricky if some icons intentionally share the same glyph (e.g., aliases)
+    //[Fact]
+    //public void All_Enum_Values_Should_Have_Unique_Values()
+    //{
+    //    var values = Enum.GetValues<TEnum>()
+    //        .Select(icon => Convert.ToInt32(icon))
+    //        .ToList();
+
+    //    var duplicates = values.GroupBy(x => x)
+    //        .Where(g => g.Count() > 1)
+    //        .Select(g => g.Key)
+    //        .ToList();
+
+    //    Assert.Empty(duplicates);
+    //}
+
+    [Fact]
+    public void Enum_Should_Have_At_Least_One_Value()
+    {
+        var values = Enum.GetValues<TEnum>();
+        Assert.NotEmpty(values);
+    }
+
+    [Fact]
+    public void All_Enum_Values_Should_Have_Valid_Names()
+    {
+        foreach (TEnum icon in Enum.GetValues<TEnum>())
+        {
+            var name = icon.ToString();
+
+            Assert.NotNull(name);
+            Assert.NotEmpty(name);
+            Assert.DoesNotContain(" ", name); // Pas d'espaces dans les noms
+            Assert.Matches("^[A-Za-z0-9_]+$", name); // Uniquement des caractères alphanumériques et underscores
+        }
+    }
+
+    [Fact]
+    public void GetGlyph_Should_Return_Single_Character_Or_Surrogate_Pair()
+    {
+        foreach (TEnum icon in Enum.GetValues<TEnum>())
+        {
+            var glyph = icon.GetGlyph();
+
+            // Un glyphe Unicode valide devrait avoir 1 ou 2 caractères (paire de substitution)
+            Assert.InRange(glyph.Length, 1, 2);
         }
     }
 

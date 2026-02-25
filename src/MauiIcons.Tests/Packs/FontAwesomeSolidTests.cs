@@ -11,6 +11,6 @@ public class FontAwesomeSolidTests : BaseIconPackTests<
     public void Verify_Specific_Icon_Code()
     {
         // Test de sécurité sur une icône connue
-        Assert.Equal("\uf55e", FontAwesomeSolidIcons.BusSimple.GetDescription());
+        Assert.Equal("\uf55e", FontAwesomeSolidIcons.BusSimple.GetGlyph());
     }
 }

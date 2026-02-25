@@ -11,6 +11,6 @@ public class MaterialTwoToneTests : BaseIconPackTests<
     public void Verify_Specific_Icon_Code()
     {
         // Test de sécurité sur une icône connue
-        Assert.Equal("\uE06F", MaterialTwoToneIcons.Note.GetDescription());
+        Assert.Equal("\uE06F", MaterialTwoToneIcons.Note.GetGlyph());
     }
 }

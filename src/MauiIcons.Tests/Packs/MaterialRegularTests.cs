@@ -11,6 +11,6 @@ public class MaterialRegularTests : BaseIconPackTests<
     public void Verify_Specific_Icon_Code()
     {
         // Test de sécurité sur une icône connue
-        Assert.Equal("\uE859", MaterialRegularIcons.Android.GetDescription());
+        Assert.Equal("\uE859", MaterialRegularIcons.Android.GetGlyph());
     }
 }

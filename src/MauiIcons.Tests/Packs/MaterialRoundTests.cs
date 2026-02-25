@@ -11,6 +11,6 @@ public class MaterialRoundTests : BaseIconPackTests<
     public void Verify_Specific_Icon_Code()
     {
         // Test de sécurité sur une icône connue
-        Assert.Equal("\uE39F", MaterialRoundIcons.Assistant.GetDescription());
+        Assert.Equal("\uE39F", MaterialRoundIcons.Assistant.GetGlyph());
     }
 }

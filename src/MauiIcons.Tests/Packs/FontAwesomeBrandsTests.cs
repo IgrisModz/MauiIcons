@@ -11,6 +11,6 @@ public class FontAwesomeBrandsTests : BaseIconPackTests<
     public void Verify_Specific_Icon_Code()
     {
         // Test de sécurité sur une icône connue
-        Assert.Equal("\uf17b", FontAwesomeBrandsIcons.Android.GetDescription());
+        Assert.Equal("\uf17b", FontAwesomeBrandsIcons.Android.GetGlyph());
     }
 }
