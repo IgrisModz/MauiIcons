@@ -545,7 +545,7 @@ public enum FontAwesomeBrandsIcons
     Xmpp = 0xe864,
     YCombinator = 0xf23b,
     Yahoo = 0xf19e,
-    Yammer = 0xf232,
+    Yammer = 0xf840,
     Yandex = 0xf413,
     YandexInternational = 0xf414,
     Yarn = 0xf7e3,
