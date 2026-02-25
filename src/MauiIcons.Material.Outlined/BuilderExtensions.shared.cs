@@ -1,12 +1,32 @@
-﻿namespace MauiIcons.Material.Outlined;
+﻿using MauiIcons.Core.Helpers;
 
+namespace MauiIcons.Material.Outlined;
+
+/// <summary>
+/// Extension methods for configuring Material Outlined icons in a .NET MAUI application.
+/// </summary>
 public static class BuilderExtensions
 {
+    private const string FontFileName = "material-outlined.otf";
+
+    /// <summary>
+    /// Adds Material Outlined icon font to the application.
+    /// </summary>
+    /// <param name="builder">The <see cref="MauiAppBuilder"/> to configure.</param>
+    /// <returns>The <see cref="MauiAppBuilder"/> for method chaining.</returns>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="builder"/> is null.</exception>
+    /// <exception cref="FileNotFoundException">Thrown when the embedded font resource is not found in the assembly.</exception>
     public static MauiAppBuilder UseMaterialOutlined(this MauiAppBuilder builder)
     {
+        ArgumentNullException.ThrowIfNull(builder);
+
         return builder.ConfigureFonts(fonts =>
         {
-            fonts.AddEmbeddedResourceFont(typeof(BuilderExtensions).Assembly, "material-outlined.otf", MaterialOutlinedFont.FontAlias);
+            FontRegistrationHelper.RegisterEmbeddedFont(
+                fonts,
+                typeof(BuilderExtensions).Assembly,
+                FontFileName,
+                MaterialOutlinedFont.FontAlias);
         });
     }
 }
