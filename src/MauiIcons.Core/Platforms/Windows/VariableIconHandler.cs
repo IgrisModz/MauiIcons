@@ -26,7 +26,7 @@ public class VariableIconHandler : LabelHandler
 
         platformView.FontWeight = new FontWeight
         {
-            Weight = (ushort)icon.Weight
+            Weight = (ushort)Math.Clamp(icon.Weight, FontWeights.Thin, FontWeights.Black)
         };
     }
 }
