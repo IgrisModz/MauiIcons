@@ -1,54 +1,61 @@
-.NET NAUI Icons - FontAwesome Solid
+Here is the polished and adapted **ReadMe.txt** for **FontAwesome Solid 7.2.0**. I've maintained the same clean, structured layout to ensure it looks professional when opened in Visual Studio.
 
-Getting Started
+---
 
-In order to use the .NET MAUI Icons - FontAwesome Solid library, you need to follow these steps:
+```text
+*******************************************************************************************
+.NET MAUI Icons - FontAwesome Solid (v7.2.0)
+*******************************************************************************************
 
-In your `MauiProgram.cs`, add the following line to the `CreateMauiApp` method:
+Thank you for installing IgrisModz.MauiIcons.FontAwesome.Solid!
+This library provides a seamless way to use FontAwesome 7.2.0 Solid icons in .NET 10 MAUI.
+
+===========================================================================================
+1. GETTING STARTED
+===========================================================================================
+
+In your `MauiProgram.cs`, register the library by adding the following:
 
 using MauiIcons.FontAwesome.Solid;
 
-
 public static MauiApp CreateMauiApp()
 {
-	var builder = MauiApp.CreateBuilder();
-	builder
-		.UseMauiApp<App>()
-		.UseFontAwesomeSolid(); // Add this line to register the FontAwesome Solid icons
-	return builder.Build();
+    var builder = MauiApp.CreateBuilder();
+    builder
+        .UseMauiApp<App>()
+        .UseFontAwesomeSolid(); // Essential for font registration
+
+    return builder.Build();
 }
 
+===========================================================================================
+2. XAML USAGE
+===========================================================================================
 
-XAML Usage
-
-In order to use the FontAwesome Solid icons in your XAML files, you need to add the following namespace declaration at the top of your XAML file:
+Add this unique namespace declaration at the top of your XAML file:
 
 xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
 
-
+-------------------------------------------------------------------------------------------
+A. Built-in Icon Controls
 -------------------------------------------------------------------------------------------
 
-Built-in Icons Usage
-
 XAML:
-
-<mi:FontAwesomeSolidIcon Icon="Bell" TextColor="Blue" FontSize="40" BackgroundColor="White" />
+<mi:FontAwesomeSolidIcon Icon="Bell" TextColor="Blue" FontSize="40" />
 
 C#:
-
-Using MauiIcons.FontAwesome.Solid;
+using MauiIcons.FontAwesome.Solid;
 
 var bellIcon = new FontAwesomeSolidIcon
 {
-	Icon = FontAwesomeSolidIcons.Bell,
-	TextColor = Colors.Blue,
-	FontSize = 40,
-	BackgroundColor = Colors.White
+    Icon = FontAwesomeSolidIcons.Bell,
+    TextColor = Colors.Blue,
+    FontSize = 40
 };
 
---------------------------------------------------------------------------------------------
-
-XAML Extension Usage:
+-------------------------------------------------------------------------------------------
+B. Markup Extensions (Label, Button, Image)
+-------------------------------------------------------------------------------------------
 
 <Label Text="{mi:FontAwesomeSolid Icon=Heart, Size=60, Color=DarkBlue}" />
 
@@ -56,69 +63,57 @@ XAML Extension Usage:
 
 <Image Source="{mi:FontAwesomeSolid Icon=Image, Size=50, Color=Black}" Aspect="Center" />
 
---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+C. Animations
+-------------------------------------------------------------------------------------------
 
-XAML Animations:
+NOTE: Animations do not work on all controls. Buttons animate the entire control.
 
-// Animation don't work on all controls, like images, and buttons is full animated not only the icon.
+<mi:FontAwesomeSolidIcon Icon="House" Animation="Shake" IsAnimationActive="True" />
 
-<mi:FontAwesomeSolidIcon Icon="House" TextColor="Blue" FontSize="40" BackgroundColor="White" Animation="Shake" IsAnimationActive="True" />
+<Label Text="{mi:FontAwesomeSolid Icon=Heart, Animation=Spin, IsAnimationActive=True}" />
 
-<Label Text="{mi:FontAwesomeSolid Icon=Heart, Size=60, Color=DarkBlue, Animation=Spin, IsAnimationActive=True}" />
+-------------------------------------------------------------------------------------------
+D. Platform-Specific Icons
+-------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------
+<mi:FontAwesomeSolidIcon Icon="{mi:FontAwesomeSolidPlatform WinUI=Heart, Android=House}" 
+                           FontSize="60" />
 
-XAML Binding:
+<Label Text="{mi:FontAwesomeSolid Icon={mi:FontAwesomeSolidPlatform WinUI=Newspaper, Android=AddressCard}}" />
 
-// Icon, TextColor, FontSize, BackgroundColor, and Animation properties can be bound to your ViewModel properties. For example:
+===========================================================================================
+3. DATA BINDING
+===========================================================================================
 
-<mi:FontAwesomeSolidIcon Icon="{Binding SelectedIcon}" TextColor="{Binding YourIconColor}" FontSize="{Binding YourIconSize}" BackgroundColor="{Binding YourIconBackgroundColor}" Animation="{Binding YourIconAnimation}" IsAnimationActive="{Binding YourIconIsAnimated}" />
+Icon, TextColor, FontSize, and Animation properties are Bindable:
 
-<Label Text="{mi:FontAwesomeSolid Icon={Binding SelectedIcon}, Size={Binding YourIconColor}, Color={Binding YourIconSize}, BackgroundColor="{Binding YourIconBackgroundColor}" Animation={Binding YourIconAnimation}, IsAnimationActive={Binding YourIconIsAnimated}}" />
+<mi:FontAwesomeSolidIcon Icon="{Binding SelectedIcon}" 
+                           TextColor="{Binding IconColor}" 
+                           Animation="{Binding MyAnimation}" />
 
---------------------------------------------------------------------------------------------
+===========================================================================================
+4. MANUAL USAGE (Advanced)
+===========================================================================================
 
-XAML Platform Extension Usage:
+If you prefer using Glyph codes and FontFamily directly (ensure UseFontAwesomeSolid is called):
 
-<mi:FontAwesomeSolidIcon Icon="{mi:FontAwesomeSolidPlatform WinUI=Heart}" FontSize="60" TextColor="Red" Animation="Rotate" IsAnimationActive="True"/>
+<Label Text="&#xf02e;" FontSize="60" FontFamily="FontAwesomeSolid" />
 
-<Label Text="{mi:FontAwesomeSolid Icon={mi:FontAwesomeSolidPlatform WinUI=House, Android=Heart, iOS=Image}, Size=60, Color=Orange}" VerticalOptions="Center" HorizontalOptions="Center"/>
+===========================================================================================
+DISCLAIMER & NOTES
+===========================================================================================
 
-<Label HorizontalOptions="Center" VerticalOptions="Center">
-	<Label.Text>
-		<mi:FontAwesomeSolid Size="60" Color="RosyBrown" Animation="Shake" IsAnimationActive="True">
-			<mi:FontAwesomeSolid.Icon>
-				<mi:FontAwesomeSolidPlatform WinUI="Newspaper" />
-				<mi:FontAwesomeSolidPlatform Android="AddressCard" />
-            </mi:FontAwesomeSolid.Icon>
-        </mi:FontAwesomeSolid>
-	</Label.Text>
-</Label>
+* This library is not affiliated with or endorsed by FontAwesome. 
+* Icons are based on the FontAwesome 7.2.0 Solid (Free) icon set.
+* Not all MAUI controls support advanced extension features (animations/specific sizing).
 
-// You can also use this but the editor will currently it as an error
+-------------------------------------------------------------------------------------------
+FURTHER INFORMATION
+-------------------------------------------------------------------------------------------
 
-<mi:FontAwesomeSolidIcon>
-	<mi:FontAwesomeSolidIcon.Icon>
-		<mi:IconPlatform x:TypeArguments="mi:FontAwesomeSolidIcons" WinUI="AddressCard" />
-	</mi:FontAwesomeSolidIcon.Icon>
-</mi:FontAwesomeSolidIcon>
+For full documentation and community support, please visit the GitHub repository:
+https://github.com/IgrisModz/MauiIcons
 
---------------------------------------------------------------------------------------------
-
-You can also use the font-family directly in your XAML or C# code, but you need to make sure that the font (.UseFontAwesomeSolid()) is properly registered in your MauiProgram file:
-
-<Label Text="&#xf02e;" FontSize="60" FontFamily="FontAwesomeSolidIcons" />
-
-
-
-Disclaimer: It's important to note that the .NET MAUI Icons - FontAwesome Solid library is not affiliated with or endorsed by FontAwesome. The icons provided in this library are based on the FontAwesome Solid icon set, but they may not be an exact representation of the original icons. Please refer to the FontAwesome website for the official icons and licensing information.
-
-PS: Not all controls support the icon extensions with all functions, such as animations, colors, and sizes. Please refer to the documentation for each control to see which features are supported.
-
----------------------------------------------------------------------------------------------
-
-## Further Information
-
-For more information and documentation, please visit the official GitHub repository of the .NET MAUI Icons - FontAwesome Solid library:
-
-- GitHub Repository: https://github.com/IgrisModz/MauiIcons
+Happy Coding!
+*******************************************************************************************

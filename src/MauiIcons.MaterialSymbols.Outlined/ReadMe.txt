@@ -1,124 +1,114 @@
-.NET NAUI Icons - MaterialIcons Outlined
+*******************************************************************************************
+.NET MAUI Icons - Material Symbols Outlined
+*******************************************************************************************
 
-Getting Started
+Thank you for installing IgrisModz.MauiIcons.MaterialSymbols.Outlined!
+This library provides a seamless way to use Google Material Symbols Outlined icons in .NET 10 MAUI.
 
-In order to use the .NET MAUI Icons - MaterialIcons Outlined library, you need to follow these steps:
+===========================================================================================
+1. GETTING STARTED
+===========================================================================================
 
-In your `MauiProgram.cs`, add the following line to the `CreateMauiApp` method:
+In your `MauiProgram.cs`, register the library by adding the following:
 
-using MauiIcons.Material.Outlined;
-
+using MauiIcons.MaterialSymbols.Outlined;
 
 public static MauiApp CreateMauiApp()
 {
-	var builder = MauiApp.CreateBuilder();
-	builder
-		.UseMauiApp<App>()
-		.UseMaterialOutlined(); // Add this line to register the Material Outlined icons
-	return builder.Build();
+    var builder = MauiApp.CreateBuilder();
+    builder
+        .UseMauiApp<App>()
+        .UseMaterialSymbolsOutlined(); // Essential for font registration
+
+    return builder.Build();
 }
 
+===========================================================================================
+2. XAML USAGE
+===========================================================================================
 
-XAML Usage
-
-In order to use the Material Outlined icons in your XAML files, you need to add the following namespace declaration at the top of your XAML file:
+Add this unique namespace declaration at the top of your XAML file:
 
 xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
 
-
+-------------------------------------------------------------------------------------------
+A. Built-in Icon Controls
 -------------------------------------------------------------------------------------------
 
-Built-in Icons Usage
-
 XAML:
-
-<mi:MaterialOutlinedIcon Icon="Search" TextColor="Blue" FontSize="40" BackgroundColor="White" />
+<mi:MaterialSymbolsOutlinedIcon Icon="Search" TextColor="Blue" FontSize="40" />
 
 C#:
+using MauiIcons.MaterialSymbols.Outlined;
 
-Using MauiIcons.Material.Outlined;
-
-var searchIcon = new MaterialOutlinedIcon
+var searchIcon = new MaterialSymbolsOutlinedIcon
 {
-	Icon = MaterialOutlinedIcons.Search,
-	TextColor = Colors.Blue,
-	FontSize = 40,
-	BackgroundColor = Colors.White
+    Icon = MaterialSymbolsOutlinedIcons.Search,
+    TextColor = Colors.Blue,
+    FontSize = 40
 };
 
---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+B. Markup Extensions (Label, Button, Image)
+-------------------------------------------------------------------------------------------
 
-XAML Extension Usage:
+<Label Text="{mi:MaterialSymbolsOutlined Icon=Favorite, Size=60, Color=DarkBlue}" />
 
-<Label Text="{mi:MaterialOutlined Icon=Favorite, Size=60, Color=DarkBlue}" />
+<Button Text="{mi:MaterialSymbolsOutlined Icon=Home, Size=30, Color=SkyBlue}" />
 
-<Button Text="{mi:MaterialOutlined Icon=Home, Size=30, Color=SkyBlue}" />
+<Image Source="{mi:MaterialSymbolsOutlined Icon=Settings, Size=50, Color=Black}" Aspect="Center" />
 
-<Image Source="{mi:MaterialOutlined Icon=Imagee, Size=50, Color=Black}" Aspect="Center" />
+-------------------------------------------------------------------------------------------
+C. Animations
+-------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------
+NOTE: Animations do not work on all controls. Buttons animate the entire control.
 
-XAML Animations:
+<mi:MaterialSymbolsOutlinedIcon Icon="Home" Animation="Shake" IsAnimationActive="True" />
 
-// Animation don't work on all controls, like images, and buttons is full animated not only the icon.
+<Label Text="{mi:MaterialSymbolsOutlined Icon=Favorite, Animation=Spin, IsAnimationActive=True}" />
 
-<mi:MaterialOutlinedIcon Icon="Home" TextColor="Blue" FontSize="40" BackgroundColor="White" Animation="Shake" IsAnimationActive="True" />
+-------------------------------------------------------------------------------------------
+D. Platform-Specific Icons
+-------------------------------------------------------------------------------------------
 
-<Label Text="{mi:MaterialOutlined Icon=Favorite, Size=60, Color=DarkBlue, Animation=Spin, IsAnimationActive=True}" />
+<mi:MaterialSymbolsOutlinedIcon Icon="{mi:MaterialSymbolsOutlinedPlatform WinUI=Favorite, Android=Home}" 
+                         FontSize="60" />
 
---------------------------------------------------------------------------------------------
+<Label Text="{mi:MaterialSymbolsOutlined Icon={mi:MaterialSymbolsOutlinedPlatform WinUI=Logout, Android=Language}}" />
 
-XAML Binding:
+===========================================================================================
+3. DATA BINDING
+===========================================================================================
 
-// Icon, TextColor, FontSize, BackgroundColor, and Animation properties can be bound to your ViewModel properties. For example:
+Icon, TextColor, FontSize, and Animation properties are Bindable:
 
-<mi:MaterialOutlinedIcon Icon="{Binding SelectedIcon}" TextColor="{Binding YourIconColor}" FontSize="{Binding YourIconSize}" BackgroundColor="{Binding YourIconBackgroundColor}" Animation="{Binding YourIconAnimation}" IsAnimationActive="{Binding YourIconIsAnimated}" />
+<mi:MaterialSymbolsOutlinedIcon Icon="{Binding SelectedIcon}" 
+                         TextColor="{Binding IconColor}" 
+                         Animation="{Binding MyAnimation}" />
 
-<Label Text="{mi:MaterialOutlined Icon={Binding SelectedIcon}, Size={Binding YourIconColor}, Color={Binding YourIconSize}, BackgroundColor="{Binding YourIconBackgroundColor}" Animation={Binding YourIconAnimation}, IsAnimationActive={Binding YourIconIsAnimated}}" />
+===========================================================================================
+4. MANUAL USAGE (Advanced)
+===========================================================================================
 
---------------------------------------------------------------------------------------------
+If you prefer using Glyph codes and FontFamily directly (ensure UseMaterialSymbolsOutlined is called):
 
-XAML Platform Extension Usage:
+<Label Text="&#xef42;" FontSize="60" FontFamily="MaterialSymbolsOutlined" />
 
-<mi:MaterialOutlinedIcon Icon="{mi:MaterialOutlinedPlatform WinUI=Favorite}" FontSize="60" TextColor="Red" Animation="Rotate" IsAnimationActive="True"/>
+===========================================================================================
+DISCLAIMER & NOTES
+===========================================================================================
 
-<Label Text="{mi:MaterialOutlined Icon={mi:MaterialOutlinedPlatform WinUI=Home, Android=Favorite, iOS=Image}, Size=60, Color=Orange}" VerticalOptions="Center" HorizontalOptions="Center"/>
+* This library is not affiliated with or endorsed by Google. 
+* Material Symbols Outlined icons are based on the Material Symbols.
+* Not all MAUI controls support advanced extension features (animations/specific sizing).
 
-<Label HorizontalOptions="Center" VerticalOptions="Center">
-	<Label.Text>
-		<mi:MaterialOutlined Size="60" Color="RosyBrown" Animation="Shake" IsAnimationActive="True">
-			<mi:MaterialOutlined.Icon>
-				<mi:MaterialOutlinedPlatform WinUI="Logout" />
-				<mi:MaterialOutlinedPlatform Android="Language" />
-            </mi:MaterialOutlined.Icon>
-        </mi:MaterialOutlined>
-	</Label.Text>
-</Label>
+-------------------------------------------------------------------------------------------
+FURTHER INFORMATION
+-------------------------------------------------------------------------------------------
 
-// You can also use this but the editor will currently it as an error
+For full documentation and community support, please visit the GitHub repository:
+https://github.com/IgrisModz/MauiIcons
 
-<mi:MaterialOutlinedIcon>
-	<mi:MaterialOutlinedIcon.Icon>
-		<mi:IconPlatform x:TypeArguments="mi:MaterialOutlinedIcons" WinUI="Verified" />
-	</mi:MaterialOutlinedIcon.Icon>
-</mi:MaterialOutlinedIcon>
-
---------------------------------------------------------------------------------------------
-
-You can also use the font-family directly in your XAML or C# code, but you need to make sure that the font (.UseMaterialOutlined()) is properly registered in your MauiProgram file:
-
-<Label Text="&#xef42;" FontSize="60" FontFamily="MaterialOutlinedIcons" />
-
-
-
-Disclaimer: It's important to note that the .NET MAUI Icons - Material Outlined library is not affiliated with or endorsed by Material. The icons provided in this library are based on the Material Outlined icon set, but they may not be an exact representation of the original icons. Please refer to the Material website for the official icons and licensing information.
-
-PS: Not all controls support the icon extensions with all functions, such as animations, colors, and sizes. Please refer to the documentation for each control to see which features are supported.
-
----------------------------------------------------------------------------------------------
-
-## Further Information
-
-For more information and documentation, please visit the official GitHub repository of the .NET MAUI Icons - Material Outlined library:
-
-- GitHub Repository: https://github.com/IgrisModz/MauiIcons
+Happy Coding!
+*******************************************************************************************

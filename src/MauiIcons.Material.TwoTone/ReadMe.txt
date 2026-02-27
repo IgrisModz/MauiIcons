@@ -1,124 +1,114 @@
-.NET NAUI Icons - MaterialIcons TwoTone
+*******************************************************************************************
+.NET MAUI Icons - Material TwoTone
+*******************************************************************************************
 
-Getting Started
+Thank you for installing IgrisModz.MauiIcons.Material.TwoTone!
+This library provides a seamless way to use Google Material TwoTone icons in .NET 10 MAUI.
 
-In order to use the .NET MAUI Icons - MaterialIcons TwoTone library, you need to follow these steps:
+===========================================================================================
+1. GETTING STARTED
+===========================================================================================
 
-In your `MauiProgram.cs`, add the following line to the `CreateMauiApp` method:
+In your `MauiProgram.cs`, register the library by adding the following:
 
 using MauiIcons.Material.TwoTone;
 
-
 public static MauiApp CreateMauiApp()
 {
-	var builder = MauiApp.CreateBuilder();
-	builder
-		.UseMauiApp<App>()
-		.UseMaterialTwoTone(); // Add this line to register the Material TwoTone icons
-	return builder.Build();
+    var builder = MauiApp.CreateBuilder();
+    builder
+        .UseMauiApp<App>()
+        .UseMaterialTwoTone(); // Essential for font registration
+
+    return builder.Build();
 }
 
+===========================================================================================
+2. XAML USAGE
+===========================================================================================
 
-XAML Usage
-
-In order to use the Material TwoTone icons in your XAML files, you need to add the following namespace declaration at the top of your XAML file:
+Add this unique namespace declaration at the top of your XAML file:
 
 xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
 
-
+-------------------------------------------------------------------------------------------
+A. Built-in Icon Controls
 -------------------------------------------------------------------------------------------
 
-Built-in Icons Usage
-
 XAML:
-
-<mi:MaterialTwoToneIcon Icon="Search" TextColor="Blue" FontSize="40" BackgroundColor="White" />
+<mi:MaterialTwoToneIcon Icon="Search" TextColor="Blue" FontSize="40" />
 
 C#:
-
-Using MauiIcons.Material.TwoTone;
+using MauiIcons.Material.TwoTone;
 
 var searchIcon = new MaterialTwoToneIcon
 {
-	Icon = MaterialTwoToneIcons.Search,
-	TextColor = Colors.Blue,
-	FontSize = 40,
-	BackgroundColor = Colors.White
+    Icon = MaterialTwoToneIcons.Search,
+    TextColor = Colors.Blue,
+    FontSize = 40
 };
 
---------------------------------------------------------------------------------------------
-
-XAML Extension Usage:
+-------------------------------------------------------------------------------------------
+B. Markup Extensions (Label, Button, Image)
+-------------------------------------------------------------------------------------------
 
 <Label Text="{mi:MaterialTwoTone Icon=Favorite, Size=60, Color=DarkBlue}" />
 
 <Button Text="{mi:MaterialTwoTone Icon=Home, Size=30, Color=SkyBlue}" />
 
-<Image Source="{mi:MaterialTwoTone Icon=Imagee, Size=50, Color=Black}" Aspect="Center" />
+<Image Source="{mi:MaterialTwoTone Icon=Settings, Size=50, Color=Black}" Aspect="Center" />
 
---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+C. Animations
+-------------------------------------------------------------------------------------------
 
-XAML Animations:
+NOTE: Animations do not work on all controls. Buttons animate the entire control.
 
-// Animation don't work on all controls, like images, and buttons is full animated not only the icon.
+<mi:MaterialTwoToneIcon Icon="Home" Animation="Shake" IsAnimationActive="True" />
 
-<mi:MaterialTwoToneIcon Icon="Home" TextColor="Blue" FontSize="40" BackgroundColor="White" Animation="Shake" IsAnimationActive="True" />
+<Label Text="{mi:MaterialTwoTone Icon=Favorite, Animation=Spin, IsAnimationActive=True}" />
 
-<Label Text="{mi:MaterialTwoTone Icon=Favorite, Size=60, Color=DarkBlue, Animation=Spin, IsAnimationActive=True}" />
+-------------------------------------------------------------------------------------------
+D. Platform-Specific Icons
+-------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------
+<mi:MaterialTwoToneIcon Icon="{mi:MaterialTwoTonePlatform WinUI=Favorite, Android=Home}" 
+                         FontSize="60" />
 
-XAML Binding:
+<Label Text="{mi:MaterialTwoTone Icon={mi:MaterialTwoTonePlatform WinUI=Logout, Android=Language}}" />
 
-// Icon, TextColor, FontSize, BackgroundColor, and Animation properties can be bound to your ViewModel properties. For example:
+===========================================================================================
+3. DATA BINDING
+===========================================================================================
 
-<mi:MaterialTwoToneIcon Icon="{Binding SelectedIcon}" TextColor="{Binding YourIconColor}" FontSize="{Binding YourIconSize}" BackgroundColor="{Binding YourIconBackgroundColor}" Animation="{Binding YourIconAnimation}" IsAnimationActive="{Binding YourIconIsAnimated}" />
+Icon, TextColor, FontSize, and Animation properties are Bindable:
 
-<Label Text="{mi:MaterialTwoTone Icon={Binding SelectedIcon}, Size={Binding YourIconColor}, Color={Binding YourIconSize}, BackgroundColor="{Binding YourIconBackgroundColor}" Animation={Binding YourIconAnimation}, IsAnimationActive={Binding YourIconIsAnimated}}" />
+<mi:MaterialTwoToneIcon Icon="{Binding SelectedIcon}" 
+                         TextColor="{Binding IconColor}" 
+                         Animation="{Binding MyAnimation}" />
 
---------------------------------------------------------------------------------------------
+===========================================================================================
+4. MANUAL USAGE (Advanced)
+===========================================================================================
 
-XAML Platform Extension Usage:
+If you prefer using Glyph codes and FontFamily directly (ensure UseMaterialTwoTone is called):
 
-<mi:MaterialTwoToneIcon Icon="{mi:MaterialTwoTonePlatform WinUI=Favorite}" FontSize="60" TextColor="Red" Animation="Rotate" IsAnimationActive="True"/>
+<Label Text="&#xef42;" FontSize="60" FontFamily="MaterialTwoTone" />
 
-<Label Text="{mi:MaterialTwoTone Icon={mi:MaterialTwoTonePlatform WinUI=Home, Android=Favorite, iOS=Image}, Size=60, Color=Orange}" VerticalOptions="Center" HorizontalOptions="Center"/>
+===========================================================================================
+DISCLAIMER & NOTES
+===========================================================================================
 
-<Label HorizontalOptions="Center" VerticalOptions="Center">
-	<Label.Text>
-		<mi:MaterialTwoTone Size="60" Color="RosyBrown" Animation="Shake" IsAnimationActive="True">
-			<mi:MaterialTwoTone.Icon>
-				<mi:MaterialTwoTonePlatform WinUI="Logout" />
-				<mi:MaterialTwoTonePlatform Android="Language" />
-            </mi:MaterialTwoTone.Icon>
-        </mi:MaterialTwoTone>
-	</Label.Text>
-</Label>
+* This library is not affiliated with or endorsed by Google. 
+* Material TwoTone icons are based on the Material Icons set (v4.0.0).
+* Not all MAUI controls support advanced extension features (animations/specific sizing).
 
-// You can also use this but the editor will currently it as an error
+-------------------------------------------------------------------------------------------
+FURTHER INFORMATION
+-------------------------------------------------------------------------------------------
 
-<mi:MaterialTwoToneIcon>
-	<mi:MaterialTwoToneIcon.Icon>
-		<mi:IconPlatform x:TypeArguments="mi:MaterialTwoToneIcons" WinUI="Verified" />
-	</mi:MaterialTwoToneIcon.Icon>
-</mi:MaterialTwoToneIcon>
+For full documentation and community support, please visit the GitHub repository:
+https://github.com/IgrisModz/MauiIcons
 
---------------------------------------------------------------------------------------------
-
-You can also use the font-family directly in your XAML or C# code, but you need to make sure that the font (.UseMaterialTwoTone()) is properly registered in your MauiProgram file:
-
-<Label Text="&#xef42;" FontSize="60" FontFamily="MaterialTwoToneIcons" />
-
-
-
-Disclaimer: It's important to note that the .NET MAUI Icons - Material TwoTone library is not affiliated with or endorsed by Material. The icons provided in this library are based on the Material TwoTone icon set, but they may not be an exact representation of the original icons. Please refer to the Material website for the official icons and licensing information.
-
-PS: Not all controls support the icon extensions with all functions, such as animations, colors, and sizes. Please refer to the documentation for each control to see which features are supported.
-
----------------------------------------------------------------------------------------------
-
-## Further Information
-
-For more information and documentation, please visit the official GitHub repository of the .NET MAUI Icons - Material TwoTone library:
-
-- GitHub Repository: https://github.com/IgrisModz/MauiIcons
+Happy Coding!
+*******************************************************************************************
