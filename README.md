@@ -1,4 +1,4 @@
-# IgrisModz.MauiIcons
+﻿# IgrisModz.MauiIcons 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![.NET Version](https://img.shields.io/badge/.NET-10.0-purple.svg)
@@ -8,7 +8,7 @@ A powerful and modular suite of libraries for **.NET MAUI** (.NET 10) that allow
 
 ---
 
-## Available NuGet Packages
+## 📦 Available NuGet Packages
 
 Each package is independent. Install only the ones that match your design needs:
 
@@ -25,7 +25,7 @@ Each package is independent. Install only the ones that match your design needs:
 
 ---
 
-## Configuration
+## 🛠 Configuration
 
 In your `MauiProgram.cs`, register the icon fonts for the packages you have installed:
 
@@ -51,7 +51,7 @@ public static class MauiProgram
 
 ---
 
-## Usage
+## 🚀 Usage
 
 ### 1. XAML Namespace Declaration
 
@@ -103,7 +103,7 @@ Display different icons based on the target OS:
 
 ---
 
-## Key Features
+## 🎨 Key Features
 
 * **Animations:** Native support for `Spin`, `Shake`, `Rotate`, etc., via `Animation` and `IsAnimationActive` properties.
 * **Data Binding:** All properties (Icon, Color, Size, Animation) are *Bindable Properties*.
@@ -121,7 +121,7 @@ var facebookIcon = new FontAwesomeBrandsIcon
 
 ---
 
-## Notes & Limitations
+## ⚠️ Notes & Limitations
 
 * **Animation Compatibility:** Animations may not work on all controls (e.g., `Image`). On a `Button`, the animation will apply to the entire control rather than just the icon glyph.
 * **Direct Font Usage:** If the font is registered, you can still use the FontFamily manually:
@@ -129,7 +129,7 @@ var facebookIcon = new FontAwesomeBrandsIcon
 
 ---
 
-## License & Disclaimer
+## 📄 License & Disclaimer
 
 This project is licensed under the **MIT License**.
 
@@ -137,4 +137,4 @@ This project is licensed under the **MIT License**.
 
 ---
 
-*Developed with ?? by IgrisModz for the .NET MAUI community.*
+*Developed with ❤️ by IgrisModz for the .NET MAUI community.*
