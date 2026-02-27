@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Others/">
     <File Path="../README.md" />
+    <File Path="ReleaseNotes.txt" />
     <File Path="Directory.Build.props" />
   </Folder>
   <Folder Name="/Samples/">

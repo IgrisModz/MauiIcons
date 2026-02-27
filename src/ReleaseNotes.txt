@@ -4,6 +4,9 @@ v1.1.0
 • Fix Yammer icon in FontAwesome Brands collection.
 • Change the name of FontFamily to remove "Icons" suffix, now it's "FontAwesomeBrands" instead of "FontAwesomeBrandsIcons", same for other FontFamily in the library.
 • Improving the performance of loading icons by using direct value instead of using DescriptionAttribute to get the unicode value of the icon, this will significantly reduce the loading time of icons in the library.
+• Improving Material Icons enums to contains official codepoints from Google, this will ensure that the icons are displayed correctly and consistently across different platforms and devices.
 
 v1.0.0
 • Initial Release
+• Contains 2 collections of icons: FontAwesome (Brands, Regular, Solid), and Material Icons (Outlined, Regular, Round, Sharp, TwoTone).
+• Contains controls and extensions to easily use icons in your .NET MAUI applications, such as FontAwesomeBrandsIcon, MaterialRegularIcon,... controls, and extension methods for setting icons on buttons, labels,....

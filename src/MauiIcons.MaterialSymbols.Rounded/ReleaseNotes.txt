@@ -1,6 +1,0 @@
-v1.1.0
-• Add Material Symbols icons to the MauiIcons library.
-• Add Variable icons to the Material Symbols collection. (Just Weight work on Windows, Maybe in later update or waiting Microsoft to add variablefont support on WinUI)
-• Fix Yammer icon in FontAwesome Brands collection.
-• Change the name of FontFamily to remove "Icons" suffix, now it's "FontAwesomeBrands" instead of "FontAwesomeBrandsIcons", same for other FontFamily in the library.
-• Improving the performance of loading icons by using direct value instead of using DescriptionAttribute to get the unicode value of the icon, this will significantly reduce the loading time of icons in the library.

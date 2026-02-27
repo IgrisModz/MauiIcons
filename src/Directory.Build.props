@@ -26,7 +26,7 @@
 		<Configurations>Debug;Release</Configurations>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<GitInfoReportImportance>high</GitInfoReportImportance>
-		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/ReleaseNotes.txt"))</PackageReleaseNotes>
+		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)ReleaseNotes.txt"))</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/IgrisModz/MauiIcons</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/IgrisModz/MauiIcons</RepositoryUrl>
