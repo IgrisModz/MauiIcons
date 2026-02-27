@@ -125,7 +125,7 @@ var facebookIcon = new FontAwesomeBrandsIcon
 
 * **Animation Compatibility:** Animations may not work on all controls (e.g., `Image`). On a `Button`, the animation will apply to the entire control rather than just the icon glyph.
 * **Direct Font Usage:** If the font is registered, you can still use the FontFamily manually:
-`<Label Text="&#xf024;" FontFamily="FontAwesomeBrandsIcons" />`
+`<Label Text="&#xf024;" FontFamily="FontAwesomeBrands" />`
 
 ---
 
