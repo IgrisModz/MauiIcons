@@ -18,6 +18,9 @@
     <Project Path="MauiIcons.Material.Round/MauiIcons.Material.Round.csproj" />
     <Project Path="MauiIcons.Material.Sharp/MauiIcons.Material.Sharp.csproj" />
     <Project Path="MauiIcons.Material.TwoTone/MauiIcons.Material.TwoTone.csproj" />
+    <Project Path="MauiIcons.MaterialSymbols.Outlined/MauiIcons.MaterialSymbols.Outlined.csproj" />
+    <Project Path="MauiIcons.MaterialSymbols.Rounded/MauiIcons.MaterialSymbols.Rounded.csproj" />
+    <Project Path="MauiIcons.MaterialSymbols.Sharp/MauiIcons.MaterialSymbols.Sharp.csproj" />
   </Folder>
   <Folder Name="/Tests/">
     <Project Path="MauiIcons.Tests/MauiIcons.Tests.csproj" />

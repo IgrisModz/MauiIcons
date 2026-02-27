@@ -90,6 +90,9 @@
       <ProjectReference Include="..\..\src\MauiIcons.Material.Round\MauiIcons.Material.Round.csproj" />
       <ProjectReference Include="..\..\src\MauiIcons.Material.Sharp\MauiIcons.Material.Sharp.csproj" />
       <ProjectReference Include="..\..\src\MauiIcons.Material.TwoTone\MauiIcons.Material.TwoTone.csproj" />
+	  <ProjectReference Include="..\..\src\MauiIcons.MaterialSymbols.Outlined\MauiIcons.MaterialSymbols.Outlined.csproj" />
+	  <ProjectReference Include="..\..\src\MauiIcons.MaterialSymbols.Rounded\MauiIcons.MaterialSymbols.Rounded.csproj" />
+	  <ProjectReference Include="..\..\src\MauiIcons.MaterialSymbols.Sharp\MauiIcons.MaterialSymbols.Sharp.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -65,7 +65,7 @@ xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
 
 ```xml
 <mi:FontAwesomeSolidIcon Icon="Heart" 
-                         TextColor="Blue" 
+                         TextColor="Red" 
                          FontSize="40" 
                          Animation="Pulse" 
                          IsAnimationActive="True" />

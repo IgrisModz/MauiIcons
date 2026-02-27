@@ -67,6 +67,8 @@
                 </mi:FontAwesomeBrandsIcon.Icon>
             </mi:FontAwesomeBrandsIcon>-->
 
+            <mi:MaterialSymbolsOutlinedIcon Icon="AccessAlarm" Weight="400" FontSize="50" TextColor="Maroon"/>
+
         </StackLayout>
     </ScrollView>
 

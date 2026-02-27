@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<PackageId>IgrisModz.MauiIcons.MaterialSymbols.Sharp</PackageId>
+	<Summary>Maui Icons - MaterialSymbols Sharp is Icon Library for .Net Maui</Summary>
+	<Product>MauiIcons - MaterialSymbols Sharp (net10.0)</Product>
+	<Description>Maui Icons - MaterialSymbols Sharp is a Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete MaterialSymbols Icon Collection Built into Library.</Description>
+	<PackageTags>Material,MaterialSymbols,Sharp,Maui,Icon,Dotnet,Icons,MauiIcons,iOSIcon,AndroidIcon,MacIcon,WindowsIcon,IgrisModz</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\material-symbols-sharp.ttf" />
+  </ItemGroup>
+
+</Project>
