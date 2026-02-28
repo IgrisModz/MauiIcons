@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+             x:Class="MauiIcons.Sample.Pages.UsagePage"
+             Title="Usage">
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+            
+            <Label 
+                Text="Icon Usage Examples"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+            
+            <Label 
+                Text="Icons can be used in various controls"
+                FontSize="14"
+                HorizontalOptions="Center"/>
+            
+            <Label 
+                Text="Direct Icon Usage"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <Border Stroke="Blue" Padding="15">
+                <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                    <mi:FontAwesomeRegularIcon Icon="Heart" FontSize="60" TextColor="Red"/>
+                    <mi:FontAwesomeSolidIcon Icon="Star" FontSize="60" TextColor="Gold"/>
+                    <mi:MaterialRegularIcon Icon="Favorite" FontSize="60" TextColor="Pink"/>
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
+                <Label FontFamily="Courier" FontSize="12">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="&lt;mi:FontAwesomeRegularIcon&#x0a;"/>
+                            <Span Text="    Icon=&quot;Heart&quot;&#x0a;"/>
+                            <Span Text="    FontSize=&quot;60&quot;&#x0a;"/>
+                            <Span Text="    TextColor=&quot;Red&quot; /&gt;"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Border>
+            
+            <Label 
+                Text="Using Icons in Label"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <Border Stroke="Blue" Padding="15">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="{mi:FontAwesomeRegular Icon=Heart, Color=Pink, Size=40}" HorizontalOptions="Center"/>
+                    <Label Text="{mi:FontAwesomeSolid Icon=House, Color=Blue, Size=40}" HorizontalOptions="Center"/>
+                    <Label HorizontalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{mi:FontAwesomeBrands Icon=Facebook, Color=#1877F2, Size=25}"/>
+                                <Span Text=" Follow us on Facebook"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
+                <Label FontFamily="Courier" FontSize="12">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="&lt;Label Text=&quot;{mi:FontAwesomeRegular&#x0a;"/>
+                            <Span Text="    Icon=Heart, Color=Pink, Size=40}&quot; /&gt;"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Border>
+            
+            <Label 
+                Text="Using Icons in Button"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <Border Stroke="Blue" Padding="15">
+                <VerticalStackLayout Spacing="10">
+                    <Button Text="{mi:FontAwesomeSolid Icon=Download, Color=White, Size=20}" 
+                            BackgroundColor="Green"
+                            HorizontalOptions="Center"/>
+                    <Button Text="{mi:FontAwesomeSolid Icon=Upload, Color=White, Size=20}" 
+                            BackgroundColor="Blue"
+                            HorizontalOptions="Center"/>
+                    <Button Text="{mi:FontAwesomeSolid Icon=TrashCan, Color=White, Size=20}" 
+                            BackgroundColor="Red"
+                            HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
+                <Label FontFamily="Courier" FontSize="12">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="&lt;Button Text=&quot;{mi:FontAwesomeSolid&#x0a;"/>
+                            <Span Text="    Icon=Download, Color=White, Size=20}&quot;&#x0a;"/>
+                            <Span Text="    BackgroundColor=&quot;Green&quot; /&gt;"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Border>
+            
+            <Label 
+                Text="Using Icons in Image"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <Border Stroke="Blue" Padding="15">
+                <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                    <Image Source="{mi:FontAwesomeRegular Icon=Image, Color=Wheat, Size=60}" Aspect="Center"/>
+                    <Image Source="{mi:FontAwesomeSolid Icon=Camera, Color=Purple, Size=60}" Aspect="Center"/>
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
+                <Label FontFamily="Courier" FontSize="12">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="&lt;Image Source=&quot;{mi:FontAwesomeRegular&#x0a;"/>
+                            <Span Text="    Icon=Image, Color=Wheat, Size=60}&quot; Aspect=&quot;Center&quot; /&gt;"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Border>
+            
+            <Label 
+                Text="Using Icons in ContentView"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <Border Stroke="Blue" Padding="15">
+                <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                    <ContentView Content="{mi:FontAwesomeRegular Icon=AddressCard, Size=50, Color=Crimson}"/>
+                    <ContentView Content="{mi:MaterialSymbolsRounded Icon=Phone, Color=Gold, Size=50}"/>
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
+                <Label FontFamily="Courier" FontSize="12">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="&lt;ContentView Content=&quot;{mi:FontAwesomeRegular&#x0a;"/>
+                            <Span Text="    Icon=AddressCard, Size=50, Color=Crimson}&quot; /&gt;"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Border>
+            
+            <Label 
+                Text="Platform-Specific Icons"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <Border Stroke="Blue" Padding="15">
+                <VerticalStackLayout Spacing="15">
+                    <mi:FontAwesomeBrandsIcon 
+                        Icon="{mi:FontAwesomeBrandsPlatform Android=Github, WinUI=Youtube}"
+                        FontSize="60"
+                        TextColor="Red"
+                        HorizontalOptions="Center"/>
+                    <Label Text="This icon changes based on platform" 
+                           HorizontalOptions="Center"
+                           FontSize="12"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
+                <Label FontFamily="Courier" FontSize="12">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="&lt;mi:FontAwesomeBrandsIcon&#x0a;"/>
+                            <Span Text="    Icon=&quot;{mi:FontAwesomeBrandsPlatform&#x0a;"/>
+                            <Span Text="        Android=Github,&#x0a;"/>
+                            <Span Text="        WinUI=Youtube}&quot;&#x0a;"/>
+                            <Span Text="    FontSize=&quot;60&quot; /&gt;"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Border>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

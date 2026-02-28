@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+             x:Class="MauiIcons.Sample.Pages.MaterialPage"
+             Title="Material">
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            
+            <Label 
+                Text="Material Icons"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+            
+            <Label 
+                Text="Material Regular"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <FlexLayout Padding="10" 
+                        Direction="Row" 
+                        Wrap="Wrap" 
+                        JustifyContent="Center" 
+                        AlignItems="Center">
+                
+                <mi:MaterialRegularIcon Icon="Home" FontSize="50" TextColor="Blue" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="Search" FontSize="50" TextColor="Green" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="Settings" FontSize="50" TextColor="Gray" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="Favorite" FontSize="50" TextColor="Red" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="Star" FontSize="50" TextColor="Gold" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="AccountCircle" FontSize="50" TextColor="Purple" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="ShoppingCart" FontSize="50" TextColor="Orange" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="Delete" FontSize="50" TextColor="DarkRed" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="Info" FontSize="50" TextColor="DodgerBlue" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="Check" FontSize="50" TextColor="Green" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="Close" FontSize="50" TextColor="Red" Margin="10"/>
+                <mi:MaterialRegularIcon Icon="Add" FontSize="50" TextColor="DarkGreen" Margin="10"/>
+                
+            </FlexLayout>
+            
+            <Label 
+                Text="Material Outlined"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+
+            <FlexLayout Padding="10" 
+                        Direction="Row" 
+                        Wrap="Wrap" 
+                        JustifyContent="Center" 
+                        AlignItems="Center">
+
+                <mi:MaterialOutlinedIcon Icon="Home" FontSize="50" TextColor="Blue" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="Search" FontSize="50" TextColor="Green" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="Settings" FontSize="50" TextColor="Gray" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="Favorite" FontSize="50" TextColor="Red" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="Star" FontSize="50" TextColor="Gold" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="AccountCircle" FontSize="50" TextColor="Purple" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="ShoppingCart" FontSize="50" TextColor="Orange" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="Delete" FontSize="50" TextColor="DarkRed" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="Info" FontSize="50" TextColor="DodgerBlue" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="Check" FontSize="50" TextColor="Green" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="Close" FontSize="50" TextColor="Red" Margin="10"/>
+                <mi:MaterialOutlinedIcon Icon="Add" FontSize="50" TextColor="DarkGreen" Margin="10"/>
+
+            </FlexLayout>
+
+            <Label 
+                Text="Material Symbols Outlined"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+
+
+
+            <VerticalStackLayout>
+
+                <FlexLayout Padding="10,0" 
+                        Direction="Row" 
+                        Wrap="Wrap" 
+                        JustifyContent="Center" 
+                        AlignItems="Center">
+                    <Label Text="Normal:" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" WidthRequest="80" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Home" FontSize="50" TextColor="Blue" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Search" FontSize="50" TextColor="Green" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Settings" FontSize="50" TextColor="Gray" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Favorite" FontSize="50" TextColor="Red" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Star" FontSize="50" TextColor="Gold" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="AccountCircle" FontSize="50" TextColor="Purple" Margin="10,2"/>
+
+                </FlexLayout>
+
+                <FlexLayout Padding="10,0" 
+                        Direction="Row" 
+                        Wrap="Wrap" 
+                        JustifyContent="Center" 
+                        AlignItems="Center">
+                    <Label Text="Bold:" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" WidthRequest="80" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Home" Weight="700" FontSize="50" TextColor="Blue" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Search" Weight="700" FontSize="50" TextColor="Green" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Settings" Weight="700" FontSize="50" TextColor="Gray" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Favorite" Weight="700" FontSize="50" TextColor="Red" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="Star" Weight="700" FontSize="50" TextColor="Gold" Margin="10,2"/>
+                    <mi:MaterialSymbolsOutlinedIcon Icon="AccountCircle" Weight="700" FontSize="50" TextColor="Purple" Margin="10,2"/>
+
+                </FlexLayout>
+            </VerticalStackLayout>
+
+            <Label 
+                Text="Material Symbols Rounded"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+
+            <VerticalStackLayout>
+
+                <FlexLayout Padding="10,0" 
+                        Direction="Row" 
+                        Wrap="Wrap" 
+                        JustifyContent="Center" 
+                        AlignItems="Center">
+                    
+                    <Label Text="Normal:" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" WidthRequest="80" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Home" FontSize="50" TextColor="Blue" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Search" FontSize="50" TextColor="Green" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Settings" FontSize="50" TextColor="Gray" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Phone" FontSize="50" TextColor="Gold" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Star" FontSize="50" TextColor="Gold" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="AccountCircle" FontSize="50" TextColor="Purple" Margin="10,2"/>
+
+                </FlexLayout>
+
+                <FlexLayout Padding="10" 
+                            Direction="Row" 
+                            Wrap="Wrap" 
+                            JustifyContent="Center" 
+                            AlignItems="Center">
+
+                    <Label Text="Bold:" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" WidthRequest="80" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Home" Weight="700" FontSize="50" TextColor="Blue" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Search" Weight="700" FontSize="50" TextColor="Green" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Settings" Weight="700" FontSize="50" TextColor="Gray" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Phone" Weight="700" FontSize="50" TextColor="Gold" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="Star" Weight="700" FontSize="50" TextColor="Gold" Margin="10,2"/>
+                    <mi:MaterialSymbolsRoundedIcon Icon="AccountCircle" Weight="700" FontSize="50" TextColor="Purple" Margin="10,2"/>
+
+                </FlexLayout>
+                
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

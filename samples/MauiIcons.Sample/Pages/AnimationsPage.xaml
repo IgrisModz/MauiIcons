@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+             x:Class="MauiIcons.Sample.Pages.AnimationsPage"
+             Title="Animations"
+             x:Name="thisRoot">
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30">
+            
+            <Label 
+                Text="Icon Animations"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+            
+            <Label 
+                Text="All icons support various animations that can be activated."
+                FontSize="14"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="*,Auto,*" RowSpacing="30" ColumnSpacing="20">
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Spin" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"/>
+                <mi:FontAwesomeSolidIcon Grid.Row="0" Grid.Column="1" Icon="Gear" FontSize="60" TextColor="Blue" Animation="Spin" IsAnimationActive="True"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Continuous rotation" FontSize="14" VerticalOptions="Center"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Pulse" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"/>
+                <mi:FontAwesomeRegularIcon Grid.Row="1" Grid.Column="1" Icon="Heart" FontSize="60" TextColor="Red" Animation="Pulse" IsAnimationActive="True"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="Scale in and out" FontSize="14" VerticalOptions="Center"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Rotate" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"/>
+                <mi:FontAwesomeBrandsIcon Grid.Row="2" Grid.Column="1" Icon="Youtube" FontSize="60" TextColor="Red" Animation="Rotate" IsAnimationActive="{Binding EnableRotate, Mode=TwoWay, Source={x:Reference thisRoot}}"/>
+                <HorizontalStackLayout Grid.Row="2" Grid.Column="2" Spacing="10">
+                    <Label Text="360° rotation" FontSize="14" VerticalOptions="Center"/>
+                    <Button Text="Enable Rotate with click event" HeightRequest="40" Clicked="Button_Clicked"/>
+                    <Button Text="Enable Rotate with MVVM command" HeightRequest="40" Command="{Binding RotateCommand, Source={x:Reference thisRoot}}"/>
+                </HorizontalStackLayout>
+
+                <Label Grid.Row="3" Grid.Column="0" Text="Shake" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"/>
+                <mi:FontAwesomeBrandsIcon Grid.Row="3" Grid.Column="1" Icon="Airbnb" FontSize="60" TextColor="RosyBrown" Animation="Shake" IsAnimationActive="True"/>
+                <Label Grid.Row="3" Grid.Column="2" Text="Shake horizontally" FontSize="14" VerticalOptions="Center"/>
+
+            </Grid>
+
+            <BoxView HeightRequest="1" Color="Gray" Margin="0,10"/>
+            
+            <Label 
+                Text="Animation Examples"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <FlexLayout Padding="10" 
+                        Direction="Row" 
+                        Wrap="Wrap" 
+                        JustifyContent="Center" 
+                        AlignItems="Center">
+                
+                <mi:FontAwesomeRegularIcon Icon="Newspaper" FontSize="60" TextColor="Indigo" Animation="Spin" IsAnimationActive="True" Margin="15"/>
+                <mi:FontAwesomeSolidIcon Icon="Gear" FontSize="60" TextColor="Gray" Animation="Spin" IsAnimationActive="True" Margin="15"/>
+                <mi:MaterialRegularIcon Icon="Refresh" FontSize="60" TextColor="Green" Animation="Spin" IsAnimationActive="True" Margin="15"/>
+                <mi:FontAwesomeSolidIcon Icon="Sun" FontSize="60" TextColor="Orange" Animation="Pulse" IsAnimationActive="True" Margin="15"/>
+                <mi:MaterialRegularIcon Icon="Favorite" FontSize="60" TextColor="Pink" Animation="Pulse" IsAnimationActive="True" Margin="15"/>
+                <mi:FontAwesomeSolidIcon Icon="Bell" FontSize="60" TextColor="Gold" Animation="Shake" IsAnimationActive="True" Margin="15"/>
+                
+            </FlexLayout>
+            
+            <Label 
+                Text="Code Example"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,20,0,0"/>
+            
+            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
+                <Label FontFamily="Courier" FontSize="12">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="&lt;mi:FontAwesomeSolidIcon&#x0a;"/>
+                            <Span Text="    Icon=&quot;Gear&quot;&#x0a;"/>
+                            <Span Text="    FontSize=&quot;60&quot;&#x0a;"/>
+                            <Span Text="    TextColor=&quot;Blue&quot;&#x0a;"/>
+                            <Span Text="    Animation=&quot;Spin&quot;&#x0a;"/>
+                            <Span Text="    IsAnimationActive=&quot;True&quot; /&gt;"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Border>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

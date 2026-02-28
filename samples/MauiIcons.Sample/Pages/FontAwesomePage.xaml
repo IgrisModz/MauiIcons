@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+             x:Class="MauiIcons.Sample.Pages.FontAwesomePage"
+             Title="FontAwesome">
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            
+            <Label 
+                Text="FontAwesome Icons"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+            
+            <Label 
+                Text="FontAwesome Regular"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <FlexLayout Padding="10" 
+                        Direction="Row" 
+                        Wrap="Wrap" 
+                        JustifyContent="Center" 
+                        AlignItems="Center">
+                
+                <mi:FontAwesomeRegularIcon Icon="Heart" FontSize="50" TextColor="Red" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="Star" FontSize="50" TextColor="Gold" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="User" FontSize="50" TextColor="Blue" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="Calendar" FontSize="50" TextColor="Green" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="Bell" FontSize="50" TextColor="Orange" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="Envelope" FontSize="50" TextColor="Purple" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="Clock" FontSize="50" TextColor="Teal" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="Comment" FontSize="50" TextColor="Brown" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="File" FontSize="50" TextColor="Gray" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="Folder" FontSize="50" TextColor="Goldenrod" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="Image" FontSize="50" TextColor="Pink" Margin="10"/>
+                <mi:FontAwesomeRegularIcon Icon="Newspaper" FontSize="50" TextColor="Indigo" Margin="10"/>
+                
+            </FlexLayout>
+            
+            <Label 
+                Text="FontAwesome Solid"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <FlexLayout Padding="10" 
+                        Direction="Row" 
+                        Wrap="Wrap" 
+                        JustifyContent="Center" 
+                        AlignItems="Center">
+                
+                <mi:FontAwesomeSolidIcon Icon="House" FontSize="50" TextColor="DarkBlue" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="MagnifyingGlass" FontSize="50" TextColor="DarkGreen" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="Gear" FontSize="50" TextColor="DarkGray" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="Download" FontSize="50" TextColor="DarkCyan" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="Upload" FontSize="50" TextColor="DarkMagenta" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="TrashCan" FontSize="50" TextColor="DarkRed" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="Pen" FontSize="50" TextColor="DarkOrange" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="Plus" FontSize="50" TextColor="DarkGreen" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="Minus" FontSize="50" TextColor="DarkRed" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="Check" FontSize="50" TextColor="Green" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="Xmark" FontSize="50" TextColor="Red" Margin="10"/>
+                <mi:FontAwesomeSolidIcon Icon="ArrowRight" FontSize="50" TextColor="Blue" Margin="10"/>
+                
+            </FlexLayout>
+            
+            <Label 
+                Text="FontAwesome Brands"
+                FontSize="22"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <FlexLayout Padding="10" 
+                        Direction="Row" 
+                        Wrap="Wrap" 
+                        JustifyContent="Center" 
+                        AlignItems="Center">
+                
+                <mi:FontAwesomeBrandsIcon Icon="Github" FontSize="50" TextColor="#181717" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Facebook" FontSize="50" TextColor="#1877F2" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Twitter" FontSize="50" TextColor="#1DA1F2" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Instagram" FontSize="50" TextColor="#E4405F" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Youtube" FontSize="50" TextColor="#FF0000" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Apple" FontSize="50" TextColor="#000000" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Android" FontSize="50" TextColor="#3DDC84" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Windows" FontSize="50" TextColor="#0078D6" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Microsoft" FontSize="50" TextColor="#F25022" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Google" FontSize="50" TextColor="#4285F4" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Airbnb" FontSize="50" TextColor="#FF5A5F" Margin="10"/>
+                <mi:FontAwesomeBrandsIcon Icon="Amazon" FontSize="50" TextColor="#FF9900" Margin="10"/>
+                
+            </FlexLayout>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

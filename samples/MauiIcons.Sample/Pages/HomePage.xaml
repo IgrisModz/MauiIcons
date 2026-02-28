@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+             x:Class="MauiIcons.Sample.Pages.HomePage"
+             Title="Home">
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25">
+            
+            <mi:FontAwesomeBrandsIcon 
+                Icon="Github" 
+                FontSize="100" 
+                TextColor="{AppThemeBinding Light=#181717, Dark=White}"
+                HorizontalOptions="Center"
+                Animation="Pulse"
+                IsAnimationActive="True"/>
+            
+            <Label 
+                Text="MauiIcons Sample"
+                FontSize="32"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+            
+            <Label 
+                Text="A comprehensive icon library for .NET MAUI"
+                FontSize="16"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+            
+            <BoxView 
+                HeightRequest="1" 
+                Color="Gray"
+                Margin="0,10"/>
+            
+            <Label 
+                Text="Features"
+                FontSize="24"
+                FontAttributes="Bold"
+                Margin="0,10,0,0"/>
+            
+            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="15" RowSpacing="15">
+                
+                <mi:FontAwesomeRegularIcon Grid.Row="0" Grid.Column="0" Icon="CircleCheck" FontSize="30" TextColor="Green"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Multiple icon families: FontAwesome and Material" VerticalOptions="Center"/>
+                
+                <mi:FontAwesomeRegularIcon Grid.Row="1" Grid.Column="0" Icon="CircleCheck" FontSize="30" TextColor="Green"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="Built-in animations (Spin, Pulse, Rotate, Shake)" VerticalOptions="Center"/>
+                
+                <mi:FontAwesomeRegularIcon Grid.Row="2" Grid.Column="0" Icon="CircleCheck" FontSize="30" TextColor="Green"/>
+                <Label Grid.Row="2" Grid.Column="1" Text="Easy to use XAML extensions" VerticalOptions="Center"/>
+                
+                <mi:FontAwesomeRegularIcon Grid.Row="3" Grid.Column="0" Icon="CircleCheck" FontSize="30" TextColor="Green"/>
+                <Label Grid.Row="3" Grid.Column="1" Text="Platform-specific icon selection" VerticalOptions="Center"/>
+                
+            </Grid>
+            
+            <Label 
+                Text="Icon Families"
+                FontSize="24"
+                FontAttributes="Bold"
+                Margin="0,20,0,0"/>
+            
+            <FlexLayout Wrap="Wrap" JustifyContent="SpaceEvenly" AlignItems="Center">
+
+                <Border Padding="20" Margin="5" Stroke="Blue" WidthRequest="150">
+                    <VerticalStackLayout Spacing="10">
+                        <mi:FontAwesomeRegularIcon Icon="FontAwesome" FontSize="40" HorizontalOptions="Center"/>
+                        <Label Text="FontAwesome" HorizontalOptions="Center" FontAttributes="Bold"/>
+                        <Label Text="Regular" HorizontalOptions="Center" FontSize="12"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Padding="20" Margin="5" Stroke="Blue" WidthRequest="150">
+                    <VerticalStackLayout Spacing="10">
+                        <mi:FontAwesomeSolidIcon Icon="FontAwesome" FontSize="40" HorizontalOptions="Center"/>
+                        <Label Text="FontAwesome" HorizontalOptions="Center" FontAttributes="Bold"/>
+                        <Label Text="Solid" HorizontalOptions="Center" FontSize="12"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Padding="20" Margin="5" Stroke="Blue" WidthRequest="150">
+                    <VerticalStackLayout Spacing="10">
+                        <mi:FontAwesomeBrandsIcon Icon="Github" FontSize="40" HorizontalOptions="Center"/>
+                        <Label Text="FontAwesome" HorizontalOptions="Center" FontAttributes="Bold"/>
+                        <Label Text="Brands" HorizontalOptions="Center" FontSize="12"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Padding="20" Margin="5" Stroke="Blue" WidthRequest="150">
+                    <VerticalStackLayout Spacing="10">
+                        <mi:MaterialRegularIcon Icon="Home" FontSize="40" HorizontalOptions="Center"/>
+                        <Label Text="Material" HorizontalOptions="Center" FontAttributes="Bold"/>
+                        <Label Text="Icons" HorizontalOptions="Center" FontSize="12"/>
+                    </VerticalStackLayout>
+                </Border>
+                
+                <Border Padding="20" Margin="5" Stroke="Blue" WidthRequest="150">
+                    <VerticalStackLayout Spacing="10">
+                        <mi:MaterialSymbolsOutlinedIcon Icon="Star" FontSize="40" HorizontalOptions="Center"/>
+                        <Label Text="Material" HorizontalOptions="Center" FontAttributes="Bold"/>
+                        <Label Text="Symbols" HorizontalOptions="Center" FontSize="12"/>
+                    </VerticalStackLayout>
+                </Border>
+                
+            </FlexLayout>
+            
+            <Label 
+                Text="Explore the samples using the tabs below to see all available icons and features."
+                FontSize="14"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                Margin="0,20,0,0"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

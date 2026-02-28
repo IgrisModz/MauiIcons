@@ -3,12 +3,40 @@
     x:Class="MauiIcons.Sample.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiIcons.Sample"
-    Title="MauiIcons.Sample">
+    xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+    xmlns:pages="clr-namespace:MauiIcons.Sample.Pages"
+    Title="MauiIcons Sample">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            Icon="{mi:FontAwesomeRegular Icon=House, Size=20}"
+            ContentTemplate="{DataTemplate pages:HomePage}"
+            Route="HomePage" />
+
+        <ShellContent
+            Title="FontAwesome"
+            Icon="{mi:FontAwesomeBrands Icon=FontAwesome, Size=20}"
+            ContentTemplate="{DataTemplate pages:FontAwesomePage}"
+            Route="FontAwesomePage" />
+
+        <ShellContent
+            Title="Material"
+            Icon="{mi:MaterialRegular Icon=Star, Size=20}"
+            ContentTemplate="{DataTemplate pages:MaterialPage}"
+            Route="MaterialPage" />
+
+        <ShellContent
+            Title="Animations"
+            Icon="{mi:FontAwesomeSolid Icon=Gear, Size=20}"
+            ContentTemplate="{DataTemplate pages:AnimationsPage}"
+            Route="AnimationsPage" />
+
+        <ShellContent
+            Title="Usage"
+            Icon="{mi:FontAwesomeSolid Icon=FileLines, Size=20}"
+            ContentTemplate="{DataTemplate pages:UsagePage}"
+            Route="UsagePage" />
+    </TabBar>
 
 </Shell>
