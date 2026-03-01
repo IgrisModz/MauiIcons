@@ -3,6 +3,7 @@ using System.Reflection;
 
 namespace MauiIcons.Core.Extensions;
 
+[ContentProperty(nameof(Icon))]
 public class VariableIconExtension<TEnum> : IconExtension<TEnum> where TEnum : struct, Enum
 {
     // Propriétés Bindable pour les axes de variation
