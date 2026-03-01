@@ -2,6 +2,6 @@
 
 namespace MauiIcons.MaterialSymbols.Sharp;
 
-public sealed class MaterialSymbolsSharpExtension : IconExtension<MaterialSymbolsSharpIcons>
+public sealed class MaterialSymbolsSharpExtension : VariableIconExtension<MaterialSymbolsSharpIcons>
 {
 }

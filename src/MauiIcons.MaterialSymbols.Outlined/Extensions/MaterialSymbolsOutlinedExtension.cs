@@ -2,6 +2,6 @@
 
 namespace MauiIcons.MaterialSymbols.Outlined;
 
-public sealed class MaterialSymbolsOutlinedExtension : IconExtension<MaterialSymbolsOutlinedIcons>
+public sealed class MaterialSymbolsOutlinedExtension : VariableIconExtension<MaterialSymbolsOutlinedIcons>
 {
 }

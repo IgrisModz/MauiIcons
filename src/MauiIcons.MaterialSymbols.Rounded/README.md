@@ -4,95 +4,77 @@
 [![NuGet](https://img.shields.io/nuget/v/IgrisModz.MauiIcons.MaterialSymbols.Rounded.svg)](https://www.nuget.org/packages/IgrisModz.MauiIcons.MaterialSymbols.Rounded/)
 ![.NET Version](https://img.shields.io/badge/.NET-10.0-purple.svg)
 
-This library provides **MaterialSymbols Rounded** support for **.NET MAUI** (.NET 10). It allows you to use icons as fonts, offering full control over size, color, and animations with high performance.
+This library provides **Material Symbols Rounded** support for **.NET MAUI** (.NET 10). It utilizes **Variable Font** technology to offer highly customizable icons.
+
+---
+
+## ⚠️ Important Technical Constraints
+
+### 1. Platform Support (Variable Axes)
+Due to platform-specific rendering engines, support for variable axes varies:
+* **Weight:** Supported on **all** platforms.
+* **Fill, Grade, OpticalSize:** Supported on **Android & iOS**. These axes are currently **NOT supported on Windows (WinUI)**.
+
+### 2. Control Compatibility
+To ensure the icons render correctly with their variable properties:
+* **Full Support:** Use the direct control `<mi:MaterialSymbolsRoundedIcon />`.
+* **Container Support:** You can also use View-based controls like `ContentView`, `SwipeView`, etc.
+* **Limited Support:** Standard text-based controls (like `Label` or `Button`) using Markup Extensions will only render the icon with default axes and **cannot** display advanced variable axes.
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1. Installation
-Install the package via NuGet:
-
 ```bash
 dotnet add package IgrisModz.MauiIcons.MaterialSymbols.Rounded
 ```
 
-### 2. Configuration
-
-In your `MauiProgram.cs`, call the registration method to ensure the fonts are correctly loaded:
+### 2. Configuration (MauiProgram.cs)
 
 ```csharp
-using MauiIcons.MaterialSymbols.Rounded;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .UseMauiApp<App>()
-            .UseMaterialSymbolsRounded();
-
-        return builder.Build();
-    }
-}
+builder.UseMaterialSymbolsRounded();
 ```
 
 ---
 
 ## 🛠 Usage
 
-### XAML Namespace
+### Recommended: Direct Icon Control
 
-Add the following unique namespace to your XAML file:
+This is the most reliable way to display icons with variable support:
 
 ```xml
-xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+<mi:MaterialSymbolsRoundedIcon Icon="Settings" 
+                                TextColor="Blue" 
+                                FontSize="40" 
+                                Weight="700" 
+                                Fill="True" />
 ```
 
-### Built-in Control
-
-Use the dedicated icon control for full feature support:
-
+### View-Based Controls
+You can wrap icons in containers if needed:
 ```xml
-<mi:MaterialSymbolsRoundedIcon Icon="Heart" 
-                         TextColor="Red" 
-                         FontSize="40" 
-                         Animation="Pulse" 
-                         IsAnimationActive="True" />
-```
-
-### XAML Extensions
-
-Apply icons directly to any standard control (Label, Button, Image, etc.):
-
-```xml
-<Label Text="{mi:MaterialSymbolsRounded Icon=Home, Size=60, Color=DarkBlue}" />
-<Image Source="{mi:MaterialSymbolsRounded Icon=Image, Size=50}" />
-```
-
-### Platform-Specific Icons
-
-```xml
-<mi:MaterialSymbolsRoundedIcon Icon="{mi:MaterialSymbolsRoundedPlatform WinUI=Image, Android=Home}" />
+<ContentView>
+    <mi:MaterialSymbolsRoundedIcon Icon="Home" Weight="100" />
+</ContentView>
 ```
 
 ---
 
 ## ✨ Features
 
-* **Typing Safety:** Use Enums in C# to avoid magic strings.
-* **Markup Extensions:** Seamless integration with standard MAUI controls.
-* **Animations:** Built-in support for `Spin`, `Shake`, `Rotate`, and more.
-* **Binding:** Fully compatible with MVVM and Data Binding.
+* **Variable Font Support:** Adjust Weight (All platforms) and Fill/Grade/OpticalSize (Mobile only).
+* **Typing Safety:** Full Enum support for all Material Symbols.
+* **Animations:** Built-in support for `Spin`, `Shake`, `Pulse`, etc.
+* **Binding:** Properties are fully bindable for MVVM scenarios.
 
 ---
 
 ## 📄 License & Disclaimer
 
-This project is licensed under the **MIT License**.
-
-**Disclaimer:** This library is not affiliated with or endorsed by the original icon creators (Google). Please refer to the official icon providers for their specific licensing terms.
+Licensed under **MIT**.
+**Disclaimer:** Not affiliated with Google. Please check [Material Symbols](https://fonts.google.com/icons) for original glyph licensing.
 
 ---
 

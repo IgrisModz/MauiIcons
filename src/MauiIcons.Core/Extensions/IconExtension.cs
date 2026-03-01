@@ -67,7 +67,7 @@ public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> whe
 
         return Glyph;
     }
-    private GenericIcon CreateBaseIconControl()
+    protected virtual View CreateBaseIconControl()
     {
         // On instancie notre classe interne concrète
         var iconControl = new GenericIcon();
@@ -218,5 +218,5 @@ public class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> whe
     }
 
     // Classe interne pour instancier BaseIcon<TEnum> qui est abstraite
-    private class GenericIcon : BaseIcon<TEnum> { }
+    protected class GenericIcon : BaseIcon<TEnum> { }
 }

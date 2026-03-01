@@ -2,6 +2,6 @@
 
 namespace MauiIcons.MaterialSymbols.Rounded;
 
-public sealed class MaterialSymbolsRoundedExtension : IconExtension<MaterialSymbolsRoundedIcons>
+public sealed class MaterialSymbolsRoundedExtension : VariableIconExtension<MaterialSymbolsRoundedIcons>
 {
 }
