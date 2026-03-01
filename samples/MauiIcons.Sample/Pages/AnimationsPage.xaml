@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+             xmlns:controls="clr-namespace:MauiIcons.Sample.Controls"
              x:Class="MauiIcons.Sample.Pages.AnimationsPage"
              Title="Animations"
              x:Name="thisRoot">
@@ -74,20 +75,7 @@
                 FontAttributes="Bold"
                 Margin="0,20,0,0"/>
 
-            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
-                <Label FontFamily="Courier" FontSize="12">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="&lt;mi:FontAwesomeSolidIcon&#x0a;"/>
-                            <Span Text="    Icon=&quot;Gear&quot;&#x0a;"/>
-                            <Span Text="    FontSize=&quot;60&quot;&#x0a;"/>
-                            <Span Text="    TextColor=&quot;Blue&quot;&#x0a;"/>
-                            <Span Text="    Animation=&quot;Spin&quot;&#x0a;"/>
-                            <Span Text="    IsAnimationActive=&quot;True&quot; /&gt;"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Border>
+            <controls:CodeBlock HeightRequest="163" Code="&lt;mi:FontAwesomeSolidIcon&#x0a;    Icon=&quot;Gear&quot;&#x0a;    FontSize=&quot;60&quot;&#x0a;    TextColor=&quot;Blue&quot;&#x0a;    Animation=&quot;Spin&quot;&#x0a;    IsAnimationActive=&quot;True&quot; /&gt;"/>
 
         </VerticalStackLayout>
     </ScrollView>

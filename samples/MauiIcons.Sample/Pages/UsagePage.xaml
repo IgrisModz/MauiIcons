@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
+             xmlns:controls="clr-namespace:MauiIcons.Sample.Controls"
              x:Class="MauiIcons.Sample.Pages.UsagePage"
              Title="Usage">
 
@@ -33,18 +34,7 @@
                 </HorizontalStackLayout>
             </Border>
 
-            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
-                <Label FontFamily="Courier" FontSize="12">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="&lt;mi:FontAwesomeRegularIcon&#x0a;"/>
-                            <Span Text="    Icon=&quot;Heart&quot;&#x0a;"/>
-                            <Span Text="    FontSize=&quot;60&quot;&#x0a;"/>
-                            <Span Text="    TextColor=&quot;Red&quot; /&gt;"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Border>
+            <controls:CodeBlock HeightRequest="124" Code="&lt;mi:FontAwesomeRegularIcon&#x0a;    Icon=&quot;Heart&quot;&#x0a;    FontSize=&quot;60&quot;&#x0a;    TextColor=&quot;Red&quot; /&gt;"/>
 
             <Label 
                 Text="Using Icons in Label"
@@ -67,16 +57,7 @@
                 </VerticalStackLayout>
             </Border>
 
-            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
-                <Label FontFamily="Courier" FontSize="12">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="&lt;Label Text=&quot;{mi:FontAwesomeRegular&#x0a;"/>
-                            <Span Text="    Icon=Heart, Color=Pink, Size=40}&quot; /&gt;"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Border>
+            <controls:CodeBlock HeightRequest="85" Code="&lt;Label Text=&quot;{mi:FontAwesomeRegular&#x0a;    Icon=Heart, Color=Pink, Size=40}&quot; /&gt;"/>
 
             <Label 
                 Text="Using Icons in Button"
@@ -98,17 +79,7 @@
                 </VerticalStackLayout>
             </Border>
 
-            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
-                <Label FontFamily="Courier" FontSize="12">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="&lt;Button Text=&quot;{mi:FontAwesomeSolid&#x0a;"/>
-                            <Span Text="    Icon=Download, Color=White, Size=20}&quot;&#x0a;"/>
-                            <Span Text="    BackgroundColor=&quot;Green&quot; /&gt;"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Border>
+            <controls:CodeBlock HeightRequest="105" Code="&lt;Button Text=&quot;{mi:FontAwesomeSolid&#x0a;    Icon=Download, Color=White, Size=20}&quot;&#x0a;    BackgroundColor=&quot;Green&quot; /&gt;"/>
 
             <Label 
                 Text="Using Icons in Image"
@@ -123,16 +94,7 @@
                 </HorizontalStackLayout>
             </Border>
 
-            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
-                <Label FontFamily="Courier" FontSize="12">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="&lt;Image Source=&quot;{mi:FontAwesomeRegular&#x0a;"/>
-                            <Span Text="    Icon=Image, Color=Wheat, Size=60}&quot; Aspect=&quot;Center&quot; /&gt;"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Border>
+            <controls:CodeBlock HeightRequest="85" Code="&lt;Image Source=&quot;{mi:FontAwesomeRegular&#x0a;    Icon=Image, Color=Wheat, Size=60}&quot; Aspect=&quot;Center&quot; /&gt;"/>
 
             <Label 
                 Text="Using Icons in ContentView"
@@ -147,16 +109,7 @@
                 </HorizontalStackLayout>
             </Border>
 
-            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
-                <Label FontFamily="Courier" FontSize="12">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="&lt;ContentView Content=&quot;{mi:FontAwesomeRegular&#x0a;"/>
-                            <Span Text="    Icon=AddressCard, Size=50, Color=Crimson}&quot; /&gt;"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Border>
+            <controls:CodeBlock HeightRequest="85" Code="&lt;ContentView Content=&quot;{mi:FontAwesomeRegular&#x0a;    Icon=AddressCard, Size=50, Color=Crimson}&quot; /&gt;"/>
 
             <Label 
                 Text="Platform-Specific Icons"
@@ -177,19 +130,7 @@
                 </VerticalStackLayout>
             </Border>
 
-            <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
-                <Label FontFamily="Courier" FontSize="12">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="&lt;mi:FontAwesomeBrandsIcon&#x0a;"/>
-                            <Span Text="    Icon=&quot;{mi:FontAwesomeBrandsPlatform&#x0a;"/>
-                            <Span Text="        Android=Github,&#x0a;"/>
-                            <Span Text="        WinUI=Youtube}&quot;&#x0a;"/>
-                            <Span Text="    FontSize=&quot;60&quot; /&gt;"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Border>
+            <controls:CodeBlock HeightRequest="144" Code="&lt;mi:FontAwesomeBrandsIcon&#x0a;    Icon=&quot;{mi:FontAwesomeBrandsPlatform&#x0a;        Android=Github,&#x0a;        WinUI=Youtube}&quot;&#x0a;    FontSize=&quot;60&quot; /&gt;"/>
 
         </VerticalStackLayout>
     </ScrollView>
