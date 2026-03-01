@@ -6,6 +6,9 @@ using MauiIcons.Material.Regular;
 using MauiIcons.Material.Round;
 using MauiIcons.Material.Sharp;
 using MauiIcons.Material.TwoTone;
+using MauiIcons.MaterialSymbols.Outlined;
+using MauiIcons.MaterialSymbols.Rounded;
+using MauiIcons.MaterialSymbols.Sharp;
 
 namespace MauiIcons.Sample;
 
@@ -24,6 +27,9 @@ public static class MauiProgram
 			.UseMaterialRound()
 			.UseMaterialSharp()
 			.UseMaterialTwoTone()
+			.UseMaterialSymbolsOutlined()
+			.UseMaterialSymbolsRounded()
+			.UseMaterialSymbolsSharp()
             .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

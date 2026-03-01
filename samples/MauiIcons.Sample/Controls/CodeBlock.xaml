@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiIcons.Sample.Controls.CodeBlock"
+             x:Name="this"
+             Padding="0,0,0,-1.4">
+    <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#1e1e1e}" 
+            Stroke="Gray"
+            StrokeShape="RoundRectangle 5"
+            StrokeThickness=".7"
+            Padding="0">
+        <WebView x:Name="webView" 
+                 HeightRequest="{Binding HeightRequest, Source={x:Reference this}}"
+                 WidthRequest="{Binding WidthRequest, Source={x:Reference this}}"/>
+    </Border>
+</ContentView>

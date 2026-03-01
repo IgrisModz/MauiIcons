@@ -6,6 +6,9 @@ using MauiIcons.Material.Regular;
 using MauiIcons.Material.Round;
 using MauiIcons.Material.Sharp;
 using MauiIcons.Material.TwoTone;
+using MauiIcons.MaterialSymbols.Outlined;
+using MauiIcons.MaterialSymbols.Rounded;
+using MauiIcons.MaterialSymbols.Sharp;
 using System.Reflection;
 
 namespace MauiIcons.Tests.Integration;
@@ -27,11 +30,14 @@ public class MultiPackIntegrationTests
             typeof(MaterialRegularIcons).Namespace!,
             typeof(MaterialRoundIcons).Namespace!,
             typeof(MaterialSharpIcons).Namespace!,
-            typeof(MaterialTwoToneIcons).Namespace!
+            typeof(MaterialTwoToneIcons).Namespace!,
+            typeof(MaterialSymbolsOutlinedIcons).Namespace!,
+            typeof(MaterialSymbolsRoundedIcons).Namespace!,
+            typeof(MaterialSymbolsSharpIcons).Namespace!
         };
 
         // Vérifie qu'il y a autant de namespaces uniques que de packs
-        Assert.Equal(8, namespaces.Count);
+        Assert.Equal(11, namespaces.Count);
     }
 
     [Fact]
@@ -46,11 +52,14 @@ public class MultiPackIntegrationTests
             MaterialRegularIcons.Home.GetFontFamily(),
             MaterialRoundIcons.Home.GetFontFamily(),
             MaterialSharpIcons.Home.GetFontFamily(),
-            MaterialTwoToneIcons.Home.GetFontFamily()
+            MaterialTwoToneIcons.Home.GetFontFamily(),
+            MaterialSymbolsOutlinedIcons.Home.GetFontFamily(),
+            MaterialSymbolsRoundedIcons.Home.GetFontFamily(),
+            MaterialSymbolsSharpIcons.Home.GetFontFamily()
         };
 
         // Vérifie qu'il y a autant de FontFamily uniques que de packs
-        Assert.Equal(8, fontFamilies.Count);
+        Assert.Equal(11, fontFamilies.Count);
     }
 
     [Fact]
@@ -69,10 +78,14 @@ public class MultiPackIntegrationTests
         var materialOutlined = MaterialOutlinedIcons.Home.GetGlyph()
             .GetEnumByGlyph<MaterialOutlinedIcons>();
 
+        var materialSymbolsOutlined = MaterialSymbolsOutlinedIcons.Home.GetGlyph()
+            .GetEnumByGlyph<MaterialSymbolsOutlinedIcons>();
+
         Assert.Equal(FontAwesomeBrandsIcons.Android, brands);
         Assert.Equal(FontAwesomeRegularIcons.Bell, regular);
         Assert.Equal(FontAwesomeSolidIcons.House, solid);
         Assert.Equal(MaterialOutlinedIcons.Home, materialOutlined);
+        Assert.Equal(MaterialSymbolsOutlinedIcons.Home, materialSymbolsOutlined);
     }
 
     [Theory]
@@ -84,6 +97,9 @@ public class MultiPackIntegrationTests
     [InlineData(typeof(MaterialRoundIcons), "MaterialRound")]
     [InlineData(typeof(MaterialSharpIcons), "MaterialSharp")]
     [InlineData(typeof(MaterialTwoToneIcons), "MaterialTwoTone")]
+    [InlineData(typeof(MaterialSymbolsOutlinedIcons), "MaterialSymbolsOutlined")]
+    [InlineData(typeof(MaterialSymbolsRoundedIcons), "MaterialSymbolsRounded")]
+    [InlineData(typeof(MaterialSymbolsSharpIcons), "MaterialSymbolsSharp")]
     public void EnumType_HasExpectedFontFamily(Type enumType, string expectedFontFamily)
     {
         var attribute = enumType.GetCustomAttribute<MauiIcons.Core.Attributes.IconFontAttribute>();

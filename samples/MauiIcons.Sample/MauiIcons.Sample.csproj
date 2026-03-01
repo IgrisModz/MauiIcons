@@ -90,11 +90,51 @@
       <ProjectReference Include="..\..\src\MauiIcons.Material.Round\MauiIcons.Material.Round.csproj" />
       <ProjectReference Include="..\..\src\MauiIcons.Material.Sharp\MauiIcons.Material.Sharp.csproj" />
       <ProjectReference Include="..\..\src\MauiIcons.Material.TwoTone\MauiIcons.Material.TwoTone.csproj" />
+	  <ProjectReference Include="..\..\src\MauiIcons.MaterialSymbols.Outlined\MauiIcons.MaterialSymbols.Outlined.csproj" />
+	  <ProjectReference Include="..\..\src\MauiIcons.MaterialSymbols.Rounded\MauiIcons.MaterialSymbols.Rounded.csproj" />
+	  <ProjectReference Include="..\..\src\MauiIcons.MaterialSymbols.Sharp\MauiIcons.MaterialSymbols.Sharp.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Maui.Markup" Version="7.0.0" />
-		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+	  <Compile Update="Controls\CodeBlock.xaml.cs">
+	    <DependentUpon>CodeBlock.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\AnimationsPage.xaml.cs">
+	    <DependentUpon>AnimationsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\FontAwesomePage.xaml.cs">
+	    <DependentUpon>FontAwesomePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\HomePage.xaml.cs">
+	    <DependentUpon>HomePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\MaterialPage.xaml.cs">
+	    <DependentUpon>MaterialPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\UsagePage.xaml.cs">
+	    <DependentUpon>UsagePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Controls\CodeBlock.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\AnimationsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\FontAwesomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\MaterialPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\UsagePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

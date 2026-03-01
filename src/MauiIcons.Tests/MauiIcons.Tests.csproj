@@ -38,6 +38,9 @@
     <ProjectReference Include="..\MauiIcons.Material.Round\MauiIcons.Material.Round.csproj" />
     <ProjectReference Include="..\MauiIcons.Material.Sharp\MauiIcons.Material.Sharp.csproj" />
     <ProjectReference Include="..\MauiIcons.Material.TwoTone\MauiIcons.Material.TwoTone.csproj" />
+	  <ProjectReference Include="..\MauiIcons.MaterialSymbols.Outlined\MauiIcons.MaterialSymbols.Outlined.csproj" />
+	  <ProjectReference Include="..\MauiIcons.MaterialSymbols.Rounded\MauiIcons.MaterialSymbols.Rounded.csproj" />
+	  <ProjectReference Include="..\MauiIcons.MaterialSymbols.Sharp\MauiIcons.MaterialSymbols.Sharp.csproj" />
   </ItemGroup>
 
   <ItemGroup>

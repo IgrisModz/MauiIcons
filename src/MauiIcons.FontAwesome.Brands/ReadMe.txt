@@ -1,124 +1,119 @@
-.NET NAUI Icons - FontAwesome Brands
+Here is the polished and adapted **ReadMe.txt** for **FontAwesome Brands 7.2.0**. I've maintained the same clean, structured layout to ensure it looks professional when opened in Visual Studio.
 
-Getting Started
+---
 
-In order to use the .NET MAUI Icons - FontAwesome Brands library, you need to follow these steps:
+```text
+*******************************************************************************************
+.NET MAUI Icons - FontAwesome Brands (v7.2.0)
+*******************************************************************************************
 
-In your `MauiProgram.cs`, add the following line to the `CreateMauiApp` method:
+Thank you for installing IgrisModz.MauiIcons.FontAwesome.Brands!
+This library provides a seamless way to use FontAwesome 7.2.0 Brands icons in .NET 10 MAUI.
+
+===========================================================================================
+1. GETTING STARTED
+===========================================================================================
+
+In your `MauiProgram.cs`, register the library by adding the following:
 
 using MauiIcons.FontAwesome.Brands;
 
-
 public static MauiApp CreateMauiApp()
 {
-	var builder = MauiApp.CreateBuilder();
-	builder
-		.UseMauiApp<App>()
-		.UseFontAwesomeBrands(); // Add this line to register the FontAwesome Brands icons
-	return builder.Build();
+    var builder = MauiApp.CreateBuilder();
+    builder
+        .UseMauiApp<App>()
+        .UseFontAwesomeBrands(); // Essential for font registration
+
+    return builder.Build();
 }
 
+===========================================================================================
+2. XAML USAGE
+===========================================================================================
 
-XAML Usage
-
-In order to use the FontAwesome Brands icons in your XAML files, you need to add the following namespace declaration at the top of your XAML file:
+Add this unique namespace declaration at the top of your XAML file:
 
 xmlns:mi="http://www.igrismodz.com/dotnet/2026/maui/icons"
 
-
+-------------------------------------------------------------------------------------------
+A. Built-in Icon Controls
 -------------------------------------------------------------------------------------------
 
-Built-in Icons Usage
-
 XAML:
-
-<mi:FontAwesomeBrandsIcon Icon="Facebook" TextColor="Blue" FontSize="40" BackgroundColor="White" />
+<mi:FontAwesomeBrandsIcon Icon="Bell" TextColor="Blue" FontSize="40" />
 
 C#:
+using MauiIcons.FontAwesome.Brands;
 
-Using MauiIcons.FontAwesome.Brands;
-
-var facebookIcon = new FontAwesomeBrandsIcon
+var bellIcon = new FontAwesomeBrandsIcon
 {
-	Icon = FontAwesomeBrandsIcons.Facebook,
-	TextColor = Colors.Blue,
-	FontSize = 40,
-	BackgroundColor = Colors.White
+    Icon = FontAwesomeBrandsIcons.Bell,
+    TextColor = Colors.Blue,
+    FontSize = 40
 };
 
---------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+B. Markup Extensions (Label, Button, Image)
+-------------------------------------------------------------------------------------------
 
-XAML Extension Usage:
+<Label Text="{mi:FontAwesomeBrands Icon=Heart, Size=60, Color=DarkBlue}" />
 
-<Label Text="{mi:FontAwesomeBrands Icon=Apple, Size=60, Color=DarkBlue}" />
+<Button Text="{mi:FontAwesomeBrands Icon=House, Size=30, Color=SkyBlue}" />
 
-<Button Text="{mi:FontAwesomeBrands Icon=Twitter, Size=30, Color=SkyBlue}" />
+<Image Source="{mi:FontAwesomeBrands Icon=Image, Size=50, Color=Black}" Aspect="Center" />
 
-<Image Source="{mi:FontAwesomeBrands Icon=Github, Size=50, Color=Black}" Aspect="Center" />
+-------------------------------------------------------------------------------------------
+C. Animations
+-------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------
+NOTE: Animations do not work on all controls. Buttons animate the entire control.
 
-XAML Animations:
+<mi:FontAwesomeBrandsIcon Icon="House" Animation="Shake" IsAnimationActive="True" />
 
-// Animation don't work on all controls, like images, and buttons is full animated not only the icon.
+<Label Text="{mi:FontAwesomeBrands Icon=Heart, Animation=Spin, IsAnimationActive=True}" />
 
-<mi:FontAwesomeBrandsIcon Icon="Facebook" TextColor="Blue" FontSize="40" BackgroundColor="White" Animation="Shake" IsAnimationActive="True" />
+-------------------------------------------------------------------------------------------
+D. Platform-Specific Icons
+-------------------------------------------------------------------------------------------
 
-<Label Text="{mi:FontAwesomeBrands Icon=Apple, Size=60, Color=DarkBlue, Animation=Spin, IsAnimationActive=True}" />
+<mi:FontAwesomeBrandsIcon Icon="{mi:FontAwesomeBrandsPlatform WinUI=Heart, Android=House}" 
+                           FontSize="60" />
 
---------------------------------------------------------------------------------------------
+<Label Text="{mi:FontAwesomeBrands Icon={mi:FontAwesomeBrandsPlatform WinUI=Newspaper, Android=AddressCard}}" />
 
-XAML Binding:
+===========================================================================================
+3. DATA BINDING
+===========================================================================================
 
-// Icon, TextColor, FontSize, BackgroundColor, and Animation properties can be bound to your ViewModel properties. For example:
+Icon, TextColor, FontSize, and Animation properties are Bindable:
 
-<mi:FontAwesomeBrandsIcon Icon="{Binding SelectedIcon}" TextColor="{Binding YourIconColor}" FontSize="{Binding YourIconSize}" BackgroundColor="{Binding YourIconBackgroundColor}" Animation="{Binding YourIconAnimation}" IsAnimationActive="{Binding YourIconIsAnimated}" />
+<mi:FontAwesomeBrandsIcon Icon="{Binding SelectedIcon}" 
+                           TextColor="{Binding IconColor}" 
+                           Animation="{Binding MyAnimation}" />
 
-<Label Text="{mi:FontAwesomeBrands Icon={Binding SelectedIcon}, Size={Binding YourIconColor}, Color={Binding YourIconSize}, BackgroundColor="{Binding YourIconBackgroundColor}" Animation={Binding YourIconAnimation}, IsAnimationActive={Binding YourIconIsAnimated}}" />
+===========================================================================================
+4. MANUAL USAGE (Advanced)
+===========================================================================================
 
---------------------------------------------------------------------------------------------
+If you prefer using Glyph codes and FontFamily directly (ensure UseFontAwesomeBrands is called):
 
-XAML Platform Extension Usage:
+<Label Text="&#xf02e;" FontSize="60" FontFamily="FontAwesomeBrands" />
 
-<mi:FontAwesomeBrandsIcon Icon="{mi:FontAwesomeBrandsPlatform WinUI=Youtube}" FontSize="60" TextColor="Red" Animation="Rotate" IsAnimationActive="True"/>
+===========================================================================================
+DISCLAIMER & NOTES
+===========================================================================================
 
-<Label Text="{mi:FontAwesomeBrands Icon={mi:FontAwesomeBrandsPlatform WinUI=Apple, Android=Discord, iOS=GitHub}, Size=60, Color=Orange}" VerticalOptions="Center" HorizontalOptions="Center"/>
+* This library is not affiliated with or endorsed by FontAwesome. 
+* Icons are based on the FontAwesome 7.2.0 Brands (Free) icon set.
+* Not all MAUI controls support advanced extension features (animations/specific sizing).
 
-<Label HorizontalOptions="Center" VerticalOptions="Center">
-	<Label.Text>
-		<mi:FontAwesomeBrands Size="60" Color="RosyBrown" Animation="Shake" IsAnimationActive="True">
-			<mi:FontAwesomeBrands.Icon>
-				<mi:FontAwesomeBrandsPlatform WinUI="Airbnb" />
-				<mi:FontAwesomeBrandsPlatform Android="Google" />
-            </mi:FontAwesomeBrands.Icon>
-        </mi:FontAwesomeBrands>
-	</Label.Text>
-</Label>
+-------------------------------------------------------------------------------------------
+FURTHER INFORMATION
+-------------------------------------------------------------------------------------------
 
-// You can also use this but the editor will currently it as an error
+For full documentation and community support, please visit the GitHub repository:
+https://github.com/IgrisModz/MauiIcons
 
-<mi:FontAwesomeBrandsIcon>
-	<mi:FontAwesomeBrandsIcon.Icon>
-		<mi:IconPlatform x:TypeArguments="mi:FontAwesomeBrandsIcons" WinUI="Angular" />
-	</mi:FontAwesomeBrandsIcon.Icon>
-</mi:FontAwesomeBrandsIcon>
-
---------------------------------------------------------------------------------------------
-
-You can also use the font-family directly in your XAML or C# code, but you need to make sure that the font (.UseFontAwesomeBrands()) is properly registered in your MauiProgram file:
-
-<Label Text="&#xf024;" FontSize="60" FontFamily="FontAwesomeBrandsIcons" />
-
-
-
-Disclaimer: It's important to note that the .NET MAUI Icons - FontAwesome Brands library is not affiliated with or endorsed by FontAwesome. The icons provided in this library are based on the FontAwesome Brands icon set, but they may not be an exact representation of the original icons. Please refer to the FontAwesome website for the official icons and licensing information.
-
-PS: Not all controls support the icon extensions with all functions, such as animations, colors, and sizes. Please refer to the documentation for each control to see which features are supported.
-
----------------------------------------------------------------------------------------------
-
-## Further Information
-
-For more information and documentation, please visit the official GitHub repository of the .NET MAUI Icons - FontAwesome Brands library:
-
-- GitHub Repository: https://github.com/IgrisModz/MauiIcons
+Happy Coding!
+*******************************************************************************************

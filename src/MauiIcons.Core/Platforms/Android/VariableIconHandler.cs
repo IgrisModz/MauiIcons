@@ -29,3 +29,4 @@ public class VariableIconHandler : LabelHandler
                 $"'wght' {icon.Weight}, 'FILL' {icon.Fill}, 'GRAD' {icon.Grade}, 'opsz' {icon.OpticalSize}");
         }
     }
+}
