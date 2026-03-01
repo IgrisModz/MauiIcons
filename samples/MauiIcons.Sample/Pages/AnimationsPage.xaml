@@ -5,16 +5,16 @@
              x:Class="MauiIcons.Sample.Pages.AnimationsPage"
              Title="Animations"
              x:Name="thisRoot">
-    
+
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="30">
-            
+
             <Label 
                 Text="Icon Animations"
                 FontSize="28"
                 FontAttributes="Bold"
                 HorizontalOptions="Center"/>
-            
+
             <Label 
                 Text="All icons support various animations that can be activated."
                 FontSize="14"
@@ -46,34 +46,34 @@
             </Grid>
 
             <BoxView HeightRequest="1" Color="Gray" Margin="0,10"/>
-            
+
             <Label 
                 Text="Animation Examples"
                 FontSize="22"
                 FontAttributes="Bold"
                 Margin="0,10,0,0"/>
-            
+
             <FlexLayout Padding="10" 
                         Direction="Row" 
                         Wrap="Wrap" 
                         JustifyContent="Center" 
                         AlignItems="Center">
-                
+
                 <mi:FontAwesomeRegularIcon Icon="Newspaper" FontSize="60" TextColor="Indigo" Animation="Spin" IsAnimationActive="True" Margin="15"/>
                 <mi:FontAwesomeSolidIcon Icon="Gear" FontSize="60" TextColor="Gray" Animation="Spin" IsAnimationActive="True" Margin="15"/>
                 <mi:MaterialRegularIcon Icon="Refresh" FontSize="60" TextColor="Green" Animation="Spin" IsAnimationActive="True" Margin="15"/>
                 <mi:FontAwesomeSolidIcon Icon="Sun" FontSize="60" TextColor="Orange" Animation="Pulse" IsAnimationActive="True" Margin="15"/>
                 <mi:MaterialRegularIcon Icon="Favorite" FontSize="60" TextColor="Pink" Animation="Pulse" IsAnimationActive="True" Margin="15"/>
                 <mi:FontAwesomeSolidIcon Icon="Bell" FontSize="60" TextColor="Gold" Animation="Shake" IsAnimationActive="True" Margin="15"/>
-                
+
             </FlexLayout>
-            
+
             <Label 
                 Text="Code Example"
                 FontSize="22"
                 FontAttributes="Bold"
                 Margin="0,20,0,0"/>
-            
+
             <Border BackgroundColor="{AppThemeBinding Light=LightGray, Dark=#303030}" Padding="15" Stroke="Gray">
                 <Label FontFamily="Courier" FontSize="12">
                     <Label.FormattedText>
@@ -88,8 +88,8 @@
                     </Label.FormattedText>
                 </Label>
             </Border>
-            
+
         </VerticalStackLayout>
     </ScrollView>
-    
+
 </ContentPage>

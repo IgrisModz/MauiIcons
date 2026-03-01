@@ -96,6 +96,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\AnimationsPage.xaml.cs">
+	    <DependentUpon>AnimationsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\FontAwesomePage.xaml.cs">
+	    <DependentUpon>FontAwesomePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\HomePage.xaml.cs">
+	    <DependentUpon>HomePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\MaterialPage.xaml.cs">
+	    <DependentUpon>MaterialPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\UsagePage.xaml.cs">
+	    <DependentUpon>UsagePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Pages\AnimationsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
