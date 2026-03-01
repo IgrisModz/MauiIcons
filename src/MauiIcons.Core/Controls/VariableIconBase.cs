@@ -1,6 +1,4 @@
-﻿using Microsoft.Maui.Controls;
-
-namespace MauiIcons.Core.Controls;
+﻿namespace MauiIcons.Core.Controls;
 
 public class VariableIconBase<TEnum> : BaseIcon<TEnum>, IVariableIcon where TEnum : struct, Enum
 {

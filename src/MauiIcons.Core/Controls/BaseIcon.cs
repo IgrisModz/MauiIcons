@@ -3,15 +3,6 @@ using System.ComponentModel;
 
 namespace MauiIcons.Core.Controls;
 
-public enum AnimationType
-{
-    None,
-    Spin,   // Rotation infinie (ex: spinner)
-    Pulse,  // Grossit et rétrécit
-    Shake,  // Tremblement latéral
-    Rotate  // Rotation simple une seule fois
-}
-
 public abstract class BaseIcon<TEnum> : Label where TEnum : struct, Enum
 {
     private CancellationTokenSource? _animationSource;
@@ -19,9 +10,22 @@ public abstract class BaseIcon<TEnum> : Label where TEnum : struct, Enum
     public static readonly BindableProperty IconProperty = BindableProperty.Create(nameof(Icon), typeof(TEnum), typeof(BaseIcon<TEnum>), default(TEnum), propertyChanged: OnIconChanged);
     public static readonly BindableProperty AnimationProperty = BindableProperty.Create(nameof(Animation), typeof(AnimationType), typeof(BaseIcon<TEnum>), AnimationType.None);
     public static readonly BindableProperty IsAnimationActiveProperty = BindableProperty.Create(nameof(IsAnimationActive), typeof(bool), typeof(BaseIcon<TEnum>), false, propertyChanged: OnIsAnimationActiveChanged);
-    
+
+    /// <summary>
+    /// Gets or sets the icon displayed by the control.
+    /// </summary>
     public TEnum Icon { get => (TEnum)GetValue(IconProperty); set => SetValue(IconProperty, value); }
+
+    /// <summary>
+    /// Gets or sets the animation type applied to the control.
+    /// </summary>
+    /// <remarks>Use this property to specify how the control animates during transitions or state changes.
+    /// The available animation types are defined by the AnimationType enumeration.</remarks>
     public AnimationType Animation { get => (AnimationType)GetValue(AnimationProperty); set => SetValue(AnimationProperty, value); }
+
+    /// <summary>
+    /// Gets or sets a value indicating whether the animation is currently active.
+    /// </summary>
     public bool IsAnimationActive { get => (bool)GetValue(IsAnimationActiveProperty); set => SetValue(IsAnimationActiveProperty, value); }
 
 
@@ -33,7 +37,7 @@ public abstract class BaseIcon<TEnum> : Label where TEnum : struct, Enum
     {
         VerticalTextAlignment = TextAlignment.Center;
         HorizontalTextAlignment = TextAlignment.Center;
-        FontSize = 30.0; // Taille par défaut de l'icône
+        FontSize = 30.0; // Default icon size
         UpdateIcon(Icon);
     }
 
@@ -88,10 +92,10 @@ public abstract class BaseIcon<TEnum> : Label where TEnum : struct, Enum
                     }
                     break;
                 case AnimationType.Rotate:
-                    // Rotation simple (One-shot)
+                    // Simple rotation (One-shot)
                     await this.RotateToAsync(360, 500, Easing.CubicInOut);
                     Rotation = 0;
-                    IsAnimationActive = false; //Auto reset
+                    IsAnimationActive = false; // Auto reset
                     break;
                 case AnimationType.Shake:
                     while (!token.IsCancellationRequested)
