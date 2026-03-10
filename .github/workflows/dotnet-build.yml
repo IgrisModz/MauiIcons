@@ -55,20 +55,14 @@ jobs:
       with:
         distribution: 'microsoft'
         java-version: '21'
-    - name: Install MAUI Workload
+    - name: Install MAUI Workloads
       run: |
         dotnet workload install maui
-        dotnet workload update
+        dotnet workload restore ${{ env.PathToLibrarySolution }}
     - name: Display dotnet info
       run: dotnet --info
-    - name: Restore Library
-      run: dotnet restore ${{ env.PathToLibrarySolution }}
-    - name: Build Library
-      run: dotnet build ${{ env.PathToLibrarySolution }} --configuration Release --no-restore
-    - name: Restore Sample
-      run: dotnet restore ${{ env.PathToSampleSolution }}
-    - name: Build Sample
-      run: dotnet build ${{ env.PathToSampleSolution }} --configuration Release --no-restore
+    - name: Build Library & Sample
+      run: dotnet build ${{ env.PathToLibrarySolution }} --configuration Release
     - name: Test
       run: dotnet test ${{ env.PathToMauiIconsTestsCsproj }} --configuration Release --no-build --verbosity normal
     - name: Pack Library Packages
