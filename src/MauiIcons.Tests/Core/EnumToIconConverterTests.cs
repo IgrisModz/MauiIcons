@@ -1,4 +1,3 @@
-using MauiIcons.Core.Converters;
 using MauiIcons.FontAwesome.Brands;
 
 namespace MauiIcons.Tests.Core;

@@ -24,7 +24,7 @@ public class EnumToIconConverter : IValueConverter
     /// <param name="parameter">An optional parameter to be used in the conversion. This parameter is not used in this implementation.</param>
     /// <param name="culture">The culture to use in the converter. This parameter is not used in this implementation.</param>
     /// <returns>A glyph object representing the enumeration value if the input is an enumeration; otherwise, null.</returns>
-    public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
+    public object? Convert(object? value, Type targetType, object? parameter, CultureInfo? culture)
     {
         if (value != null && value.GetType().IsEnum)
         {
@@ -45,7 +45,7 @@ public class EnumToIconConverter : IValueConverter
     /// <param name="parameter">An optional parameter to be used in the conversion. This parameter is not used in this implementation.</param>
     /// <param name="culture">The culture to use in the conversion. This parameter is not used in this implementation.</param>
     /// <returns>The enum value corresponding to the provided glyph string if conversion is successful; otherwise, null.</returns>
-    public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
+    public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo? culture)
     {
         if (value is string str && targetType.IsEnum)
         {
