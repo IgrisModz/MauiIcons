@@ -4,24 +4,15 @@ using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
 using MauiIcons.Core.Controls;
 
-namespace MauiIcons.Core.Platforms.iOS;
+namespace MauiIcons.Core.Handlers;
 
-public class VariableIconHandler : LabelHandler
+public partial class VariableIconHandler
 {
-    protected override void ConnectHandler(MauiLabel platformView)
+    partial void ApplyVariations()
     {
-        base.ConnectHandler(platformView);
-        ApplyVariations(platformView);
-    }
+        if (PlatformView is not MauiLabel platformView)
+            return;
 
-    public override void UpdateValue(string property)
-    {
-        base.UpdateValue(property);
-        ApplyVariations(PlatformView);
-    }
-
-    private void ApplyVariations(MauiLabel platformView)
-    {
         if (VirtualView is not IVariableIcon icon)
             return;
 
@@ -41,7 +32,7 @@ public class VariableIconHandler : LabelHandler
 
         var attributesDict = NSDictionary.FromObjectsAndKeys(
             [variation],
-            [new NSString("NSFontVariationAttribute")] // À remplacer par la clé correcte
+            [new NSString("NSFontVariationAttribute")]
         );
         var descriptor = platformView.Font.FontDescriptor.CreateWithAttributes(attributesDict);
         platformView.Font = UIFont.FromDescriptor(descriptor, platformView.Font.PointSize);

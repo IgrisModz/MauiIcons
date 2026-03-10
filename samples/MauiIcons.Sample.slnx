@@ -4,6 +4,7 @@
     <File Path="../ReleaseNotes.txt" />
     <File Path="../Directory.Build.props" />
     <File Path="../global.json" />
+    <File Path="../.editorconfig" />
   </Folder>
   <Folder Name="/Samples/">
     <Project Path="MauiIcons.Sample/MauiIcons.Sample.csproj">

@@ -2,6 +2,6 @@
 
 namespace MauiIcons.FontAwesome.Solid;
 
-public class FontAwesomeSolidExtension : IconExtension<FontAwesomeSolidIcons>
+public partial class FontAwesomeSolidExtension : IconExtension<FontAwesomeSolidIcons>
 {
 }

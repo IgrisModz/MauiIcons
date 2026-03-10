@@ -1,6 +1,6 @@
 ﻿namespace MauiIcons.Material.Regular;
 
-internal static class MaterialRegularFont
+static class MaterialRegularFont
 {
     public const string FontAlias = "MaterialRegular";
 }

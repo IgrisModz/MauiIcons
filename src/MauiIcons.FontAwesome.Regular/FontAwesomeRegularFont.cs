@@ -1,6 +1,6 @@
 ﻿namespace MauiIcons.FontAwesome.Regular;
 
-internal static class FontAwesomeRegularFont
+static class FontAwesomeRegularFont
 {
     public const string FontAlias = "FontAwesomeRegular";
 }

@@ -8,7 +8,7 @@ namespace MauiIcons.MaterialSymbols.Outlined;
 /// </summary>
 public static class BuilderExtensions
 {
-    private const string FontFileName = "material-symbols-outlined.ttf";
+    const string FontFileName = "material-symbols-outlined.ttf";
 
     /// <summary>
     /// Adds Material Symbols Outlined icon font to the application.

@@ -2,6 +2,6 @@
 
 namespace MauiIcons.Material.Round;
 
-public sealed class MaterialRoundExtension : IconExtension<MaterialRoundIcons>
+public partial class MaterialRoundExtension : IconExtension<MaterialRoundIcons>
 {
 }

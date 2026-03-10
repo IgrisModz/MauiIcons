@@ -8,7 +8,7 @@ namespace MauiIcons.MaterialSymbols.Rounded;
 /// </summary>
 public static class BuilderExtensions
 {
-    private const string FontFileName = "material-symbols-rounded.ttf";
+    const string FontFileName = "material-symbols-rounded.ttf";
 
     /// <summary>
     /// Adds Material Symbols Rounded icon font to the application.

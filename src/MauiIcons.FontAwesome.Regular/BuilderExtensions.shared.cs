@@ -7,7 +7,7 @@ namespace MauiIcons.FontAwesome.Regular;
 /// </summary>
 public static class BuilderExtensions
 {
-    private const string FontFileName = "fa-regular-400.otf";
+    const string FontFileName = "fa-regular-400.otf";
 
     /// <summary>
     /// Adds Font Awesome Regular icon font to the application.

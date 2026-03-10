@@ -13,8 +13,8 @@ namespace MauiIcons.Core.Extensions;
 /// conventions or custom attributes to map between enum values and their visual representations.</remarks>
 public static class EnumExtension
 {
-    private static readonly ConcurrentDictionary<Type, string> _fontFamilyCache = new();
-    private static readonly ConcurrentDictionary<Type, Dictionary<string, Enum>> _glyphReverseCache = new();
+    static readonly ConcurrentDictionary<Type, string> fontFamilyCache = new();
+    static readonly ConcurrentDictionary<Type, Dictionary<string, Enum>> glyphReverseCache = new();
 
     /// Return the glyph string corresponding to the enum value, by converting its integer value to a Unicode character.
     /// <summary>
@@ -45,11 +45,14 @@ public static class EnumExtension
     /// null or whitespace.</returns>
     public static TEnum? GetEnumByGlyph<TEnum>(this string? glyph) where TEnum : struct, Enum
     {
-        if (string.IsNullOrWhiteSpace(glyph)) return null;
+		if (string.IsNullOrWhiteSpace(glyph))
+		{
+			return null;
+		}
 
         var type = typeof(TEnum);
 
-        var map = _glyphReverseCache.GetOrAdd(type, t =>
+        var map = glyphReverseCache.GetOrAdd(type, t =>
         {
             var dict = new Dictionary<string, Enum>();
             foreach (TEnum enumValue in Enum.GetValues(t))
@@ -77,7 +80,7 @@ public static class EnumExtension
     {
         var type = typeof(TEnum);
 
-        return _fontFamilyCache.GetOrAdd(type, t =>
+        return fontFamilyCache.GetOrAdd(type, t =>
         {
             var attr = t.GetCustomAttribute<IconFontAttribute>();
             return attr?.FontFamily ?? t.Name[..^"Icons".Length];

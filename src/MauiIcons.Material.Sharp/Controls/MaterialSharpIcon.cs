@@ -2,6 +2,6 @@
 
 namespace MauiIcons.Material.Sharp;
 
-public class MaterialSharpIcon : BaseIcon<MaterialSharpIcons>
+public partial class MaterialSharpIcon : BaseIcon<MaterialSharpIcons>
 {
 }

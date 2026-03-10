@@ -5,68 +5,70 @@ namespace MauiIcons.Sample.Controls;
 
 public partial class CodeBlock : ContentView
 {
-    public static readonly BindableProperty CodeProperty =
-        BindableProperty.Create(nameof(Code), typeof(string), typeof(CodeBlock), string.Empty, propertyChanged: OnCodeChanged);
+	public static readonly BindableProperty CodeProperty =
+		BindableProperty.Create(nameof(Code), typeof(string), typeof(CodeBlock), string.Empty, propertyChanged: OnCodeChanged);
 
-    public static readonly BindableProperty LanguageProperty =
-        BindableProperty.Create(nameof(Language), typeof(string), typeof(CodeBlock), "xml");
+	public static readonly BindableProperty LanguageProperty =
+		BindableProperty.Create(nameof(Language), typeof(string), typeof(CodeBlock), "xml");
 
-    public string Code
-    {
-        get => (string)GetValue(CodeProperty);
-        set => SetValue(CodeProperty, value);
-    }
+	public string Code
+	{
+		get => (string)GetValue(CodeProperty);
+		set => SetValue(CodeProperty, value);
+	}
 
-    public string Language
-    {
-        get => (string)GetValue(LanguageProperty);
-        set => SetValue(LanguageProperty, value);
-    }
+	public string Language
+	{
+		get => (string)GetValue(LanguageProperty);
+		set => SetValue(LanguageProperty, value);
+	}
 
-    public CodeBlock()
-    {
-        InitializeComponent();
+	public CodeBlock()
+	{
+		InitializeComponent();
 
-        if (Application.Current != null)
-        {
-            Application.Current.RequestedThemeChanged += (s, e) => UpdateWebView();
-        }
-    }
+		if (Application.Current != null)
+		{
+			Application.Current.RequestedThemeChanged += (s, e) => UpdateWebView();
+		}
+	}
 
-    private static void OnCodeChanged(BindableObject bindable, object oldValue, object newValue)
-    {
-        if (bindable is CodeBlock codeBlock)
-        {
-            codeBlock.UpdateWebView();
-        }
-    }
+	static void OnCodeChanged(BindableObject bindable, object oldValue, object newValue)
+	{
+		if (bindable is CodeBlock codeBlock)
+		{
+			codeBlock.UpdateWebView();
+		}
+	}
 
-    protected override void OnPropertyChanged([CallerMemberName] string? propertyName = null)
-    {
-        base.OnPropertyChanged(propertyName);
+	protected override void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+	{
+		base.OnPropertyChanged(propertyName);
 
-        if (propertyName == nameof(Language))
-        {
-            UpdateWebView();
-        }
-    }
+		if (propertyName == nameof(Language))
+		{
+			UpdateWebView();
+		}
+	}
 
-    private void UpdateWebView()
-    {
-        if (string.IsNullOrEmpty(Code))
-            return;
+	void UpdateWebView()
+	{
+		if (string.IsNullOrEmpty(Code))
+		{
+			return;
+		}
 
-        var isDarkTheme = Application.Current?.RequestedTheme == AppTheme.Dark;
+		var isDarkTheme = Application.Current?.RequestedTheme == AppTheme.Dark;
 
-        // Couleurs de fond pour correspondre à l'IDE VS 2022/2026
-        var backgroundColor = isDarkTheme ? "#1e1e1e" : "#ffffff";
+		// Couleurs de fond pour correspondre à l'IDE VS 2022/2026
+		var backgroundColor = isDarkTheme ? "#1e1e1e" : "#ffffff";
 
-        // On utilise prism-vs.min.css pour le clair et prism-vsc-dark-plus pour le sombre (très proche de VS 2022+)
-        var themeCssUrl = isDarkTheme
-            ? "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vsc-dark-plus.min.css"
-            : "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-vs.min.css";
+		// On utilise prism-vs.min.css pour le clair et prism-vsc-dark-plus pour le sombre (très proche de VS 2022+)
+		var themeCssUrl = isDarkTheme
+			? "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vsc-dark-plus.min.css"
+			: "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-vs.min.css";
 
-        var html = $@"
+		var html = $@"
 <!DOCTYPE html>
 <html>
 <head>
@@ -113,6 +115,6 @@ public partial class CodeBlock : ContentView
 </body>
 </html>";
 
-        webView.Source = new HtmlWebViewSource { Html = html };
-    }
+		webView.Source = new HtmlWebViewSource { Html = html };
+	}
 }

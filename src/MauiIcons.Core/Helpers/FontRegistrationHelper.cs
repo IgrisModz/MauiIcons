@@ -38,7 +38,7 @@ public static class FontRegistrationHelper
     /// <param name="assembly">The assembly to check.</param>
     /// <param name="fontFileName">The name of the font file to validate.</param>
     /// <exception cref="FileNotFoundException">Thrown when the font resource is not found.</exception>
-    private static void ValidateEmbeddedResource(Assembly assembly, string fontFileName)
+    static void ValidateEmbeddedResource(Assembly assembly, string fontFileName)
     {
         var resourceNames = assembly.GetManifestResourceNames();
 

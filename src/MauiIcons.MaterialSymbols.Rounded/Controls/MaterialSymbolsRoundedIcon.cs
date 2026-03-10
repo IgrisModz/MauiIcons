@@ -2,6 +2,6 @@
 
 namespace MauiIcons.MaterialSymbols.Rounded;
 
-public class MaterialSymbolsRoundedIcon : VariableIconBase<MaterialSymbolsRoundedIcons>
+public partial class MaterialSymbolsRoundedIcon : VariableIconBase<MaterialSymbolsRoundedIcons>
 {
 }

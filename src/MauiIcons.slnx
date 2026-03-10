@@ -3,7 +3,9 @@
     <File Path="../README.md" />
     <File Path="../ReleaseNotes.txt" />
     <File Path="../Directory.Build.props" />
+    <File Path="../Directory.Build.targets" />
     <File Path="../global.json" />
+    <File Path="../.editorconfig" />
   </Folder>
   <Folder Name="/Tests/">
     <Project Path="MauiIcons.Tests/MauiIcons.Tests.csproj" />

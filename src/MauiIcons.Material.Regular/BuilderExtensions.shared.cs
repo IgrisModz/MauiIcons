@@ -7,7 +7,7 @@ namespace MauiIcons.Material.Regular;
 /// </summary>
 public static class BuilderExtensions
 {
-    private const string FontFileName = "material-regular.ttf";
+	const string FontFileName = "material-regular.ttf";
 
     /// <summary>
     /// Adds Material Regular icon font to the application.

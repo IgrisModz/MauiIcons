@@ -2,6 +2,6 @@
 
 namespace MauiIcons.FontAwesome.Regular;
 
-public class FontAwesomeRegularIcon : BaseIcon<FontAwesomeRegularIcons>
+public partial class FontAwesomeRegularIcon : BaseIcon<FontAwesomeRegularIcons>
 {
 }

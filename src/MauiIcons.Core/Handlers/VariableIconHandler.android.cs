@@ -2,24 +2,15 @@
 using MauiIcons.Core.Controls;
 using Microsoft.Maui.Handlers;
 
-namespace MauiIcons.Core.Platforms.Android;
+namespace MauiIcons.Core.Handlers;
 
-public class VariableIconHandler : LabelHandler
+public partial class VariableIconHandler
 {
-    protected override void ConnectHandler(AppCompatTextView platformView)
+    partial void ApplyVariations()
     {
-        base.ConnectHandler(platformView);
-        ApplyVariations(platformView);
-    }
+        if (PlatformView is not AppCompatTextView platformView)
+            return;
 
-    public override void UpdateValue(string property)
-    {
-        base.UpdateValue(property);
-        ApplyVariations(PlatformView);
-    }
-
-    private void ApplyVariations(AppCompatTextView platformView)
-    {
         if (VirtualView is not IVariableIcon icon)
             return;
 

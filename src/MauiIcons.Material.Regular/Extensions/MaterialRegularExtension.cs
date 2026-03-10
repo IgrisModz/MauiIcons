@@ -2,6 +2,6 @@
 
 namespace MauiIcons.Material.Regular;
 
-public sealed class MaterialRegularExtension : IconExtension<MaterialRegularIcons>
+public partial class MaterialRegularExtension : IconExtension<MaterialRegularIcons>
 {
 }

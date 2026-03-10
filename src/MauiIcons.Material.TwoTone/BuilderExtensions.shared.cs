@@ -7,7 +7,7 @@ namespace MauiIcons.Material.TwoTone;
 /// </summary>
 public static class BuilderExtensions
 {
-    private const string FontFileName = "material-twotone.otf";
+    const string FontFileName = "material-twotone.otf";
 
     /// <summary>
     /// Adds Material TwoTone icon font to the application.

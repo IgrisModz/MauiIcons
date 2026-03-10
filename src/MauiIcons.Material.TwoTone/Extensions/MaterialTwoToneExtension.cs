@@ -2,6 +2,6 @@
 
 namespace MauiIcons.Material.TwoTone;
 
-public sealed class MaterialTwoToneExtension : IconExtension<MaterialTwoToneIcons>
+public partial class MaterialTwoToneExtension : IconExtension<MaterialTwoToneIcons>
 {
 }

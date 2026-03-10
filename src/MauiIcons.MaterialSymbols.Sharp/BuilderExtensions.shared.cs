@@ -8,7 +8,7 @@ namespace MauiIcons.MaterialSymbols.Sharp;
 /// </summary>
 public static class BuilderExtensions
 {
-    private const string FontFileName = "material-symbols-sharp.ttf";
+    const string FontFileName = "material-symbols-sharp.ttf";
 
     /// <summary>
     /// Adds Material Symbols Sharp icon font to the application.

@@ -7,7 +7,7 @@ namespace MauiIcons.FontAwesome.Brands;
 /// </summary>
 public static class BuilderExtensions
 {
-    private const string FontFileName = "fa-brands-regular-400.otf";
+    const string FontFileName = "fa-brands-regular-400.otf";
 
     /// <summary>
     /// Adds Font Awesome Brands icon font to the application.

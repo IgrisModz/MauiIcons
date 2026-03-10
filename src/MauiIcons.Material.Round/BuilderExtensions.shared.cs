@@ -7,7 +7,7 @@ namespace MauiIcons.Material.Round;
 /// </summary>
 public static class BuilderExtensions
 {
-    private const string FontFileName = "material-round.otf";
+    const string FontFileName = "material-round.otf";
 
     /// <summary>
     /// Adds Material Round icon font to the application.

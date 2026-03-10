@@ -2,6 +2,6 @@
 
 namespace MauiIcons.FontAwesome.Brands;
 
-public class FontAwesomeBrandsIcon : BaseIcon<FontAwesomeBrandsIcons>
+public partial class FontAwesomeBrandsIcon : BaseIcon<FontAwesomeBrandsIcons>
 {
 }

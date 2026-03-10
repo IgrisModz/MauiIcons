@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace MauiIcons.Sample;
+﻿namespace MauiIcons.Sample;
 
 public partial class App : Application
 {

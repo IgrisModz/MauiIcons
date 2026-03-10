@@ -7,7 +7,7 @@ namespace MauiIcons.FontAwesome.Solid;
 /// </summary>
 public static class BuilderExtensions
 {
-    private const string FontFileName = "fa-solid-900.otf";
+    const string FontFileName = "fa-solid-900.otf";
 
     /// <summary>
     /// Adds Font Awesome Solid icon font to the application.
