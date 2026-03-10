@@ -18,12 +18,12 @@ public partial class AnimationsPage : ContentPage, INotifyPropertyChanged
 		BindingContext = this;
 	}
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private void Button_Clicked(object? sender, EventArgs e)
     {
         EnableRotate = true;
     }
 
-    protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string propertyName = "")
+    protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName] string? propertyName = null)
     {
         if (EqualityComparer<T>.Default.Equals(backingStore, value))
             return false;
