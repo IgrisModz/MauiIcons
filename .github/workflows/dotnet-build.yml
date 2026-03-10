@@ -1,0 +1,75 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+env:
+  PathToLibrarySolution: 'src/MauiIcons.slnx'
+  PathToSampleSolution: 'samples/MauiIcons.Sample.slnx'
+  PathToMauiIconsCoreCsproj: 'src/MauiIcons.Core.csproj'
+  PathToMauiIconsFontAwesomeBrandsCsproj: 'src/MauiIcons.FontAwesome.Brands/MauiIcons.FontAwesome.Brands.csproj'
+  PathToMauiIconsFontAwesomeRegularCsproj: 'src/MauiIcons.FontAwesome.Regular/MauiIcons.FontAwesome.Regular.csproj'
+  PathToMauiIconsFontAwesomeSolidCsproj: 'src/MauiIcons.FontAwesome.Solid/MauiIcons.FontAwesome.Solid.csproj'
+  PathToMauiIconsMaterialOutlinedCsproj: 'src/MauiIcons.Material.Outlined/MauiIcons.Material.Outlined.csproj'
+  PathToMauiIconsMaterialRegularCsproj: 'src/MauiIcons.Material.Regular/MauiIcons.Material.Regular.csproj'
+  PathToMauiIconsMaterialRoundCsproj: 'src/MauiIcons.Material.Round/MauiIcons.Material.Round.csproj'
+  PathToMauiIconsMaterialSharpCsproj: 'src/MauiIcons.Material.Sharp/MauiIcons.Material.Sharp.csproj'
+  PathToMauiIconsMaterialTwoToneCsproj: 'src/MauiIcons.Material.Outlined/MauiIcons.Material.TwoTone.csproj'
+  PathToMauiIconsMaterialSymbolsOutlinedCsproj: 'src/MauiIcons.MaterialSymbols.Outlined/MauiIcons.MaterialSymbols.Outlined.csproj'
+  PathToMauiIconsMaterialSymbolsRoundedCsproj: 'src/MauiIcons.MaterialSymbols.Rounded/MauiIcons.MaterialSymbols.Rounded.csproj'
+  PathToMauiIconsMaterialSymbolsSharpCsproj: 'src/MauiIcons.MaterialSymbols.Sharp/MauiIcons.MaterialSymbols.Sharp.csproj'
+  PathToMauiIconsSampleCsproj: 'samples/MauiIcons.Sample/MauiIcons.Sample.csproj'
+  PathToMauiIconsTestsCsproj: 'src/MauiIcons.Tests/MauiIcons.Tests.csproj'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.0.x
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'microsoft'
+        java-version: '21'
+    - name: Install MAUI Workload
+      run: |
+        dotnet workload install maui
+        dotnet workload update
+    - name: Display dotnet info
+      run: dotnet --info
+    - name: Restore Library
+      run: dotnet restore ${{ env.PathToLibrarySolution }}
+    - name: Build Library
+      run: dotnet build ${{ env.PathToLibrarySolution }} --configuration Release --no-restore
+    - name: Restore Sample
+      run: dotnet restore ${{ env.PathToSampleSolution }}
+    - name: Build Sample
+      run: dotnet build ${{ env.PathToSampleSolution }} --configuration Release --no-restore
+    - name: Test
+      run: dotnet test ${{ env.PathToMauiIconsTestsCsproj }} --configuration Release --no-build --verbosity normal
+    - name: Pack Library Packages
+      run: dotnet pack ${{ env.PathToLibrarySolution }} --configuration Release --no-build
+    - name: Upload NuGet Packages
+      uses: actions/upload-artifact@v4
+      with:
+        name: nuget-packages-${{ matrix.os }}
+        path: '**/*.nupkg'

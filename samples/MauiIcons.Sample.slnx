@@ -1,0 +1,27 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../README.md" />
+    <File Path="../src/ReleaseNotes.txt" />
+    <File Path="../src/Directory.Build.props" />
+  </Folder>
+  <Folder Name="/Samples/">
+    <Project Path="MauiIcons.Sample/MauiIcons.Sample.csproj">
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="../src/MauiIcons.Tests/MauiIcons.Tests.csproj" />
+  </Folder>
+  <Project Path="../src/MauiIcons.Core/MauiIcons.Core.csproj" />
+  <Project Path="../src/MauiIcons.FontAwesome.Brands/MauiIcons.FontAwesome.Brands.csproj" />
+  <Project Path="../src/MauiIcons.FontAwesome.Regular/MauiIcons.FontAwesome.Regular.csproj" />
+  <Project Path="../src/MauiIcons.FontAwesome.Solid/MauiIcons.FontAwesome.Solid.csproj" />
+  <Project Path="../src/MauiIcons.Material.Outlined/MauiIcons.Material.Outlined.csproj" />
+  <Project Path="../src/MauiIcons.Material.Regular/MauiIcons.Material.Regular.csproj" />
+  <Project Path="../src/MauiIcons.Material.Round/MauiIcons.Material.Round.csproj" />
+  <Project Path="../src/MauiIcons.Material.Sharp/MauiIcons.Material.Sharp.csproj" />
+  <Project Path="../src/MauiIcons.Material.TwoTone/MauiIcons.Material.TwoTone.csproj" />
+  <Project Path="../src/MauiIcons.MaterialSymbols.Outlined/MauiIcons.MaterialSymbols.Outlined.csproj" />
+  <Project Path="../src/MauiIcons.MaterialSymbols.Rounded/MauiIcons.MaterialSymbols.Rounded.csproj" />
+  <Project Path="../src/MauiIcons.MaterialSymbols.Sharp/MauiIcons.MaterialSymbols.Sharp.csproj" />
+</Solution>
