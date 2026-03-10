@@ -1,8 +1,9 @@
 <Solution>
   <Folder Name="/Solution Items/">
     <File Path="../README.md" />
-    <File Path="../src/ReleaseNotes.txt" />
-    <File Path="../src/Directory.Build.props" />
+    <File Path="../ReleaseNotes.txt" />
+    <File Path="../Directory.Build.props" />
+    <File Path="../global.json" />
   </Folder>
   <Folder Name="/Samples/">
     <Project Path="MauiIcons.Sample/MauiIcons.Sample.csproj">
