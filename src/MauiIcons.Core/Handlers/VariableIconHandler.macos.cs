@@ -5,6 +5,13 @@ using MauiIcons.Core.Controls;
 
 namespace MauiIcons.Core.Handlers;
 
+/// <summary>
+/// Handles the application of variable font icon variations to a platform-specific label control.
+/// </summary>
+/// <remarks>This handler is responsible for updating the font attributes of a label based on the properties
+/// defined by an associated variable icon. It ensures that the correct font variations, such as weight, fill, grade,
+/// and optical size, are applied to the label's font descriptor. This class is typically used in scenarios where
+/// dynamic icon appearance is required based on variable font features.</remarks>
 public partial class VariableIconHandler
 {
 	partial void ApplyVariations()
