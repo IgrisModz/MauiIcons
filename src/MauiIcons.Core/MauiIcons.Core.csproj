@@ -16,12 +16,32 @@
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
     <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+  </PropertyGroup>
 
+  <PropertyGroup>
     <PackageId>IgrisModz.MauiIcons.Core</PackageId>
+    <GitInfoReportImportance>high</GitInfoReportImportance>
     <Summary>Core Library for Maui Icons</Summary>
-    <Product>MauiIcons - Core (net10.0)</Product>
-    <Description>Core Library for .Net Maui Icons</Description>
     <PackageTags>FontAwesome,Material,Maui,Icon,Dotnet,Icons,MauiIcons,iOSIcon,AndroidIcon,MacIcon,WindowsIcon,IgrisModz</PackageTags>
+    <Authors>IgrisModz</Authors>
+    <Owners>IgrisModz</Owners>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Product>IgrisModz.MauiIcons.Core ($(NetVersion))</Product>
+    <Copyright>© IgrisModz. All rights reserved.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/IgrisModz/MauiIcons</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/IgrisModz/MauiIcons</RepositoryUrl>
+    <PackageReleaseNotes>See https://github.com/IgrisModz/MauiIcons/releases</PackageReleaseNotes>
+    <DefineConstants>$(DefineConstants);</DefineConstants>
+    <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+    <Title>IgrisModz.MauiIcons.Core</Title>
+    <Description>Core Library for .NET MAUI Icons</Description>
+    <PackageIcon>icon.png</PackageIcon>
+    <Product>$(AssemblyName) ($(TargetFramework))</Product>
+    <Version>1.0.0</Version>
+    <PackageVersion>$(Version)$(VersionSuffix)</PackageVersion>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 
   <ItemGroup>

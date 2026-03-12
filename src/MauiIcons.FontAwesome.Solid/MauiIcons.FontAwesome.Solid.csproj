@@ -5,24 +5,43 @@
     <TargetFrameworks Condition="!$([MSBuild]::IsOSPlatform('linux'))">$(TargetFrameworks);$(NetVersion)-ios;$(NetVersion)-maccatalyst</TargetFrameworks>
     <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);$(NetVersion)-windows10.0.19041.0</TargetFrameworks>
 
+    <SingleProject>true</SingleProject>
+    <IsAotCompatible>true</IsAotCompatible>
+    <AllowMissingPrunePackageData>true</AllowMissingPrunePackageData>
+
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
     <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-
-
-    <SingleProject>true</SingleProject>
-    <IsAotCompatible>true</IsAotCompatible>
-    <AllowMissingPrunePackageData>true</AllowMissingPrunePackageData>
-
-    <PackageId>IgrisModz.MauiIcons.FontAwesome.Solid</PackageId>
-    <Summary>Maui Icons - FontAwesome Solid is a FontAwesome 7 Based Icon Library for .Net Maui</Summary>
-    <Product>MauiIcons - FontAwesome Solid (net10.0)</Product>
-    <Description>Maui Icons - FontAwesome Solid is a FontAwesome 7 Based Icon Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete FontAwesome 7 Icon Collection Built into Library.</Description>
-    <PackageTags>FontAwesome,Solid,Maui,Icon,Dotnet,Icons,MauiIcons,iOSIcon,AndroidIcon,MacIcon,WindowsIcon,IgrisModz</PackageTags>
   </PropertyGroup>
+
+	<PropertyGroup>
+    <PackageId>IgrisModz.MauiIcons.FontAwesome.Solid</PackageId>
+    <GitInfoReportImportance>high</GitInfoReportImportance>
+    <Summary>Maui Icons - FontAwesome Solid is a FontAwesome 7 Based Icon Library for .Net Maui</Summary>
+    <PackageTags>FontAwesome,Solid,Maui,Icon,Dotnet,Icons,MauiIcons,iOSIcon,AndroidIcon,MacIcon,WindowsIcon,IgrisModz</PackageTags>
+		<Authors>IgrisModz</Authors>
+		<Owners>IgrisModz</Owners>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Product>IgrisModz.MauiIcons.FontAwesome.Solid ($(NetVersion))</Product>
+		<Copyright>© IgrisModz. All rights reserved.</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/IgrisModz/MauiIcons</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/IgrisModz/MauiIcons</RepositoryUrl>
+		<PackageReleaseNotes>See https://github.com/IgrisModz/MauiIcons/releases</PackageReleaseNotes>
+		<DefineConstants>$(DefineConstants);</DefineConstants>
+		<UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+		<Title>IgrisModz.MauiIcons.FontAwesome.Solid</Title>
+    <Description>Maui Icons - FontAwesome Solid is a FontAwesome 7 Based Icon Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete FontAwesome 7 Icon Collection Built into Library.</Description>
+    <PackageIcon>icon.png</PackageIcon>
+		<Product>$(AssemblyName) ($(TargetFramework))</Product>
+		<Version>1.1.0</Version>
+		<PackageVersion>$(Version)$(VersionSuffix)</PackageVersion>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<Configurations>Debug;Release</Configurations>
+	</PropertyGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Fonts\fa-solid-900.otf" />

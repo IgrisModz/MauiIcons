@@ -5,24 +5,43 @@
     <TargetFrameworks Condition="!$([MSBuild]::IsOSPlatform('linux'))">$(TargetFrameworks);$(NetVersion)-ios;$(NetVersion)-maccatalyst</TargetFrameworks>
     <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);$(NetVersion)-windows10.0.19041.0</TargetFrameworks>
 
+    <SingleProject>true</SingleProject>
+    <IsAotCompatible>true</IsAotCompatible>
+    <AllowMissingPrunePackageData>true</AllowMissingPrunePackageData>
+
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
     <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-
-
-    <SingleProject>true</SingleProject>
-    <IsAotCompatible>true</IsAotCompatible>
-    <AllowMissingPrunePackageData>true</AllowMissingPrunePackageData>
-
-    <PackageId>IgrisModz.MauiIcons.MaterialSymbols.Sharp</PackageId>
-    <Summary>Maui Icons - MaterialSymbols Sharp is Icon Library for .Net Maui</Summary>
-    <Product>MauiIcons - MaterialSymbols Sharp (net10.0)</Product>
-    <Description>Maui Icons - MaterialSymbols Sharp is a Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete MaterialSymbols Icon Collection Built into Library.</Description>
-    <PackageTags>Material,MaterialSymbols,Sharp,Maui,Icon,Dotnet,Icons,MauiIcons,iOSIcon,AndroidIcon,MacIcon,WindowsIcon,IgrisModz</PackageTags>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>IgrisModz.MauiIcons.MaterialSymbols.Sharp</PackageId>
+		<GitInfoReportImportance>high</GitInfoReportImportance>
+    <Summary>Maui Icons - MaterialSymbols Sharp is Icon Library for .Net Maui</Summary>
+    <PackageTags>Material,MaterialSymbols,Sharp,Maui,Icon,Dotnet,Icons,MauiIcons,iOSIcon,AndroidIcon,MacIcon,WindowsIcon,IgrisModz</PackageTags>
+		<Authors>IgrisModz</Authors>
+		<Owners>IgrisModz</Owners>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Product>IgrisModz.MauiIcons.MaterialSymbols.Sharp ($(NetVersion))</Product>
+		<Copyright>© IgrisModz. All rights reserved.</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/IgrisModz/MauiIcons</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/IgrisModz/MauiIcons</RepositoryUrl>
+		<PackageReleaseNotes>See https://github.com/IgrisModz/MauiIcons/releases</PackageReleaseNotes>
+		<DefineConstants>$(DefineConstants);</DefineConstants>
+		<UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+		<Title>IgrisModz.MauiIcons.MaterialSymbols.Sharp</Title>
+		<Description>Maui Icons - MaterialSymbols Sharp is a Library to Resolves Icons or Font Icon Management on .Net Maui by Providing Controls with Complete MaterialSymbols Icon Collection Built into Library.</Description>
+		<PackageIcon>icon.png</PackageIcon>
+		<Product>$(AssemblyName) ($(TargetFramework))</Product>
+		<Version>1.1.0</Version>
+		<PackageVersion>$(Version)$(VersionSuffix)</PackageVersion>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<Configurations>Debug;Release</Configurations>
+	</PropertyGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Fonts\material-symbols-sharp.ttf" />
