@@ -1,4 +1,5 @@
 ﻿using MauiIcons.Core.Helpers;
+using MauiIcons.Material.Round.Fonts;
 
 namespace MauiIcons.Material.Round;
 
@@ -7,7 +8,7 @@ namespace MauiIcons.Material.Round;
 /// </summary>
 public static class BuilderExtensions
 {
-    const string FontFileName = "material-round.otf";
+    const string fontFileName = "material-round.otf";
 
     /// <summary>
     /// Adds Material Round icon font to the application.
@@ -25,7 +26,7 @@ public static class BuilderExtensions
             FontRegistrationHelper.RegisterEmbeddedFont(
                 fonts,
                 typeof(BuilderExtensions).Assembly,
-                FontFileName,
+                fontFileName,
                 MaterialRoundFont.FontAlias);
         });
     }

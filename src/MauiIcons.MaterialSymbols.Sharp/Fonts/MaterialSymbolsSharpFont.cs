@@ -1,4 +1,4 @@
-﻿namespace MauiIcons.MaterialSymbols.Sharp;
+﻿namespace MauiIcons.MaterialSymbols.Sharp.Fonts;
 
 static class MaterialSymbolsSharpFont
 {

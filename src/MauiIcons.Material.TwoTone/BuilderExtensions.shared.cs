@@ -1,4 +1,5 @@
 ﻿using MauiIcons.Core.Helpers;
+using MauiIcons.Material.TwoTone.Fonts;
 
 namespace MauiIcons.Material.TwoTone;
 
@@ -7,7 +8,7 @@ namespace MauiIcons.Material.TwoTone;
 /// </summary>
 public static class BuilderExtensions
 {
-    const string FontFileName = "material-twotone.otf";
+    const string fontFileName = "material-twotone.otf";
 
     /// <summary>
     /// Adds Material TwoTone icon font to the application.
@@ -25,7 +26,7 @@ public static class BuilderExtensions
             FontRegistrationHelper.RegisterEmbeddedFont(
                 fonts,
                 typeof(BuilderExtensions).Assembly,
-                FontFileName,
+                fontFileName,
                 MaterialTwoToneFont.FontAlias);
         });
     }

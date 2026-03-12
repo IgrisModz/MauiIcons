@@ -4,16 +4,52 @@ using System.Reflection;
 
 namespace MauiIcons.Core.Extensions;
 
+/// <summary>
+/// Représente une extension de balisage générique permettant de fournir dynamiquement des icônes, issues d'une
+/// énumération, dans les interfaces utilisateur XAML. Permet la configuration de l'icône, de sa couleur, de sa taille,
+/// de son animation et de son apparence via des propriétés liées.
+/// </summary>
+/// <remarks>Utilisez cette extension dans XAML pour injecter des icônes personnalisées dans des propriétés telles
+/// que Image.Source, ContentView.Content ou Label.Text. Les propriétés exposées permettent de contrôler l'apparence et
+/// le comportement de l'icône, y compris la couleur, la taille, l'animation et le fond. L'extension adapte
+/// automatiquement la valeur retournée au type attendu par la propriété cible (ImageSource, View ou chaîne de
+/// caractères). Elle prend en charge les scénarios MVVM grâce à la liaison de données et peut appliquer des animations
+/// prédéfinies selon la configuration. Cette classe est conçue pour être utilisée avec .NET MAUI ou
+/// Xamarin.Forms.</remarks>
+/// <typeparam name="TEnum">Le type d'énumération utilisé pour sélectionner l'icône à afficher. Doit être une énumération (Enum) structurelle.</typeparam>
 [ContentProperty(nameof(Icon))]
 public partial class IconExtension<TEnum> : BindableObject, IMarkupExtension<object> where TEnum : struct, Enum
 {
 	WeakReference<VisualElement>? targetReference;
 
+	/// <summary>
+	/// Defines a bindable property for the icon enumeration value. This property allows you to specify which icon to display
+	/// </summary>
 	public static readonly BindableProperty IconProperty = BindableProperty.Create(nameof(Icon), typeof(TEnum), typeof(IconExtension<TEnum>), default(TEnum));
+
+	/// <summary>
+	/// Defines a bindable property for the color of the icon. This property allows you to set the color of the icon when it is rendered.
+	/// </summary>
 	public static readonly BindableProperty ColorProperty = BindableProperty.Create(nameof(Color), typeof(Color), typeof(IconExtension<TEnum>), null);
+
+	/// <summary>
+	/// Defines a bindable property for the background color of the icon. This property allows you to set the background color behind the icon when it is rendered.
+	/// </summary>
 	public static readonly BindableProperty BackgroundColorProperty = BindableProperty.Create(nameof(BackgroundColor), typeof(Color), typeof(IconExtension<TEnum>), null);
+
+	/// <summary>
+	/// Defines a bindable property for the size of the icon. This property allows you to specify the size (e.g., font size) at which the icon should be rendered. The default value is 30.0.
+	/// </summary>
 	public static readonly BindableProperty SizeProperty = BindableProperty.Create(nameof(Size), typeof(double), typeof(IconExtension<TEnum>), 30.0);
+
+	/// <summary>
+	/// Defines a bindable property for the animation type applied to the control. This property allows you to specify the type of animation (e.g., rotation, pulse) that should be applied to the icon when it is rendered or when certain state changes occur. The default value is AnimationType.None, indicating that no animation will be applied unless explicitly set.
+	/// </summary>
 	public static readonly BindableProperty AnimationProperty = BindableProperty.Create(nameof(Animation), typeof(AnimationType), typeof(IconExtension<TEnum>), AnimationType.None);
+
+	/// <summary>
+	/// Defines a bindable property that indicates whether the animation is currently active. This property allows you to control the activation of the specified animation. When set to true, the animation defined by the Animation property will be triggered; when set to false, any active animation will be stopped. The default value is false, meaning that animations will not be active unless explicitly enabled. Changes to this property will trigger an update to the animation state of the target control through the OnIsAnimationActivePropertyChanged callback.
+	/// </summary>
 	public static readonly BindableProperty IsAnimationActiveProperty = BindableProperty.Create(nameof(IsAnimationActive), typeof(bool), typeof(BaseIcon<TEnum>), false, propertyChanged: OnIsAnimationActivePropertyChanged);
 
 	/// <summary>
@@ -116,6 +152,13 @@ public partial class IconExtension<TEnum> : BindableObject, IMarkupExtension<obj
 
 		return Glyph;
 	}
+
+	/// <summary>
+	/// Creates and configures the base icon control with bindings to the relevant properties.
+	/// </summary>
+	/// <remarks>The returned control is set up for data binding to support MVVM scenarios. Override this method to
+	/// customize the icon control's appearance or behavior in derived classes.</remarks>
+	/// <returns>A configured instance of the icon control with property bindings applied.</returns>
 	protected virtual View CreateBaseIconControl()
 	{
 		// We instantiate our concrete internal class

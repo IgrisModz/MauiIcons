@@ -1,7 +1,8 @@
 ﻿using MauiIcons.Core.Extensions;
+using MauiIcons.FontAwesome.Regular.Icons;
 
-namespace MauiIcons.FontAwesome.Regular;
+namespace MauiIcons.FontAwesome.Regular.Extensions;
 
-public class FontAwesomeRegularPlatform : IconPlatformExtension<FontAwesomeRegularIcons>
+public partial class FontAwesomeRegularPlatform : IconPlatformExtension<FontAwesomeRegularIcons>
 {
 }

@@ -1,4 +1,5 @@
 ﻿using MauiIcons.Core.Helpers;
+using MauiIcons.FontAwesome.Solid.Fonts;
 
 namespace MauiIcons.FontAwesome.Solid;
 
@@ -7,7 +8,7 @@ namespace MauiIcons.FontAwesome.Solid;
 /// </summary>
 public static class BuilderExtensions
 {
-    const string FontFileName = "fa-solid-900.otf";
+    const string fontFileName = "fa-solid-900.otf";
 
     /// <summary>
     /// Adds Font Awesome Solid icon font to the application.
@@ -25,7 +26,7 @@ public static class BuilderExtensions
             FontRegistrationHelper.RegisterEmbeddedFont(
                 fonts,
                 typeof(BuilderExtensions).Assembly,
-                FontFileName,
+                fontFileName,
                 FontAwesomeSolidFont.FontAlias);
         });
     }

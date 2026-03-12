@@ -1,7 +1,9 @@
 using MauiIcons.Core.Attributes;
+using MauiIcons.Material.TwoTone.Fonts;
 
-namespace MauiIcons.Material.TwoTone;
+namespace MauiIcons.Material.TwoTone.Icons;
 
+#pragma warning disable CS1591
 [IconFont(MaterialTwoToneFont.FontAlias)]
 public enum MaterialTwoToneIcons
 {
@@ -2244,3 +2246,4 @@ public enum MaterialTwoToneIcons
     ZoomOut = 0xe900,
     ZoomOutMap = 0xe56b,
 }
+#pragma warning restore CS1591

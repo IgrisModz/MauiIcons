@@ -1,1 +1,4 @@
 ﻿[assembly: XmlnsDefinition("http://www.igrismodz.com/dotnet/2026/maui/icons", "MauiIcons.Material.Outlined")]
+[assembly: XmlnsDefinition("http://www.igrismodz.com/dotnet/2026/maui/icons", "MauiIcons.Material.Outlined.Controls")]
+[assembly: XmlnsDefinition("http://www.igrismodz.com/dotnet/2026/maui/icons", "MauiIcons.Material.Outlined.Extensions")]
+[assembly: XmlnsDefinition("http://www.igrismodz.com/dotnet/2026/maui/icons", "MauiIcons.Material.Outlined.Icons")]

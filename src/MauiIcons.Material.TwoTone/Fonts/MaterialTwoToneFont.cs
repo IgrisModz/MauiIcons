@@ -1,4 +1,4 @@
-﻿namespace MauiIcons.Material.TwoTone;
+﻿namespace MauiIcons.Material.TwoTone.Fonts;
 
 static class MaterialTwoToneFont
 {

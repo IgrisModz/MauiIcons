@@ -1,4 +1,5 @@
 ﻿using MauiIcons.Core.Helpers;
+using MauiIcons.Material.Outlined.Fonts;
 
 namespace MauiIcons.Material.Outlined;
 
@@ -7,7 +8,7 @@ namespace MauiIcons.Material.Outlined;
 /// </summary>
 public static class BuilderExtensions
 {
-    const string FontFileName = "material-outlined.otf";
+    const string fontFileName = "material-outlined.otf";
 
     /// <summary>
     /// Adds Material Outlined icon font to the application.
@@ -25,7 +26,7 @@ public static class BuilderExtensions
             FontRegistrationHelper.RegisterEmbeddedFont(
                 fonts,
                 typeof(BuilderExtensions).Assembly,
-                FontFileName,
+                fontFileName,
                 MaterialOutlinedFont.FontAlias);
         });
     }

@@ -1,7 +1,8 @@
 ﻿using MauiIcons.Core.Extensions;
+using MauiIcons.FontAwesome.Brands.Icons;
 
-namespace MauiIcons.FontAwesome.Brands;
+namespace MauiIcons.FontAwesome.Brands.Extensions;
 
-public class FontAwesomeBrandsPlatform : IconPlatformExtension<FontAwesomeBrandsIcons>
+public partial class FontAwesomeBrandsPlatform : IconPlatformExtension<FontAwesomeBrandsIcons>
 {
 }

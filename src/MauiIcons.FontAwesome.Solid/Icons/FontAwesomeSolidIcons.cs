@@ -1,8 +1,9 @@
 ﻿using MauiIcons.Core.Attributes;
-using System.ComponentModel;
+using MauiIcons.FontAwesome.Solid.Fonts;
 
-namespace MauiIcons.FontAwesome.Solid;
+namespace MauiIcons.FontAwesome.Solid.Icons;
 
+#pragma warning disable CS1591
 [IconFont(FontAwesomeSolidFont.FontAlias)]
 public enum FontAwesomeSolidIcons
 {
@@ -1429,3 +1430,4 @@ public enum FontAwesomeSolidIcons
     YinYang = 0xf6ad,
     Z = 0x005a,
 }
+#pragma warning restore CS1591

@@ -1,7 +1,9 @@
 using MauiIcons.Core.Attributes;
+using MauiIcons.MaterialSymbols.Sharp.Fonts;
 
-namespace MauiIcons.MaterialSymbols.Sharp;
+namespace MauiIcons.MaterialSymbols.Sharp.Icons;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 [IconFont(MaterialSymbolsSharpFont.FontAlias)]
 public enum MaterialSymbolsSharpIcons
 {
@@ -4194,3 +4196,4 @@ public enum MaterialSymbolsSharpIcons
     ZoomOut = 0xe900,
     ZoomOutMap = 0xe56b,
 }
+#pragma warning restore CS1591

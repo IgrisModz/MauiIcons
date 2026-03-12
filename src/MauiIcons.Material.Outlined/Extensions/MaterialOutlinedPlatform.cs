@@ -1,7 +1,8 @@
 ﻿using MauiIcons.Core.Extensions;
+using MauiIcons.Material.Outlined.Icons;
 
-namespace MauiIcons.Material.Outlined;
+namespace MauiIcons.Material.Outlined.Extensions;
 
-public class MaterialOutlinedPlatform : IconPlatformExtension<MaterialOutlinedIcons>
+public partial class MaterialOutlinedPlatform : IconPlatformExtension<MaterialOutlinedIcons>
 {
 }

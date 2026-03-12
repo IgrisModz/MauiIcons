@@ -1,5 +1,6 @@
 ﻿using MauiIcons.Core;
 using MauiIcons.Core.Helpers;
+using MauiIcons.MaterialSymbols.Sharp.Fonts;
 
 namespace MauiIcons.MaterialSymbols.Sharp;
 
@@ -8,7 +9,7 @@ namespace MauiIcons.MaterialSymbols.Sharp;
 /// </summary>
 public static class BuilderExtensions
 {
-    const string FontFileName = "material-symbols-sharp.ttf";
+    const string fontFileName = "material-symbols-sharp.ttf";
 
     /// <summary>
     /// Adds Material Symbols Sharp icon font to the application.
@@ -26,7 +27,7 @@ public static class BuilderExtensions
                           FontRegistrationHelper.RegisterEmbeddedFont(
                               fonts,
                               typeof(BuilderExtensions).Assembly,
-                              FontFileName,
+                              fontFileName,
                               MaterialSymbolsSharpFont.FontAlias);
                       });
     }

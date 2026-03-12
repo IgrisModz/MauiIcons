@@ -1,7 +1,8 @@
 ﻿using MauiIcons.Core.Extensions;
+using MauiIcons.MaterialSymbols.Rounded.Icons;
 
-namespace MauiIcons.MaterialSymbols.Rounded;
+namespace MauiIcons.MaterialSymbols.Rounded.Extensions;
 
-public class MaterialSymbolsRoundedPlatform : IconPlatformExtension<MaterialSymbolsRoundedIcons>
+public partial class MaterialSymbolsRoundedPlatform : IconPlatformExtension<MaterialSymbolsRoundedIcons>
 {
 }

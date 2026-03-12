@@ -1,4 +1,4 @@
-﻿namespace MauiIcons.MaterialSymbols.Rounded;
+﻿namespace MauiIcons.MaterialSymbols.Rounded.Fonts;
 
 static class MaterialSymbolsRoundedFont
 {

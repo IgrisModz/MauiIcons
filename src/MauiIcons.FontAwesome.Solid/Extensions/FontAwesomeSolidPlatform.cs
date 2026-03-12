@@ -1,7 +1,8 @@
 ﻿using MauiIcons.Core.Extensions;
+using MauiIcons.FontAwesome.Solid.Icons;
 
-namespace MauiIcons.FontAwesome.Solid;
+namespace MauiIcons.FontAwesome.Solid.Extensions;
 
-public class FontAwesomeSolidPlatform : IconPlatformExtension<FontAwesomeSolidIcons>
+public partial class FontAwesomeSolidPlatform : IconPlatformExtension<FontAwesomeSolidIcons>
 {
 }

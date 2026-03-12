@@ -1,7 +1,9 @@
 using MauiIcons.Core.Attributes;
+using MauiIcons.Material.Outlined.Fonts;
 
-namespace MauiIcons.Material.Outlined;
+namespace MauiIcons.Material.Outlined.Icons;
 
+#pragma warning disable CS1591
 [IconFont(MaterialOutlinedFont.FontAlias)]
 public enum MaterialOutlinedIcons
 {
@@ -2201,3 +2203,4 @@ public enum MaterialOutlinedIcons
     ZoomOut = 0xe900,
     ZoomOutMap = 0xe56b,
 }
+#pragma warning restore CS1591

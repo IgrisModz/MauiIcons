@@ -1,5 +1,4 @@
 ﻿using MauiIcons.Core.Extensions;
-using System.ComponentModel;
 
 namespace MauiIcons.Core.Controls;
 
@@ -38,16 +37,16 @@ public abstract class BaseIcon<TEnum> : Label, IDisposable where TEnum : struct,
 	/// </summary>
 	public bool IsAnimationActive { get => (bool)GetValue(IsAnimationActiveProperty); set => SetValue(IsAnimationActiveProperty, value); }
 
-
-
-	[EditorBrowsable(EditorBrowsableState.Never)]
-	public TEnum? IconSuggestions => default;
-
+    /// <summary>
+	/// Initializes a new instance of the BaseIcon class with default alignment and font size settings.
+	/// </summary>
+	/// <remarks>The constructor sets the vertical and horizontal text alignment to center and assigns a default
+	/// font size of 30.0. It also initializes the icon display based on the current Icon property value.</remarks>
 	public BaseIcon()
 	{
 		VerticalTextAlignment = TextAlignment.Center;
 		HorizontalTextAlignment = TextAlignment.Center;
-		FontSize = 30.0; // Default icon size
+		FontSize = 30.0;
 		UpdateIcon(Icon);
 	}
 
@@ -127,6 +126,12 @@ public abstract class BaseIcon<TEnum> : Label, IDisposable where TEnum : struct,
 		catch (Exception) { }
 	}
 
+	/// <summary>
+	/// Stops any ongoing animation and resets the object's transformation properties to their default values.
+	/// </summary>
+	/// <remarks>Calling this method cancels all current animations and restores the object's rotation, scale, and
+	/// translation to their initial states. This method is safe to call even if no animation is currently
+	/// running.</remarks>
 	public void StopAnimation()
 	{
 		animationSource?.Cancel();
@@ -136,6 +141,15 @@ public abstract class BaseIcon<TEnum> : Label, IDisposable where TEnum : struct,
 		TranslationX = 0;
 	}
 
+	/// <summary>
+	/// Libère les ressources utilisées par l'objet en cours, en option libérant les ressources managées et non managées.
+	/// </summary>
+	/// <remarks>Cette méthode est appelée par la méthode Dispose et le finaliseur, le cas échéant. Lorsqu'elle est
+	/// appelée avec disposing défini sur true, cette méthode libère toutes les ressources détenues par les objets managés
+	/// référencés par ce composant. Remplacez cette méthode pour libérer des ressources spécifiques à la classe
+	/// dérivée.</remarks>
+	/// <param name="disposing">true pour libérer à la fois les ressources managées et non managées ; false pour libérer uniquement les ressources
+	/// non managées.</param>
 	protected virtual void Dispose(bool disposing)
 	{
 		if (disposing)
@@ -145,6 +159,12 @@ public abstract class BaseIcon<TEnum> : Label, IDisposable where TEnum : struct,
 		}
 	}
 
+	/// <summary>
+	/// Releases all resources used by the current instance of the class.
+	/// </summary>
+	/// <remarks>Call this method when you are finished using the object to free unmanaged resources and perform
+	/// other cleanup operations. After calling this method, the object should not be used further. This method suppresses
+	/// finalization for the object.</remarks>
 	public void Dispose()
 	{
 		Dispose(true);

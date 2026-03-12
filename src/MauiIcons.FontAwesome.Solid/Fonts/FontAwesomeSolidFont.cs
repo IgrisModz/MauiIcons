@@ -1,4 +1,4 @@
-﻿namespace MauiIcons.FontAwesome.Solid;
+﻿namespace MauiIcons.FontAwesome.Solid.Fonts;
 
 static class FontAwesomeSolidFont
 {

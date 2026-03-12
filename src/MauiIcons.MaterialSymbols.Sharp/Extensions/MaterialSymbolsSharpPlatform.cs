@@ -1,7 +1,8 @@
 ﻿using MauiIcons.Core.Extensions;
+using MauiIcons.MaterialSymbols.Sharp.Icons;
 
-namespace MauiIcons.MaterialSymbols.Sharp;
+namespace MauiIcons.MaterialSymbols.Sharp.Extensions;
 
-public class MaterialSymbolsSharpPlatform : IconPlatformExtension<MaterialSymbolsSharpIcons>
+public partial class MaterialSymbolsSharpPlatform : IconPlatformExtension<MaterialSymbolsSharpIcons>
 {
 }

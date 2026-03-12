@@ -1,7 +1,9 @@
 ﻿using MauiIcons.Core.Attributes;
+using MauiIcons.FontAwesome.Regular.Fonts;
 
-namespace MauiIcons.FontAwesome.Regular;
+namespace MauiIcons.FontAwesome.Regular.Icons;
 
+#pragma warning disable CS1591
 [IconFont(FontAwesomeRegularFont.FontAlias)]
 public enum FontAwesomeRegularIcons
 {
@@ -175,3 +177,4 @@ public enum FontAwesomeRegularIcons
     WindowMinimize = 0xf2d1,
     WindowRestore = 0xf2d2,
 }
+#pragma warning restore CS1591

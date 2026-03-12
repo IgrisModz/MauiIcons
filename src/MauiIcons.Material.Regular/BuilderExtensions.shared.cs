@@ -1,4 +1,5 @@
 ﻿using MauiIcons.Core.Helpers;
+using MauiIcons.Material.Regular.Fonts;
 
 namespace MauiIcons.Material.Regular;
 
@@ -7,7 +8,7 @@ namespace MauiIcons.Material.Regular;
 /// </summary>
 public static class BuilderExtensions
 {
-	const string FontFileName = "material-regular.ttf";
+	const string fontFileName = "material-regular.ttf";
 
     /// <summary>
     /// Adds Material Regular icon font to the application.
@@ -25,7 +26,7 @@ public static class BuilderExtensions
             FontRegistrationHelper.RegisterEmbeddedFont(
                 fonts,
                 typeof(BuilderExtensions).Assembly,
-                FontFileName,
+                fontFileName,
                 MaterialRegularFont.FontAlias);
         });
     }

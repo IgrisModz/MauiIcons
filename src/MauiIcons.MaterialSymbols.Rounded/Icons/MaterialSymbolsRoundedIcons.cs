@@ -1,7 +1,9 @@
 using MauiIcons.Core.Attributes;
+using MauiIcons.MaterialSymbols.Rounded.Fonts;
 
-namespace MauiIcons.MaterialSymbols.Rounded;
+namespace MauiIcons.MaterialSymbols.Rounded.Icons;
 
+#pragma warning disable CS1591
 [IconFont(MaterialSymbolsRoundedFont.FontAlias)]
 public enum MaterialSymbolsRoundedIcons
 {
@@ -4194,3 +4196,4 @@ public enum MaterialSymbolsRoundedIcons
     ZoomOut = 0xe900,
     ZoomOutMap = 0xe56b,
 }
+#pragma warning restore CS1591

@@ -1,4 +1,4 @@
-﻿namespace MauiIcons.Material.Outlined;
+﻿namespace MauiIcons.Material.Outlined.Fonts;
 
 static class MaterialOutlinedFont
 {

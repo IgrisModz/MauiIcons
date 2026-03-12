@@ -1,7 +1,9 @@
 ﻿using MauiIcons.Core.Attributes;
+using MauiIcons.FontAwesome.Brands.Fonts;
 
-namespace MauiIcons.FontAwesome.Brands;
+namespace MauiIcons.FontAwesome.Brands.Icons;
 
+#pragma warning disable CS1591
 [IconFont(FontAwesomeBrandsFont.FontAlias)]
 public enum FontAwesomeBrandsIcons
 {
@@ -556,3 +558,4 @@ public enum FontAwesomeBrandsIcons
     Zoom = 0xe87b,
     Zulip = 0xe853,
 }
+#pragma warning restore CS1591

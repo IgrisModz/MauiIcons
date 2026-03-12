@@ -1,4 +1,4 @@
-﻿namespace MauiIcons.FontAwesome.Brands;
+﻿namespace MauiIcons.FontAwesome.Brands.Fonts;
 
 static class FontAwesomeBrandsFont
 {

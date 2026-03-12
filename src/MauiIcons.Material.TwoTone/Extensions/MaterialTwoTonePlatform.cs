@@ -1,7 +1,8 @@
 ﻿using MauiIcons.Core.Extensions;
+using MauiIcons.Material.TwoTone.Icons;
 
-namespace MauiIcons.Material.TwoTone;
+namespace MauiIcons.Material.TwoTone.Extensions;
 
-public class MaterialTwoTonePlatform : IconPlatformExtension<MaterialTwoToneIcons>
+public partial class MaterialTwoTonePlatform : IconPlatformExtension<MaterialTwoToneIcons>
 {
 }

@@ -1,5 +1,6 @@
 ﻿using MauiIcons.Core;
 using MauiIcons.Core.Helpers;
+using MauiIcons.MaterialSymbols.Rounded.Fonts;
 
 namespace MauiIcons.MaterialSymbols.Rounded;
 
@@ -8,7 +9,7 @@ namespace MauiIcons.MaterialSymbols.Rounded;
 /// </summary>
 public static class BuilderExtensions
 {
-    const string FontFileName = "material-symbols-rounded.ttf";
+    const string fontFileName = "material-symbols-rounded.ttf";
 
     /// <summary>
     /// Adds Material Symbols Rounded icon font to the application.
@@ -27,7 +28,7 @@ public static class BuilderExtensions
                           FontRegistrationHelper.RegisterEmbeddedFont(
                               fonts,
                               typeof(BuilderExtensions).Assembly,
-                              FontFileName,
+                              fontFileName,
                               MaterialSymbolsRoundedFont.FontAlias);
                       });
     }

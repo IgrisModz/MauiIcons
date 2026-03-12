@@ -1,4 +1,5 @@
 ﻿using MauiIcons.Core.Helpers;
+using MauiIcons.FontAwesome.Brands.Fonts;
 
 namespace MauiIcons.FontAwesome.Brands;
 
@@ -7,7 +8,7 @@ namespace MauiIcons.FontAwesome.Brands;
 /// </summary>
 public static class BuilderExtensions
 {
-    const string FontFileName = "fa-brands-regular-400.otf";
+    const string fontFileName = "fa-brands-regular-400.otf";
 
     /// <summary>
     /// Adds Font Awesome Brands icon font to the application.
@@ -25,7 +26,7 @@ public static class BuilderExtensions
             FontRegistrationHelper.RegisterEmbeddedFont(
                 fonts,
                 typeof(BuilderExtensions).Assembly,
-                FontFileName,
+                fontFileName,
                 FontAwesomeBrandsFont.FontAlias);
         });
     }
