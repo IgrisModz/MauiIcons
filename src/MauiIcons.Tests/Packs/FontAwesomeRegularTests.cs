@@ -1,4 +1,6 @@
-﻿using MauiIcons.FontAwesome.Regular;
+﻿using MauiIcons.FontAwesome.Regular.Icons;
+using MauiIcons.FontAwesome.Regular.Controls;
+using MauiIcons.FontAwesome.Regular.Extensions;
 
 namespace MauiIcons.Tests.Packs;
 
@@ -10,7 +12,6 @@ public class FontAwesomeRegularTests : BaseIconPackTests<
     [Fact]
     public void Verify_Specific_Icon_Code()
     {
-        // Test de sécurité sur une icône connue
         Assert.Equal("\uf0f3", FontAwesomeRegularIcons.Bell.GetGlyph());
     }
 }

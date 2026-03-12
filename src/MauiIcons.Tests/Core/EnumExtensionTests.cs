@@ -1,4 +1,4 @@
-﻿using MauiIcons.FontAwesome.Brands;
+﻿using MauiIcons.FontAwesome.Brands.Icons;
 
 namespace MauiIcons.Tests.Core;
 
@@ -59,11 +59,11 @@ public class EnumExtensionTests
     [Fact]
     public void GetFontFamily_IsCached()
     {
-        // Premier appel
-        var fontFamily1 = FontAwesomeBrandsIcons.Android.GetFontFamily();
+		// First call
+		var fontFamily1 = FontAwesomeBrandsIcons.Android.GetFontFamily();
 
-        // Deuxième appel (devrait utiliser le cache)
-        var fontFamily2 = FontAwesomeBrandsIcons.Apple.GetFontFamily();
+		// Second call (should use the cache)
+		var fontFamily2 = FontAwesomeBrandsIcons.Apple.GetFontFamily();
 
         Assert.Equal(fontFamily1, fontFamily2);
     }
@@ -71,8 +71,8 @@ public class EnumExtensionTests
     [Fact]
     public void GetEnumByGlyph_AllEnumValues_CanBeRetrieved()
     {
-        // Test avec un échantillon pour éviter que le test soit trop long
-        var sampleIcons = new[]
+		// Test with a sample to avoid the test being too long
+		var sampleIcons = new[]
         {
             FontAwesomeBrandsIcons.Android,
             FontAwesomeBrandsIcons.Apple,

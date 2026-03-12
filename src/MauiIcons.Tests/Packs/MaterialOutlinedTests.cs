@@ -1,4 +1,6 @@
-﻿using MauiIcons.Material.Outlined;
+﻿using MauiIcons.Material.Outlined.Icons;
+using MauiIcons.Material.Outlined.Controls;
+using MauiIcons.Material.Outlined.Extensions;
 
 namespace MauiIcons.Tests.Packs;
 
@@ -10,7 +12,6 @@ public class MaterialOutlinedTests : BaseIconPackTests<
     [Fact]
     public void Verify_Specific_Icon_Code()
     {
-        // Test de sécurité sur une icône connue
         Assert.Equal("\ue85b", MaterialOutlinedIcons.AspectRatio.GetGlyph());
     }
 }

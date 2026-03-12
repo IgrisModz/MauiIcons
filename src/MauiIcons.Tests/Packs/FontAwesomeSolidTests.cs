@@ -1,4 +1,6 @@
-﻿using MauiIcons.FontAwesome.Solid;
+﻿using MauiIcons.FontAwesome.Solid.Icons;
+using MauiIcons.FontAwesome.Solid.Controls;
+using MauiIcons.FontAwesome.Solid.Extensions;
 
 namespace MauiIcons.Tests.Packs;
 
@@ -10,7 +12,6 @@ public class FontAwesomeSolidTests : BaseIconPackTests<
     [Fact]
     public void Verify_Specific_Icon_Code()
     {
-        // Test de sécurité sur une icône connue
         Assert.Equal("\uf55e", FontAwesomeSolidIcons.BusSimple.GetGlyph());
     }
 }

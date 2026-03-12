@@ -1,4 +1,6 @@
-﻿using MauiIcons.MaterialSymbols.Sharp;
+﻿using MauiIcons.MaterialSymbols.Sharp.Icons;
+using MauiIcons.MaterialSymbols.Sharp.Controls;
+using MauiIcons.MaterialSymbols.Sharp.Extensions;
 
 namespace MauiIcons.Tests.Packs;
 
@@ -10,7 +12,6 @@ public class MaterialSymbolsSharpTests : BaseIconPackTests<
     [Fact]
     public void Verify_Specific_Icon_Code()
     {
-        // Test de sécurité sur une icône connue
         Assert.Equal("\uef76", MaterialSymbolsSharpIcons.Verified.GetGlyph());
     }
 }

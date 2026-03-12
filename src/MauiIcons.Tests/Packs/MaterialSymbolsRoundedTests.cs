@@ -1,4 +1,6 @@
-﻿using MauiIcons.MaterialSymbols.Rounded;
+﻿using MauiIcons.MaterialSymbols.Rounded.Icons;
+using MauiIcons.MaterialSymbols.Rounded.Controls;
+using MauiIcons.MaterialSymbols.Rounded.Extensions;
 
 namespace MauiIcons.Tests.Packs;
 
@@ -10,7 +12,6 @@ public class MaterialSymbolsRoundedTests : BaseIconPackTests<
     [Fact]
     public void Verify_Specific_Icon_Code()
     {
-        // Test de sécurité sur une icône connue
         Assert.Equal("\uf86f", MaterialSymbolsRoundedIcons.GalleryThumbnail.GetGlyph());
     }
 }

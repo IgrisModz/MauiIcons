@@ -1,4 +1,6 @@
-﻿using MauiIcons.Material.Round;
+﻿using MauiIcons.Material.Round.Icons;
+using MauiIcons.Material.Round.Controls;
+using MauiIcons.Material.Round.Extensions;
 
 namespace MauiIcons.Tests.Packs;
 
@@ -10,7 +12,6 @@ public class MaterialRoundTests : BaseIconPackTests<
     [Fact]
     public void Verify_Specific_Icon_Code()
     {
-        // Test de sécurité sur une icône connue
         Assert.Equal("\ue39f", MaterialRoundIcons.Assistant.GetGlyph());
     }
 }

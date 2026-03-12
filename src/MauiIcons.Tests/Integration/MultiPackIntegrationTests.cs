@@ -1,21 +1,25 @@
-using MauiIcons.FontAwesome.Brands;
-using MauiIcons.FontAwesome.Regular;
-using MauiIcons.FontAwesome.Solid;
-using MauiIcons.Material.Outlined;
-using MauiIcons.Material.Regular;
-using MauiIcons.Material.Round;
-using MauiIcons.Material.Sharp;
-using MauiIcons.Material.TwoTone;
-using MauiIcons.MaterialSymbols.Outlined;
-using MauiIcons.MaterialSymbols.Rounded;
-using MauiIcons.MaterialSymbols.Sharp;
+using MauiIcons.FontAwesome.Brands.Icons;
+using MauiIcons.FontAwesome.Regular.Icons;
+using MauiIcons.FontAwesome.Solid.Icons;
+using MauiIcons.Material.Outlined.Icons;
+using MauiIcons.Material.Regular.Icons;
+using MauiIcons.Material.Round.Icons;
+using MauiIcons.Material.Sharp.Icons;
+using MauiIcons.Material.TwoTone.Icons;
+using MauiIcons.MaterialSymbols.Outlined.Icons;
+using MauiIcons.MaterialSymbols.Rounded.Icons;
+using MauiIcons.MaterialSymbols.Sharp.Icons;
 using System.Reflection;
 
 namespace MauiIcons.Tests.Integration;
 
 /// <summary>
-/// Tests d'intégration qui vérifient le bon fonctionnement de plusieurs packs ensemble
+/// Provides a suite of integration tests to validate consistency and interoperability between multiple icon packs in the application.
 /// </summary>
+/// <remarks>These tests verify that each icon pack has a unique namespace
+/// and font family, and that the conversion between glyphs and enumerations works correctly for each pack.
+/// They also ensure that the metadata attributes associated with icon enumerations meet expectations. This class is designed to guarantee the integrity of
+/// multi-pack integration and prevent conflicts or inconsistencies when adding or modifying icon packs.</remarks>
 public class MultiPackIntegrationTests
 {
     [Fact]
@@ -36,8 +40,8 @@ public class MultiPackIntegrationTests
             typeof(MaterialSymbolsSharpIcons).Namespace!
         };
 
-        // Vérifie qu'il y a autant de namespaces uniques que de packs
-        Assert.Equal(11, namespaces.Count);
+		// Verify that there are as many unique namespaces as there are packages.
+		Assert.Equal(11, namespaces.Count);
     }
 
     [Fact]
@@ -58,15 +62,15 @@ public class MultiPackIntegrationTests
             MaterialSymbolsSharpIcons.Home.GetFontFamily()
         };
 
-        // Vérifie qu'il y a autant de FontFamily uniques que de packs
-        Assert.Equal(11, fontFamilies.Count);
+		// Verify that there are as many unique FontFamily as there are packs.
+		Assert.Equal(11, fontFamilies.Count);
     }
 
     [Fact]
     public void GetEnumByGlyph_WorksAcrossDifferentPacks()
     {
-        // Test de round-trip pour chaque pack
-        var brands = FontAwesomeBrandsIcons.Android.GetGlyph()
+		// Round-trip test for each pack
+		var brands = FontAwesomeBrandsIcons.Android.GetGlyph()
             .GetEnumByGlyph<FontAwesomeBrandsIcons>();
 
         var regular = FontAwesomeRegularIcons.Bell.GetGlyph()

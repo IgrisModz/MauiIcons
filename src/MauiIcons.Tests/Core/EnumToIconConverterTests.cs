@@ -1,15 +1,15 @@
-using MauiIcons.FontAwesome.Brands;
+using MauiIcons.FontAwesome.Brands.Icons;
 
 namespace MauiIcons.Tests.Core;
 
 public class EnumToIconConverterTests
 {
-    private readonly EnumToIconConverter _converter = new();
+    private readonly EnumToIconConverter converter = new();
 
     [Fact]
     public void Convert_WithValidEnum_ReturnsGlyph()
     {
-        var result = _converter.Convert(FontAwesomeBrandsIcons.Android, typeof(string), null, null);
+        var result = converter.Convert(FontAwesomeBrandsIcons.Android, typeof(string), null, null);
 
         Assert.Equal("\uf17b", result);
     }
@@ -17,7 +17,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void Convert_WithNull_ReturnsNull()
     {
-        var result = _converter.Convert(null, typeof(string), null, null);
+        var result = converter.Convert(null, typeof(string), null, null);
 
         Assert.Null(result);
     }
@@ -25,7 +25,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void Convert_WithNonEnum_ReturnsNull()
     {
-        var result = _converter.Convert("not an enum", typeof(string), null, null);
+        var result = converter.Convert("not an enum", typeof(string), null, null);
 
         Assert.Null(result);
     }
@@ -33,7 +33,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void Convert_WithIntValue_ReturnsNull()
     {
-        var result = _converter.Convert(42, typeof(string), null, null);
+        var result = converter.Convert(42, typeof(string), null, null);
 
         Assert.Null(result);
     }
@@ -41,7 +41,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void ConvertBack_WithValidGlyph_ReturnsEnum()
     {
-        var result = _converter.ConvertBack("\uf17b", typeof(FontAwesomeBrandsIcons), null, null);
+        var result = converter.ConvertBack("\uf17b", typeof(FontAwesomeBrandsIcons), null, null);
 
         Assert.NotNull(result);
         Assert.IsType<FontAwesomeBrandsIcons>(result);
@@ -51,7 +51,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void ConvertBack_WithNullGlyph_ReturnsNull()
     {
-        var result = _converter.ConvertBack(null, typeof(FontAwesomeBrandsIcons), null, null);
+        var result = converter.ConvertBack(null, typeof(FontAwesomeBrandsIcons), null, null);
 
         Assert.Null(result);
     }
@@ -59,7 +59,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void ConvertBack_WithEmptyString_ReturnsNull()
     {
-        var result = _converter.ConvertBack("", typeof(FontAwesomeBrandsIcons), null, null);
+        var result = converter.ConvertBack("", typeof(FontAwesomeBrandsIcons), null, null);
 
         Assert.Null(result);
     }
@@ -67,7 +67,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void ConvertBack_WithWhitespaceString_ReturnsNull()
     {
-        var result = _converter.ConvertBack("   ", typeof(FontAwesomeBrandsIcons), null, null);
+        var result = converter.ConvertBack("   ", typeof(FontAwesomeBrandsIcons), null, null);
 
         Assert.Null(result);
     }
@@ -75,7 +75,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void ConvertBack_WithInvalidGlyph_ReturnsNull()
     {
-        var result = _converter.ConvertBack("\uffff", typeof(FontAwesomeBrandsIcons), null, null);
+        var result = converter.ConvertBack("\uffff", typeof(FontAwesomeBrandsIcons), null, null);
 
         Assert.Null(result);
     }
@@ -83,7 +83,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void ConvertBack_WithNonEnumTargetType_ReturnsNull()
     {
-        var result = _converter.ConvertBack("\uf17b", typeof(string), null, null);
+        var result = converter.ConvertBack("\uf17b", typeof(string), null, null);
 
         Assert.Null(result);
     }
@@ -91,7 +91,7 @@ public class EnumToIconConverterTests
     [Fact]
     public void ConvertBack_WithNonStringValue_ReturnsNull()
     {
-        var result = _converter.ConvertBack(42, typeof(FontAwesomeBrandsIcons), null, null);
+        var result = converter.ConvertBack(42, typeof(FontAwesomeBrandsIcons), null, null);
 
         Assert.Null(result);
     }
