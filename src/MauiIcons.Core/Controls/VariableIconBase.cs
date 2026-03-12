@@ -10,9 +10,34 @@
 /// <typeparam name="TEnum">The enumeration type that defines the available icon variants.</typeparam>
 public partial class VariableIconBase<TEnum> : BaseIcon<TEnum>, IVariableIcon where TEnum : struct, Enum
 {
+	/// <summary>
+	/// Identifies the Weight bindable property, which represents the stroke weight for the icon.
+	/// </summary>
+	/// <remarks>The default value is 400. Changing this property triggers the icon variation update. This property
+	/// is typically used in data binding scenarios to control the visual thickness of the icon.</remarks>
     public static readonly BindableProperty WeightProperty = BindableProperty.Create(nameof(Weight), typeof(int), typeof(VariableIconBase<TEnum>), 400, propertyChanged: OnVariationChanged);
+
+	/// <summary>
+	/// Identifies the Fill bindable property, which determines the fill level for the icon.
+	/// </summary>
+	/// <remarks>This property can be used for data binding in Xamarin.Forms to control how much of the icon is
+	/// filled. Changing the value triggers the icon variation update.</remarks>
     public static readonly BindableProperty FillProperty = BindableProperty.Create(nameof(Fill), typeof(int), typeof(VariableIconBase<TEnum>), 0, propertyChanged: OnVariationChanged);
+
+	/// <summary>
+	/// Identifies the Grade bindable property, which represents the grade value for the VariableIconBase control.
+	/// </summary>
+	/// <remarks>Use this property to bind or set the grade value in data templates or styles. The default value is
+	/// 0. Changes to this property trigger the OnVariationChanged callback, which may update the icon's
+	/// appearance.</remarks>
     public static readonly BindableProperty GradeProperty = BindableProperty.Create(nameof(Grade), typeof(int), typeof(VariableIconBase<TEnum>), 0, propertyChanged: OnVariationChanged);
+
+	/// <summary>
+	/// Identifies the OpticalSize bindable property, which specifies the optical size of the icon in points.
+	/// </summary>
+	/// <remarks>The default value is 24. Changing this property updates the icon's visual appearance to match the
+	/// specified optical size. This property is typically used to adjust icon rendering for different display
+	/// contexts.</remarks>
     public static readonly BindableProperty OpticalSizeProperty = BindableProperty.Create(nameof(OpticalSize), typeof(int), typeof(VariableIconBase<TEnum>), 24, propertyChanged: OnVariationChanged);
 
     /// <summary>

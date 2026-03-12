@@ -16,8 +16,27 @@ public abstract class BaseIcon<TEnum> : Label, IDisposable where TEnum : struct,
 {
 	CancellationTokenSource? animationSource;
 
+	/// <summary>
+	/// Identifies the Icon bindable property for use with data binding and property change notifications.
+	/// </summary>
+	/// <remarks>This field is used to reference the Icon property in Xamarin.Forms or MAUI frameworks when
+	/// implementing custom controls. It enables developers to bind and observe changes to the Icon property of a
+	/// BaseIcon&lt;TEnum&gt; control.</remarks>
 	public static readonly BindableProperty IconProperty = BindableProperty.Create(nameof(Icon), typeof(TEnum), typeof(BaseIcon<TEnum>), default(TEnum), propertyChanged: OnIconChanged);
+
+	/// <summary>
+	/// Identifies the Animation bindable property, which specifies the animation type applied to the icon.
+	/// </summary>
+	/// <remarks>Use this property to bind or set the animation type for the icon in XAML or code. The default value
+	/// is AnimationType.None.</remarks>
 	public static readonly BindableProperty AnimationProperty = BindableProperty.Create(nameof(Animation), typeof(AnimationType), typeof(BaseIcon<TEnum>), AnimationType.None);
+
+	/// <summary>
+	/// Identifies the bindable property that indicates whether the animation is active for the icon.
+	/// </summary>
+	/// <remarks>This property can be used to bind the animation state in data templates or view models. Changing
+	/// its value triggers the associated property changed callback, which may start or stop the animation depending on the
+	/// new value.</remarks>
 	public static readonly BindableProperty IsAnimationActiveProperty = BindableProperty.Create(nameof(IsAnimationActive), typeof(bool), typeof(BaseIcon<TEnum>), false, propertyChanged: OnIsAnimationActiveChanged);
 
 	/// <summary>

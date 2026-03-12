@@ -15,9 +15,32 @@ namespace MauiIcons.Core.Extensions;
 [ContentProperty(nameof(Icon))]
 public partial class VariableIconExtension<TEnum> : IconExtension<TEnum> where TEnum : struct, Enum
 {
+	/// <summary>
+	/// Identifies the Weight bindable property, which represents the font weight for the icon extension.
+	/// </summary>
+	/// <remarks>The default value is 400, corresponding to the normal font weight. This property can be used in
+	/// data binding scenarios to control the visual weight of the icon.</remarks>
 	public static readonly BindableProperty WeightProperty = BindableProperty.Create(nameof(Weight), typeof(int), typeof(VariableIconExtension<TEnum>), 400);
+
+	/// <summary>
+	/// Identifies the Fill bindable property, which represents the fill value for the icon extension.
+	/// </summary>
+	/// <remarks>This property can be used to bind the fill value in XAML or code, enabling dynamic updates to the
+	/// icon's appearance. The default value is 0.</remarks>
 	public static readonly BindableProperty FillProperty = BindableProperty.Create(nameof(Fill), typeof(int), typeof(VariableIconExtension<TEnum>), 0);
+
+	/// <summary>
+	/// Identifies the Grade bindable property, which represents the grade value for the VariableIconExtension.
+	/// </summary>
+	/// <remarks>This property can be used for data binding in Xamarin.Forms to track or update the grade value
+	/// associated with the extension. The default value is 0.</remarks>
 	public static readonly BindableProperty GradeProperty = BindableProperty.Create(nameof(Grade), typeof(int), typeof(VariableIconExtension<TEnum>), 0);
+
+	/// <summary>
+	/// Identifies the bindable property used to set the optical size for the icon extension.
+	/// </summary>
+	/// <remarks>This property enables data binding for the optical size of icons in XAML. The default value is 24.
+	/// Changing this property affects the rendering size of the icon.</remarks>
 	public static readonly BindableProperty OpticalSizeProperty = BindableProperty.Create(nameof(OpticalSize), typeof(int), typeof(VariableIconExtension<TEnum>), 24);
 
 	/// <summary>
@@ -62,7 +85,13 @@ public partial class VariableIconExtension<TEnum> : IconExtension<TEnum> where T
 		return result;
 	}
 
-	// We override the control creation process to use VariableIcon instead of BaseIcon
+	/// <summary>
+	/// Creates and configures a variable icon control with bindings for icon properties and visual attributes.
+	/// </summary>
+	/// <remarks>This method overrides the base icon control creation to use a variable icon, enabling support for
+	/// additional properties such as weight, fill, grade, and optical size. The returned control is fully bound to the
+	/// relevant properties, ensuring dynamic updates and two-way binding for animation state.</remarks>
+	/// <returns>A configured instance of the variable icon control representing the icon with applied bindings.</returns>
 	protected override View CreateBaseIconControl()
 	{
 		var iconControl = new VariableGenericIcon();
@@ -81,11 +110,6 @@ public partial class VariableIconExtension<TEnum> : IconExtension<TEnum> where T
 		iconControl.SetBinding(VariableIconBase<TEnum>.FillProperty, new Binding(nameof(Fill), source: this));
 		iconControl.SetBinding(VariableIconBase<TEnum>.GradeProperty, new Binding(nameof(Grade), source: this));
 		iconControl.SetBinding(VariableIconBase<TEnum>.OpticalSizeProperty, new Binding(nameof(OpticalSize), source: this));
-
-		//iconControl.Weight = this.Weight;
-		//iconControl.Fill = this.Fill;
-		//iconControl.Grade = this.Grade;
-		//iconControl.OpticalSize = this.OpticalSize;
 
 		return iconControl;
 	}
