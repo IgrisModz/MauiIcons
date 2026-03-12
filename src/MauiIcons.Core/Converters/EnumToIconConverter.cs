@@ -1,5 +1,6 @@
-﻿using MauiIcons.Core.Extensions;
+﻿using System.Collections.Concurrent;
 using System.Globalization;
+using MauiIcons.Core.Extensions;
 
 namespace MauiIcons.Core.Converters;
 
@@ -13,7 +14,6 @@ namespace MauiIcons.Core.Converters;
 /// type does not meet the expected criteria (i.e., not an enum or not a string).</remarks>
 public class EnumToIconConverter : IValueConverter
 {
-
     /// <summary>
     /// Converts an enumeration value to its associated glyph representation using the specified culture.
     /// </summary>
@@ -26,11 +26,10 @@ public class EnumToIconConverter : IValueConverter
     /// <returns>A glyph object representing the enumeration value if the input is an enumeration; otherwise, null.</returns>
     public object? Convert(object? value, Type targetType, object? parameter, CultureInfo? culture)
     {
-        if (value != null && value.GetType().IsEnum)
+		if (value is Enum icon)
         {
-            var method = typeof(EnumExtension).GetMethod(nameof(EnumExtension.GetGlyph))
-                ?.MakeGenericMethod(value.GetType());
-            return method?.Invoke(null, [value]);
+            var codePoint = System.Convert.ToInt32(icon);
+            return char.ConvertFromUtf32(codePoint);
         }
         return null;
     }
@@ -49,9 +48,20 @@ public class EnumToIconConverter : IValueConverter
     {
         if (value is string str && targetType.IsEnum)
         {
-            var method = typeof(EnumExtension).GetMethod(nameof(EnumExtension.GetEnumByGlyph))
-                ?.MakeGenericMethod(targetType);
-            return method?.Invoke(null, [str]);
+            var map = EnumExtension.GlyphReverseCache.GetOrAdd(targetType, t =>
+            {
+                var dict = new Dictionary<string, Enum>();
+                var values = Enum.GetValuesAsUnderlyingType(t);
+                foreach (var underlyingValue in values)
+                {
+                    var enumValue = (Enum)Enum.ToObject(t, underlyingValue);
+                    var codePoint = System.Convert.ToInt32(enumValue);
+                    dict[char.ConvertFromUtf32(codePoint)] = enumValue;
+                }
+                return dict;
+            });
+
+            return map.TryGetValue(str, out var enumValue) ? enumValue : null;
         }
         return null;
     }

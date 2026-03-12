@@ -14,7 +14,7 @@ namespace MauiIcons.Core.Extensions;
 public static class EnumExtension
 {
     static readonly ConcurrentDictionary<Type, string> fontFamilyCache = new();
-    static readonly ConcurrentDictionary<Type, Dictionary<string, Enum>> glyphReverseCache = new();
+    internal static readonly ConcurrentDictionary<Type, Dictionary<string, Enum>> GlyphReverseCache = new();
 
     /// Return the glyph string corresponding to the enum value, by converting its integer value to a Unicode character.
     /// <summary>
@@ -29,7 +29,7 @@ public static class EnumExtension
     /// <returns>A string containing the Unicode character that corresponds to the integer value of the specified enumeration.</returns>int = Convert.ToInt32((Enum)(object)icon);
     public static string GetGlyph<TEnum>(this TEnum icon) where TEnum : struct, Enum
     {
-        int codePoint = Convert.ToInt32((Enum)(object)icon);
+        var codePoint = Convert.ToInt32((Enum)(object)icon);
         return char.ConvertFromUtf32(codePoint);
     }
 
@@ -45,17 +45,17 @@ public static class EnumExtension
     /// null or whitespace.</returns>
     public static TEnum? GetEnumByGlyph<TEnum>(this string? glyph) where TEnum : struct, Enum
     {
-		if (string.IsNullOrWhiteSpace(glyph))
-		{
-			return null;
-		}
+        if (string.IsNullOrWhiteSpace(glyph))
+        {
+            return null;
+        }
 
         var type = typeof(TEnum);
 
-        var map = glyphReverseCache.GetOrAdd(type, t =>
+        var map = GlyphReverseCache.GetOrAdd(type, t =>
         {
             var dict = new Dictionary<string, Enum>();
-            foreach (TEnum enumValue in Enum.GetValues(t))
+            foreach (TEnum enumValue in Enum.GetValues<TEnum>())
             {
                 dict[enumValue.GetGlyph()] = enumValue;
             }
